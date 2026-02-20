@@ -635,7 +635,6 @@ def _descriptive_summary(entry: dict, cfg: dict, max_chars: int) -> str:
                 candidates.append(p)
 
     title = (entry.get("title", "") or "").strip().rstrip(".")
-    sector = detect_sector_label(entry, cfg)
     domain = entry.get("source_domain", "") or "the source"
     pub = _fmt_date(entry.get("published"))
     flags = detect_flags(entry, cfg)
@@ -660,7 +659,7 @@ def _descriptive_summary(entry: dict, cfg: dict, max_chars: int) -> str:
 
     topic = _title_topic(entry)
     fallback = (
-        f"In {sector}, reporting from {domain} ({pub}) highlights {topic.lower()}"
+        f"Reporting from {domain} ({pub}) highlights {topic.lower()}"
         f"{flag_text}, with potential implications for near-term policy, operations, or investment decisions."
     )
     if len(fallback) > max_chars:
