@@ -3,7 +3,7 @@
 ## Latest News Synthesis
 
 - This brief synthesizes 35 ranked Venezuela-focused items spanning 6 sectors: Extractives & Mining, Food & Agriculture, Health & Water, Education & Workforce, Finance & Investment, Cross-cutting / Policy / Risk.
-- The strongest concentration is in Extractives & Mining (10), Finance & Investment (10), Education & Workforce (6).
+- The strongest concentration is in Extractives & Mining (10), Finance & Investment (10), Education & Workforce (7).
 - Across headlines and summaries, the dominant themes are energy and extractives, finance and macro policy, food systems.
 - Opportunity signals appear in 1 items, indicating active commercial or partnership openings.
 - Risk signals appear in 4 items, highlighting policy, sanctions, or operational uncertainty to monitor.
@@ -71,18 +71,18 @@
   - Are Indian firms intent on moving to Venezuelan oil?
   - This article is categorized under Extractives & Mining in the Venezuela brief.
 
+- **[FEATURE | US refiners seek direct Venezuelan crude deals with PDVSA - Baird Maritime](https://news.google.com/rss/articles/CBMizwFBVV95cUxNdmxqMlB3WXVhdzVVVnE0MDVqVWE3ajIwYUU2eDNwUmFNbWs0NWlmY21GN2hVWXBhSVJXWWh0aHllQUVyeXVIbjZOUGIzMDVhWGxBMTBGTExfdk1pcV94ZkMwMGZwSXZ6WEJRWGFBekhtTExWZTMweFlhSHdVODg4RlRZS0cteDBSak1wXzV4Zm9DeFd1TjZzWC02LTJSWHdkNTVXMFVhSGRLQkVmRmF1cElkR2FpaEtZZEVtRnBXekRJTUJHTElNeDd3dFIyMTTSAc8BQVVfeXFMTXZsajJQd1l1YXc1VVZxNDA1alVhN2oyMGFFNngzcFJhTW1rNDVpZmNtRjdoVVlwYUlSV1lodGh5ZUFFcnl1SG42TlBiMzA1YVhsQTEwRkxMX3ZNaXFfeGZDMDBmcEl2elhCUVhhQXpIbUxMVmUzMHhZYUh3VTg4OEZUWUtHLXgwUmpNcF81eGZvQ3hXdU42c1gtNi0yUlh3ZDU1VzBVYUhkS0JFZkZhdXBJZEdhaWhLWWRFbUZwV3pESU1CR0xJTXg3d3RSMjE0?oc=5)**  
+  Date: 2026-02-18
+  Summary:
+  - FEATURE | US refiners seek direct Venezuelan crude deals with PDVSA - Baird Maritime.
+  - FEATURE | US refiners seek direct Venezuelan crude deals with PDVSA Baird Maritime.
+  - This article is categorized under Extractives & Mining in the Venezuela brief.
+
 - **[Venezuela's Oil Surge: PDVSA Boosts Production in Orinoco Belt - Devdiscourse](https://news.google.com/rss/articles/CBMitgFBVV95cUxPeW42RDNWLWN5TVota2I0Z29fNW1vWXZteERuWDhFUkVNTHRsZUpramFZb1NzeDdDTXcxS0UtQXhSVFpQbGhSMlJrcTlWU1NqV2pwWXY0d1Q2NS0xY3VoTFJNUFlEeEttZ2ZHcXQtbXl3TTk2MUNydThmbVRLTkFsOFY2Ul9HZlFEeG12UExucERrX1o4a0c0RHQ5YUdzeUhZSkgtdWZnUXNCaktBTzBHSjdXVUZaUdIBuwFBVV95cUxOdkFmR2ZVQkJmeXJScVhjMm1mRU0tUXEtQjd3T0F1MUFZRzJmUTNQYmF0dWhLdkpGc2lrY0k0MGFURDNWaU5aeGt6NXh0TG5OcWlRUXZiYnUySVN1Y0FZdHgtZ25tTWI1Y2dQa2pRajBNZy1ieDZ3WkszSkRVeGROTTE0c01HVFJwVTBRd1ZvUHdCaUVjYXFya3BEWEpUN1plSngwdTJQcDF6U1RwcnNPckdvRkxRQzI3N3BR?oc=5)**  
   Date: 2026-02-09
   Summary:
   - Venezuela's Oil Surge: PDVSA Boosts Production in Orinoco Belt - Devdiscourse.
   - Venezuela's Oil Surge: PDVSA Boosts Production in Orinoco Belt Devdiscourse.
-  - This article is categorized under Extractives & Mining in the Venezuela brief.
-
-- **[US Energy Secretary announces multimillion-dollar investments in Venezuelan oil - EL PAÍS English](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZF94dVVwSUoxR3F4V0FCaC1mUEZyaTEtTXFoLXFnOUxhR3Vxc3hJRWpNMXJNbUh3TFc4NGQtUUpfMEFYbDRLRHZtMXN2RFZ0MkRnbWwxemhmajFwRlpYbnlxMXRJLU1ydk95cWU5anl2WTFHSXAtUDJuTTlINGRLMy1WR3hzQjU3c05tUWlITndvT1BZdUZjTU81a3M5Q09IMktZTGFwUENCcWxoeUhuQkJyMm83Rmx3TG1rczJVbFVsbG9vRkZ0YnBjazl5M18wbHFqYWZSX0xfRVHSAe8BQVVfeXFMTmNxU2ZWbFVhT1p1MWNNN24yYTB1X0ZQSWtqTldvTkpkSTZtQklVOWd4NUM3R3NiRjBBTlBzNEZHWXZWcldobF9QTndvR2dlMF9EM2kyZ2VhS1BnSURnQTFfNkZiMnB0VXRLank0NFBoRGtUd3BtMEhKUXhwOEVtQTJ1WFMyUWtHbWJXUDR4dlo3cUkxTW05bzhYb29RNFFHZW4xTDVPODViWDBWSV9sclM2U0xjZG5RSEI4R3FadjBQMlBlczZkaDZ1MUNXWnpZR0RYSWZPWVJ0cllUSGprNzJBMXhZUHZCWnVIT0hHT2M?oc=5)**  
-  Date: 2026-02-13
-  Summary:
-  - US Energy Secretary announces multimillion-dollar investments in Venezuelan oil - EL PAÍS English.
-  - US Energy Secretary announces multimillion-dollar investments in Venezuelan oil EL PAÍS English.
   - This article is categorized under Extractives & Mining in the Venezuela brief.
 
 ### Food & Agriculture
@@ -108,28 +108,14 @@
   - Food Security, could Digital Insurance help Venezuela?
   - This article is categorized under Food & Agriculture in the Venezuela brief.
 
-- **[Venezuelan Embassy in Belize hosts vigil calling for return of Nicolas Maduro - Belize News and Opinion on www.breakingbelizenews.com](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNY2RVeFVNa1V1OU1wVmE1YUtucHFjTGxWWmZKUFc2Rmhzdl9SMmVFckZPby1nNkN5dkNFN2VibURVeVM5VkhndjNpX3FrMDlSdXphbXpmcXR4bUJEa3FWRXFCMFUxckcxUWpsVnFELVBaRy11ZUpYT3AtQ0NsSVp3dXRYTGZkT09DZW1iVDZJMkxyU1ZsNEVzM2lJUUZtRG14R1A2c3NlSnR0SzJsd0RTcHdzU3IxR3N3S1JCMlU3bTNHZw?oc=5)**  
-  Date: 2026-01-22
-  Summary:
-  - Venezuelan Embassy in Belize hosts vigil calling for return of Nicolas Maduro - Belize News and Opinion on www.breakingbelizenews.com.
-  - Venezuelan Embassy in Belize hosts vigil calling for return of Nicolas Maduro Belize News and Opinion on www.breakingbelizenews.com.
-  - This article is categorized under Food & Agriculture in the Venezuela brief.
-
 ### Health & Water
-
-- **[China in the U.S.-Venezuela Dispute: Beijing Complicates Washington’s Policy Towards Caracas - The SAIS Review of International Affairs](https://news.google.com/rss/articles/CBMixAFBVV95cUxOT1gzRnZOZUJqc3dWYVowa1RWbEZXc2pHVXhLT3VmY2o2cVFFOUpaRHdrMmNxa2VHU1Jma1huRnhFaS1TWUZTVXI4dGJjMDhGeVA4TEJiLWQzY0NaOWZVX2VJZE9hd19NWjR4dEgtdXg5dWZ3b1RYVlhDVEkzcThzQnJtS3VtYW5URnpJQmwwWkFBOF9tTTVtWGJDaXRCb05WOW5tOWs4NjFYZVpwX18wOVN2ckJST2hHSzgtYmNGci1nY1dH?oc=5)**  
-  Date: 2026-02-10
-  Summary:
-  - China in the U.S.-Venezuela Dispute: Beijing Complicates Washington’s Policy Towards Caracas - The SAIS Review of International Affairs.
-  - China in the U.S.-Venezuela Dispute: Beijing Complicates Washington’s Policy Towards Caracas The SAIS Review of International Affairs.
-  - This article is categorized under Health & Water in the Venezuela brief.
 
 - **[Three months after Hurricane Melissa: PAHO continues supporting health system recovery across the Caribbean](https://www.paho.org/en/news/29-1-2026-three-months-after-hurricane-melissa-paho-continues-supporting-health-system)**  
   Date: 2026-01-29
   Summary:
-  - Three months after Hurricane Melissa: PAHO continues supporting health system recovery across the Caribbean.
-  - Three months after Hurricane Melissa: PAHO continues supporting health system recovery across the Caribbean Oscar Reyes 29 Jan 2026.
-  - This article is categorized under Health & Water in the Venezuela brief.
+  - Three months after Hurricane Melissa: PAHO continues supporting health system recovery across the Caribbean - PAHO/WHO | Pan American Health Organization User account menu Log in English Español Français Language Apply Home Topics Countries Resources Publications Data Tools Digital Health Library Virtual Health Library Virtual Campus for Public Health PAHO/WHO Collaborating Centres Regional Revolving Funds Initiatives Alliance for Primary Health Care in the Americas Elimination Initiative Zero Preventable Maternal…
+  - The Category 5 storm made landfall first in Jamaica on 28 October 2025, causing widespread damage in several Caribbean nations, mainly across Jamaica, Cuba and Haiti, and placing sustained pressure on national health systems.
+  - The hurricane resulted in 88 deaths and physical damage to 785 health facilities (80% of them in Cuba).
 
 - **[The road to self-sufficiency for Venezuelan communities - nrc.no](https://news.google.com/rss/articles/CBMilwFBVV95cUxOMG1ZUnFzblc4cElzdnZMRDdES2huQkNaWDgyTGNsRnpIWEZqLTZJd3pTUS1lNmQwSkZ0MlkxSjk0WWNEZUtjcXFocXJNRGxpSE1SWnZtMzVSQnhDbTVVNlpEVnJnbGdNc0ZGekNxSHp4RW00QXMzdjVOVDRmT2c0Mmo2ajEwc0tQRE5SUUh2SV9ZNHR0bzNZ?oc=5)**  
   Date: 2026-02-06
@@ -182,6 +168,13 @@
   - Venezuelan Migration: Past, Present, and Future Georgetown Journal of International Affairs.
   - This article is categorized under Education & Workforce in the Venezuela brief.
 
+- **[Characteristics of Venezuelan Migration to Brazil: General Aspects and Labour Market Allocation - NIESR](https://news.google.com/rss/articles/CBMiggFBVV95cUxOaG1VanQxbWlpZ3J5cXR5RERESWxJV0dMOWc2dHd3aERTcE1Yc2dzNUxCUHY2ZzdzZThMOGUxV2pMNnJYeHNSaUhXdU43WHItZ1FRX3E3V0s3blZNVnozUVR6bkFPQk5Lc1ZwNF9xWkZ3VkxkQjdENkM2S3o2RFRPRlJ3?oc=5)**  
+  Date: 2026-01-27
+  Summary:
+  - Characteristics of Venezuelan Migration to Brazil: General Aspects and Labour Market Allocation - NIESR.
+  - Characteristics of Venezuelan Migration to Brazil: General Aspects and Labour Market Allocation NIESR.
+  - This article is categorized under Education & Workforce in the Venezuela brief.
+
 ### Finance & Investment
 
 - **[Venezuela: Acting President Rodríguez Secures US $300 Million in Oil Revenue to Shield Workers From Inflation (+Exchange Rate) - Orinoco Tribune](https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTjN1NEdCQzIyT1NiQU5zbjd5c1JobTNHbENhWmR4blh5LUs1OUFzOUxYTm9udzlicW9raXJ0TmVnV19aSzg4SEcwWDlUX05MdEI1aGpYemNqSk5ZS3JmX2lVZi1PUXRZS1JCbnNVamlrOFgwOVhjLWdOLWdGazQ3Q3NkakRJSHNYem1HYTNqWkZTRV9xWlFyVHlhWnVlX2ZnaWxoalJEUGJEZ01ETFNrb2lRX0lhRmstbzBxZm4xcTJMNDBVOVRaNHcwUEdQb0I4T1RYMjhMS2JFYUhDMW1CZmdLWQ?oc=5)**  
@@ -226,13 +219,6 @@
   - US control of Venezuela oil risks debt restructuring showdown with China Reuters.
   - This article is categorized under Finance & Investment in the Venezuela brief.
 
-- **[Venezuela Oil Sector Reform: Investment & Policy Changes - Discovery Alert](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbWJPRTlrXzl5X3V0RFF4TzNXYTh3VmRPd0pUbEZQdnNLN2cxcWJMaFJsTWFPc0NSaG90bWVERjliQUM2UTB4a3R6cS1Ia1lqc0d6d1B4UnkyLW9YdE80TWVPaU9RMzBuajRDQTczVmRaTk1lby1LLXlSajl0QlBCVS1TZE1qaktx?oc=5)**  
-  Date: 2026-01-29
-  Summary:
-  - Venezuela Oil Sector Reform: Investment & Policy Changes - Discovery Alert.
-  - Venezuela Oil Sector Reform: Investment & Policy Changes Discovery Alert.
-  - This article is categorized under Finance & Investment in the Venezuela brief.
-
 - **[The US Attack on Venezuela - Climate Change Performance Index (CCPI)](https://news.google.com/rss/articles/CBMiQEFVX3lxTE1RUGVvSEQydFpocjlnaUk2cUZPZzQ4RVRWcEhMRlNNVEh5b292LUdRVVRaQzVyOWk3ckZ0dDFYNHk?oc=5)**  
   Date: 2026-02-19
   Summary:
@@ -254,7 +240,21 @@
   - Venezuelan lawmakers approve easing state control of oil industry Source ONE News.
   - This article is categorized under Finance & Investment in the Venezuela brief.
 
+- **[Venezuela’s oil sector remains uninvestable - GIS Reports](https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBxUlVJSGJxR3FLRGJGcWxJRFZRSERHMzBLZ1hQZEgzU0kxdVN1bmlIT0hyTmJNM18zUUFuTmV0bzhZUzNZOVZoS1hMV1pNMzkzOWNlNUlrcFFJMGk0aEVCakZrSkRYVFU?oc=5)**  
+  Date: 2026-02-12
+  Summary:
+  - Venezuela’s oil sector remains uninvestable - GIS Reports.
+  - Venezuela’s oil sector remains uninvestable GIS Reports.
+  - This article is categorized under Finance & Investment in the Venezuela brief.
+
 ### Cross-cutting / Policy / Risk
+
+- **[At a Stalemate: Venezuelan Exiles at Harvard are Caught Between Two Regimes - The Harvard Crimson](https://news.google.com/rss/articles/CBMiigFBVV95cUxQZnFRaVpScGtUSTdBc3JZMElhSjVMYjIwY0w0dEhoZGYzNDE1alM5NjEtSTdhbnBSVnEwT2RmTkxRSU03eXdyR093WE5HQmF0WjdpUklVQ1hpdmU0VkZoeXZfMDAwNUh6ZUtMREJXRWRLX3BlQ05sRHFzT0FmNTBJZDBvZG9CVURWYWc?oc=5)**  
+  Date: 2026-02-20
+  Summary:
+  - At a Stalemate: Venezuelan Exiles at Harvard are Caught Between Two Regimes - The Harvard Crimson.
+  - At a Stalemate: Venezuelan Exiles at Harvard are Caught Between Two Regimes The Harvard Crimson.
+  - This article is categorized under Cross-cutting / Policy / Risk in the Venezuela brief.
 
 - **[Ricardo Hausmann: Venezuela's rapid decline from AAA to default, the devastating impact of Chávez's nationalization policies, and the urgent need for economic diversification | Odd Lots - Crypto Briefing](https://news.google.com/rss/articles/CBMirwJBVV95cUxORzhsdzNFMDVkZTJVQVUwa3BQalZCMGdrUnJBZ2FUajBWUGdERjltQ2xWSjVocGtNeVRET3J6RVRtTDd5Z19MbllOem9PZUJ1djBIMU5MN0FZUkRDUlpyeWp0anpzeWpGTHczMEoxUUR2eVpLSEdSRTNrbl9MNDFqa25KUkszTmR4dmFQc1VXM0tVNVZITERQQ2JXdU5XaDlRRWZ0LWlJdkJtTVAtNjRKb1R4RHAtNFdmVmxXSFhZVHF4Qk9hMjdwWHdoc3lrUmp0SmEtTE5OV2xiMnNnaWU1eVlwalB6bHBIUlJxM0xGbGR3R2w1eGd3N050NnRGc3V6T2ZaTWdhUWxBcFFfQVJIQkFwNGZzbGJUR3lWRTU2ZXNjc3pZT1Z6VVhxNk04blU?oc=5)**  
   Date: 2026-02-17 | 🔴 Risk

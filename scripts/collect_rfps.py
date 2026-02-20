@@ -24,6 +24,7 @@ from urllib.parse import urlparse
 import time as _time
 
 import feedparser
+import requests
 import yaml
 from dateutil import parser as dateutil_parser
 
@@ -105,6 +106,68 @@ def fetch_feed(url: str) -> list[dict]:
     except Exception as exc:  # noqa: BLE001
         logger.warning("Failed to fetch %s: %s", url, exc)
         return []
+
+
+def _extract_visible_text(html: str) -> str:
+    text = re.sub(r"(?is)<(script|style|noscript)[^>]*>.*?</\1>", " ", html)
+    text = re.sub(r"(?is)<[^>]+>", " ", text)
+    text = unescape(text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def fetch_article_text(url: str, timeout_seconds: int = 6, max_chars: int = 6000) -> str:
+    if not url:
+        return ""
+    try:
+        response = requests.get(
+            url,
+            timeout=timeout_seconds,
+            headers={"User-Agent": "VZLAnews/1.0"},
+            allow_redirects=True,
+        )
+        if response.status_code != 200 or not response.text:
+            return ""
+
+        text = _extract_visible_text(response.text)
+        if not text:
+            return ""
+        if len(text) > max_chars:
+            return text[:max_chars]
+        return text
+    except requests.RequestException:
+        return ""
+
+
+def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
+    extraction_cfg = cfg.get("article_extraction", {})
+    if not extraction_cfg.get("enabled", True):
+        return
+
+    max_items = max(0, int(extraction_cfg.get("max_items", 12)))
+    timeout_seconds = max(1, int(extraction_cfg.get("timeout_seconds", 6)))
+    min_chars = max(100, int(extraction_cfg.get("min_chars", 240)))
+    max_chars = max(1000, int(extraction_cfg.get("max_chars", 6000)))
+
+    fetched_count = 0
+    enriched_count = 0
+    for entry in entries:
+        if fetched_count >= max_items:
+            break
+        link = entry.get("link", "")
+        if not link:
+            continue
+        fetched_count += 1
+        article_text = fetch_article_text(link, timeout_seconds=timeout_seconds, max_chars=max_chars)
+        if len(article_text) >= min_chars:
+            entry["article_text"] = article_text
+            enriched_count += 1
+
+    logger.info(
+        "Article text enrichment: %d/%d entries enriched",
+        enriched_count,
+        fetched_count,
+    )
 
 
 def _parse_date(entry) -> datetime | None:
@@ -468,10 +531,12 @@ def _summary_excerpt(entry: dict, max_chars: int) -> str:
 
 
 def _three_sentence_summary(entry: dict, cfg: dict, max_chars: int) -> list[str]:
-    raw = entry.get("summary", "") or ""
-    clean = re.sub(r"<[^>]+>", " ", raw)
-    clean = unescape(clean)
-    clean = re.sub(r"\s+", " ", clean).strip()
+    base_text = (entry.get("article_text", "") or "").strip()
+    if not base_text:
+        raw = entry.get("summary", "") or ""
+        clean = re.sub(r"<[^>]+>", " ", raw)
+        base_text = unescape(clean)
+    clean = re.sub(r"\s+", " ", base_text).strip()
 
     candidates = []
     if clean:
@@ -486,7 +551,7 @@ def _three_sentence_summary(entry: dict, cfg: dict, max_chars: int) -> list[str]
     domain = entry.get("source_domain", "") or "the source"
     pub = _fmt_date(entry.get("published"))
 
-    if title:
+    if title and not any(title.lower() in s.lower() for s in candidates[:2]):
         candidates.insert(0, f"{title}.")
 
     fallback_pool = [
@@ -692,6 +757,7 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     ranked = score_and_rank(deduped, cfg, now)
     max_results = cfg.get("max_results", 35)
     top = select_diverse_top_entries(ranked, cfg, max_results)
+    enrich_entries_with_article_text(top, cfg)
     selected_count = len(top)
     logger.info("Selected top %d entries", selected_count)
 
