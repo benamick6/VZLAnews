@@ -467,6 +467,59 @@ def _summary_excerpt(entry: dict, max_chars: int) -> str:
     return (clipped or clean[:max_chars]).strip() + "…"
 
 
+def _three_sentence_summary(entry: dict, cfg: dict, max_chars: int) -> list[str]:
+    raw = entry.get("summary", "") or ""
+    clean = re.sub(r"<[^>]+>", " ", raw)
+    clean = unescape(clean)
+    clean = re.sub(r"\s+", " ", clean).strip()
+
+    candidates = []
+    if clean:
+        parts = re.split(r"(?<=[.!?])\s+", clean)
+        for part in parts:
+            p = part.strip(" -\u2022\t\n\r")
+            if len(p) >= 25:
+                candidates.append(p)
+
+    title = (entry.get("title", "") or "").strip().rstrip(".")
+    sector = detect_sector_label(entry, cfg)
+    domain = entry.get("source_domain", "") or "the source"
+    pub = _fmt_date(entry.get("published"))
+
+    if title:
+        candidates.insert(0, f"{title}.")
+
+    fallback_pool = [
+        f"This article is categorized under {sector} in the Venezuela brief.",
+        f"The item was published on {pub} and sourced from {domain}.",
+        "It is included due to relevance signals tied to Venezuela and sector-specific terms.",
+    ]
+
+    selected: list[str] = []
+    seen: set[str] = set()
+    for sentence in candidates + fallback_pool:
+        normalized = sentence.lower().strip()
+        if not normalized or normalized in seen:
+            continue
+        seen.add(normalized)
+        selected.append(sentence if sentence.endswith((".", "!", "?")) else sentence + ".")
+        if len(selected) == 3:
+            break
+
+    final_sentences = []
+    for sentence in selected:
+        trimmed = sentence.strip()
+        if len(trimmed) > max_chars:
+            clipped = trimmed[:max_chars].rsplit(" ", 1)[0].strip()
+            trimmed = (clipped or trimmed[:max_chars]).strip().rstrip(".") + "…"
+        final_sentences.append(trimmed)
+
+    while len(final_sentences) < 3:
+        final_sentences.append("This article remains relevant to the current Venezuela monitoring scope.")
+
+    return final_sentences[:3]
+
+
 def _latest_news_synthesis(entries: list[dict], cfg: dict) -> list[str]:
     section_order = cfg.get("brief_sections", [])
     if not entries:
@@ -646,9 +699,10 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
             if flag_str:
                 meta_parts.append(flag_str)
             lines.append(f"  {' | '.join(meta_parts)}")
-            excerpt = _summary_excerpt(e, summary_max_chars)
-            if excerpt:
-                lines.append(f"  Summary: {excerpt}")
+            summary_sentences = _three_sentence_summary(e, cfg, summary_max_chars)
+            lines.append("  Summary:")
+            for sentence in summary_sentences:
+                lines.append(f"  - {sentence}")
             lines.append("")
 
     return "\n".join(lines) + "\n"
