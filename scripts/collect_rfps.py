@@ -596,17 +596,10 @@ def _latest_news_synthesis(entries: list[dict], cfg: dict) -> list[str]:
 
 def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
     country_name = cfg.get("country", {}).get("name", "Venezuela")
-    now_str = run_meta.get("run_at", datetime.now(timezone.utc).isoformat())
     summary_max_chars = int(cfg.get("summary_max_chars", 520))
 
     lines = [
         f"# {country_name} News Intelligence",
-        "",
-        f"> Generated: {now_str}  ",
-        f"> Entries fetched: {run_meta['fetched']}  ",
-        f"> After filtering: {run_meta['filtered']}  ",
-        f"> After deduplication: {run_meta['deduplicated']}  ",
-        f"> Top results shown: {run_meta['selected']}",
         "",
         "## Latest News Synthesis",
         "",
@@ -616,44 +609,6 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         lines.append(f"- {sentence}")
 
     lines += [
-        "",
-        "---",
-        "",
-        "## Pipeline Metrics",
-        "",
-        f"| Metric | Value |",
-        f"|--------|-------|",
-        f"| Fetched | {run_meta['fetched']} |",
-        f"| Filtered | {run_meta['filtered']} |",
-        f"| Deduplicated | {run_meta['deduplicated']} |",
-        f"| Selected | {run_meta['selected']} |",
-        "",
-        "## Scoring Summary",
-        "",
-    ]
-
-    if entries:
-        scores = [e["score"] for e in entries]
-        lines += [
-            f"| Metric | Value |",
-            f"|--------|-------|",
-            f"| Entries scored | {len(scores)} |",
-            f"| Average score | {sum(scores)/len(scores):.3f} |",
-            f"| Highest score | {max(scores):.3f} |",
-            f"| Lowest score | {min(scores):.3f} |",
-        ]
-    else:
-        lines.append("_No entries scored this run._")
-
-    lines += [
-        "",
-        "## Run Metadata",
-        "",
-        f"| Key | Value |",
-        f"|-----|-------|",
-        f"| Output file | `{run_meta.get('output_file', OUTPUT_PATH)}` |",
-        f"| Metadata file | `{run_meta.get('metadata_file', METADATA_PATH)}` |",
-        f"| Timezone | UTC |",
         "",
         "---",
         "",
@@ -689,13 +644,11 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
             title = e.get("title", "(no title)")
             link = e.get("link", "")
             pub = _fmt_date(e.get("published"))
-            domain = e.get("source_domain", "")
-            score = e.get("score", 0.0)
             if link:
                 lines.append(f"- **[{title}]({link})**  ")
             else:
                 lines.append(f"- **{title}**  ")
-            meta_parts = [f"Score: {score:.3f}", f"Date: {pub}", f"Source: {domain}"]
+            meta_parts = [f"Date: {pub}"]
             if flag_str:
                 meta_parts.append(flag_str)
             lines.append(f"  {' | '.join(meta_parts)}")

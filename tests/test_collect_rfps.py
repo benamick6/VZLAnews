@@ -357,9 +357,7 @@ class TestBuildMarkdown:
             }
         ]
         md = cr.build_markdown(entries, cfg, run_meta)
-        assert "## Pipeline Metrics" in md
-        assert "## Scoring Summary" in md
-        assert "## Run Metadata" in md
+        assert "## Latest News Synthesis" in md
         assert "## Top Results" in md
 
     def test_contains_entry_title(self):
@@ -397,7 +395,32 @@ class TestBuildMarkdown:
             "metadata_file": "data/last_run.json",
         }
         md = cr.build_markdown([], cfg, run_meta)
-        assert "_No entries scored this run._" in md
+        assert "_No items this week._" in md
+
+    def test_result_details_hide_score_and_source(self):
+        cfg = minimal_cfg()
+        run_meta = {
+            "run_at": NOW.isoformat(),
+            "fetched": 1,
+            "filtered": 1,
+            "deduplicated": 1,
+            "selected": 1,
+            "output_file": "docs/index.md",
+            "metadata_file": "data/last_run.json",
+        }
+        entries = [
+            {
+                **make_entry(
+                    title="PDVSA Oil Tender Venezuela",
+                    published=NOW - timedelta(days=1),
+                    source_domain="worldbank.org",
+                ),
+                "score": 0.80,
+            }
+        ]
+        md = cr.build_markdown(entries, cfg, run_meta)
+        assert "Score:" not in md
+        assert "Source:" not in md
 
 
 # ---------------------------------------------------------------------------

@@ -29,7 +29,7 @@ jobs:
 
       - name: Verify docs/index.md contains required sections
         run: |
-          for section in "Pipeline Metrics" "Scoring Summary" "Run Metadata"; do
+          for section in "Latest News Synthesis" "Top Results"; do
             if ! grep -q "$section" docs/index.md; then
               echo "ERROR: docs/index.md is missing section: $section"
               exit 1
