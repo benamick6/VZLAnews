@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-21 13:55 UTC**
+> Last updated: **2026-02-21 19:05 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,35 +8,35 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Alianza opositora en España criticó que amnistía no deja en libertad a todos los presos](https://bitlysdowssl-aws.com/2026/02/alianza-opositora-en-espana-critico-que-amnistia-no-deja-en-libertad-a-todos-los-presos/) — Sat, 21 Feb 2026 13:01:39 +0000
-- [Denuncian que preso político condenado a 30 años por fotografiarse con Leopoldo López quedó excluido de la ley de amnistía](https://bitlysdowssl-aws.com/2026/02/denuncian-que-preso-politico-condenado-a-30-anos-por-fotografiarse-con-leopoldo-lopez-quedo-excluido-de-la-ley-de-amnistia/) — Sat, 21 Feb 2026 12:56:17 +0000
-- [Gobierno británico estudia eliminar por ley al expríncipe Andrés de la línea sucesoria](https://bitlysdowssl-aws.com/2026/02/gobierno-britanico-estudia-eliminar-por-ley-al-exprincipe-andres-de-la-linea-sucesoria/) — Sat, 21 Feb 2026 12:38:58 +0000
-- [Zapato 3 se entregó por completo en su reencuentro con Caracas](https://bitlysdowssl-aws.com/2026/02/zapato-3-se-entrego-por-completo-en-su-reencuentro-con-caracas/) — Sat, 21 Feb 2026 12:30:23 +0000
-- [Tres muertos en nuevo ataque de EE UU en el Pacífico](https://bitlysdowssl-aws.com/2026/02/tres-muertos-en-nuevo-ataque-de-ee-uu-en-el-pacifico/) — Sat, 21 Feb 2026 11:22:29 +0000
+- [Expectativa en Venezuela ante anuncio de centenares de liberaciones por amnistía: "Ojalá no sea una burla"](https://bitlysdowssl-aws.com/2026/02/expectativa-en-venezuela-ante-anuncio-de-centenares-de-liberaciones-por-amnistia/) — Sat, 21 Feb 2026 17:58:18 +0000
+- [Las últimas palabras de Eric Dane a sus hijas Billie y Georgia](https://bitlysdowssl-aws.com/2026/02/las-ultimas-palabras-de-eric-dane-a-sus-hijas-billie-y-georgia/) — Sat, 21 Feb 2026 17:34:09 +0000
+- [Esposa del dirigente Freddy Superlano denunció que él sigue bajo régimen domiciliario](https://bitlysdowssl-aws.com/2026/02/esposa-del-dirigente-freddy-superlano-denuncio-que-su-esposo-sigue-bajo-regimen-domiciliario/) — Sat, 21 Feb 2026 17:32:22 +0000
+- [Trump condena fallo del Supremo contra sus aranceles y anuncia tasa global de 10%](https://bitlysdowssl-aws.com/2026/02/trump-condena-fallo-del-supremo-contra-sus-aranceles-y-anuncia-tasa-global-de-10-2/) — Sat, 21 Feb 2026 17:27:07 +0000
+- [Encarcelan a dos hombres acusados de reclutar menores para disidencias de las Farc en Colombia](https://bitlysdowssl-aws.com/2026/02/encarcelan-a-dos-hombres-acusados-de-reclutar-menores-para-disidencias-de-las-farc-en-colombia/) — Sat, 21 Feb 2026 17:25:54 +0000
 
 ## Efecto Cocuyo
 
+- [Muere Willie Colón y nos deja toda la alegría de su música](https://efectococuyo.com/solaz/muere-willie-colon-y-nos-deja-toda-la-alegria-de-su-musica/) — Sat, 21 Feb 2026 18:54:16 +0000
+- [Anuncian las primeras 379 excarcelaciones tras aprobación de la Ley de Amnistía](https://efectococuyo.com/politica/anuncian-las-primeras-379-excarcelaciones-tras-aprobacion-de-la-ley-de-amnistia/) — Sat, 21 Feb 2026 18:36:42 +0000
+- [Para no olvidar: por qué El Helicoide no debería ser un centro recreativo](https://efectococuyo.com/la-humanidad/por-que-el-helicoide-no-deberia-ser-un-centro-recreativo/) — Sat, 21 Feb 2026 18:30:00 +0000
 - [Las remodelaciones marcaron el crecimiento del sector construcción en Carabobo](https://efectococuyo.com/economia/las-remodelaciones-marcaron-el-crecimiento-del-sector-construccion-en-carabobo/) — Sat, 21 Feb 2026 13:00:00 +0000
 - [Aprueban un protocolo, aún no publicado, para aplicar la amnistía](https://efectococuyo.com/politica/aprueban-protocolo-aun-no-publicado-para-aplicar-la-amnistia/) — Sat, 21 Feb 2026 02:31:39 +0000
-- [El “primer Amazon en Caracas” no existe: es un vídeo de IA de una cuenta de TikTok sobre la «Venezuela del mañana»](https://efectococuyo.com/cocuyo-chequea/falso-amazon-caracas/) — Fri, 20 Feb 2026 23:17:32 +0000
-- [Diputados de oposición: comisión abordará casos no incluidos en la amnistía y habrá más liberaciones de presos políticos](https://efectococuyo.com/politica/diputados-comision-casos-incluidos-ley-amnistia-liberaciones-presos-politicos/) — Fri, 20 Feb 2026 22:41:33 +0000
-- [Foro Penal: Ley de Amnistía es un paso importante, pero no elimina el aparato represor](https://efectococuyo.com/politica/foro-penal-ley-de-amnistia-es-un-paso-importante-pero-no-elimina-el-aparato-represor/) — Fri, 20 Feb 2026 20:14:26 +0000
 
 ## El Pitazo
 
-- [EE. UU. | Autoridades migratorias proponen dejar de otorgar permisos de trabajo a solicitantes de asilo](https://elpitazo.net/migracion/ee-uu-autoridades-migratorias-proponen-dejar-de-otorgar-permisos-de-trabajo-a-solicitantes-de-asilo/) — Fri, 20 Feb 2026 23:29:15 +0000
-- [¿Dónde está Alex Saab? El empresario suma 17 días sin aparecer públicamente tras rumores de su detención](https://elpitazo.net/politica/donde-esta-alex-saab-el-empresario-suma-17-dias-sin-aparecer-publicamente-tras-rumores-de-su-detencion/) — Fri, 20 Feb 2026 23:03:38 +0000
-- [Esposa de Freddy Superlano anuncia que el exdiputado recibirá libertad plena en las próximas horas](https://elpitazo.net/politica/esposa-de-freddy-superlano-anuncia-que-el-exdiputado-recibira-libertad-plena-en-las-proximas-horas/) — Fri, 20 Feb 2026 22:41:39 +0000
-- [Sntp denuncia que profesor universitario fue extorsionado por presuntos PNB: lo amenazaron con llevarlo al Helicoide](https://elpitazo.net/regiones/sntp-denuncia-que-profesor-universitario-fue-extorsionado-por-presuntos-pnb-lo-amenazaron-con-llevarlo-al-helicoide/) — Fri, 20 Feb 2026 22:09:37 +0000
-- [Foro Penal advierte que al menos 400 presos políticos podrían quedar excluidos de la ley de amnistía](https://elpitazo.net/politica/foro-penal-dice-que-al-menos-400-presos-politicos-podrian-quedar-excluidos-de-la-ley-de-amnistia/) — Fri, 20 Feb 2026 19:46:45 +0000
+- [Reuters: asesores de seguridad y médicos cubanos salen de Venezuela ante presión de EE. UU.](https://elpitazo.net/politica/reuters-asesores-de-seguridad-y-medicos-cubanos-salen-de-venezuela-ante-presion-de-ee-uu/) — Sat, 21 Feb 2026 19:03:45 +0000
+- [Muere Willie Colón, una leyenda de la salsa](https://elpitazo.net/cultura/muere-willie-colon-una-leyenda-de-la-salsa/) — Sat, 21 Feb 2026 17:58:37 +0000
+- [Maturín | Seis personas mueren por presunta ingesta de licor adulterado](https://elpitazo.net/sucesos/maturin-seis-personas-mueren-por-presunta-ingesta-de-licor-adulterado/) — Sat, 21 Feb 2026 17:13:02 +0000
+- [Administración de Delcy Rodríguez rechaza renovación de decreto de emergencia de EE. UU. sobre Venezuela](https://elpitazo.net/politica/administracion-de-delcy-rodriguez-rechaza-renovacion-de-decreto-de-emergencia-de-ee-uu-sobre-venezuela/) — Sat, 21 Feb 2026 16:04:52 +0000
+- [Diputado asegura que van 379 excarcelaciones tras aprobación de la Ley de Amnistía](https://elpitazo.net/politica/diputado-asegura-que-van-379-excarcelaciones-tras-aprobacion-de-la-ley-de-amnistia/) — Sat, 21 Feb 2026 16:00:06 +0000
 
 ## Google News – Venezuela
 
-- [Estados Unidos pidió a Venezuela avanzar en investigaciones contra el hijo de Nicolás Maduro y otros ocho líderes del régimen chavista - Infobae](https://news.google.com/rss/articles/CBMijAJBVV95cUxQM2xBVXh5cnFBb2xfUmxhSERYTTlJdy0xeUI2dTNmcVdENWJaVXR4SjdXcVVRTFR2YmNQWXRSRGs4TGcyMURJbG9PZ3J2NnJoU0NDU0E3bW16NDE4V3A4YlJkYW1zMHpVVnFTQThjYWZGRkRsSVpDWmc0Y001YWVwWVBwZjlmTTdIci1GUzdFNWZFRTFnZ3hBLWdnZTNlTi1nWUpNRmY3RmdPYl85NlV0b1l2MklXaGRDQno5LVB6VWltSUJ3YXF1SlNNZnZBUWZGR0I0SkcwNGtxaGlpUmk1RFYzYi0xandUZ0U4YzU3a1pUWm1CU1pxbzEwVHlnX2NwNFNQdEg2ck42bGNL0gGnAkFVX3lxTE5ua3VoeU5waEw1Y2dlNDU2Q0xIaWU2eTBPbU5tQmJvX3FoNm00cWZBOXkzRkQ0OXdlYnBFX05JekVpUGZYRURSQmtmVkhqdHNPYTMtaG1DMUtLSzhJMlVNODk2V3doTHpBVmFEMDNiT3NMaDhkSkllMlYtMlZad0oycEwtVXVZeFpuOUt4YmtYSk1kV0cwQnJOTzVNNTVfejVqb0dxZGdwN3lzNDdGSXV3SFl4dXBXV2xIOV93Y1M4dXNUVDBtQ2FsNmNJN0xWMUZuOHVLNkZPSzI2Q1c1WThhYmQzN1A0UlRWdDllMXdBclY0anNlTEVaVDJvM1dob3lPTV9PN1dEaWo0TVU2UGkwNXhMVzhvZ1FiUmUtVDhuVXZMZlJwN0U?oc=5) — Sat, 21 Feb 2026 05:22:00 GMT
-- [Venezuela, ¿bajo tutela de EE.UU.? Cada vez más venezolanos creen que es una buena opción - CNN en Español](https://news.google.com/rss/articles/CBMinAFBVV95cUxPRHgya2dfMEZPYjZLQ291UjhZYkpBY2tzTjEweEU1YVVYZkNXQkJzc0Y5UzhZRFJNMVN1ekhsWmFZbl9oY2lJTTk5Ykxja283d2xBZjllT2lUcWpyc3VWb25oWUlGT1dOVW9YRGtiVkptOUNrTnowdFdHNVNQdS1wOHVqRG5lQmpTNGxDT3hxSG5hc0xvYl83WktNT0E?oc=5) — Fri, 20 Feb 2026 15:50:00 GMT
-- [Después de Venezuela, ¿sigue Cuba? - The New York Times](https://news.google.com/rss/articles/CBMibkFVX3lxTE5pc242bW9OcUpmbW0zRnlvdk1mbzVvQlA4VGtRUUNaMHk4UjZ5SFBwdnZtYnRKZ1U3c0MwdmhCUmJ3VHphcUVFNkJqTk4taEs4amVVVDljS21udy1wTkF6R1FuRzFWcEhYckx6bFJB?oc=5) — Fri, 20 Feb 2026 06:00:05 GMT
-- [Hasta dónde llega la ley de amnistía aprobada en Venezuela: estas son las claves - CNN en Español](https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ3NQTnd0WGpuaTRaMUVSQVJzd05LbGZ4OVE3VGRLYWtkc1loNkZMWGZkLVZ5eWJtby1LbzVEdVQ1NV9VWFJITFFueDlydlptX0lnYUpUVFU5V1NncGNPVzh0dnVLdzItclhJU280VnhrVzR3Y3BUY2dZX3I1ZkhEYUFJWTM5UXZmS1E?oc=5) — Fri, 20 Feb 2026 02:48:00 GMT
-- [Venezuela: Urge desmantelar el aparato represivo - Human Rights Watch](https://news.google.com/rss/articles/CBMijwFBVV95cUxNWDlfRzB4Ykk1UUJHWnpNVXl2emJVbFltQnRCeXljTm43U29sdUg3dTkyTUZQZU1jS0lTY1pQNUNiS1NNYk1ZMERXRTl0c2FCMWR5RWJ0Yy1OQ1ZXS0xkbV9TdnFmdGR5WlZGZXdybWpVNjRlWS1uc1p5bjVtS0o3VVozcVprOHFJc1AxY0xNYw?oc=5) — Wed, 18 Feb 2026 05:00:00 GMT
+- [Asamblea Nacional de Venezuela aprueba histórica ley de amnistía para los presos políticos - CNN en Español](https://news.google.com/rss/articles/CBMirAFBVV95cUxOR3hjeVpFWk9FX2dGS0hfWVNWYmpQc2w5UzcwQXdGdElEX1B1a0ZqbElld2tITUJ4Q2N4VHVYamNHUGpCQncwMXJuZUxFdmNmMTRUMHdRNFlINkFwclpwUExwdEd4eHRPc1cwXy11ckJUcjRNSTF5MnpPN0NzclJqNnRhOU1WY2ZCSUh3V3JYcG5fNkhkZXhMWjF1QnRxanU5WU05eWlvUEZWQzlB?oc=5) — Fri, 20 Feb 2026 00:14:00 GMT
+- [Venezuela rechaza prórroga de «emergencia nacional» dictada por EE. UU. - teleSUR](https://news.google.com/rss/articles/CBMimgFBVV95cUxNTXdVZi00c0pDNHhrZE52Y3Jka2NnU05qRThJMjcwTXc3Q2plZVNvT2pQVHdvZ2dIMGpHTFVUUG56TGlidHk5d1pESHBwNm5kRmo0RVlETmZHMVpyeF80eG5wQ055ZHluNE5QbThGbFV5eFd5eEp2V0J5UEJHZmZXSFowVFZLeVhqZFB1UE91XzNJdVNWNHpjNkpn?oc=5) — Sat, 21 Feb 2026 13:15:14 GMT
+- [(Multimedia) Venezuela rechaza renovación de "emergencia nacional" decretada por EEUU - Xinhua Español](https://news.google.com/rss/articles/CBMihAFBVV95cUxNcnFaVHkyZUg5UDF1MG5uVXRHNGY1aWVZcjlMdFZzTko3NUY4ZGtuWEg4MUFqVUZPOU5Va3BrbjdIYTRkTWpNY0RtbHVkUG5wZXVVanM5SGJNMkdTa1BZNWFrUlNicnVyR05fUVEzTmx5RWhOemdOSzZNMl9lQ3NFRVgySDI?oc=5) — Sat, 21 Feb 2026 17:34:15 GMT
+- [Caracas rechaza renovación de decreto de "emergencia" dictado en 2015 por EE.UU. sobre Venezuela - Yahoo](https://news.google.com/rss/articles/CBMinwFBVV95cUxPZHdCQWFQOGdHUzNXc2NTbFlpaEdYcXFFRnB5U3g5V213UWdFODNqQVNRcmZmc3J3MEMyT3FTMFduY0tiM1FkVkpwZVNucHBMd2xnOVlYTThCdEFwYkFPd0dFSGhnVEFGY0lKTmZQMGNsU0tLYnFFYk82VU45NnVaVmc1Vk9iekM0TWM0cXN4NUczdUJ6ZTR4OGpDbTBFcG8?oc=5) — Sat, 21 Feb 2026 14:59:32 GMT
+- [Las fuerzas de seguridad cubanas abandonan Venezuela mientras aumenta la presión de EE.UU - Yahoo](https://news.google.com/rss/articles/CBMimAFBVV95cUxNNFlZNktMY2s4OTdFQ0NtWjhDYVU0TTRmZmdZSV9WM2pHQ0tmdDhMeXJnMk8tVmItMFhXUzFNNjY4MzBjS0QtckxZdFVVeHpPUjVPVW1wdURKLVFtOHE0UG92X2xXbzdiN1EyVVpaMTUzV2FXbzhyejRYWkFCQkZXZGsxNUlnTlZhXzVkTTJzYVo5S2E0MEJENg?oc=5) — Sat, 21 Feb 2026 13:42:43 GMT
 
 ---
 
