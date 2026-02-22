@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-22 13:56 UTC**
+> Last updated: **2026-02-22 19:05 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,11 +8,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Serena Williams regresa este domingo a los 44 años al circuito WTA](https://bitlysdowssl-aws.com/2026/02/serena-williams-regresa-este-domingo-a-los-44-anos-al-circuito-wta/) — Sun, 22 Feb 2026 12:27:30 +0000
-- [Análisis de entorno: Transición tutelada y resistencia chavista](https://bitlysdowssl-aws.com/2026/02/analisis-de-entorno-transicion-tutelada-y-resistencia-chavista/) — Sun, 22 Feb 2026 12:19:00 +0000
-- [Real Madrid cae ante el Osasuna y pone en riesgo su liderato](https://bitlysdowssl-aws.com/2026/02/real-madrid-cae-ante-el-osasuna-y-pone-en-riesgo-su-liderato/) — Sun, 22 Feb 2026 12:13:22 +0000
-- [Capturaron a falso médico en La California: emitía recetas que no trataban las enfermedades de los pacientes](https://bitlysdowssl-aws.com/2026/02/capturaron-a-falso-medico-en-la-california-emitia-recetas-que-no-trataban-las-enfermedades-de-los-pacientes/) — Sun, 22 Feb 2026 11:33:00 +0000
-- [Lula le dirá a Trump que quiere igualdad de trato entre todos los países](https://bitlysdowssl-aws.com/2026/02/lula-le-dira-a-trump-que-quiere-igualdad-de-trato-entre-todos-los-paises/) — Sun, 22 Feb 2026 11:08:35 +0000
+- [Gobernanza en transición: Venezuela busca superar la crisis institucional a pesar de la corrupción](https://bitlysdowssl-aws.com/2026/02/gobernanza-en-transicion-venezuela-busca-superar-la-crisis-institucional-a-pesar-de-la-corrupcion/) — Sun, 22 Feb 2026 18:01:00 +0000
+- [Activista Sairam Rivas regresó a Venezuela luego de más de seis meses en el exilio](https://bitlysdowssl-aws.com/2026/02/activista-sairam-rivas-regresa-a-venezuela-luego-de-mas-de-seis-meses-en-el-exilio/) — Sun, 22 Feb 2026 17:58:58 +0000
+- [El asesino silencioso que se puede manifestar con un dolor de cuello](https://bitlysdowssl-aws.com/2026/02/el-asesino-silencioso-que-se-puede-manifestar-con-un-dolor-de-cuello/) — Sun, 22 Feb 2026 17:35:14 +0000
+- [Convocan pronunciamiento público para denunciar exclusiones de la ley de amnistía este #23Feb](https://bitlysdowssl-aws.com/2026/02/convocan-pronunciamiento-publico-para-denunciar-exclusiones-de-la-ley-de-amnistia-este-23feb/) — Sun, 22 Feb 2026 16:51:24 +0000
+- [Agentes de seguridad dan de baja a hombre que irrumpió en la residencia de Trump en Florida](https://bitlysdowssl-aws.com/2026/02/agentes-de-seguridad-dan-de-baja-a-hombre-que-irrumpio-en-la-residencia-de-trump-en-florida/) — Sun, 22 Feb 2026 16:18:00 +0000
 
 ## Efecto Cocuyo
 
@@ -24,18 +24,18 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Pitazo
 
-- [Willie Colón y su lucha por la libertad de Venezuela: la brutalidad del chavismo es una cosa espantosa (video)](https://elpitazo.net/cultura/willie-colon-y-su-lucha-por-la-libertad-de-venezuela-la-brutalidad-del-chavismo-es-una-cosa-espantosa-video/) — Sun, 22 Feb 2026 01:15:01 +0000
-- [Familiares denuncian la detención de 30 funcionarios del Cicpc por negarse a adulterar pruebas en Fuerte Tiuna](https://elpitazo.net/politica/familiares-denuncian-la-detencion-de-30-funcionarios-del-cicpc-por-negarse-a-adulterar-pruebas-en-fuerte-tiuna/) — Sun, 22 Feb 2026 00:56:55 +0000
-- [¿Dónde están Tareck El Aissami y Samark López? Lo que sabemos del caso](https://elpitazo.net/politica/donde-estan-tareck-el-aissami-y-samark-lopez-lo-que-sabemos-del-caso/) — Sat, 21 Feb 2026 22:52:25 +0000
-- [Más de 60 toneladas de insumos médicos llegan a Venezuela provenientes de EE. UU.](https://elpitazo.net/politica/mas-de-60-toneladas-de-insumos-medicos-llegan-a-venezuela-provenientes-de-ee-uu/) — Sat, 21 Feb 2026 21:30:45 +0000
-- [Reuters: asesores de seguridad y médicos cubanos salen de Venezuela ante presión de EE. UU.](https://elpitazo.net/politica/reuters-asesores-de-seguridad-y-medicos-cubanos-salen-de-venezuela-ante-presion-de-ee-uu/) — Sat, 21 Feb 2026 19:03:45 +0000
+- [Cruz Roja Venezolana brindará atención médica a liberados por amnistía](https://elpitazo.net/politica/cruz-roja-venezolana-brindara-atencion-medica-a-liberados-por-amnistia/) — Sun, 22 Feb 2026 18:36:14 +0000
+- [Activista y familiares confirman huelga de hambre de presos políticos en El Rodeo I](https://elpitazo.net/politica/activista-y-familiares-confirman-huelga-de-hambre-de-presos-politicos-en-el-rodeo-i/) — Sun, 22 Feb 2026 17:53:16 +0000
+- [EE. UU. | Servicio Secreto mata a un hombre que entró armado a la residencia de Donald Trump](https://elpitazo.net/internacionales/ee-uu-servicio-secreto-mato-a-un-hombre-que-entro-armado-a-la-residencia-de-donald-trump/) — Sun, 22 Feb 2026 17:04:44 +0000
+- [Abogada Blanca Isabel Suárez cumplirá un año detenida por ejercer su labor como representante legal](https://elpitazo.net/politica/abogada-blanca-isabel-suarez-cumplira-un-ano-detenida-por-ejercer-su-labor-como-representante-legal/) — Sun, 22 Feb 2026 16:24:23 +0000
+- [Carabobo | Joven planifica el robo de $2.000 del negocio de su padre en Valencia](https://elpitazo.net/sucesos/carabobo-joven-planifica-el-robo-de-2-000-del-negocio-de-su-padre-en-valencia/) — Sun, 22 Feb 2026 15:33:10 +0000
 
 ## Google News – Venezuela
 
-- [Hasta dónde llega la ley de amnistía aprobada en Venezuela: estas son las claves - CNN en Español](https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ3NQTnd0WGpuaTRaMUVSQVJzd05LbGZ4OVE3VGRLYWtkc1loNkZMWGZkLVZ5eWJtby1LbzVEdVQ1NV9VWFJITFFueDlydlptX0lnYUpUVFU5V1NncGNPVzh0dnVLdzItclhJU280VnhrVzR3Y3BUY2dZX3I1ZkhEYUFJWTM5UXZmS1E?oc=5) — Fri, 20 Feb 2026 02:48:00 GMT
-- [Caracas dicta primeras 379 liberaciones por ley de amnistía - DW.com](https://news.google.com/rss/articles/CBMiogFBVV95cUxQeFhpR3pucVpiX21STEh4emgxOThwV1FWcDZZSnlOaGVpVXR0R2NyQ3EtTUxNS0twa05FaV9QalJINjY3UWY1MDB6YlNINnNuVl95X2hQYmhKTU5OYlF2UklZUGY1TXNRWGV0RjRDYnZEc0lkRDlqOUxWU3JCamRTcDlMYktNWVNsQVZPZENtMmNzRTZYNVBkMVNsaUREVXlsQXfSAaIBQVVfeXFMUEp0a3JUcjR3cVlTVmFrRWl1Rlp6aUY1c29BSHNLSDNIc19RSE40QW5JMUh6UVpUbU1EZDFoUUJSLTlxWGtHR19sS2U0YjRSaXJuM0VfUnJJdk5kNnpFclhFM0FPaDFRZzY5OWc3MmpZOUx5Zm1HcE9paTI4WlJkQURwOVQ2cU1Odk5UVzNqMHEwWExWLWJUN1ZMSTFwREZJTW9B?oc=5) — Sat, 21 Feb 2026 13:54:10 GMT
-- [Ley de amnistía en Venezuela: quiénes pueden acogerse, quiénes quedan excluidos y cómo se aplicará - EL PAÍS](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZTlXMHltZ0RJbk12SV9veThJMEtnRE9QZUFpU1R0eEZUeThHYlNCVk85dzRQOU4wd282WkFtNTlGQ0RJOVVBbnRWYkpxVzg4RF93SVk1dkJCcFdTUHYzVHJ4SFpCWHZYdXpOVUVWTUwxUHRCdWFRMTg1ZE16d3BoRmpac3RHMlVVejlaNG9ZXzVrTDVscTBvQzJkeU9HVzBEYzNjU1pPamF2WmhsZmNkM01QZG5BcTgyUUYzdXRnZTV5eVdQOVBlMGpQM0plZUVYMHF3ZXNB0gHqAUFVX3lxTE9iSkk4aVBBYlRiX25LWWtZQ25lVHJnajludUdPM0VMdE10bTZuekh0aDJEeUtrNjVSVy1XZDQ3LURSSGpfYWY4OEVyaG5iS1h2bTVaVXhsOFA1QzJ0WFlOOTRhaEhnUlJfVmxGc09DNGdveHFBbWJnSE1kTWE5bjFDMm4yM01WMThTSEU0OWZJa0R6QTl1bDZZendEdkZzVFdwZGVjdHNmY2VtR041ejV4Y3hvYjI1dllqS1ozVXc5YzhHRndoOUhEc24wd21nRGQzWDY5RURhRkR5bHU0NG80U0liWXJVYXFFUQ?oc=5) — Fri, 20 Feb 2026 19:27:26 GMT
-- [Un equipo venezolano repleto de talento irá en busca de su primera final - MLB.com](https://news.google.com/rss/articles/CBMikAFBVV95cUxNT0RvRk9SWGlLMFBkVmEyOGFoZi1vYVpCMGwtcFpQODZQN0Q3V3dWb090NHZibWJiQlJfMGkyQWpQNDN0VnE4VHFjTTRFUU5CTl9ldHJSVm5ZNDN0RWprRENDVXNOajN6U2RLeWlyb2tJNmN4a1p4SEpQSUtNMFB3V2cxVUl5bU1BUVZWNTBnSHfSAZwBQVVfeXFMUE9GdFRPMEw5LUxxcHNyOHBqSWVJTGJNaTJzaUhZdmdXX0pTQzA2amFXLTFXT0JCbGdwQk1VVnV5dE4tV1pKMTN2RVFDcGNncS02M2VTRGVIdDBBUUlzZjk2dVJJNjZJQWo4TGFHbHhmdDZ3UHI4UGNoSFIyOTMxR1I2WURqa1hKd3M4N3Y4SmVrdDdKa2tyZnhnQkxI?oc=5) — Sat, 21 Feb 2026 16:30:34 GMT
+- [La Asamblea Nacional de Venezuela aprueba por unanimidad la ley de amnistía - EL PAÍS](https://news.google.com/rss/articles/CBMiugFBVV95cUxNalJwUFJhN1dHT1N5a25BV1lSV0JnT2ZVTUhvUXlCRGdJUnhhUXVZdHVXY0V0RzdrY3VEQmM3b3d1b1dLNlVxNTFqeHRuakhIZE0zVHpmMXNMNERBSWc5TnE0UXh4NXVGelRRQ1M1c2REZTNHeGwtUE1JYzZKc2R2M001RlVGVmtxTDZjWU9xdUM4M2JtSE1HdXFjYS1fZHRqcGpiYTAxaV93YjRWZ0xRUnJLT3NoTU1xWGfSAc4BQVVfeXFMTWU3YnNWaGwyeFZTTDl0VklTd3FUUUtNdk9ON0hucU0tSklPTDZObW5PU0RCSVphS1RkNnFIV2RNU2k3STFVbmZUZVRnN2FZM0tfTXFUd05OZ0RkR3JoTld0OGdaNzlWZzlWOEZQYkF1S25lNDZtOUxyMjJVR0dxaTJ6R1NGYlR4eF92T3ZYNmZQSGkyNEFrQTRFc2lTcFRIajlwSW9WZzZ6MURocXdYVEJ2bHBRdzNtMU14ZnA1UFRtbUNJdGhZVnFvVHlRaHc?oc=5) — Fri, 20 Feb 2026 00:12:54 GMT
+- [Ecopetrol no podría importar gas de Venezuela sin licencia de Estados Unidos, advierte ministro de Minas - Yahoo](https://news.google.com/rss/articles/CBMikwFBVV95cUxNbzJwaVl1VXduZ1FUbmhvOFBPcHlfd2VINW9rd3B2WjM2bXRGZWswdWlDVlRucG83NklhWGZmRjhUMU1hbURFTDlFWV96dFQ5aEczZ0JoRm10dUtmb0RoMHpodFVQOW5tS1l3MllHRXBkUlhmSXN1UnhQUTBCSC1pdkZYWVBzSXhNZFNrV3dpLWZEX0k?oc=5) — Sun, 22 Feb 2026 17:37:14 GMT
+- [Confirman 16 liberaciones de presos políticos tras amnistía en Venezuela - Yahoo](https://news.google.com/rss/articles/CBMimwFBVV95cUxNb2hRVEVGbHBCLU8tQTBjS0VzRHN0MHJfcnZYUU1acUFVLVR3dktpTWNsbzNsSzhldXE2cG1laktRZW1LbExyYlp4dlBjLTY1elVkMVAzSDFBYlNXNG5PNzJPT1NuM2d1S05zVW9RYU9BV0xZR2l2ZzFGRGpRRHZuWkFSZDExZ3dKR282dy1qb1ZDSzE3ZHVKbWdwMA?oc=5) — Sun, 22 Feb 2026 17:46:53 GMT
+- [Un equipo venezolano repleto de talento irá en busca de su primera final - MLB.com](https://news.google.com/rss/articles/CBMikAFBVV95cUxNT0RvRk9SWGlLMFBkVmEyOGFoZi1vYVpCMGwtcFpQODZQN0Q3V3dWb090NHZibWJiQlJfMGkyQWpQNDN0VnE4VHFjTTRFUU5CTl9ldHJSVm5ZNDN0RWprRENDVXNOajN6U2RLeWlyb2tJNmN4a1p4SEpQSUtNMFB3V2cxVUl5bU1BUVZWNTBnSHfSAZwBQVVfeXFMUE9GdFRPMEw5LUxxcHNyOHBqSWVJTGJNaTJzaUhZdmdXX0pTQzA2amFXLTFXT0JCbGdwQk1VVnV5dE4tV1pKMTN2RVFDcGNncS02M2VTRGVIdDBBUUlzZjk2dVJJNjZJQWo4TGFHbHhmdDZ3UHI4UGNoSFIyOTMxR1I2WURqa1hKd3M4N3Y4SmVrdDdKa2tyZnhnQkxI?oc=5) — Sat, 21 Feb 2026 18:10:38 GMT
 - [Venezuela recibe nuevo cargamento de EE UU con 65.000 kilos de suministros médicos - El Nacional](https://news.google.com/rss/articles/CBMimgFBVV95cUxNTGhQZlJzWkVzUkFIbHEzU0xvVUU1X1BmdnNuUG43OXdzcFRXMmp6VUwxNEhsc0g3SU8xOTNsRFg0YTNFSzhKaXdKMTVGNDlDUjA0dXJNbGFxQTBTNHFEbUdlODVDR3MyZlhTdGNnd2l5WjZqbDJGQUlDUDBtTUhfdFphSXl6OFdPakVqZWVGbHkyejVpaktXRUtn?oc=5) — Sat, 21 Feb 2026 21:55:34 GMT
 
 ---
