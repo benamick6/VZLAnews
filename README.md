@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-23 14:38 UTC**
+> Last updated: **2026-02-23 19:13 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,35 +8,35 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Gloria Estefan sobre ICE: "Una cosa es agarrar criminales y otra las redadas"](https://bitlysdowssl-aws.com/2026/02/gloria-estefan-una-cosa-es-agarrar-criminales-y-otra-las-redadas/) — Mon, 23 Feb 2026 13:43:55 +0000
-- [Toque de queda en Nueva York ante llegada de violenta tormenta invernal](https://bitlysdowssl-aws.com/2026/02/toque-de-queda-en-nueva-york-ante-llegada-de-violenta-tormenta-invernal/) — Mon, 23 Feb 2026 13:41:02 +0000
-- [Vinotinto femenina sub-20 empató con Ecuador](https://bitlysdowssl-aws.com/2026/02/vinotinto-femenina-sub-20-empato-con-ecuador/) — Mon, 23 Feb 2026 13:32:27 +0000
-- [Delcy Rodríguez afirma que garantizará los derechos y beneficios de los trabajadores con la Constituyente Laboral](https://bitlysdowssl-aws.com/2026/02/delcy-rodriguez-afirma-que-garantizara-beneficios-de-trabajadores/) — Mon, 23 Feb 2026 13:28:29 +0000
-- [San Francisco se prepara para recibir la nueva arquitectura móvil de Samsung](https://bitlysdowssl-aws.com/2026/02/san-francisco-recibe-la-nueva-arquitectura-movil-de-samsung/) — Mon, 23 Feb 2026 13:17:47 +0000
+- [Médicos trujillanos permanecen detenidos a pesar de contar con boleta de excarcelación](https://bitlysdowssl-aws.com/2026/02/medicos-permanecen-detenidos-boleta-excarcelacion/) — Mon, 23 Feb 2026 18:21:57 +0000
+- [Oposición democrática reporta casi 600 presos políticos liberados y publica lista](https://bitlysdowssl-aws.com/2026/02/oposicion-democratica-reporta-576-presos-politicos-liberados/) — Mon, 23 Feb 2026 17:56:01 +0000
+- [Camilla Fabri, esposa de Alex Saab, sale del gabinete tras nuevas designaciones de Delcy Rodríguez](https://bitlysdowssl-aws.com/2026/02/camilla-fabri-sale-del-gabinete-tras-nuevas-designaciones/) — Mon, 23 Feb 2026 17:51:22 +0000
+- [Seis planetas se alinearán este mes: cuándo y cómo ver el fenómeno que no volverá hasta 2040](https://bitlysdowssl-aws.com/2026/02/seis-planetas-se-alinearan-este-mes-cuando-y-como-ver-el-fenomeno-que-no-volvera-hasta-2040/) — Mon, 23 Feb 2026 16:59:13 +0000
+- [Jorge Rodríguez: Ley de Amnistía beneficiará a más de 11.000 presos políticos en Venezuela](https://bitlysdowssl-aws.com/2026/02/jorge-rodriguez-la-amnistia-beneficiara-a-11-000-presos-politicos/) — Mon, 23 Feb 2026 16:48:17 +0000
 
 ## Efecto Cocuyo
 
-- [Gobierno anuncia comienzo de trabajos de remodelación de El Helicoide desde este lunes](https://efectococuyo.com/la-humanidad/gobierno-anuncia-comienzo-de-trabajos-de-remodelacion-de-el-helicoide-este-lunes/) — Mon, 23 Feb 2026 13:39:53 +0000
-- [Foro Penal actualiza: al menos 54 libertades plenas en 3 días](https://efectococuyo.com/politica/foro-penal-actualiza-al-menos-52-libertades-plenas-en-3-dias/) — Mon, 23 Feb 2026 01:21:44 +0000
-- [Caos y violencia en varios estados de México tras muerte del capo «El Mencho»](https://efectococuyo.com/internacionales/caos-violenia-varios-estados-de-mexico-tras-muerte-del-capo-el-mencho/) — Mon, 23 Feb 2026 00:17:16 +0000
-- [Foro Penal verificó 16 liberaciones desde la promulgación de la amnistía](https://efectococuyo.com/asignar-categoria/foro-penal-veirifico-16-liberaciones-desde-promulgacion-de-la-amnistia/) — Sun, 22 Feb 2026 20:42:45 +0000
-- [Más de 200 presos políticos en huelga de hambre en Rodeo I](https://efectococuyo.com/la-humanidad/mas-de-200-presos-politicos-inician-huelga-de-hambre-en-rodeo-i/) — Sun, 22 Feb 2026 20:26:33 +0000
+- [¿Qué sabemos de la presunta “orden de retirar cuadros de Chávez y Maduro de oficinas públicas y sedes diplomáticas”?](https://efectococuyo.com/cocuyo-chequea/cuadros-chavez-maduro-orden-eeuu/) — Mon, 23 Feb 2026 18:53:01 +0000
+- [Activos del entorno de Maduro bloqueados en Suiza ascienden a 887 millones de dólares](https://efectococuyo.com/internacionales/activos-del-entorno-de-maduro-bloqueados-en-suiza-ascienden-a-887-millones-de-dolares/) — Mon, 23 Feb 2026 18:25:02 +0000
+- [Sntp denuncia que tribunales antiterrorismo rechazan solicitudes de sobreseimiento a periodistas](https://efectococuyo.com/la-humanidad/sntp-denuncia-que-tribunales-antiterrorismo-rechazan-solicitudes-de-sobreseimiento-a-periodistas/) — Mon, 23 Feb 2026 18:18:04 +0000
+- [Delcy Rodríguez hace nuevos cambios en viceministerios de Cancillería](https://efectococuyo.com/politica/delcy-rodriguez-hace-nuevos-cambios-en-viceministerios-de-cancilleria/) — Mon, 23 Feb 2026 18:04:32 +0000
+- [Ni la Cruz Roja ni autoridades han pasado por la Zona 7 desde que se aprobó la Ley de Amnistía](https://efectococuyo.com/la-humanidad/ni-la-cruz-roja-ni-autoridades-han-pasado-por-la-zona-7-desde-que-se-aprobo-la-ley-de-amnistia/) — Mon, 23 Feb 2026 17:43:04 +0000
 
 ## El Pitazo
 
-- [Foro Penal confirma 54 liberaciones plenas después de la entrada en vigencia de la Ley de Amnistía](https://elpitazo.net/politica/foro-penal-confirma-54-liberaciones-plenas-despues-de-la-entrada-en-vigencia-de-la-ley-de-amnistia/) — Mon, 23 Feb 2026 14:04:39 +0000
-- [Ataque de EE. UU. contra una barca en el Pacífico deja tres personas muertas](https://elpitazo.net/internacionales/ataque-de-ee-uu-contra-una-barca-en-el-pacifico-deja-tres-personas-muertas/) — Mon, 23 Feb 2026 13:03:08 +0000
-- [Caos y violencia: México en alerta máxima tras la muerte del líder del Cártel de Jalisco en operativo militar](https://elpitazo.net/internacional/caos-y-violencia-mexico-en-alerta-maxima-tras-la-muerte-del-lider-del-cartel-de-jalisco-en-operativo-militar/) — Mon, 23 Feb 2026 00:42:41 +0000
-- [Familiares denuncian que el régimen inventa acusación contra funcionarios del Cicpc que se negaron a adulterar experticia el #3Ene](https://elpitazo.net/politica/regimen-inventa-acusacion-contra-funcionarios-del-cicpc-que-se-negaron-a-adulterar-experticia-el-3ene/) — Sun, 22 Feb 2026 23:38:23 +0000
-- [Pedro Guanipa anuncia que un tribunal le otorgó libertad plena](https://elpitazo.net/politica/pedro-guanipa-anuncia-que-un-tribunal-le-otorgo-libertad-plena/) — Sun, 22 Feb 2026 23:08:02 +0000
+- [Delcy Rodríguez destituye a la esposa de Alex Saab de su cargo: el empresario sigue sin aparecer](https://elpitazo.net/politica/delcy-rodriguez-destituye-a-la-esposa-de-alex-saab-de-su-cargo-el-empresario-sigue-sin-aparecer/) — Mon, 23 Feb 2026 18:44:43 +0000
+- [Sntp denuncia que tribunales de terrorismo se niegan a recibir solicitudes de amnistía](https://elpitazo.net/caracas/sntp-denuncia-que-tribunales-de-terrorismo-se-niegan-a-recibir-solicitudes-de-amnistia/) — Mon, 23 Feb 2026 18:22:21 +0000
+- [Aerolínea Latam reanuda sus vuelos entre Bogotá y Caracas este #23Feb: conoce la frecuencia](https://elpitazo.net/migracion/aerolinea-latam-reanuda-sus-vuelos-entre-bogota-y-caracas-este-23feb-conoce-la-frecuencia/) — Mon, 23 Feb 2026 17:54:18 +0000
+- [Aumento del salario mínimo: Ministro de Trabajo evita dar fechas y asegura que el anuncio no es su competencia](https://elpitazo.net/economia/aumento-del-salario-minimo-ministro-de-trabajo-evita-dar-fechas-y-asegura-que-el-anuncio-no-es-su-competencia/) — Mon, 23 Feb 2026 17:44:20 +0000
+- [Esculpir el futuro: pacto o ruina](https://elpitazo.net/opinion/esculpir-el-futuro-pacto-o-ruina/) — Mon, 23 Feb 2026 17:39:37 +0000
 
 ## Google News – Venezuela
 
-- [Ley de amnistía en Venezuela: quiénes pueden acogerse, quiénes quedan excluidos y cómo se aplicará - EL PAÍS](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZTlXMHltZ0RJbk12SV9veThJMEtnRE9QZUFpU1R0eEZUeThHYlNCVk85dzRQOU4wd282WkFtNTlGQ0RJOVVBbnRWYkpxVzg4RF93SVk1dkJCcFdTUHYzVHJ4SFpCWHZYdXpOVUVWTUwxUHRCdWFRMTg1ZE16d3BoRmpac3RHMlVVejlaNG9ZXzVrTDVscTBvQzJkeU9HVzBEYzNjU1pPamF2WmhsZmNkM01QZG5BcTgyUUYzdXRnZTV5eVdQOVBlMGpQM0plZUVYMHF3ZXNB0gHqAUFVX3lxTE9iSkk4aVBBYlRiX25LWWtZQ25lVHJnajludUdPM0VMdE10bTZuekh0aDJEeUtrNjVSVy1XZDQ3LURSSGpfYWY4OEVyaG5iS1h2bTVaVXhsOFA1QzJ0WFlOOTRhaEhnUlJfVmxGc09DNGdveHFBbWJnSE1kTWE5bjFDMm4yM01WMThTSEU0OWZJa0R6QTl1bDZZendEdkZzVFdwZGVjdHNmY2VtR041ejV4Y3hvYjI1dllqS1ozVXc5YzhHRndoOUhEc24wd21nRGQzWDY5RURhRkR5bHU0NG80U0liWXJVYXFFUQ?oc=5) — Fri, 20 Feb 2026 19:27:26 GMT
-- [En medio del acercamiento, Venezuela responde con fuerza a EE.UU. por aún considerarla una "amenaza inusual y extraordinaria" - CNN en Español](https://news.google.com/rss/articles/CBMimgFBVV95cUxQbWVkbUdJMmtnQ1RwaGhHdkI0UllyUWhCUFVkQkRGMG0tOUtMRjRybl9WVERyTk10Sl9VdnZmcUVxQVZ1ZzYtZU1NeTBna3FtQndHWTVRamNiMXlqc0ptMG9rR1NyRllveVZMYWR6ZXd4M20zWi1jVzBFOV9nV0oweUNVQlVJb0M3MUE1dThDRUhXOGcyTGE1MDVR?oc=5) — Sat, 21 Feb 2026 20:10:00 GMT
-- [Venezuela, ¿bajo tutela de EE.UU.? Cada vez más venezolanos creen que es una buena opción - CNN en Español](https://news.google.com/rss/articles/CBMinAFBVV95cUxPRHgya2dfMEZPYjZLQ291UjhZYkpBY2tzTjEweEU1YVVYZkNXQkJzc0Y5UzhZRFJNMVN1ekhsWmFZbl9oY2lJTTk5Ykxja283d2xBZjllT2lUcWpyc3VWb25oWUlGT1dOVW9YRGtiVkptOUNrTnowdFdHNVNQdS1wOHVqRG5lQmpTNGxDT3hxSG5hc0xvYl83WktNT0E?oc=5) — Fri, 20 Feb 2026 15:50:00 GMT
-- [ABC de España: EE UU exige a Venezuela la entrega del hijo de Maduro y ocho jerarcas clave - El Nacional](https://news.google.com/rss/articles/CBMiwwFBVV95cUxORnVoMi1EeUhlTkhtMnY2NmpHMENiNXdLZDZZYnhkNWxOejlRSURydk9RcVpja202TlVNYk42Qkt6Tmp2SFV1bXhXd0hRZlVlcDExVlVfYnluNUlIRklJeGRIeUNwV1hUTlVtTTJfVWxwVjVlU3NTLVhWdElmaUNuNzZYY2pLRl9Pd3JHZXdWZFhSSml1STgybnhYU1F1RTNabFg5bV9KTGh5aVkwRXFwRUNUdUlocUVPWmtLTDd3UXZGVFE?oc=5) — Sat, 21 Feb 2026 15:31:35 GMT
-- [El canciller de Venezuela pide ante la ONU la liberación de Maduro - Yahoo](https://news.google.com/rss/articles/CBMilwFBVV95cUxNeHJhT2l6TGhxSVphRFZlamhER1BFemFfTTl4WlNJT2tyQThlYnVYLTRsZkFKWTF0TlFGXzM1ZkxwSHVwaWwzUWtTd25lZHhOM09WWjBFMDNEYUpOcjctcG5qY09GdlAxSWVfQmZ5bnI1a3RrY0FnOE8xbWV0S3NnQmxER2FHV2s4QlRoZVlBa2gzN3FrT21Z?oc=5) — Mon, 23 Feb 2026 13:42:29 GMT
+- [Telefónica, Venezuela y el poder invisible de la infraestructura - El Nacional](https://news.google.com/rss/articles/CBMiowFBVV95cUxPMlotUEVQcTRoOFVCc25uM2dCTENTdU5RTDhYeUlMeEhPdDBjTFVndnlTMnprMzJwLUp2SlZPdGtNTVBxUUkwVUhpWWFINjdwZmFqMlRMVTdRWER0ZnRpYlZ3U3hUY0tyTmoySThVMkxLU2JteHlMQ2FtWWVENnh5LUVvelNYWDRteTlMdjBEaXBCdFprdDZkaUtKcV9pbzJpNENR?oc=5) — Mon, 23 Feb 2026 05:23:45 GMT
+- [Estados Unidos envió a Venezuela lujosas camionetas y comenzó adecuaciones para su Embajada en Caracas: "Más recursos para nuestro equipo" - NTN24](https://news.google.com/rss/articles/CBMikgJBVV95cUxOYmdGcTVfSDJSOWdyM3lMWnFaMDFJUm1nWnhFYzdfTkRDWkFLal9meTEwUG5uamNqeDJnZm1MVHR5VlJORTY2WFkySFMxUVpGQVdISWxMT1kzN04tTllEc3dvazZ4SDRKR0I1aEN0eGZSdTYya09FeXByeVROSXBzcmhmU1JGVHdZMjVXSDgyS0M2TFFqWjJudkx5bXF5MTZHQmJGakhRb3FsSHd0eWFJN1ZrWFpwMVlHdWN3bEdmQ1U5VmYzdjB4ZG5wNFBvWDBvQ195R25GdWFnZXRZeTYySFBkcE1xNlQ0RXJDazJkTG1mbE1kQnFYMl81Ym4wSVhDOTZ3T3ZNUmlub3RvYjZxTHZR0gGSAkFVX3lxTFA0dkxjZFBpMnB2bFRaZVUxWGxkSXc2Zjk4LW5GMGtENURDWmRRMGhtaU9uQnBaajFOaXVudFFFbDBGdU5FZ3RYV0NZODBhd3ljTk5neTBGZTdwRGNTT0lxRHF6NTY0d0o5Tkd6cy1UWGZSYUx3VEF5T2ctbFd1RFpxcVVTQWJYU1Y4bm50a0ZrMUVKcVM3WXdfZ2hkVDgzWVBvOWF0SmEyM2QyZDRGVGlobVhoWGp5b29ZVklfUTdMTVl1VWlVdkx4LVpjMXZPZld4VW1DRGFqdGJZbUdZUzlkTkZUb2ZzUmdYMTFkUktRb1VSNm55cTdtc2V2bXpXZi1ZWXhKSWVPTnJ1T2dMV0ZHZlE?oc=5) — Sun, 22 Feb 2026 16:06:34 GMT
+- [Des-informando - ¿Hay un acuerdo entre Estados Unidos y Venezuela para la liberación de Maduro? - France 24](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMzJEQUh2YndsU3FEX1UwY1NJZWtEZUI3RjVsYWdOemNPdmFaVy1UU1RFUWVDUmY4a1ppaDk2cXAyUTZNbHE1RzhIejl4SHM3MkxoQks3OXVfeUlXUDYtMmZrNHpyMk1rZ1FSYVR2OURJXzF5TG1RTVBDV0FTRW9obUJJaUItX3JPRGlyQVN6bHNFeUhVNUxFajJSTDVDV1pzcHVpVE5wT0g4VTVoTmJFUG93Z1d3eUxaUkdEaE5pR2lKdHBGMWtoaXhiUU42djZJdUtBc3FWcllwSTQ?oc=5) — Mon, 23 Feb 2026 15:54:23 GMT
+- [Venezuela pide ante la ONU la liberación de Maduro mientras aumentan los amnistiados - Yahoo](https://news.google.com/rss/articles/CBMikwFBVV95cUxNYnBIQ09mZ184OFhrYS1JS2QxcWpuYUZqU0ZKSFZCZlJqTVZhWWFBUHo1UE1pRTA1T0F6bXIxeXR5WmlUejItVG84MFFYRjVCY1dhTzZaVGU0T3R0a25hVnRvamV5bVY5ZG5Sb2tYMl9xVTdtRWpyVTlkSDk2U2tMM3FDSVlVd3NXU3RsZWdQQXZGczg?oc=5) — Mon, 23 Feb 2026 16:49:27 GMT
+- [El sueño de volver a Venezuela choca con la vida que millones reconstruyeron en Colombia - Yahoo](https://news.google.com/rss/articles/CBMijwFBVV95cUxPeGtJYk1teGVxUGZDMmVUTlpteGZKWmVITGY3cFJ1cTdWeUlaSzlSSlBDelVMSUxaWGs5V0RwNXFjUkpYUDQ5YW5qcUdjZnREZkRkV0FzTXA4M0FzX01LOFVPOWJFZFM0UHBoV1FqUEVfd3FFdnJQTmNVZzNObjdIbzFtTmsyRW42d0lqcmNKbw?oc=5) — Mon, 23 Feb 2026 16:16:00 GMT
 
 ---
 
