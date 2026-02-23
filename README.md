@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-23 05:24 UTC**
+> Last updated: **2026-02-23 08:06 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,11 +8,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
+- [¿Cuánto tiempo gobernará Delcy Rodríguez?](https://bitlysdowssl-aws.com/2026/02/cuanto-tiempo-gobernara-delcy-rodriguez/) — Mon, 23 Feb 2026 05:25:00 +0000
+- [Prosperidad en libertad, fundamento occidental del Orden Nuevo](https://bitlysdowssl-aws.com/2026/02/prosperidad-en-libertad-fundamento-occidental-del-orden-nuevo/) — Mon, 23 Feb 2026 05:24:00 +0000
+- [Telefónica, Venezuela y el poder invisible de la infraestructura](https://bitlysdowssl-aws.com/2026/02/telefonica-venezuela-y-el-poder-invisible-de-la-infraestructura-2/) — Mon, 23 Feb 2026 05:23:00 +0000
+- [El transitar de las transiciones](https://bitlysdowssl-aws.com/2026/02/el-transitar-de-las-transiciones/) — Mon, 23 Feb 2026 05:22:00 +0000
 - [La privatización de la paz: caso Venezuela](https://bitlysdowssl-aws.com/2026/02/la-privatizacion-de-la-paz-caso-venezuela/) — Mon, 23 Feb 2026 05:21:00 +0000
-- [Therian y Furries: identidades, cultura y su influencia en la sociedad](https://bitlysdowssl-aws.com/2026/02/therian-y-furries-identidades-cultura-y-su-influencia-en-la-sociedad/) — Mon, 23 Feb 2026 05:20:00 +0000
-- [Vitrina: Petróleo bajo control, corrupción a la deriva](https://bitlysdowssl-aws.com/2026/02/vitrina-petroleo-bajo-control-corrupcion-a-la-deriva/) — Mon, 23 Feb 2026 05:19:00 +0000
-- [La decrepitud moral de un príncipe](https://bitlysdowssl-aws.com/2026/02/la-decrepitud-moral-de-un-principe/) — Mon, 23 Feb 2026 05:18:00 +0000
-- [Clamor por los presos políticos](https://bitlysdowssl-aws.com/2026/02/clamor-por-los-presos-politicos/) — Mon, 23 Feb 2026 05:18:00 +0000
 
 ## Efecto Cocuyo
 
@@ -32,11 +32,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## Google News – Venezuela
 
-- [213 presos políticos inician huelga de hambre en Venezuela - DW](https://news.google.com/rss/articles/CBMirAFBVV95cUxOaHVpTmhYU2NMSnVtaEdKTUVaTEl5eUtWcUVXSkR0RHZmM0VjOHYwZm9ydmlMOVl1anZ6Ym1CTm9kdUpuUzBIYzAxeHYzOU9mT2tlLXprUkNGWGRrdUtNbnBWam1VVmNUZFRCdTFZcFBFcElIMS14RzlxenN6SFcxQnp3STlieWpVZUpQY05aOElVTGRfbVNVXzBQTUV3QXRSZDNKTjdLb0ZTcmx40gGsAUFVX3lxTE12bEpiQW96TEhzU2x3THNUMjFYV3hfQkJ0ZGNuX0RFVjNyXzJDY0FRbXZFazlXRXYtcnJ0OFlOUFJrMjl1MEQxWmtrNDVMXzJsQUNFOEhXZEs5ZWRHb19XbXZzMDRZWHZMeFlqOVhqTnJ3dU1QTXA0WGs0ZGlPaklmTnV4MGUtRHNQYWE0TXZ0bDJXSmVoVC1WYXA1M25wNjF0V0dwbmRlSk94R2c?oc=5) — Sun, 22 Feb 2026 21:41:15 GMT
+- [Los límites de la ley de amnistía en Venezuela: qué personas quedarían excluidas y cómo afecta a María Corina Machado - CNN en Español](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPb01McDJIX1c5LVd6MGQtaTlDZ0R6ZTFPaWQ5dWZJdF94aEFkMDg5WGprR2JRYmNkbWdpUmw2aGFncFNjWjN5RDN3ZVU5bDJsQld6RjBFOEVSUTdSdnU2b1FfWlBTOFpZUjBZUTFleWhHcV9naXFGRmlrTl96Ri1mbTFTd1NDNDZTa01OcXBlVHVyU3ZDRXpfWkMyN2RNQlFJbzhkN1R4VW82cGIwaFNuNnZkZF9ZWUE1MGRNMW96dXd2eTQ?oc=5) — Sat, 21 Feb 2026 19:33:00 GMT
 - [Lula: “Si Nicolás Maduro tiene que ser juzgado, debe ser en Venezuela, no en el extranjero” - EL PAÍS](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZFFrc3JhSjJhWmFlYWtVd19HaGo1QkxhRDRrODBwb05qRnYtZnBQbmZGT1BJZVJFQjUyWkNSZXBfM2pWU1dSZDdFNzFlWTZORGFKMkdoMHNRa2M1d3ByRzBfcDBDSlR4anNhdWhHeGxqRDlsU2w0bUVsTWdpZTFWSlcxTXdrZU91Rno2a01fVnR3NUE3aHo1STBtUl96OFZha0dLWU9ZYkpDc0ViX3lsNXJGLUVxa3dn0gHMAUFVX3lxTFBDSlhHQlBjNWhqVE50YkVGa2NkcjVQQUpxM1ZxRFZaYjRPckRRaTE1QkZLc0NsblJWemViZ0t2aUlZTDdDUXRXcWtINk1FWENGOGJxOWhfc0t3U25DcTJpWGVDeTdfbFF6bnpmT01ValRNcHdTTE5fdGlnaURtZGtHQ2ZubEY4UDNLbVpEelY0YnVpWVE3OHJZcmJPV2tUWWFzd2dqV0c5cXZ1UVRsa1A0azIxQkdzaGM1UVpxeENkakhwcnp1Ym5IYnF4Yg?oc=5) — Fri, 20 Feb 2026 15:42:09 GMT
 - [Colombia y Venezuela van por acuerdos energéticos - Yahoo](https://news.google.com/rss/articles/CBMilwFBVV95cUxQd3lOYWhPOWhkQkhmRWp2VXRvQnM3a0NuUXlZV25vb2RqUTBtYk5wWnFXcFIyMHhMREFhQ3pxU2VpRTJENzNodGtuMHlUSmZBbG16S2hzZHJaSDNNUDBPMGdLcTJKbjB3S2VRQXZhS1JtTnZ0THk1RG9HVGMxdEJsTVNRNmtfT0tHaEVSWFdJNWFDdXFKTXVV?oc=5) — Mon, 23 Feb 2026 04:01:00 GMT
-- [Familias esperan liberaciones en Venezuela tras polémica ley de amnistía - Yahoo](https://news.google.com/rss/articles/CBMiowFBVV95cUxPeXc0bVQxLUR1MTUtSTdVbmF0em1kcTEwM19TLTFsZ2k0Qkxvd2tDenFOa2dHczVWQUtSOHZUeGxoYnc4bjIyckNLSXpFU2lmd2Y2UHFRajlMelJNYU1lWVNNMWQ2TnE1N2VIOF9zRC1qdmVWRmIxSmNUZlVMekRpNm54WlFNZE1KMG9aS0diOGlWcnpGQU45bm91S0tOWVctLXk4?oc=5) — Mon, 23 Feb 2026 02:49:00 GMT
-- ["¡Salió tu esposo!": alegría y preocupación en cárcel para presos políticos en Venezuela - Yahoo](https://news.google.com/rss/articles/CBMioAFBVV95cUxPQVNsVXU0Ynd2dFFVRHlQVEdORWUwYTJQMXdPMk1DOEI5WFBDTDJ5bkhRakZhYmpvdndjcVU5aml6SXRPcW0wS3paZFFFVDFBdWl0OUY5Y3hvTE9nR1NqdXlRaWhpNmc1Y1V3Qkc1cm9oUFlvRlhpSUtCaXdPaG5QeDlWUzRBVnZQcWtYc3p0RUpwTVNRdzljZnRYa24yMFNi?oc=5) — Mon, 23 Feb 2026 02:34:00 GMT
+- [Un equipo venezolano repleto de talento irá en busca de su primera final - MLB.com](https://news.google.com/rss/articles/CBMikAFBVV95cUxNT0RvRk9SWGlLMFBkVmEyOGFoZi1vYVpCMGwtcFpQODZQN0Q3V3dWb090NHZibWJiQlJfMGkyQWpQNDN0VnE4VHFjTTRFUU5CTl9ldHJSVm5ZNDN0RWprRENDVXNOajN6U2RLeWlyb2tJNmN4a1p4SEpQSUtNMFB3V2cxVUl5bU1BUVZWNTBnSHfSAZwBQVVfeXFMUE9GdFRPMEw5LUxxcHNyOHBqSWVJTGJNaTJzaUhZdmdXX0pTQzA2amFXLTFXT0JCbGdwQk1VVnV5dE4tV1pKMTN2RVFDcGNncS02M2VTRGVIdDBBUUlzZjk2dVJJNjZJQWo4TGFHbHhmdDZ3UHI4UGNoSFIyOTMxR1I2WURqa1hKd3M4N3Y4SmVrdDdKa2tyZnhnQkxI?oc=5) — Sat, 21 Feb 2026 18:10:38 GMT
+- [Venezuela recibe nuevo cargamento de EE UU con 65.000 kilos de suministros médicos - El Nacional](https://news.google.com/rss/articles/CBMimgFBVV95cUxNTGhQZlJzWkVzUkFIbHEzU0xvVUU1X1BmdnNuUG43OXdzcFRXMmp6VUwxNEhsc0g3SU8xOTNsRFg0YTNFSzhKaXdKMTVGNDlDUjA0dXJNbGFxQTBTNHFEbUdlODVDR3MyZlhTdGNnd2l5WjZqbDJGQUlDUDBtTUhfdFphSXl6OFdPakVqZWVGbHkyejVpaktXRUtn?oc=5) — Sat, 21 Feb 2026 21:55:34 GMT
 
 ---
 
