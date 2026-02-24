@@ -31,8 +31,8 @@ article_extraction:
   max_chars: 6000
 
 selection:
-  min_per_section: 2
-  max_per_section: 10
+  min_per_section: 3
+  max_per_section: 3
 
 brief_sections:
   - "Extractives & Mining"

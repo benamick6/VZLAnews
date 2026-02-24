@@ -357,8 +357,8 @@ class TestBuildMarkdown:
             }
         ]
         md = cr.build_markdown(entries, cfg, run_meta)
-        assert "## Latest News Synthesis" in md
-        assert "## Top Results" in md
+        assert "## Latest Updates" in md
+        assert "### Extractives & Mining" in md
 
     def test_contains_entry_title(self):
         cfg = minimal_cfg()
@@ -395,9 +395,9 @@ class TestBuildMarkdown:
             "metadata_file": "data/last_run.json",
         }
         md = cr.build_markdown([], cfg, run_meta)
-        assert "_No items this week._" in md
+        assert "No qualifying stories available this cycle." in md
 
-    def test_result_details_hide_score_and_source(self):
+    def test_result_details_hide_score(self):
         cfg = minimal_cfg()
         run_meta = {
             "run_at": NOW.isoformat(),
@@ -420,7 +420,6 @@ class TestBuildMarkdown:
         ]
         md = cr.build_markdown(entries, cfg, run_meta)
         assert "Score:" not in md
-        assert "Source:" not in md
 
     def test_descriptive_summary_prefers_article_text(self):
         cfg = minimal_cfg()

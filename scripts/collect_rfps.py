@@ -541,6 +541,17 @@ def _fmt_date(dt: datetime | None) -> str:
     return dt.strftime("%Y-%m-%d")
 
 
+def _fmt_source(entry: dict) -> str:
+    source = (entry.get("source_domain", "") or "").strip()
+    if source:
+        return source
+
+    link = (entry.get("link", "") or "").strip()
+    if link:
+        return _domain(link) or "Unknown Source"
+    return "Unknown Source"
+
+
 def _summary_excerpt(entry: dict, max_chars: int) -> str:
     raw = entry.get("summary", "") or ""
     clean = re.sub(r"<[^>]+>", " ", raw)
@@ -666,6 +677,47 @@ def _descriptive_summary(entry: dict, cfg: dict, max_chars: int) -> str:
         fallback = (clipped or fallback[:max_chars]).strip().rstrip(".") + "…"
     return fallback
 
+
+def _compact_summary(entry: dict, cfg: dict, max_chars: int = 280) -> str:
+    text = _descriptive_summary(entry, cfg, max_chars=max_chars)
+    sentences = re.split(r"(?<=[.!?])\s+", text)
+    compact = " ".join(s.strip() for s in sentences if s.strip()[:1]).strip()
+    if not compact:
+        return ""
+
+    first_two = []
+    for sentence in sentences:
+        sentence = sentence.strip()
+        if not sentence:
+            continue
+        first_two.append(sentence)
+        if len(first_two) == 2:
+            break
+    compact = " ".join(first_two).strip()
+
+    if len(compact) > max_chars:
+        clipped = compact[:max_chars].rsplit(" ", 1)[0].strip()
+        compact = (clipped or compact[:max_chars]).strip().rstrip(".") + "…"
+    return compact
+
+
+def _published_sort_key(entry: dict) -> tuple[int, datetime, float]:
+    published = entry.get("published")
+    has_date = 1 if hasattr(published, "strftime") and hasattr(published, "tzinfo") else 0
+    dt = published if has_date else datetime.min.replace(tzinfo=timezone.utc)
+    score = float(entry.get("score", 0.0) or 0.0)
+    return (has_date, dt, score)
+
+
+def _sort_entries_for_sector(entries: list[dict]) -> list[dict]:
+    return sorted(entries, key=_published_sort_key, reverse=True)
+
+
+def _latest_updates(entries: list[dict], cfg: dict, limit: int = 5) -> list[dict]:
+    eligible = [e for e in entries if detect_sector_label(e, cfg)]
+    sorted_entries = _sort_entries_for_sector(eligible)
+    return sorted_entries[:limit]
+
 def _latest_news_synthesis(entries: list[dict], cfg: dict) -> list[str]:
     section_order = cfg.get("brief_sections", [])
     if not entries:
@@ -745,27 +797,78 @@ def _latest_news_synthesis(entries: list[dict], cfg: dict) -> list[str]:
 
 def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
     country_name = cfg.get("country", {}).get("name", "Venezuela")
-    summary_max_chars = int(cfg.get("summary_max_chars", 520))
+    summary_max_chars = min(280, int(cfg.get("summary_max_chars", 280)))
+    section_descriptions = {
+        "Extractives & Mining": "Oil, gas, mining activity, concessions, production shifts, and energy security developments.",
+        "Food & Agriculture": "Food supply, agricultural output, imports, and nutrition-related policy and market developments.",
+        "Health & Water": "Public health, hospitals, outbreaks, water access, sanitation, and infrastructure reliability updates.",
+        "Education & Workforce": "Schools, labor conditions, student activity, workforce policy, and human capital developments.",
+        "Finance & Investment": "Inflation, exchange rates, debt, sanctions, investment flows, and financial policy signals.",
+        "Cross-cutting / Policy / Risk": "Governance, diplomacy, legal shifts, sanctions context, and systemic risk signals.",
+    }
 
     lines = [
         f"# {country_name} News Intelligence",
         "",
-        "## Latest News Synthesis",
+        "<style>",
+        ".vzla-page { max-width: 920px; margin: 0 auto; }",
+        ".vzla-section { margin-top: 32px; }",
+        ".latest-updates-list { list-style: none; margin: 0; padding: 0; }",
+        ".latest-updates-item { padding: 10px 0; border-bottom: 1px solid #e5e7eb; }",
+        ".latest-updates-item:last-child { border-bottom: none; }",
+        ".latest-updates-meta { margin-top: 4px; color: #6b7280; font-size: 13px; line-height: 1.4; }",
+        ".sector-title { margin-bottom: 6px; }",
+        ".sector-description { margin: 0 0 20px; color: #4b5563; font-size: 16px; line-height: 1.5; }",
+        ".sector-cards { display: block; }",
+        ".story-card { border: 1px solid #e5e7eb; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08); border-radius: 8px; padding: 18px; margin-bottom: 22px; }",
+        ".story-card:last-child { margin-bottom: 0; }",
+        ".story-title { margin: 0 0 10px; font-size: 18px; line-height: 1.35; font-weight: 700; }",
+        ".story-card.featured .story-title { font-size: 20px; }",
+        ".story-summary { margin: 0 0 10px; font-size: 16px; line-height: 1.55; color: #111827; }",
+        ".story-meta { margin: 0; color: #6b7280; font-size: 13px; line-height: 1.4; }",
+        ".transparency-note { margin-top: 36px; color: #6b7280; font-size: 14px; line-height: 1.5; border-top: 1px solid #e5e7eb; padding-top: 16px; }",
+        "@media (max-width: 720px) {",
+        "  .vzla-page { padding: 0 12px; }",
+        "  .story-card { padding: 16px; margin-bottom: 20px; }",
+        "  .story-title { font-size: 18px; }",
+        "  .story-card.featured .story-title { font-size: 19px; }",
+        "  .story-summary, .sector-description { font-size: 16px; }",
+        "  .latest-updates-item a, .story-title a { display: inline-block; padding: 2px 0; }",
+        "}",
+        "</style>",
         "",
+        "<div class=\"vzla-page\">",
+        "",
+        "## Latest Updates",
+        "",
+        "<section class=\"vzla-section\">",
+        "<ul class=\"latest-updates-list\">",
     ]
 
-    for sentence in _latest_news_synthesis(entries, cfg):
-        lines.append(f"- {sentence}")
+    updates = _latest_updates(entries, cfg, limit=5)
+    if not updates:
+        lines.append('<li class="latest-updates-item">No qualifying updates this cycle.</li>')
+    else:
+        for entry in updates:
+            title = entry.get("title", "(no title)")
+            link = entry.get("link", "")
+            source = _fmt_source(entry)
+            pub = _fmt_date(entry.get("published"))
+            sector = detect_sector_label(entry, cfg)
+            if link:
+                lines.append(f'<li class="latest-updates-item"><a href="{link}">{title}</a>')
+            else:
+                lines.append(f'<li class="latest-updates-item">{title}')
+            lines.append(
+                f'<div class="latest-updates-meta">{source} · {pub} · {sector}</div></li>'
+            )
 
     lines += [
-        "",
-        "---",
-        "",
-        "## Top Results",
+        "</ul>",
+        "</section>",
         "",
     ]
 
-    # Group by section order
     section_order = cfg.get("brief_sections", [])
     grouped: dict[str, list[dict]] = {s: [] for s in section_order}
     grouped["Cross-cutting / Policy / Risk"] = grouped.get(
@@ -781,30 +884,50 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
 
     for section in section_order:
         section_entries = grouped.get(section, [])
+        lines.append('<section class="vzla-section">')
         lines.append(f"### {section}")
         lines.append("")
+        lines.append(
+            f'<p class="sector-description">{section_descriptions.get(section, "Key developments and relevant updates.")}</p>'
+        )
+
+        lines.append('<div class="sector-cards">')
         if not section_entries:
-            lines.append("_No items this week._")
+            lines.append('<article class="story-card"><p class="story-summary">No qualifying stories available this cycle.</p></article>')
+            lines.append("</div>")
+            lines.append("</section>")
             lines.append("")
             continue
-        for e in section_entries:
-            flags = detect_flags(e, cfg)
-            flag_str = " ".join(flags)
+
+        top_three = _sort_entries_for_sector(section_entries)[:3]
+        for idx, e in enumerate(top_three):
             title = e.get("title", "(no title)")
             link = e.get("link", "")
             pub = _fmt_date(e.get("published"))
+            source = _fmt_source(e)
+            summary_sentence = _compact_summary(e, cfg, summary_max_chars)
+            feature_class = " featured" if idx == 0 else ""
+
+            lines.append(f'<article class="story-card{feature_class}">')
+            lines.append('<h4 class="story-title">')
             if link:
-                lines.append(f"- **[{title}]({link})**  ")
+                lines.append(f'<a href="{link}">{title}</a>')
             else:
-                lines.append(f"- **{title}**  ")
-            meta_parts = [f"Date: {pub}"]
-            if flag_str:
-                meta_parts.append(flag_str)
-            lines.append(f"  {' | '.join(meta_parts)}")
-            summary_sentence = _descriptive_summary(e, cfg, summary_max_chars)
-            lines.append("  Summary:")
-            lines.append(f"  - {summary_sentence}")
-            lines.append("")
+                lines.append(title)
+            lines.append("</h4>")
+            lines.append(f'<p class="story-summary">{summary_sentence}</p>')
+            lines.append(f'<p class="story-meta">{source} · {pub}</p>')
+            lines.append("</article>")
+
+        lines.append("</div>")
+        lines.append("</section>")
+        lines.append("")
+
+    lines += [
+        '<footer class="transparency-note">This page aggregates publicly available reporting from Venezuelan and international sources. Summaries are descriptive and non-partisan. Updated regularly.</footer>',
+        "</div>",
+        "",
+    ]
 
     return "\n".join(lines) + "\n"
 
