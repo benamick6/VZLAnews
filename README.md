@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-24 07:08 UTC**
+> Last updated: **2026-02-24 13:20 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,19 +8,19 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [¿Cuál transición? Amnistía chucuta](https://bitlysdowssl-aws.com/2026/02/cual-transicion-amnistia-chucuta/) — Tue, 24 Feb 2026 05:24:00 +0000
-- [El artículo 9 de la Ley de Amnistía y el olvido incompleto](https://bitlysdowssl-aws.com/2026/02/el-articulo-9-de-la-ley-de-amnistia-y-el-olvido-incompleto/) — Tue, 24 Feb 2026 05:23:00 +0000
-- [¡Saboteador es el régimen, no los petroleros!](https://bitlysdowssl-aws.com/2026/02/saboteador-es-el-regimen-no-los-petroleros/) — Tue, 24 Feb 2026 05:21:00 +0000
-- [La deuda venezolana: buitres, fantasmas y la ilusión del cobro](https://bitlysdowssl-aws.com/2026/02/la-deuda-venezolana-buitres-fantasmas-y-la-ilusion-del-cobro/) — Tue, 24 Feb 2026 05:21:00 +0000
-- [Expulsan al castrismo](https://bitlysdowssl-aws.com/2026/02/expulsan-al-castrismo/) — Tue, 24 Feb 2026 05:20:00 +0000
+- [UCV mantiene el liderato en el Torneo Apertura](https://bitlysdowssl-aws.com/2026/02/ucv-mantiene-el-liderato-en-el-torneo-apertura/) — Tue, 24 Feb 2026 12:18:25 +0000
+- [Kim Jong-un reelecto líder del Partido de los Trabajadores de Corea del Norte](https://bitlysdowssl-aws.com/2026/02/kim-jong-un-reelecto-lider-del-partido-de-los-trabajadores-de-corea-del-norte/) — Tue, 24 Feb 2026 11:59:50 +0000
+- [La academia de cine se disculpa por el insulto racista durante los BAFTA](https://bitlysdowssl-aws.com/2026/02/la-academia-de-cine-se-disculpa-por-el-insulto-durante-los-bafta/) — Tue, 24 Feb 2026 11:50:14 +0000
+- [Demócratas bloquearán cualquier intento de Trump de extender nuevo arancel global del 15%](https://bitlysdowssl-aws.com/2026/02/democratas-bloquearan-cualquier-intento-de-trump-de-extender-nuevo-arancel-global-del-15/) — Tue, 24 Feb 2026 11:48:55 +0000
+- [Jefa de la diplomacia de la UE propondrá que se levanten las sanciones a Delcy Rodríguez](https://bitlysdowssl-aws.com/2026/02/union-europea-evaluara-levantar-sanciones-a-delcy-rodriguez/) — Tue, 24 Feb 2026 11:46:16 +0000
 
 ## Efecto Cocuyo
 
+- [Embajada de Estados Unidos en Venezuela no habilitó canales de denuncia para víctimas de extorsión o violencia](https://efectococuyo.com/cocuyo-chequea/falso-canales-denuncia-embajada-eeuu/) — Tue, 24 Feb 2026 12:43:30 +0000
 - [Confirman más de 30  liberaciones de presos políticos en El Rodeo I](https://efectococuyo.com/la-humanidad/confirman-mas-de-30-liberaciones-de-presos-politicos-en-el-rodeo-i/) — Mon, 23 Feb 2026 23:59:59 +0000
 - [Claves del operativo contra «El Mencho»: de la inteligencia de EEUU a una pareja sentimental](https://efectococuyo.com/internacionales/claves-operativo-contra-elmencho-inteligencia-de-eeuu-a-pareja-sentimental/) — Mon, 23 Feb 2026 23:30:00 +0000
 - [El Aissami y Samark López no aparecen “capturados recientemente” en web de ICE, su estatus cambió en septiembre de 2025](https://efectococuyo.com/cocuyo-chequea/enganoso-capturados-elaissami-samar/) — Mon, 23 Feb 2026 22:43:01 +0000
 - [Conatel cierra la emisora Urbana 94.3 FM en Guatire y confisca sus equipos](https://efectococuyo.com/la-humanidad/conatel-cierra-la-emisora-urbana-94-3-fm-en-guatire-y-confisca-sus-equipos/) — Mon, 23 Feb 2026 22:21:49 +0000
-- [Aplazan sentencia de exgeneral chavista ‘El Pollo’ Carvajal por amenaza de tormenta](https://efectococuyo.com/internacionales/aplazan-sentencia-de-exgeneral-chavista-el-pollo-carvajal-por-amenaza-de-tormenta/) — Mon, 23 Feb 2026 19:55:18 +0000
 
 ## El Pitazo
 
@@ -33,10 +33,10 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 ## Google News – Venezuela
 
 - [Las oposiciones y el oficialismo en Venezuela - El Nacional](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUEpFWmZOWURETDJ5bkFNZmZ6Ry1KMFlQYW5wcGNkMUpOWGdsWExwUHJFVjhoVVNOSlI5QU1LcFhwSXZtV0U1RC1kaFBHbFJINW04ZmdRVDd4SjJrTHlRU2F0NlJ3RlFYWWN3blEwcHRKZ21Zc2ZFNVREVDI3T0s4MXFvQWtibm5m?oc=5) — Mon, 23 Feb 2026 05:13:45 GMT
-- [Estados Unidos envió a Venezuela lujosas camionetas y comenzó adecuaciones para su Embajada en Caracas: "Más recursos para nuestro equipo" - NTN24](https://news.google.com/rss/articles/CBMikgJBVV95cUxOYmdGcTVfSDJSOWdyM3lMWnFaMDFJUm1nWnhFYzdfTkRDWkFLal9meTEwUG5uamNqeDJnZm1MVHR5VlJORTY2WFkySFMxUVpGQVdISWxMT1kzN04tTllEc3dvazZ4SDRKR0I1aEN0eGZSdTYya09FeXByeVROSXBzcmhmU1JGVHdZMjVXSDgyS0M2TFFqWjJudkx5bXF5MTZHQmJGakhRb3FsSHd0eWFJN1ZrWFpwMVlHdWN3bEdmQ1U5VmYzdjB4ZG5wNFBvWDBvQ195R25GdWFnZXRZeTYySFBkcE1xNlQ0RXJDazJkTG1mbE1kQnFYMl81Ym4wSVhDOTZ3T3ZNUmlub3RvYjZxTHZR0gGSAkFVX3lxTFA0dkxjZFBpMnB2bFRaZVUxWGxkSXc2Zjk4LW5GMGtENURDWmRRMGhtaU9uQnBaajFOaXVudFFFbDBGdU5FZ3RYV0NZODBhd3ljTk5neTBGZTdwRGNTT0lxRHF6NTY0d0o5Tkd6cy1UWGZSYUx3VEF5T2ctbFd1RFpxcVVTQWJYU1Y4bm50a0ZrMUVKcVM3WXdfZ2hkVDgzWVBvOWF0SmEyM2QyZDRGVGlobVhoWGp5b29ZVklfUTdMTVl1VWlVdkx4LVpjMXZPZld4VW1DRGFqdGJZbUdZUzlkTkZUb2ZzUmdYMTFkUktRb1VSNm55cTdtc2V2bXpXZi1ZWXhKSWVPTnJ1T2dMV0ZHZlE?oc=5) — Sun, 22 Feb 2026 16:06:34 GMT
-- [Venezuela lleva a cabo las primeras liberaciones plenas de presos políticos tras la amnistía - EL PAÍS](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNThfMF83Y2MwaTN6T1pKWWp4OTM1RGU1cUZhRXlfb1kwV2ZIU2JxWmJySVBVaVpDUDFBcW44amlubWFVQWdtdTBIUGxPbjh0Rzg1bkpyRTBpN1FnMEw3TVJ6c1pqbHduSUVqWGU3bzQ5Uy1oR1BkVGh3aU5SOUdvT3M3VXFJNW1pb3NYZDFXOFVwVXJIeUJRZFNTSjcwUG5zOEMzLXlLZnJlWGpFUkNlenlKdWZhQkhvTWZfamUxLW1FakttTnVOZDR1VWMtR0lz0gHkAUFVX3lxTE5Uamx5Z1NZQUpwMUlHQ29HcEVLTFZSQ2JNQkhaZzBxQTZSS29FV0JGU2lIa0pDMkFXelZFanEtZmQyejBxMm4taUFNRDhtekp4NEVtaE5ONWFrblJ2WTZ2V3BCQ18zUFBxRjlJaVN0NGc4SGgtOTJkUW81SUdEWGh3a1htMUFzOTNtcHJ5TTBTVzFQeU54UEc1dEg3TEJGeE9hLTVfeUpqLXJYenlvakhLdV81MURNRDFvSGRVb1haelU3SlNRVGNQQ0lEREw5V241bks0a1FvNS0waEllN3BIemVyZg?oc=5) — Mon, 23 Feb 2026 19:40:18 GMT
+- [Qué se sabe sobre cómo EE.UU. vende el petróleo de Venezuela y le envía el dinero al gobierno de Delcy Rodríguez - BBC](https://news.google.com/rss/articles/CBMiW0FVX3lxTE16Mk94emxyd3ZFUDNGcGF0dUE1RnNad3hyaFFzVDdyNTM5S2hTanp2ODhpWVhybGc3TEpXNFE3Mko1eVkzWXdJM2NGeDJGSzJCMWZEQ3JtcTJ6ekHSAWBBVV95cUxQNVJFN29PQjNxMXZYMVl2M3BWbGlRQlNBZXJsc2FudkJXSlZvcXJrOVVHM0V4d2lDTHJNVXNHSHBhdERXVElkOXVsMmVYUndLcGpYMWZwSno1WlNBcVdvc0Y?oc=5) — Fri, 13 Feb 2026 08:00:00 GMT
 - [En medio del acercamiento, Venezuela responde con fuerza a EE.UU. por aún considerarla una "amenaza inusual y extraordinaria" - CNN en Español](https://news.google.com/rss/articles/CBMimgFBVV95cUxQbWVkbUdJMmtnQ1RwaGhHdkI0UllyUWhCUFVkQkRGMG0tOUtMRjRybl9WVERyTk10Sl9VdnZmcUVxQVZ1ZzYtZU1NeTBna3FtQndHWTVRamNiMXlqc0ptMG9rR1NyRllveVZMYWR6ZXd4M20zWi1jVzBFOV9nV0oweUNVQlVJb0M3MUE1dThDRUhXOGcyTGE1MDVR?oc=5) — Sat, 21 Feb 2026 20:10:00 GMT
-- [Venezuela rechaza renovación de Orden Ejecutiva por parte de EEUU - ultimasnoticias.com.ve](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNT21NakduMFJSNmpwVG1pLWx0R1p2b3FYaXQzMFhRUWQwd1duNjlIbzk1ZFJWS3ZYQXdGczFOTkFFRDJiaVo5TWtIajJqR0dObFpFNEp1ZTRwckI3MDhUeXF5VEU4TmZPdGdZbnUzTkp1VlA4QmFhQ3lRWEVXV2dGS0NEaklXYmVjSmZTTDFqVTJ4YWJPbkJ2alFXY3VuWnM0SFp0Q3JqVU9Hdw?oc=5) — Sat, 21 Feb 2026 14:12:56 GMT
+- [Economía, Irán y Venezuela: los pilares del discurso sobre el Estado de la Unión que Trump pronunciará en Washington DC - Infobae](https://news.google.com/rss/articles/CBMi_AFBVV95cUxOVm5hOFBrSUNzTVpTYUNoLTh0ekNlbDAzVmJKRnNrLVpxQ19FODY1WTE0TERTclRFem5jOTVJNGlhaU1KZU5zVnB2Nm9Fc2hLeHhoNW9EeVk5d1N6RERFMFhSZ1VRYlF0TkdaVHJYQ0t5QkRLcF9uc0VQOF9GckNZaFVxZ3R6aFo0LUFDamU3TDRlVER4N3YxbXVOdUxVZDBTNzloMUZReUEyOTBXbEpoakpRNWRGRmRCdGM2Z21SbzhPYjlwdUZGLVF4QklYcTlPeG1OUDBTT0Y4OHY4RnJvLVNPMzJRM3NNWjhwUm9FdlYwTmlyanB6WG1aQ1fSAZcCQVVfeXFMTmFZNHpQOFc4NC01QnpfdS10X2xyU29VWlR5UlRHZmRmY240dXhMSjRyZEFaenI5ZVNXSlNRcmlrcmJOWFdhVGlFMGpnOXdSUFhkbVdSeEEtcEpRU1FwVjg0MGpGV0haWDQ3RklLSnh4Q1pZV0FTZEJySjE4Z0ZMQ3pDSTB5N1A5SVVUZGRvUTRxa1NWZV9Wa25OOEdVcjFTdm1RVEd4SkFxUjVlcWJIN2tHTnlvb1ZvQ1JpcTNCMklfTEZBR3lvQkNqcTVndzZFZ1l0NVppd1lhTDJhc3pzVTk0SHBnQmh5OVd3eEh4aUdzM3Y1LUc0WHZLeS1FalVtdWNjSDZoNzV3QU4wTDhObGxUeDdWWlhZ?oc=5) — Tue, 24 Feb 2026 11:44:00 GMT
+- [Expertos prevén un auge de las remesas electrónicas hacia Venezuela con el nuevo gobierno - Yahoo Finanzas](https://news.google.com/rss/articles/CBMirAFBVV95cUxPMk54eEkyNnF0Uy1kSzNqamI5V0NIZFJKQXBJcnM3NWFlckplWEJ6QjQ5dXBYNUZtNThRYS1BSkdRSlpDckU3ZU8zZ25zTTk2ZDVBaWQtUF9xZnNHdUNvQTNpSjVlZmhfR0xZcVpWZk02bVowLUFDQjF5NVNJY1RxWGF0OVNmRlRiUE9sRzZmYk5xUGlSZ21ON2lLbWh1S0VqQTAwdE5ZSnp5b2h2?oc=5) — Tue, 24 Feb 2026 11:45:03 GMT
 
 ---
 
