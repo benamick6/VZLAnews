@@ -29,6 +29,9 @@ article_extraction:
   timeout_seconds: 6
   min_chars: 240
   max_chars: 6000
+  blocked_domains:
+    - oilprice.com
+    - msn.com
 
 selection:
   min_per_section: 3

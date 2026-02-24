@@ -157,6 +157,24 @@ def fetch_article_text(url: str, timeout_seconds: int = 6, max_chars: int = 6000
         return ""
 
 
+def _is_blocked_extraction_domain(entry: dict, blocked_domains: set[str]) -> bool:
+    if not blocked_domains:
+        return False
+
+    source_domain = (entry.get("source_domain", "") or "").lower().strip()
+    link_domain = _domain(entry.get("link", "") or "").lower().strip()
+
+    for blocked in blocked_domains:
+        blocked = blocked.lower().strip()
+        if not blocked:
+            continue
+        if source_domain == blocked or source_domain.endswith(f".{blocked}"):
+            return True
+        if link_domain == blocked or link_domain.endswith(f".{blocked}"):
+            return True
+    return False
+
+
 def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
     extraction_cfg = cfg.get("article_extraction", {})
     if not extraction_cfg.get("enabled", True):
@@ -166,9 +184,15 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
     timeout_seconds = max(1, int(extraction_cfg.get("timeout_seconds", 6)))
     min_chars = max(100, int(extraction_cfg.get("min_chars", 240)))
     max_chars = max(1000, int(extraction_cfg.get("max_chars", 6000)))
+    blocked_domains = {
+        str(domain).lower().strip()
+        for domain in extraction_cfg.get("blocked_domains", [])
+        if str(domain).strip()
+    }
 
     fetched_count = 0
     enriched_count = 0
+    skipped_count = 0
 
     prioritized_entries = sorted(
         entries,
@@ -181,6 +205,9 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
         link = entry.get("link", "")
         if not link:
             continue
+        if _is_blocked_extraction_domain(entry, blocked_domains):
+            skipped_count += 1
+            continue
         fetched_count += 1
         article_text = fetch_article_text(link, timeout_seconds=timeout_seconds, max_chars=max_chars)
         if len(article_text) >= min_chars:
@@ -192,6 +219,8 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
         enriched_count,
         fetched_count,
     )
+    if skipped_count:
+        logger.info("Article text enrichment: skipped %d blocked-domain entries", skipped_count)
 
 
 def _parse_date(entry) -> datetime | None:
