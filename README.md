@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-25 02:42 UTC**
+> Last updated: **2026-02-25 07:10 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,11 +8,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Venezuela denuncia vulneración de valija diplomática en aeropuerto panameño](https://bitlysdowssl-aws.com/2026/02/venezuela-denuncia-vulneracion-de-valija-diplomatica-en-aeropuerto-panameno/) — Wed, 25 Feb 2026 01:28:13 +0000
-- [El Salvador cumplirá cuatro años en estado de excepción tras nueva prórroga](https://bitlysdowssl-aws.com/2026/02/el-salvador-cumplira-cuatro-anos-en-estado-de-excepcion-tras-nueva-prorroga/) — Wed, 25 Feb 2026 01:13:15 +0000
-- [Presentarán en Bogotá libro sobre 10 años de respuesta de Colombia a la migración venezolana](https://bitlysdowssl-aws.com/2026/02/presentan-en-bogota-libro-sobre-10-anos-de-respuesta-de-colombia-a-la-migracion-venezolana/) — Wed, 25 Feb 2026 00:56:53 +0000
-- [Administración Trump evalúa exigir a la banca información adicional sobre nacionalidad de clientes](https://bitlysdowssl-aws.com/2026/02/administracion-trump-evalua-exigir-a-la-banca-informacion-adicional-sobre-nacionalidad-de-clientes/) — Wed, 25 Feb 2026 00:54:23 +0000
-- [EE UU promete presionar al régimen cubano 30 años después del derribo de dos aviones](https://bitlysdowssl-aws.com/2026/02/ee-uu-promete-presionar-al-regimen-cubano-30-anos-despues-del-derribo-de-dos-aviones/) — Wed, 25 Feb 2026 00:49:14 +0000
+- [El horizonte petrolero de Venezuela 2026](https://bitlysdowssl-aws.com/2026/02/el-horizonte-petrolero-de-venezuela-2026/) — Wed, 25 Feb 2026 05:24:00 +0000
+- [Tierra de Gracia: Delcy, Zapatero y Plus Ultra](https://bitlysdowssl-aws.com/2026/02/tierra-de-gracia-delcy-zapatero-y-plus-ultra/) — Wed, 25 Feb 2026 05:22:00 +0000
+- [El Alto Mando de la FAN le debe explicaciones al país](https://bitlysdowssl-aws.com/2026/02/el-alto-mando-de-la-fan-le-debe-explicaciones-al-pais/) — Wed, 25 Feb 2026 05:22:00 +0000
+- [Grietas en el Gran Cortafuegos chino](https://bitlysdowssl-aws.com/2026/02/grietas-en-el-gran-cortafuegos-chino/) — Wed, 25 Feb 2026 05:22:00 +0000
+- [La doctrina militar chavista](https://bitlysdowssl-aws.com/2026/02/la-doctrina-militar-chavista/) — Wed, 25 Feb 2026 05:21:00 +0000
 
 ## Efecto Cocuyo
 
@@ -32,11 +32,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## Google News – Venezuela
 
-- [Régimen interino de Venezuela cesa a esposa de Alex Saab - dw.com](https://news.google.com/rss/articles/CBMitgFBVV95cUxOaDhlUTZOamFqbGt0b3lOWEUtbGFodThpQWo0VTJtNUFnQW5wZWwzblNiYUMtYUdqLUVweFZ3QnIzUDMxX3d1eVhHWmJXNTBEeVowR1ZReG0yMWdXWUxId1BZZTIyM2ZLRHhUWmpLMHdDNjAzem42TmZyaXVGZ0I5a2dXSWhZd0d5amE4VDZkUlpvOXM2a093alNzTmhmUTgyTklFcVpLaXZ4amlubW96SEVJcnR4QdIBtgFBVV95cUxNcjh3UUJ6aU9JZy12Tkc3S0FUU0F6dlp1OFdpd0EtTE1YUXhnT1FnUXRtTXhqbWZZMVlFRUlYc2JXQ2pCVzhkRDNpUjBWbjFxTWlsdXdleFJBNmdTOWhHOEJUUHBqZVdtSmlRdFpsanE4cGRPb2hMWjhwZ3ZCUENYeWRHT0hXdFotZEVPOTNna0FoYWt4bEZkWC11UVlYVHRMdnBkLUM2MUNKSHhrMFVHeFlMNVJkUQ?oc=5) — Mon, 23 Feb 2026 23:04:52 GMT
-- [Telefónica, Venezuela y el poder invisible de la infraestructura - El Nacional](https://news.google.com/rss/articles/CBMiowFBVV95cUxPMlotUEVQcTRoOFVCc25uM2dCTENTdU5RTDhYeUlMeEhPdDBjTFVndnlTMnprMzJwLUp2SlZPdGtNTVBxUUkwVUhpWWFINjdwZmFqMlRMVTdRWER0ZnRpYlZ3U3hUY0tyTmoySThVMkxLU2JteHlMQ2FtWWVENnh5LUVvelNYWDRteTlMdjBEaXBCdFprdDZkaUtKcV9pbzJpNENR?oc=5) — Mon, 23 Feb 2026 05:23:45 GMT
+- [Régimen interino de Venezuela cesa a esposa de Alex Saab - DW.com](https://news.google.com/rss/articles/CBMitgFBVV95cUxOaDhlUTZOamFqbGt0b3lOWEUtbGFodThpQWo0VTJtNUFnQW5wZWwzblNiYUMtYUdqLUVweFZ3QnIzUDMxX3d1eVhHWmJXNTBEeVowR1ZReG0yMWdXWUxId1BZZTIyM2ZLRHhUWmpLMHdDNjAzem42TmZyaXVGZ0I5a2dXSWhZd0d5amE4VDZkUlpvOXM2a093alNzTmhmUTgyTklFcVpLaXZ4amlubW96SEVJcnR4QdIBtgFBVV95cUxNcjh3UUJ6aU9JZy12Tkc3S0FUU0F6dlp1OFdpd0EtTE1YUXhnT1FnUXRtTXhqbWZZMVlFRUlYc2JXQ2pCVzhkRDNpUjBWbjFxTWlsdXdleFJBNmdTOWhHOEJUUHBqZVdtSmlRdFpsanE4cGRPb2hMWjhwZ3ZCUENYeWRHT0hXdFotZEVPOTNna0FoYWt4bEZkWC11UVlYVHRMdnBkLUM2MUNKSHhrMFVHeFlMNVJkUQ?oc=5) — Mon, 23 Feb 2026 23:04:52 GMT
+- [Amnistía en Venezuela otorga libertad a 179 presos políticos - DW.com](https://news.google.com/rss/articles/CBMipgFBVV95cUxPa0V1elRmZVpoaFY0N05laUR0THJoclFxbDQtUzNnNnh0R01Na3FSYWV1NUFDTzdPbEtYZDlraWMyM1pSbzBWb2lRYkhzOFItOVA5dEF6Z1VYcTUyX25HeTNXRmtCWjlVRHlvd0lPNEFXV3l2R2dDTU1YTzFNV29tM1ZZNVVqUFFaLWY5WWQ2UWFzZzRuVEhBS01SNU53UHp3OGlNYkdB0gGmAUFVX3lxTE9qREJpMmRBUWNxRGdTNTVRWWR3RE9pZjNYMlhqQUZDZmctZGhiNXJiUkRRUTBCdDUtMjFnaklvY2gwOURKdWFXbHM3Nm5YYmlxVjhQT0NOVWFHQTJJVkV0Tno2QUk2Tllnc2NTMElTbWMyNFk3dDljaWxUNXlXTWVndnlSNGN3ZlNPaEhVZkl0UGF5YWFYTjZVSnc3TXNjY2dTa2VGY0E?oc=5) — Tue, 24 Feb 2026 23:43:06 GMT
+- [Venezuela lleva a cabo las primeras liberaciones plenas de presos políticos tras la amnistía - EL PAÍS](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNThfMF83Y2MwaTN6T1pKWWp4OTM1RGU1cUZhRXlfb1kwV2ZIU2JxWmJySVBVaVpDUDFBcW44amlubWFVQWdtdTBIUGxPbjh0Rzg1bkpyRTBpN1FnMEw3TVJ6c1pqbHduSUVqWGU3bzQ5Uy1oR1BkVGh3aU5SOUdvT3M3VXFJNW1pb3NYZDFXOFVwVXJIeUJRZFNTSjcwUG5zOEMzLXlLZnJlWGpFUkNlenlKdWZhQkhvTWZfamUxLW1FakttTnVOZDR1VWMtR0lz0gHkAUFVX3lxTE5Uamx5Z1NZQUpwMUlHQ29HcEVLTFZSQ2JNQkhaZzBxQTZSS29FV0JGU2lIa0pDMkFXelZFanEtZmQyejBxMm4taUFNRDhtekp4NEVtaE5ONWFrblJ2WTZ2V3BCQ18zUFBxRjlJaVN0NGc4SGgtOTJkUW81SUdEWGh3a1htMUFzOTNtcHJ5TTBTVzFQeU54UEc1dEg3TEJGeE9hLTVfeUpqLXJYenlvakhLdV81MURNRDFvSGRVb1haelU3SlNRVGNQQ0lEREw5V241bks0a1FvNS0waEllN3BIemVyZg?oc=5) — Mon, 23 Feb 2026 19:40:18 GMT
+- [El oficialismo en Venezuela dice que se han recibido más de 1.550 pedidos bajo la nueva ley de amnistía - CNN en Español](https://news.google.com/rss/articles/CBMinwFBVV95cUxPYm1xMGNLLTRSa3oxektlaWoxclhtY3JXRDJDMXlRc1BhenBOckEzQ2R0WklGdFRsOER2a0hBV1VnNmZxQmhVUnExdXVVQkJIZ3FQTVAtYVVlMW1ONE1kT2E5UEhvNk5fVGlCZ0dQOVFDQnBsdHVHVTZXcEdSbmkwOV9EWGlwQlZYX1pFNXNVQmktT0lOZUZmaHFjeWRqX1U?oc=5) — Sat, 21 Feb 2026 20:49:00 GMT
 - [Venezuela denuncia que autoridades de Panamá presuntamente forzaron la apertura de una valija diplomática - CNN en Español](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNY2FDdVdjT3ZySF8tN2NVQld3bzdUUzJpZTg0YVYtQWs1a251aGNwRGRLX3FXS1dwU1E3OEE5RW9DYm5OM21WRzYzTEdubzluNDk3LU1WNmpuNEtTU3VPaHVVdXY2THZYM2VXbzdFd0xoZDItRFVmZDVucDBkbHZjYkRreFVVcXdyWTAycVhabjNlbzVLUDlyQ3dnZExza08wdG8tSEc5bnRFUQ?oc=5) — Wed, 25 Feb 2026 02:03:00 GMT
-- [Venezuela denuncia violación de valija diplomática en Panamá - ultimasnoticias.com.ve](https://news.google.com/rss/articles/CBMiowFBVV95cUxNMXJ2aXpwS0tuTFlHWHVZQnBScFlWM0dGaGd4bm5WSldudTJicXFFZmQ1c2lyX1FJdGJMWklJU3FSbGpBa3Myd20tSnI2RHd0VmVCTjNXZnhlaXBLQnNFSTMzNmRPZmE2dzZ0RGlqcGJMMmVPMlloUF9QemVrc1Y5a3dVT3NXeFNWQl9sMHpQNF8yT2R6VGplZ2RpY1dpSGNvblY4?oc=5) — Tue, 24 Feb 2026 23:54:36 GMT
-- [Venezuela denuncia apertura ilegal de su valija diplomática en Panamá - teleSUR](https://news.google.com/rss/articles/CBMid0FVX3lxTFBWV1pjZndFdnB3aEtKOG1RVFpsS0d0Zk1ENC15Q29scEQybW1qMGNPTk9MUWlmLXlmZEpGS0hadGZTVTRJUGNVQU51VktBYkg2WWtQMWV4dmJNLWFGY3FZNWgtZ2l1Z0NuX3g3VUN5clNxd19VcnhN?oc=5) — Wed, 25 Feb 2026 01:32:06 GMT
 
 ---
 
