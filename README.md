@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-27 02:36 UTC**
+> Last updated: **2026-02-27 07:02 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,11 +8,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Excarcelaron a los dos últimos periodistas detenidos en Venezuela](https://bitlysdowssl-aws.com/2026/02/excarcelaron-a-los-dos-ultimos-periodistas-detenidos-en-venezuela/) — Fri, 27 Feb 2026 01:08:51 +0000
-- [Foro Penal reporta que aún quedan 568 presos políticos, entre ellos 182 militares](https://bitlysdowssl-aws.com/2026/02/foro-penal-reporta-que-aun-quedan-568-presos-politicos-entre-ellos-182-militares/) — Fri, 27 Feb 2026 00:58:04 +0000
-- [Maduro pide desestimar el caso de EE UU tras negarle licencia para pagar su defensa](https://bitlysdowssl-aws.com/2026/02/maduro-pide-desestimar-el-caso-de-ee-uu-tras-negarle-licencia-para-pagar-su-defensa/) — Fri, 27 Feb 2026 00:54:35 +0000
-- [Organizaciones venezolanas exigen justicia e independencia tras renuncia del fiscal y defensor](https://bitlysdowssl-aws.com/2026/02/organizaciones-venezolanas-exigen-justicia-e-independencia-tras-renuncia-del-fiscal-y-defensor/) — Fri, 27 Feb 2026 00:49:58 +0000
-- [Liberan a preso político que fue acusado de ayudar a salir a Guaidó de Venezuela](https://bitlysdowssl-aws.com/2026/02/liberan-a-preso-politico-que-fue-acusado-de-ayudar-a-salir-a-guaido-de-venezuela/) — Fri, 27 Feb 2026 00:40:53 +0000
+- [Padrino López: la feudalización del poder](https://bitlysdowssl-aws.com/2026/02/padrino-lopez-la-feudalizacion-del-poder/) — Fri, 27 Feb 2026 05:24:00 +0000
+- [La amnistía y la trampa de ponerse a derecho](https://bitlysdowssl-aws.com/2026/02/la-amnistia-y-la-trampa-de-ponerse-a-derecho/) — Fri, 27 Feb 2026 05:23:00 +0000
+- [La nueva doctrina hemisférica de EE UU](https://bitlysdowssl-aws.com/2026/02/la-nueva-doctrina-hemisferica-de-ee-uu/) — Fri, 27 Feb 2026 05:22:00 +0000
+- [El pasajero de Trump](https://bitlysdowssl-aws.com/2026/02/el-pasajero-de-trump/) — Fri, 27 Feb 2026 05:21:00 +0000
+- [¡Qué falta haces!](https://bitlysdowssl-aws.com/2026/02/que-falta-haces/) — Fri, 27 Feb 2026 05:20:00 +0000
 
 ## Efecto Cocuyo
 
@@ -32,11 +32,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## Google News – Venezuela
 
-- [Tarek William Saab renuncia como fiscal de Venezuela pero asume como defensor del Pueblo encargado - CNN en Español](https://news.google.com/rss/articles/CBMiowFBVV95cUxPNll4TUV2NUVZZ290WGgyUE1aUVlMVVdEYmVvWnV0VlFKYnB5OHJGeEdHZDB5ZHh0WGJyM3ZJRTJkRjBJY3U1dnZjVlBwZXZGSU5yc09fUlNfQlBlejR5M1o0dmZCdFdSVzYxZVFiSE14VndNSXJDa2pRTjFiZTZNZEk3R2VWc2s2amQ5SFI5LU1Pa1pScTdwQ0p4WU1ySEVXbG9R?oc=5) — Wed, 25 Feb 2026 21:55:00 GMT
-- [Venezuela: renuncia el fiscal general Tarek William Saab - DW.com](https://news.google.com/rss/articles/CBMikgFBVV95cUxOOVlTZThLQWhpWjg4NDdHY2EwbWotNmdZNDVIemlNS3Z5T0Vha3VxSzUzSmMwNUt3X2ludjlwNXduZWRJalZEX0VnUVdEZ1RGWnlmWWFiX05BdzBzS2JHZkJhMkFoWE5uYzNMYjlrOHlFNWpmNFdFZUZhcWt3NVNKYXZLN3RSazk1LXpHT19xOFowd9IBkgFBVV95cUxOVGVwZWNOXzlISkRyZVFYSGJhdko3Tmc5N0otNzJsa1JEQXVxWGJ4QUpEV19SYm9UbGdKeXVFenFLQVhzM2N6eDhISmo1RGNtTzFwMmVqSi1oSkI0dkdhOVVYNEhGN0pCYWh3d2dVSWRucWNTbExYV0Q5dGZiNDU5c2xOelE5N1RpR3B0eXpWSE9xQQ?oc=5) — Thu, 26 Feb 2026 02:29:55 GMT
+- [EE.UU. impide que el Gobierno de Venezuela pague por la defensa legal de Maduro, dice su abogado - CNN en Español](https://news.google.com/rss/articles/CBMingFBVV95cUxQNldrQ0p6NmZKdkxuT1Awa3otQXNQWmlKOWc5Z2VFNy16RElDS01wdnF4VFBVUkxPVmxTcnFKQm1VZlVqVGdmXzYxUVZ1Q3JKa3Axa3Q4WHAycG1pN2NOY3FkemRnSUJzVWdHaW1udDNpaGtlMXU2V1FqNDdoMk9zZ2xwUS1mb0RBNGNpQnlMczlrT0JyZVlKLUhfbjN6QQ?oc=5) — Thu, 26 Feb 2026 02:30:00 GMT
+- [El abogado de Maduro denuncia que Estados Unidos impide que Venezuela pague por su defensa - EL PAÍS](https://news.google.com/rss/articles/CBMizgFBVV95cUxPYVlGOTd0NVpORWZ0VkVkMFBaa1JoUDhxNUpCXzJHS01ZLUdlaVZZS0JqYnJwRzZpSUxUd1IzdUlaNERsT3lueU13bW1ONUhrQjNDR3VhSXlucWV5Yk1SZXdyZGVGSHllc05GMXA2Z0dOc1NLaVlzYnUyWkhTOHQ4WHg2QnFKSGRFMXdzdVhxazNIUEhhdzFoaUJHUVdVV3p6OWNkOVZDNkV0cmlhRldKd0ZyYnU1ZExwRFRHODJYb2lmQnlxeFlhUHB1UnQtd9IB4gFBVV95cUxPbFpqLXhTblAtUXhTdkdxd1UzYVdaQ1ZjME5lRmV3bFdURXdmNXFkVWVScG9oNHpzcGpwTFFrYlRvelN0cUJISEhjODJpOTlVMmE5UmVKU3Z4QXV2XzJyUnVpbjQyVTlvNkpXV2hYYU5PNWJISENKVl9wbzJvVHRXdE1reTZsaFhwQzcxMVpzWVlZNFhLOERRVDVud05GbmtxYWFqSV8xVHFsT0ltUWhTZ0ZXWHBUYkNEZHh2T05fQ0lmSkZGclE5ekhiYnZSNW1hWXdibl8zb3hvLTM4bkhmZTJn?oc=5) — Thu, 26 Feb 2026 04:30:00 GMT
+- [Maduro pidió anular su juicio en Nueva York tras el bloqueo del Tesoro a su defensa legal - Infobae](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMDVNcVVNb2loMUVjMk1DUGp5VUJoODR3Q3RWd3FITjlmVFgwN3ZINlJCNjZrUTRvd1RpR2ptVlROZlFrdlB1UjlvOUREemQ1Ulc0TnBNQ092OTNBWEFkNGpqRnNUblRxeVRDOTdNSFl2cEtkdEc2a1ZCbmhfU3A1RXAzUDJZekNUdHJiTjU2a2h4c3dyWm5Cc3dyLV9Ib0Z2dHdzZWVpTlZnbjltSGUwa1d3UUcxT0xTV3l0RkZka2ZfS3k2MlQ4cElKWWF0SUQ50gHrAUFVX3lxTE40R1JDUzBSLUVkNExHeFJlT2FCMldDTS0ta3IzZUdyMkdUOGJVLV9RTV9NaUhVVC1RN0RVRnVtM0pzWTNTbU1BcXVnX2tOb1FMSzVJeWc5bFlLamZabGZITTh3NVpkcFlVdzdFcTZHb0c0ZFgtRXhQNzFUVnJFb0F2RWFQVVVFbFZDQnlDWVBXMEM2aEtqcGRZRVJ1VkZhcmphd1JRWEVZbEZTVTlIMkJfbnNFZDZuZ29UTjBoekdfck5obmx6QTV2bnhKTG1nb1lDcHMwUnF4c2NmVWJTXzNlcHM5bmtIbmVDMkE?oc=5) — Fri, 27 Feb 2026 00:32:00 GMT
 - [Dimite el fiscal de Venezuela, Tarek William Saab - EL PAÍS](https://news.google.com/rss/articles/CBMilgFBVV95cUxNTF81R2lIOUx6dGFoOVBpY083RkJIaHl6Rklyeml2SFhEcUhxelB4N2lfa1FKdjdZTVdoVlZfQTdHa0RZaE5XRUlJSlA5c3ZobnNyWHl0SkpnYllYLUJvVG1vTWtfVF8yMzd4Y2x6aFN1djdWcndOcTI1cGE2bDdWaUY3cGpNbEJnTUM5U0U2SmRPbEpwWFHSAaoBQVVfeXFMTkJKd1o3ZVhrUkhEcHZFYlpuMDJIQ19Od3Q0WmpJUGZlSzgtQWpOdXBscHB3elVscnotYUQ5YVNUQ2hfMjJqZWdhWEhWX3NFSDNVOE9hTTNBSGNvalZ0b2hWazJIMGNKSUlWNkRSTVRIMERBdU1UaG42STNHdC15RG05cHUzQXl1QUw0R1hpOXp2dHVmVWlrWWREUzZacDljbEhvWXh0UzBIdlE?oc=5) — Wed, 25 Feb 2026 22:37:19 GMT
-- [Rubio: Venezuela necesita comicios "justos" y "democráticos" - DW.com](https://news.google.com/rss/articles/CBMipwFBVV95cUxNQkMwY2NiMWVVSjBRdE5lTTUybnlNWl9IM2ZkdzFfWlNpay1MNS01TDZZYmF1Tk16YnpvQnplQ1ozd2lUQmtlSGdLdXgxVHVBcWk1MEVhak5BRFBMaThaRjZCd0xIRDJOSkw2TGRBdXlKcmJkUWhnbzRCbGs4YndjcFQyM3lGSFlVYjJ2T1Vpc3pNQU5EY2Y4ZTZqQUx2VmlCVTc4dDdyMNIBpwFBVV95cUxQTHM2SFpnYmRqeG9XTnpXaDl5eHpXY2hwMmxZTTNmb2puVFl1LUZqTERwZ1ZMUjlTT2M4SkpwVUZIZUk2M0pWZDhZd0JIN1ljTmVBQ3otTDUwaUl6Ym1EMEVlWE9lUlJ0N0hWcGJ2X3Rpemo0TFhuVEZYVURvOUNmdGtCaGF5RTJLeHdCNHFueFZxcVJjWjlKN2NQYWliMld3LU9DSS1fUQ?oc=5) — Thu, 26 Feb 2026 15:37:28 GMT
-- [Venezuela afianza plan de vacunación contra fiebre amarilla en 22 parroquias priorizadas del país - MPPS](https://news.google.com/rss/articles/CBMiugFBVV95cUxORTlpRjlrMk5TQ3NobVhBcmVmVjduMnF4SzFBSnVjV0JGckE4X1NuRjNtZWVfUUhreHBVWTZZTExQbGc0X0MzVXdDZHp3M3hFdEZXZjQ5ZjZEQmN5YUEwSDNUUXFjUkgzZGhXTVpydGRSaGk1dWxUZzdnWUtMbGxKLVdYT0drcWZha0RpZ19jTDBybzlPcUxWazhRT3QtN3d0WEdueWMtaGVLRUhUSTAxdmE1VE9TZWI1R0E?oc=5) — Thu, 26 Feb 2026 08:10:20 GMT
+- [Venezuela: renuncia el fiscal general Tarek William Saab - dw.com](https://news.google.com/rss/articles/CBMikgFBVV95cUxOOVlTZThLQWhpWjg4NDdHY2EwbWotNmdZNDVIemlNS3Z5T0Vha3VxSzUzSmMwNUt3X2ludjlwNXduZWRJalZEX0VnUVdEZ1RGWnlmWWFiX05BdzBzS2JHZkJhMkFoWE5uYzNMYjlrOHlFNWpmNFdFZUZhcWt3NVNKYXZLN3RSazk1LXpHT19xOFowd9IBkgFBVV95cUxOVGVwZWNOXzlISkRyZVFYSGJhdko3Tmc5N0otNzJsa1JEQXVxWGJ4QUpEV19SYm9UbGdKeXVFenFLQVhzM2N6eDhISmo1RGNtTzFwMmVqSi1oSkI0dkdhOVVYNEhGN0pCYWh3d2dVSWRucWNTbExYV0Q5dGZiNDU5c2xOelE5N1RpR3B0eXpWSE9xQQ?oc=5) — Thu, 26 Feb 2026 07:25:51 GMT
 
 ---
 
