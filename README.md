@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-27 07:02 UTC**
+> Last updated: **2026-02-27 13:12 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,11 +8,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Padrino López: la feudalización del poder](https://bitlysdowssl-aws.com/2026/02/padrino-lopez-la-feudalizacion-del-poder/) — Fri, 27 Feb 2026 05:24:00 +0000
-- [La amnistía y la trampa de ponerse a derecho](https://bitlysdowssl-aws.com/2026/02/la-amnistia-y-la-trampa-de-ponerse-a-derecho/) — Fri, 27 Feb 2026 05:23:00 +0000
-- [La nueva doctrina hemisférica de EE UU](https://bitlysdowssl-aws.com/2026/02/la-nueva-doctrina-hemisferica-de-ee-uu/) — Fri, 27 Feb 2026 05:22:00 +0000
-- [El pasajero de Trump](https://bitlysdowssl-aws.com/2026/02/el-pasajero-de-trump/) — Fri, 27 Feb 2026 05:21:00 +0000
-- [¡Qué falta haces!](https://bitlysdowssl-aws.com/2026/02/que-falta-haces/) — Fri, 27 Feb 2026 05:20:00 +0000
+- [Deportivo Táchira eliminado de la Libertadores](https://bitlysdowssl-aws.com/2026/02/deportivo-tachira-quedo-eliminado-de-la-libertadores/) — Fri, 27 Feb 2026 12:38:44 +0000
+- [Pakistán y los talibanes entran en guerra abierta: claves de una ruptura](https://bitlysdowssl-aws.com/2026/02/pakistan-y-los-talibanes-entran-en-guerra-abierta-claves-de-una-ruptura/) — Fri, 27 Feb 2026 12:22:00 +0000
+- [Delcy Rodríguez y Gustavo Petro se reunirían el 14 de marzo en Cúcuta](https://bitlysdowssl-aws.com/2026/02/delcy-rodriguez-y-gustavo-petro-se-reunirian-el-14-de-marzo-en-cucuta/) — Fri, 27 Feb 2026 12:00:17 +0000
+- [Alto comisionado de la ONU pide liberar a todos los presos políticos en Venezuela](https://bitlysdowssl-aws.com/2026/02/alto-comisionado-de-la-onu-pide-liberar-a-todos-los-presos-politicos-en-venezuela/) — Fri, 27 Feb 2026 11:43:00 +0000
+- [Netflix: ¿cuáles fueron las series y películas más vistas esta semana en Venezuela?](https://bitlysdowssl-aws.com/2026/02/netflix-series-y-peliculas-mas-vistas-esta-semana-en-venezuela-31/) — Fri, 27 Feb 2026 11:22:28 +0000
 
 ## Efecto Cocuyo
 
@@ -32,11 +32,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## Google News – Venezuela
 
-- [EE.UU. impide que el Gobierno de Venezuela pague por la defensa legal de Maduro, dice su abogado - CNN en Español](https://news.google.com/rss/articles/CBMingFBVV95cUxQNldrQ0p6NmZKdkxuT1Awa3otQXNQWmlKOWc5Z2VFNy16RElDS01wdnF4VFBVUkxPVmxTcnFKQm1VZlVqVGdmXzYxUVZ1Q3JKa3Axa3Q4WHAycG1pN2NOY3FkemRnSUJzVWdHaW1udDNpaGtlMXU2V1FqNDdoMk9zZ2xwUS1mb0RBNGNpQnlMczlrT0JyZVlKLUhfbjN6QQ?oc=5) — Thu, 26 Feb 2026 02:30:00 GMT
+- [Rodríguez pide a Trump cesar "bloqueo" sobre Venezuela - dw.com](https://news.google.com/rss/articles/CBMilAFBVV95cUxNSXNkQXNZTTJCeXM4bl81T2xtOHIyT2NvYlBuRW5WVFpETnFOUXY5N0xNSnZ5NXI0dmRCOEt4OGJuWDhPOWs3dG5BX1dsMkFOdVNpUmlSNTVyMGhNaVZwUHhOZ0Jtbm5WSlQ4Z0gwRFNGTUZLWnFYcGNxXzMzNFJrTVdlVGR6OVZfYkFYSnR0NVgybkpQ0gGUAUFVX3lxTE9lc2FfN3FydHVMc1dPeDF6dHdzaVhkZ25WcGw1RGxIX3Blbnl6M1l5Mmstdm1WQURXdHBuNC1Nbno3elFvaUM1Y2JLWHpKRFQ4LV92RWliU2o4Y2lzTEtxZ2xub3VmSGtEaE95U0laakVSV3lUZG5sTEVGaTlXbXlmMnI5eGY4N1dFT05OakNNbGhmaHc?oc=5) — Fri, 27 Feb 2026 00:55:08 GMT
+- [Delcy Rodríguez pidió a Trump que ponga fin al bloqueo contra Venezuela - ultimasnoticias.com.ve](https://news.google.com/rss/articles/CBMisgFBVV95cUxQc2l0dlIxa3J0S3k5czh6NDdxdHpKT0JkbmcweV9JaUdZMW9zT1VzQVc2SnRGSHB0VDlLVFoxZ0tYVGJDSEV0YlFZWG9xcXpHTG53bTNBbDlwNldydUhQcmpLYkt6X3JkOExpeDNsZThqeFdpTVliWXNNQnloQnk0aXg1cnZFM1pxdzMxSW8yeEYzUWN4eHNTbmd1c1NuU3NIdWxTSEs3eUFTSVdXcjZpOGFR?oc=5) — Thu, 26 Feb 2026 23:28:08 GMT
+- [Delcy Rodríguez llama “amigo y socio” a Donald Trump y pide el fin de las sanciones y del bloqueo contra Venezuela - CNN en Español](https://news.google.com/rss/articles/CBMipwFBVV95cUxPeDNXQlU3WE9Qb3AwTVNCTm51YmVFTnlWTEZhNUVVNEJNcnBfSUVDOV9aQTBFTHAzN2pvSU5LZnpZLWZuUkF3QkZHVU5UR082THRzaUdZZGl4aFF5MDlhbHFMX01CRmc2YmRLTEtRNHVCQ204NTJLMXQ2OHc0VF9YR1NVVS1wMlF5TmF3Y1R1NUp5Q2RUNER2US04dnMtNUhRX18xcUJMSQ?oc=5) — Fri, 27 Feb 2026 00:40:35 GMT
 - [El abogado de Maduro denuncia que Estados Unidos impide que Venezuela pague por su defensa - EL PAÍS](https://news.google.com/rss/articles/CBMizgFBVV95cUxPYVlGOTd0NVpORWZ0VkVkMFBaa1JoUDhxNUpCXzJHS01ZLUdlaVZZS0JqYnJwRzZpSUxUd1IzdUlaNERsT3lueU13bW1ONUhrQjNDR3VhSXlucWV5Yk1SZXdyZGVGSHllc05GMXA2Z0dOc1NLaVlzYnUyWkhTOHQ4WHg2QnFKSGRFMXdzdVhxazNIUEhhdzFoaUJHUVdVV3p6OWNkOVZDNkV0cmlhRldKd0ZyYnU1ZExwRFRHODJYb2lmQnlxeFlhUHB1UnQtd9IB4gFBVV95cUxPbFpqLXhTblAtUXhTdkdxd1UzYVdaQ1ZjME5lRmV3bFdURXdmNXFkVWVScG9oNHpzcGpwTFFrYlRvelN0cUJISEhjODJpOTlVMmE5UmVKU3Z4QXV2XzJyUnVpbjQyVTlvNkpXV2hYYU5PNWJISENKVl9wbzJvVHRXdE1reTZsaFhwQzcxMVpzWVlZNFhLOERRVDVud05GbmtxYWFqSV8xVHFsT0ltUWhTZ0ZXWHBUYkNEZHh2T05fQ0lmSkZGclE5ekhiYnZSNW1hWXdibl8zb3hvLTM4bkhmZTJn?oc=5) — Thu, 26 Feb 2026 04:30:00 GMT
 - [Maduro pidió anular su juicio en Nueva York tras el bloqueo del Tesoro a su defensa legal - Infobae](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMDVNcVVNb2loMUVjMk1DUGp5VUJoODR3Q3RWd3FITjlmVFgwN3ZINlJCNjZrUTRvd1RpR2ptVlROZlFrdlB1UjlvOUREemQ1Ulc0TnBNQ092OTNBWEFkNGpqRnNUblRxeVRDOTdNSFl2cEtkdEc2a1ZCbmhfU3A1RXAzUDJZekNUdHJiTjU2a2h4c3dyWm5Cc3dyLV9Ib0Z2dHdzZWVpTlZnbjltSGUwa1d3UUcxT0xTV3l0RkZka2ZfS3k2MlQ4cElKWWF0SUQ50gHrAUFVX3lxTE40R1JDUzBSLUVkNExHeFJlT2FCMldDTS0ta3IzZUdyMkdUOGJVLV9RTV9NaUhVVC1RN0RVRnVtM0pzWTNTbU1BcXVnX2tOb1FMSzVJeWc5bFlLamZabGZITTh3NVpkcFlVdzdFcTZHb0c0ZFgtRXhQNzFUVnJFb0F2RWFQVVVFbFZDQnlDWVBXMEM2aEtqcGRZRVJ1VkZhcmphd1JRWEVZbEZTVTlIMkJfbnNFZDZuZ29UTjBoekdfck5obmx6QTV2bnhKTG1nb1lDcHMwUnF4c2NmVWJTXzNlcHM5bmtIbmVDMkE?oc=5) — Fri, 27 Feb 2026 00:32:00 GMT
-- [Dimite el fiscal de Venezuela, Tarek William Saab - EL PAÍS](https://news.google.com/rss/articles/CBMilgFBVV95cUxNTF81R2lIOUx6dGFoOVBpY083RkJIaHl6Rklyeml2SFhEcUhxelB4N2lfa1FKdjdZTVdoVlZfQTdHa0RZaE5XRUlJSlA5c3ZobnNyWHl0SkpnYllYLUJvVG1vTWtfVF8yMzd4Y2x6aFN1djdWcndOcTI1cGE2bDdWaUY3cGpNbEJnTUM5U0U2SmRPbEpwWFHSAaoBQVVfeXFMTkJKd1o3ZVhrUkhEcHZFYlpuMDJIQ19Od3Q0WmpJUGZlSzgtQWpOdXBscHB3elVscnotYUQ5YVNUQ2hfMjJqZWdhWEhWX3NFSDNVOE9hTTNBSGNvalZ0b2hWazJIMGNKSUlWNkRSTVRIMERBdU1UaG42STNHdC15RG05cHUzQXl1QUw0R1hpOXp2dHVmVWlrWWREUzZacDljbEhvWXh0UzBIdlE?oc=5) — Wed, 25 Feb 2026 22:37:19 GMT
-- [Venezuela: renuncia el fiscal general Tarek William Saab - dw.com](https://news.google.com/rss/articles/CBMikgFBVV95cUxOOVlTZThLQWhpWjg4NDdHY2EwbWotNmdZNDVIemlNS3Z5T0Vha3VxSzUzSmMwNUt3X2ludjlwNXduZWRJalZEX0VnUVdEZ1RGWnlmWWFiX05BdzBzS2JHZkJhMkFoWE5uYzNMYjlrOHlFNWpmNFdFZUZhcWt3NVNKYXZLN3RSazk1LXpHT19xOFowd9IBkgFBVV95cUxOVGVwZWNOXzlISkRyZVFYSGJhdko3Tmc5N0otNzJsa1JEQXVxWGJ4QUpEV19SYm9UbGdKeXVFenFLQVhzM2N6eDhISmo1RGNtTzFwMmVqSi1oSkI0dkdhOVVYNEhGN0pCYWh3d2dVSWRucWNTbExYV0Q5dGZiNDU5c2xOelE5N1RpR3B0eXpWSE9xQQ?oc=5) — Thu, 26 Feb 2026 07:25:51 GMT
 
 ---
 
