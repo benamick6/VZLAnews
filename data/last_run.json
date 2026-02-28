@@ -1,7 +1,7 @@
 {
-  "run_at": "2026-02-28T23:10:39.686353+00:00",
-  "fetched": 2061,
-  "filtered": 136,
+  "run_at": "2026-02-28T23:40:10.199354+00:00",
+  "fetched": 2070,
+  "filtered": 97,
   "deduplicated": 34,
   "selected": 34,
   "diff_new": 20,
