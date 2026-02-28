@@ -218,6 +218,172 @@
         `;
     }
 
+    function computeBdSignals(items) {
+        const kw = [
+            'esg', 'corporate sustainability', 'shared value', 'scope 3', 'responsible sourcing',
+            'supply chain', 'procurement', 'tender', 'rfp', 'rfi', 'call for proposals',
+            'innovation challenge', 'grant facility', 'foundation', 'csr', 'impact investment',
+            'blended finance', 'public-private', 'ppp', 'co-investment', 'biodiversity',
+            'nature positive', 'just transition', 'energy transition', 'community engagement',
+            'stakeholder engagement', 'local sourcing', 'supplier development'
+        ];
+
+        const corp = [
+            'exxonmobil', 'chevron', 'walmart', 'unilever', 'nestlé', 'nestle', 'cargill',
+            'microsoft', 'amazon'
+        ];
+
+        const now = Date.now();
+        const days7 = 7 * 24 * 60 * 60 * 1000;
+
+        const recent = (items || []).filter((it) => {
+            const d = Date.parse(it.publishedAt || it.dateISO || '');
+            return Number.isFinite(d) ? (now - d) <= days7 : false;
+        });
+
+        const hits = [];
+        for (const it of recent) {
+            const hay = [
+                it.title, it.preview, it.description, it.snippet,
+                ...(it.tags || []), ...(it.categories || [])
+            ].filter(Boolean).join(' ').toLowerCase();
+
+            const kwHit = kw.find((k) => hay.includes(k));
+            const corpHit = corp.find((c) => hay.includes(c));
+
+            if (kwHit || corpHit) {
+                hits.push({
+                    id: it.id,
+                    title: it.title,
+                    url: it.url,
+                    publishedAt: it.publishedAt || it.dateISO || '',
+                    match: corpHit ? `Company mention: ${corpHit}` : `Keyword: ${kwHit}`
+                });
+            }
+        }
+
+        hits.sort((a, b) => {
+            const aCorp = a.match.startsWith('Company') ? 1 : 0;
+            const bCorp = b.match.startsWith('Company') ? 1 : 0;
+            if (aCorp !== bCorp) return bCorp - aCorp;
+            return (Date.parse(b.publishedAt) || 0) - (Date.parse(a.publishedAt) || 0);
+        });
+
+        return hits.slice(0, 6);
+    }
+
+    function renderBdOpportunitiesCard(items) {
+        const signals = computeBdSignals(items);
+
+        const signalsHtml = signals.length
+            ? `
+                <div class="bd-subhead">Live signals (last 7 days)</div>
+                <ul class="bd-signals">
+                    ${signals.map((s) => `
+                        <li>
+                            <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>
+                            <div class="bd-signal-meta">${esc(s.match)} · ${esc(String(s.publishedAt).slice(0, 10))}</div>
+                        </li>
+                    `).join('')}
+                </ul>
+            `
+            : '<div class="bd-muted">No clear corporate ESG BD signals detected in the last 7 days from your current feed set.</div>';
+
+        return `
+            <section class="panel bd-card" id="bd-opportunities">
+                <div class="bd-head">
+                    <div>
+                        <h3>BD Opportunities in Venezuela</h3>
+                        <div class="bd-meta">Corporate sustainability, ESG, shared value, and partnership work focused on Venezuela only.</div>
+                    </div>
+                </div>
+
+                ${signalsHtml}
+
+                <hr class="bd-divider" />
+
+                <div class="bd-grid">
+                    <div class="bd-col">
+                        <h4>Expansion: Corporate Sustainability & ESG Partnerships</h4>
+                        <p class="bd-body">
+                            MarketEdge can support multinational corporations pursuing sustainability, ESG, and shared value strategies in Venezuela.
+                            Focus on practical deal pathways: risk-aware partnership design, investable ESG roadmaps, and implementation support.
+                        </p>
+
+                        <div class="bd-subhead">Target corporate partners to watch</div>
+                        <ul class="bd-list">
+                            <li>ExxonMobil, Chevron</li>
+                            <li>Walmart, Unilever, Nestlé, Cargill</li>
+                            <li>Microsoft, Amazon</li>
+                            <li>Mining, energy, agribusiness, and infrastructure firms with Venezuela exposure</li>
+                        </ul>
+
+                        <div class="bd-subhead">Ideal engagement types</div>
+                        <ul class="bd-list">
+                            <li>ESG market diagnostics and entry or re-entry planning for Venezuela</li>
+                            <li>Shared value partnership design with local actors and donors</li>
+                            <li>Multi-stakeholder convenings and facilitation</li>
+                            <li>Political economy and stakeholder risk analysis</li>
+                            <li>Sustainability-aligned investment roadmaps and KPI frameworks</li>
+                            <li>Bridge-building across corporate, donor, and local ecosystems</li>
+                        </ul>
+                    </div>
+
+                    <div class="bd-col">
+                        <h4>Corporate-focused service areas</h4>
+
+                        <div class="bd-subhead">1. ESG Strategy & Market-Based Sustainability</div>
+                        <ul class="bd-list">
+                            <li>ESG-aligned investment strategy</li>
+                            <li>Climate resilience and biodiversity integration</li>
+                            <li>Community engagement and stakeholder alignment</li>
+                            <li>Shared value partnership models and blended finance structuring</li>
+                            <li>Supply chain resilience and local sourcing strategies</li>
+                        </ul>
+
+                        <div class="bd-subhead">2. Sustainable Supply Chain & Market Systems</div>
+                        <ul class="bd-list">
+                            <li>Value chain diagnostics and responsible sourcing strategy</li>
+                            <li>Inclusive supplier development and local enterprise integration</li>
+                            <li>Climate-smart agriculture partnerships</li>
+                            <li>Extractives community development strategy</li>
+                        </ul>
+
+                        <div class="bd-subhead">3. Public-Private Partnership Structuring</div>
+                        <ul class="bd-list">
+                            <li>PPP design between corporations and governments</li>
+                            <li>Co-investment platform design and governance</li>
+                            <li>Outcome-based contracting models</li>
+                            <li>Multi-stakeholder coordination mechanisms</li>
+                        </ul>
+
+                        <div class="bd-subhead">4. AI-Enabled ESG Intelligence</div>
+                        <ul class="bd-list">
+                            <li>Rapid landscape analysis for market entry or expansion</li>
+                            <li>Political economy risk scanning and stakeholder mapping</li>
+                            <li>Partnership diagnostics and execution tracking</li>
+                            <li>Sustainability performance dashboards</li>
+                        </ul>
+
+                        <div class="bd-subhead">Keywords to monitor</div>
+                        <p class="bd-body">
+                            ESG strategy; corporate sustainability; shared value partnership; climate resilience investment; sustainable supply chain;
+                            responsible sourcing; community development program; public private partnership; blended finance platform; nature positive investment;
+                            just transition; energy transition partnership; extractives community engagement; sustainable agriculture sourcing; corporate co-investment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bd-foot">
+                    <div class="bd-positioning">
+                        <strong>Positioning statement:</strong> MarketEdge helps corporations translate sustainability ambition into investable, partnership-driven strategies in Venezuela.
+                        We combine AI-enabled intelligence, stakeholder engagement, and structured partnership design to reduce risk, align incentives, and deliver measurable ESG outcomes.
+                    </div>
+                </div>
+            </section>
+        `;
+    }
+
     async function init() {
         const root = document.getElementById('app-root');
         if (!root) return;
@@ -250,11 +416,15 @@
             const render = () => {
                 const rejectedRuntime = [];
                 const sectorsHtml = renderSectors(latest, activeLanguage, rejectedRuntime);
+                const allItemsSorted = (latest.sectors || [])
+                    .flatMap((sector) => (sector.items || []))
+                    .sort((a, b) => (Date.parse(b.publishedAt || b.dateISO || '') || 0) - (Date.parse(a.publishedAt || a.dateISO || '') || 0));
                 root.innerHTML = `
                     ${renderLanguageSwitcher(activeLanguage)}
                     ${renderIMFCard(imf)}
                     ${sectorsHtml || '<section class="panel"><p>No article previews available for the selected language.</p></section>'}
                     ${renderMacros(macros)}
+                    ${renderBdOpportunitiesCard(allItemsSorted || [])}
                     ${debugMode ? renderRejectedDebug(rejectedRuntime, rejectedBuild) : ''}
                 `;
             };

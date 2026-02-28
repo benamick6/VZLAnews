@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-02-28T23:02:42.405231+00:00",
-  "totalItems": 29,
+  "runAt": "2026-02-28T23:10:39.686353+00:00",
+  "totalItems": 31,
   "sectors": [
     {
       "name": "Extractives & Mining",
@@ -839,7 +839,7 @@
         "bullets": [
           "Officials reported The publication reports movement in cross-cutting / policy / risk with concrete operational relevance in Venezuela.",
           "Field updates show Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n\u2026",
-          "Separate sources indicate Leandro Palmar y Belises Cubill\u00e1n, trabajadores de LUZ Radio, fueron detenidos por guardias nacionales el 9 de enero de 2025, mientras hac\u00edan una\u2026"
+          "Separate sources indicate Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source:\u2026"
         ],
         "drivers": [
           "FX / Inflation"
@@ -1071,6 +1071,48 @@
             "numbers": [
               {
                 "label": "Policy or market figure",
+                "value": "14",
+                "context": "sinti\u00f3 que el mundo era m\u00e1s grande de lo que recordaba. Ese 14 de enero llevaba un a\u00f1o y cinco d\u00edas detenido. Lo hab\u00edan\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "tomando posesi\u00f3n para un tercer per\u00edodo presidencial \u2014luego de las elecciones del 28 de julio de 2024, cuyos resultados\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "84",
+                "context": "visitas de sus familiares. Leandro estaba angustiado por su madre: Delia, de 84 a\u00f1os, viv\u00eda sola en una urbanizaci\u00f3n de\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "111",
+                "context": "Solo se escuchaba el ruido constante del motor. Cuando llegaron al Destacamento 111 de la Guardia Nacional Bolivariana\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "100",
+                "context": "dejaron. Y el tiempo comenz\u00f3 a pasar. Dentro del destacamento hab\u00eda casi 100 personas detenidas que compart\u00edan un solo\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "5",
+                "context": "m\u00e1s tiempo presos, med\u00eda apenas 5,6 metros cuadrados. Los custodios les entregaban 5 litros de agua al d\u00eda a cada uno,\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "11",
+                "context": "incitaci\u00f3n al odio, asociaci\u00f3n para delinquir y alteraci\u00f3n del orden p\u00fablico. El 11 de enero de 2025, cuando ya ten\u00edan\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
                 "value": "9",
                 "context": "Belises Cubill\u00e1n, trabajadores de LUZ Radio, fueron detenidos por guardias nacionales el 9 de enero de 2025, mientras\u2026",
                 "score": 0
@@ -1081,12 +1123,13 @@
           "preview_source": "jina",
           "language": "es",
           "insight2": {
-            "s1": "Leandro Palmar y Belises Cubill\u00e1n, trabajadores de LUZ Radio, fueron detenidos por guardias nacionales el 9 de enero de 2025, mientras hac\u00edan una cobertura en una plaza de Maracaibo, estado Zulia",
+            "s1": "Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source: http://elpitazo.net/alianzas/leandro-palmar-y-belises-cubillan-la-libertad-no-es-solo-un-concepto/ Published Time:\u2026",
             "s2": "Al tiempo los llevaron a Tocor\u00f3n",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 9 as a measurable reference point for scenario tracking.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 14 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "Belises Cubill\u00e1n, trabajadores de LUZ Radio, fueron detenidos por guardias nacionales el 9 de enero de 2025, mientras\u2026"
+              "sinti\u00f3 que el mundo era m\u00e1s grande de lo que recordaba. Ese 14 de enero llevaba un a\u00f1o y cinco d\u00edas detenido. Lo hab\u00edan\u2026",
+              "tomando posesi\u00f3n para un tercer per\u00edodo presidencial \u2014luego de las elecciones del 28 de julio de 2024, cuyos resultados\u2026"
             ]
           },
           "icons": []
