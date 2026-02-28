@@ -1079,20 +1079,213 @@ def _source_quality_tier(domain: str) -> str:
     if not host:
         return "Unknown"
 
-    wire = ("reuters.com", "apnews.com", "bloomberg.com")
+    wire = ("reuters.com", "apnews.com", "bloomberg.com", "ft.com", "wsj.com")
     ngo_multilateral = ("paho.org", "who.int", "reliefweb.int", "worldbank.org", "nrc.no")
     major_media = ("bbc.com", "cnn.com", "nytimes.com", "wsj.com", "ft.com", "nbcnews.com")
     local_regional = ("elpitazo.net", "efectococuyo.com", "el-nacional.com", "talcualdigital.com", "venezuelanalysis.com")
 
     if any(host == d or host.endswith(f".{d}") for d in wire):
-        return "Wire Service"
+        return "Tier 1"
     if any(host == d or host.endswith(f".{d}") for d in ngo_multilateral):
-        return "NGO / Multilateral"
+        return "Tier 1"
     if any(host == d or host.endswith(f".{d}") for d in major_media):
-        return "Major Media"
+        return "Tier 1"
     if any(host == d or host.endswith(f".{d}") for d in local_regional):
-        return "Local / Regional"
-    return "Other"
+        return "Tier 2"
+    return "Tier 3"
+
+
+def _classify_event_types(entry: dict) -> list[str]:
+    text = _text(entry)
+    event_map = {
+        "Sanctions": ["sanction", "ofac", "license", "embargo", "asset freeze"],
+        "Oil production/export": ["oil", "pdvsa", "barrel", "bpd", "export", "refinery", "cargo"],
+        "Political transition": ["election", "opposition", "transition", "cabinet", "decree", "maduro"],
+        "Regulatory reform": ["regulation", "regulatory", "reform", "law", "framework", "compliance"],
+        "Humanitarian crisis": ["hunger", "malnutrition", "crisis", "humanitarian", "displacement"],
+        "FX / Inflation": ["inflation", "exchange", "fx", "currency", "devaluation", "bolivar"],
+        "Debt restructuring": ["debt", "bond", "restructuring", "creditor", "sovereign spread"],
+        "Security": ["security", "military", "protest", "violence", "guerrilla", "conflict"],
+    }
+    events = [event for event, terms in event_map.items() if any(term in text for term in terms)]
+    return events[:3]
+
+
+def _detect_entities(entry: dict) -> list[str]:
+    text = _text(entry)
+    entities = [
+        "PDVSA",
+        "Maduro",
+        "OFAC",
+        "IMF",
+        "Chevron",
+        "Bond restructuring",
+        "FX controls",
+    ]
+    checks = {
+        "PDVSA": ["pdvsa"],
+        "Maduro": ["maduro"],
+        "OFAC": ["ofac", "license"],
+        "IMF": ["imf", "international monetary fund"],
+        "Chevron": ["chevron"],
+        "Bond restructuring": ["bond", "restructuring", "creditor"],
+        "FX controls": ["fx", "exchange", "currency control", "devaluation"],
+    }
+    out = [name for name in entities if any(token in text for token in checks[name])]
+    return out[:4]
+
+
+def _sentiment_label(entry: dict) -> str:
+    text = _text(entry)
+    positive_terms = ["agreement", "easing", "recovery", "growth", "approval", "restart", "deal"]
+    negative_terms = ["sanction", "crisis", "decline", "shortage", "default", "conflict", "risk", "protest"]
+    pos = sum(1 for token in positive_terms if token in text)
+    neg = sum(1 for token in negative_terms if token in text)
+    if neg >= pos + 1:
+        return "Negative"
+    if pos >= neg + 1:
+        return "Positive"
+    return "Neutral"
+
+
+def _materiality_score(entry: dict) -> int:
+    text = _text(entry)
+    score = 1
+    high_impact = ["sanction", "oil", "pdvsa", "debt", "inflation", "export", "license", "regulation"]
+    medium_impact = ["policy", "investment", "currency", "humanitarian", "security"]
+    score += min(2, sum(1 for token in high_impact if token in text))
+    score += min(1, sum(1 for token in medium_impact if token in text))
+    if _source_quality_tier(entry.get("source_domain", "")) == "Tier 1":
+        score += 1
+    return max(1, min(5, score))
+
+
+def _risk_score(entry: dict) -> int:
+    sentiment = _sentiment_label(entry)
+    materiality = _materiality_score(entry)
+    events = _classify_event_types(entry)
+    base = materiality * 15
+    if sentiment == "Negative":
+        base += 20
+    elif sentiment == "Positive":
+        base -= 10
+    if "Sanctions" in events:
+        base += 15
+    if "Security" in events:
+        base += 10
+    if "Oil production/export" in events and sentiment == "Positive":
+        base -= 8
+    return max(0, min(100, base))
+
+
+def _annotate_intelligence(entry: dict) -> None:
+    entry["event_types"] = _classify_event_types(entry)
+    entry["sentiment"] = _sentiment_label(entry)
+    entry["materiality"] = _materiality_score(entry)
+    entry["risk_score"] = _risk_score(entry)
+    entry["entities"] = _detect_entities(entry)
+
+
+def _sparkline(values: list[float]) -> str:
+    if not values:
+        return ""
+    bars = "▁▂▃▄▅▆▇█"
+    low = min(values)
+    high = max(values)
+    if high == low:
+        return bars[3] * len(values)
+    out = []
+    for value in values:
+        idx = int(round((value - low) / (high - low) * (len(bars) - 1)))
+        out.append(bars[max(0, min(len(bars) - 1, idx))])
+    return "".join(out)
+
+
+def _window_stats(history: list[dict], key: str, days: int) -> float:
+    if not history:
+        return 0.0
+    recent = history[-days:]
+    if not recent:
+        return 0.0
+    return sum(float(item.get(key, 0) or 0) for item in recent) / len(recent)
+
+
+def _trend_direction(current: float, prior: float, threshold: float = 0.08) -> str:
+    if prior <= 0:
+        return "→ Stable"
+    delta = (current - prior) / prior
+    if delta > threshold:
+        return "↑ Risk Increasing"
+    if delta < -threshold:
+        return "↓ Risk Decreasing"
+    return "→ Stable"
+
+
+def _build_sector_brief(section: str, rows: list[dict]) -> dict:
+    if not rows:
+        return {
+            "health": 5,
+            "summary": "Coverage is limited this cycle; monitor for confirmation in the next run.",
+            "risks": ["Signal density is low", "Data confidence is constrained", "Cross-check with primary sources"],
+            "opportunities": ["Watch for early policy movement", "Track counterpart statements", "Review exposure scenarios"],
+            "watch": ["Next weekly cycle", "Regulatory updates", "Source confirmation"],
+        }
+
+    avg_risk = sum(int(r.get("risk_score", 50)) for r in rows) / len(rows)
+    health = max(1, min(10, round((100 - avg_risk) / 10)))
+    positives = [r for r in rows if r.get("sentiment") == "Positive"]
+    negatives = [r for r in rows if r.get("sentiment") == "Negative"]
+    top_events = []
+    for row in rows:
+        top_events.extend(row.get("event_types", []))
+    top_events_text = ", ".join(sorted(set(top_events))[:3]) or "cross-cutting policy signals"
+
+    summary = (
+        f"This week in {section.lower()}, signal flow is concentrated around {top_events_text}. "
+        f"Risk pressure is {'elevated' if avg_risk >= 60 else 'mixed'} with an average score of {avg_risk:.0f}/100. "
+        f"Positive momentum appears in {len(positives)} items, while {len(negatives)} items indicate material downside pressure. "
+        "Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. "
+        "Near-term positioning favors scenario planning with trigger-based execution gates."
+    )
+
+    risks = [
+        f"{row.get('title','')[:95]}" for row in sorted(rows, key=lambda r: int(r.get("risk_score", 0)), reverse=True)[:3]
+    ]
+    opportunities = [
+        f"{row.get('title','')[:95]}" for row in [r for r in rows if r.get("sentiment") != "Negative"][:3]
+    ]
+    while len(opportunities) < 3:
+        opportunities.append("Monitor policy/market openings tied to licensing, contracts, or donor leverage.")
+    watch = [
+        "Executive decrees and regulatory circulars",
+        "Sanctions/license language shifts",
+        "Operational updates from Tier 1 and Tier 2 sources",
+    ]
+    return {
+        "health": health,
+        "summary": summary,
+        "risks": risks,
+        "opportunities": opportunities[:3],
+        "watch": watch,
+    }
+
+
+def _calculate_sanctions_index(rows: list[dict], history: list[dict]) -> int:
+    sanctions_rows = [row for row in rows if "Sanctions" in row.get("event_types", [])]
+    if not sanctions_rows:
+        baseline = _window_stats(history, "sanctions_count", 7)
+        return int(max(0, min(100, baseline * 8)))
+
+    negative = sum(1 for row in sanctions_rows if row.get("sentiment") == "Negative")
+    avg_materiality = sum(int(row.get("materiality", 1)) for row in sanctions_rows) / len(sanctions_rows)
+    escalation_terms = ("rollback", "tighten", "enforcement", "penalty", "blacklist")
+    escalation_hits = sum(
+        1
+        for row in sanctions_rows
+        if any(term in (row.get("summary", "") or "").lower() for term in escalation_terms)
+    )
+    index = len(sanctions_rows) * 8 + negative * 7 + int(avg_materiality * 6) + escalation_hits * 5
+    return int(max(0, min(100, index)))
 
 
 def _research_tags(entry: dict, section_label: str) -> list[str]:
@@ -1154,6 +1347,11 @@ def _serialize_entry(entry: dict, section_label: str) -> dict:
         "sector": section_label,
         "summary": entry.get("_summary_text", ""),
         "summary_confidence": _summary_confidence_label(entry),
+        "event_types": entry.get("event_types", []),
+        "sentiment": entry.get("sentiment", "Neutral"),
+        "materiality": int(entry.get("materiality", 1) or 1),
+        "risk_score": int(entry.get("risk_score", 0) or 0),
+        "entities": entry.get("entities", []),
         "tags": tags,
     }
 
@@ -1166,6 +1364,11 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
     diff_updated = int(run_meta.get("diff_updated", 0) or 0)
     diff_dropped = int(run_meta.get("diff_dropped", 0) or 0)
     executive_brief = _latest_news_synthesis(entries, cfg)[0]
+    trend_summary = run_meta.get("trend_summary", {}) or {}
+    sanctions_index = int(run_meta.get("sanctions_index", 0) or 0)
+    macro_indicators = run_meta.get("macro_indicators", []) or []
+    sector_briefs = run_meta.get("sector_briefs", {}) or {}
+    timeline_rows = run_meta.get("timeline_rows", []) or []
     section_descriptions = {
         "Extractives & Mining": "Oil, gas, mining activity, concessions, production shifts, and energy security developments.",
         "Food & Agriculture": "Food supply, agricultural output, imports, and nutrition-related policy and market developments.",
@@ -1191,6 +1394,19 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         ".jump-links a { font-size: 13px; color: #1f2937; text-decoration: none; border: 1px solid #d1d5db; border-radius: 999px; padding: 4px 10px; }",
         ".exec-brief { border: 1px solid #e5e7eb; background: #f9fafb; border-radius: 8px; padding: 14px; font-size: 15px; line-height: 1.6; }",
         ".diff-note { margin-top: 10px; color: #374151; font-size: 14px; }",
+        ".intel-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 14px; }",
+        ".intel-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px; background: #fff; }",
+        ".intel-title { font-size: 13px; color: #6b7280; margin: 0 0 6px; }",
+        ".intel-value { font-size: 22px; font-weight: 700; margin: 0; }",
+        ".risk-green { color: #166534; }",
+        ".risk-yellow { color: #92400e; }",
+        ".risk-red { color: #991b1b; }",
+        ".sector-brief-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }",
+        ".sector-brief { border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px; }",
+        ".sector-brief h4 { margin: 0 0 8px; }",
+        ".sector-brief ul { margin: 6px 0 0 18px; }",
+        ".timeline-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }",
+        ".timeline-table th, .timeline-table td { border-bottom: 1px solid #e5e7eb; padding: 6px 8px; text-align: left; }",
         ".latest-updates-list { list-style: none; margin: 0; padding: 0; }",
         ".latest-updates-item { padding: 10px 0; border-bottom: 1px solid #e5e7eb; }",
         ".latest-updates-item:last-child { border-bottom: none; }",
@@ -1230,6 +1446,22 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         "",
         f'<section class="vzla-section"><div class="exec-brief">{escape(executive_brief)}</div>',
         f'<p class="diff-note">Run-to-run diff: <strong>{diff_new}</strong> new · <strong>{diff_updated}</strong> updated · <strong>{diff_dropped}</strong> dropped since prior snapshot.</p></section>',
+        '<section class="vzla-section">',
+        '<h3>Signal & Trend Dashboard</h3>',
+        '<div class="intel-grid">',
+        f'<div class="intel-card"><p class="intel-title">7-day signal frequency</p><p class="intel-value">{escape(str(trend_summary.get("freq_7d", 0)))}</p></div>',
+        f'<div class="intel-card"><p class="intel-title">30-day intensity change</p><p class="intel-value">{escape(str(trend_summary.get("intensity_30d", "→ Stable")))}</p></div>',
+        f'<div class="intel-card"><p class="intel-title">90-day direction shift</p><p class="intel-value">{escape(str(trend_summary.get("direction_90d", "→ Stable")))}</p></div>',
+        '</div>',
+        '</section>',
+        '<section class="vzla-section">',
+        '<h3>Sanctions & Compliance</h3>',
+        f'<p class="diff-note">Sanctions Risk Index (0–100): <strong>{sanctions_index}</strong></p>',
+        '<p class="diff-note">This index blends sanctions-signal frequency, negative sentiment, materiality, and escalation language.</p>',
+        '</section>',
+        '<section class="vzla-section">',
+        '<h3>Macro Indicators</h3>',
+        '<div class="intel-grid">',
         "",
         "## Research Tools",
         "",
@@ -1237,8 +1469,12 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         '<div class="vzla-controls">',
         '<input id="searchInput" placeholder="Search title, snippet, or tags" />',
         '<select id="sectorFilter"><option value="all">All sectors</option></select>',
-        '<select id="qualityFilter"><option value="all">All source quality tiers</option><option>Wire Service</option><option>Major Media</option><option>NGO / Multilateral</option><option>Local / Regional</option><option>Other</option><option>Unknown</option></select>',
+        '<select id="qualityFilter"><option value="all">All source quality tiers</option><option>Tier 1</option><option>Tier 2</option><option>Tier 3</option><option>Unknown</option></select>',
         '<select id="confidenceFilter"><option value="all">All snippet confidence</option><option>High (Feed snippet)</option><option>Medium (Meta description)</option><option>Medium (Page paragraph)</option><option>Low (Page extraction)</option><option>Low (Template fallback)</option></select>',
+        '<select id="eventFilter"><option value="all">All event types</option><option>Sanctions</option><option>Oil production/export</option><option>Political transition</option><option>Regulatory reform</option><option>Humanitarian crisis</option><option>FX / Inflation</option><option>Debt restructuring</option><option>Security</option></select>',
+        '<select id="sentimentFilter"><option value="all">All sentiment</option><option>Positive</option><option>Neutral</option><option>Negative</option></select>',
+        '<select id="riskFilter"><option value="all">All risk scores</option><option value="70">70+ High</option><option value="40">40+ Medium</option><option value="0">0+ Low</option></select>',
+        '<select id="entityFilter"><option value="all">All entities</option><option>PDVSA</option><option>Maduro</option><option>OFAC</option><option>IMF</option><option>Chevron</option><option>Bond restructuring</option><option>FX controls</option></select>',
         '<select id="dateFilter"><option value="all">All dates</option><option value="7">Last 7 days</option><option value="30">Last 30 days</option></select>',
         '</div>',
         '<div class="vzla-toolbar">',
@@ -1248,11 +1484,88 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         '</div>',
         '<div class="jump-links" id="jumpLinks"></div>',
         '</section>',
-        "",
-        "## Latest Updates",
-        "",
-        "<section class=\"vzla-section\">",
-        "<ul class=\"latest-updates-list\">",
+    ]
+
+    if macro_indicators:
+        for indicator in macro_indicators:
+            name = str(indicator.get("name", "Indicator"))
+            value = str(indicator.get("value", "N/A"))
+            trend = str(indicator.get("trend", ""))
+            risk_flag = str(indicator.get("risk_flag", "Yellow"))
+            spark = _sparkline([float(v) for v in indicator.get("series", []) if isinstance(v, (int, float))])
+            risk_class = "risk-yellow"
+            if risk_flag.lower().startswith("green"):
+                risk_class = "risk-green"
+            elif risk_flag.lower().startswith("red"):
+                risk_class = "risk-red"
+            lines.append(
+                f'<div class="intel-card"><p class="intel-title">{escape(name)}</p>'
+                f'<p class="intel-value {risk_class}">{escape(value)}</p>'
+                f'<p class="diff-note">{escape(trend)} {escape(spark)}</p></div>'
+            )
+    else:
+        lines.append('<div class="intel-card"><p class="intel-title">Macro feed</p><p class="intel-value">Pending</p><p class="diff-note">Add macro_indicators data file.</p></div>')
+
+    lines += [
+        '</div>',
+        '</section>',
+        '',
+        '## Sector Intelligence Briefs',
+        '<section class="vzla-section">',
+        '<div class="sector-brief-grid">',
+    ]
+
+    for sector_name in [
+        "Extractives",
+        "Finance",
+        "Agriculture",
+        "Health",
+        "Governance",
+        "Infrastructure",
+    ]:
+        brief = sector_briefs.get(sector_name, {})
+        lines.append('<article class="sector-brief">')
+        lines.append(f'<h4>{escape(sector_name)} · Health Score {int(brief.get("health", 5))}/10</h4>')
+        lines.append(f'<p>{escape(str(brief.get("summary", "No brief available.")))}</p>')
+        lines.append('<p><strong>Top Risks</strong></p><ul>')
+        for risk_item in brief.get("risks", [])[:3]:
+            lines.append(f'<li>{escape(str(risk_item))}</li>')
+        lines.append('</ul><p><strong>Top Opportunities</strong></p><ul>')
+        for opp_item in brief.get("opportunities", [])[:3]:
+            lines.append(f'<li>{escape(str(opp_item))}</li>')
+        lines.append('</ul><p><strong>Forward Watch List</strong></p><ul>')
+        for watch_item in brief.get("watch", [])[:3]:
+            lines.append(f'<li>{escape(str(watch_item))}</li>')
+        lines.append('</ul></article>')
+
+    lines += [
+        '</div>',
+        '</section>',
+        '',
+        '<section class="vzla-section">',
+        '<h3>Interactive Timeline (Policy + Economic Overlay)</h3>',
+        '<table class="timeline-table"><thead><tr><th>Date</th><th>Risk Avg</th><th>Sanctions Signals</th><th>Oil Signals</th></tr></thead><tbody>',
+    ]
+
+    if timeline_rows:
+        for item in timeline_rows[:12]:
+            lines.append(
+                f'<tr><td>{escape(str(item.get("date", "")))}</td>'
+                f'<td>{escape(str(item.get("risk_avg", 0)))}</td>'
+                f'<td>{escape(str(item.get("sanctions_count", 0)))}</td>'
+                f'<td>{escape(str(item.get("oil_count", 0)))}</td></tr>'
+            )
+    else:
+        lines.append('<tr><td colspan="4">No timeline history yet.</td></tr>')
+
+    lines += [
+        '</tbody></table>',
+        '</section>',
+        '',
+        '## Latest Updates',
+        '',
+        '<section class="vzla-section">',
+        '<ul class="latest-updates-list">',
     ]
 
     updates = _latest_updates(entries, cfg, limit=5)
@@ -1327,9 +1640,13 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
             confidence_label = _summary_confidence_label(e)
             quality_tier = _source_quality_tier(e.get("source_domain", ""))
             tags = _research_tags(e, section)
+            events = e.get("event_types", []) or []
+            sentiment = str(e.get("sentiment", "Neutral"))
+            risk_score = int(e.get("risk_score", 0) or 0)
+            entities = e.get("entities", []) or []
             why = _why_this_matters(e, cfg, section)
             citation = f'{title} — {source} ({pub}). {link}'.strip()
-            tag_text = ",".join(tags).lower()
+            tag_text = ",".join(tags + events + entities).lower()
             feature_class = " featured" if idx == 0 else ""
 
             lines.append(
@@ -1337,6 +1654,10 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
                 f'data-sector="{escape(section)}" '
                 f'data-quality="{escape(quality_tier)}" '
                 f'data-confidence="{escape(confidence_label)}" '
+                f'data-event="{escape((events[0] if events else ""))}" '
+                f'data-sentiment="{escape(sentiment)}" '
+                f'data-risk="{risk_score}" '
+                f'data-entity="{escape((entities[0] if entities else ""))}" '
                 f'data-date="{escape(pub)}" '
                 f'data-search="{escape((title + " " + summary_sentence + " " + tag_text).lower())}">'
             )
@@ -1356,6 +1677,8 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
                 lines.append('<div class="story-tags">')
                 for tag in tags:
                     lines.append(f'<span class="story-tag">{escape(tag)}</span>')
+                for event in events[:2]:
+                    lines.append(f'<span class="story-tag">{escape(event)}</span>')
                 lines.append('</div>')
             lines.append(f'<p class="story-why">{escape(why)}</p>')
             lines.append(
@@ -1382,6 +1705,10 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         "  const sectorFilter = document.getElementById('sectorFilter');",
         "  const qualityFilter = document.getElementById('qualityFilter');",
         "  const confidenceFilter = document.getElementById('confidenceFilter');",
+        "  const eventFilter = document.getElementById('eventFilter');",
+        "  const sentimentFilter = document.getElementById('sentimentFilter');",
+        "  const riskFilter = document.getElementById('riskFilter');",
+        "  const entityFilter = document.getElementById('entityFilter');",
         "  const dateFilter = document.getElementById('dateFilter');",
         "  const jumpLinks = document.getElementById('jumpLinks');",
         "",
@@ -1407,6 +1734,10 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         "    const sector = sectorFilter.value;",
         "    const quality = qualityFilter.value;",
         "    const confidence = confidenceFilter.value;",
+        "    const eventType = eventFilter.value;",
+        "    const sentiment = sentimentFilter.value;",
+        "    const riskThreshold = riskFilter.value === 'all' ? null : Number(riskFilter.value);",
+        "    const entity = entityFilter.value;",
         "    const daysWindow = dateFilter.value === 'all' ? null : Number(dateFilter.value);",
         "",
         "    cards.forEach((card) => {",
@@ -1414,15 +1745,20 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         "      const sectorMatch = sector === 'all' || card.dataset.sector === sector;",
         "      const qualityMatch = quality === 'all' || card.dataset.quality === quality;",
         "      const confidenceMatch = confidence === 'all' || card.dataset.confidence === confidence;",
+        "      const eventMatch = eventType === 'all' || card.dataset.event === eventType;",
+        "      const sentimentMatch = sentiment === 'all' || card.dataset.sentiment === sentiment;",
+        "      const riskValue = Number(card.dataset.risk || '0');",
+        "      const riskMatch = riskThreshold === null || riskValue >= riskThreshold;",
+        "      const entityMatch = entity === 'all' || card.dataset.entity === entity;",
         "      const days = daysSince(card.dataset.date);",
         "      const dateMatch = daysWindow === null || (days !== null && days <= daysWindow);",
         "      const searchMatch = !q || text.includes(q);",
-        "      card.classList.toggle('hidden', !(sectorMatch && qualityMatch && confidenceMatch && dateMatch && searchMatch));",
+        "      card.classList.toggle('hidden', !(sectorMatch && qualityMatch && confidenceMatch && eventMatch && sentimentMatch && riskMatch && entityMatch && dateMatch && searchMatch));",
         "    });",
         "  }",
         "",
-        "  [searchInput, sectorFilter, qualityFilter, confidenceFilter, dateFilter].forEach((el) => el && el.addEventListener('input', applyFilters));",
-        "  [sectorFilter, qualityFilter, confidenceFilter, dateFilter].forEach((el) => el && el.addEventListener('change', applyFilters));",
+        "  [searchInput, sectorFilter, qualityFilter, confidenceFilter, eventFilter, sentimentFilter, riskFilter, entityFilter, dateFilter].forEach((el) => el && el.addEventListener('input', applyFilters));",
+        "  [sectorFilter, qualityFilter, confidenceFilter, eventFilter, sentimentFilter, riskFilter, entityFilter, dateFilter].forEach((el) => el && el.addEventListener('change', applyFilters));",
         "  applyFilters();",
         "",
         "  document.querySelectorAll('.copy-citation').forEach((button) => {",
@@ -1480,11 +1816,18 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     selected_count = len(top)
     logger.info("Selected top %d entries", selected_count)
 
+    for entry in top:
+        _annotate_intelligence(entry)
+
     os.makedirs(DOCS_DIR, exist_ok=True)
     os.makedirs(DATA_DIR, exist_ok=True)
 
     latest_snapshot_path = os.path.join(DATA_DIR, "latest_stories.json")
     latest_csv_path = os.path.join(DATA_DIR, "latest_stories.csv")
+    signal_history_path = os.path.join(DATA_DIR, "signal_history.json")
+    alerts_path = os.path.join(DATA_DIR, "alerts.json")
+    intelligence_summary_path = os.path.join(DATA_DIR, "intelligence_summary.json")
+    macro_path = os.path.join(DATA_DIR, "macro_indicators.json")
 
     previous_snapshot: list[dict] = []
     if os.path.exists(latest_snapshot_path):
@@ -1518,6 +1861,117 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
                 diff_updated += 1
         diff_dropped = len([entry_id for entry_id in previous_map if entry_id not in current_ids])
 
+    section_alias = {
+        "Extractives & Mining": "Extractives",
+        "Finance & Investment": "Finance",
+        "Food & Agriculture": "Agriculture",
+        "Health & Water": "Health",
+        "Cross-cutting / Policy / Risk": "Governance",
+    }
+
+    intelligence_rows: list[dict] = []
+    for entry in top:
+        section = detect_sector_label(entry, cfg)
+        aliased_section = section_alias.get(section, section)
+        entry["_summary_text"] = _compact_summary(
+            entry,
+            cfg,
+            max_chars=min(280, int(cfg.get("summary_max_chars", 280))),
+            section_label=section,
+            story_index=0,
+        )
+        intelligence_rows.append(_serialize_entry(entry, aliased_section))
+
+    infra_rows = [row for row in intelligence_rows if "Infrastructure" in row.get("tags", [])]
+
+    sector_rows: dict[str, list[dict]] = {
+        "Extractives": [r for r in intelligence_rows if r.get("sector") == "Extractives"],
+        "Finance": [r for r in intelligence_rows if r.get("sector") == "Finance"],
+        "Agriculture": [r for r in intelligence_rows if r.get("sector") == "Agriculture"],
+        "Health": [r for r in intelligence_rows if r.get("sector") == "Health"],
+        "Governance": [r for r in intelligence_rows if r.get("sector") == "Governance"],
+        "Infrastructure": infra_rows,
+    }
+    sector_briefs = {name: _build_sector_brief(name, rows) for name, rows in sector_rows.items()}
+
+    if os.path.exists(macro_path):
+        try:
+            with open(macro_path, "r", encoding="utf-8") as fh:
+                macro_indicators = json.load(fh)
+            if not isinstance(macro_indicators, list):
+                macro_indicators = []
+        except (json.JSONDecodeError, OSError):
+            macro_indicators = []
+    else:
+        macro_indicators = [
+            {"name": "GDP growth estimate", "value": "N/A", "trend": "Weekly refresh pending", "risk_flag": "Yellow", "series": [0, 0, 0]},
+            {"name": "Inflation rate", "value": "N/A", "trend": "Weekly refresh pending", "risk_flag": "Yellow", "series": [0, 0, 0]},
+            {"name": "Oil production (bpd)", "value": "N/A", "trend": "Weekly refresh pending", "risk_flag": "Yellow", "series": [0, 0, 0]},
+            {"name": "FX official vs parallel", "value": "N/A", "trend": "Weekly refresh pending", "risk_flag": "Yellow", "series": [0, 0, 0]},
+        ]
+        with open(macro_path, "w", encoding="utf-8") as fh:
+            json.dump(macro_indicators, fh, indent=2)
+
+    history_records: list[dict] = []
+    if os.path.exists(signal_history_path):
+        try:
+            with open(signal_history_path, "r", encoding="utf-8") as fh:
+                loaded = json.load(fh)
+                if isinstance(loaded, list):
+                    history_records = loaded
+        except (json.JSONDecodeError, OSError):
+            history_records = []
+
+    today_key = now.strftime("%Y-%m-%d")
+    sanctions_count = sum(1 for row in intelligence_rows if "Sanctions" in row.get("event_types", []))
+    oil_count = sum(1 for row in intelligence_rows if "Oil production/export" in row.get("event_types", []))
+    risk_avg = round(
+        sum(int(row.get("risk_score", 0)) for row in intelligence_rows) / max(1, len(intelligence_rows)),
+        2,
+    )
+    current_record = {
+        "date": today_key,
+        "signals_count": len(intelligence_rows),
+        "sanctions_count": sanctions_count,
+        "oil_count": oil_count,
+        "risk_avg": risk_avg,
+    }
+    if history_records and history_records[-1].get("date") == today_key:
+        history_records[-1] = current_record
+    else:
+        history_records.append(current_record)
+    history_records = history_records[-120:]
+
+    freq_7d = round(_window_stats(history_records, "signals_count", 7), 1)
+    curr_30 = _window_stats(history_records, "risk_avg", 30)
+    prev_30 = _window_stats(history_records[:-30], "risk_avg", 30)
+    curr_90 = _window_stats(history_records, "risk_avg", 90)
+    prev_90 = _window_stats(history_records[:-90], "risk_avg", 90)
+    trend_summary = {
+        "freq_7d": freq_7d,
+        "intensity_30d": _trend_direction(curr_30, prev_30),
+        "direction_90d": _trend_direction(curr_90, prev_90),
+    }
+
+    sanctions_index = _calculate_sanctions_index(intelligence_rows, history_records)
+
+    alerts = []
+    if sanctions_count > 0:
+        alerts.append({"type": "New sanctions", "triggered": True, "detail": f"{sanctions_count} sanctions-related signals in current cycle."})
+    if oil_count >= 3:
+        alerts.append({"type": "Oil export change >10%", "triggered": True, "detail": "Oil/export signal density elevated; review cargo and production narratives."})
+    inflation_hits = sum(1 for row in intelligence_rows if "FX / Inflation" in row.get("event_types", []))
+    if inflation_hits > 0:
+        alerts.append({"type": "Inflation spike news", "triggered": True, "detail": f"{inflation_hits} inflation/FX items surfaced."})
+    decree_hits = sum(1 for row in intelligence_rows if "Political transition" in row.get("event_types", []))
+    if decree_hits > 0:
+        alerts.append({"type": "Executive decree", "triggered": True, "detail": f"{decree_hits} governance/decree-related signals detected."})
+    protest_hits = sum(1 for row in intelligence_rows if "Security" in row.get("event_types", []))
+    if protest_hits > 0:
+        alerts.append({"type": "Protest escalation", "triggered": True, "detail": f"{protest_hits} security/protest indicators detected."})
+
+    timeline_rows = list(reversed(history_records[-12:]))
+
     run_meta = {
         "run_at": now.isoformat(),
         "fetched": fetched_count,
@@ -1527,6 +1981,11 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
         "diff_new": diff_new,
         "diff_updated": diff_updated,
         "diff_dropped": diff_dropped,
+        "trend_summary": trend_summary,
+        "sanctions_index": sanctions_index,
+        "macro_indicators": macro_indicators,
+        "sector_briefs": sector_briefs,
+        "timeline_rows": timeline_rows,
         "output_file": OUTPUT_PATH,
         "metadata_file": METADATA_PATH,
     }
@@ -1590,6 +2049,11 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
             "sector",
             "summary",
             "summary_confidence",
+            "event_types",
+            "sentiment",
+            "materiality",
+            "risk_score",
+            "entities",
             "tags",
         ])
         for row in export_rows:
@@ -1604,9 +2068,35 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
                 row.get("sector", ""),
                 row.get("summary", ""),
                 row.get("summary_confidence", ""),
+                "; ".join(row.get("event_types", [])),
+                row.get("sentiment", ""),
+                row.get("materiality", ""),
+                row.get("risk_score", ""),
+                "; ".join(row.get("entities", [])),
                 "; ".join(row.get("tags", [])),
             ])
     logger.info("Wrote %s", latest_csv_path)
+
+    with open(signal_history_path, "w", encoding="utf-8") as fh:
+        json.dump(history_records, fh, indent=2)
+    logger.info("Wrote %s", signal_history_path)
+
+    with open(alerts_path, "w", encoding="utf-8") as fh:
+        json.dump({"run_at": now.isoformat(), "alerts": alerts}, fh, indent=2)
+    logger.info("Wrote %s", alerts_path)
+
+    with open(intelligence_summary_path, "w", encoding="utf-8") as fh:
+        json.dump(
+            {
+                "run_at": now.isoformat(),
+                "trend_summary": trend_summary,
+                "sanctions_index": sanctions_index,
+                "sector_briefs": sector_briefs,
+            },
+            fh,
+            indent=2,
+        )
+    logger.info("Wrote %s", intelligence_summary_path)
 
 
 if __name__ == "__main__":

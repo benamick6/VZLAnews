@@ -1,64 +1,11 @@
 {
   "run_at": "2026-02-28T18:37:17.468942+00:00",
-  "fetched": 1631,
-  "filtered": 94,
-  "deduplicated": 85,
-  "selected": 35,
-  "diff_new": 18,
-  "diff_updated": 0,
-  "diff_dropped": 1,
   "trend_summary": {
     "freq_7d": 35.0,
     "intensity_30d": "\u2192 Stable",
     "direction_90d": "\u2192 Stable"
   },
   "sanctions_index": 54,
-  "macro_indicators": [
-    {
-      "name": "GDP growth estimate",
-      "value": "N/A",
-      "trend": "Weekly refresh pending",
-      "risk_flag": "Yellow",
-      "series": [
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Inflation rate",
-      "value": "N/A",
-      "trend": "Weekly refresh pending",
-      "risk_flag": "Yellow",
-      "series": [
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Oil production (bpd)",
-      "value": "N/A",
-      "trend": "Weekly refresh pending",
-      "risk_flag": "Yellow",
-      "series": [
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "FX official vs parallel",
-      "value": "N/A",
-      "trend": "Weekly refresh pending",
-      "risk_flag": "Yellow",
-      "series": [
-        0,
-        0,
-        0
-      ]
-    }
-  ],
   "sector_briefs": {
     "Extractives": {
       "health": 7,
@@ -174,16 +121,5 @@
         "Operational updates from Tier 1 and Tier 2 sources"
       ]
     }
-  },
-  "timeline_rows": [
-    {
-      "date": "2026-02-28",
-      "signals_count": 35,
-      "sanctions_count": 3,
-      "oil_count": 19,
-      "risk_avg": 29.97
-    }
-  ],
-  "output_file": "/workspaces/VZLAnews/docs/index.md",
-  "metadata_file": "/workspaces/VZLAnews/data/last_run.json"
+  }
 }
