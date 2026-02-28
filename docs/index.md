@@ -1,6 +1,6 @@
 # Venezuela News Intelligence
 
-> Last refreshed: **2026-02-28 18:21:33.087626 UTC**
+> Last refreshed: **2026-02-28 18:26:00.993788 UTC**
 
 <style>
 .vzla-page { max-width: 920px; margin: 0 auto; }
@@ -50,8 +50,8 @@
 
 ## Executive Brief
 
-<section class="vzla-section"><div class="exec-brief">This cycle surfaces 35 ranked Venezuela-linked developments across 6 sectors (Extractives &amp; Mining, Food &amp; Agriculture, Health &amp; Water, Education &amp; Workforce, Finance &amp; Investment, Cross-cutting / Policy / Risk), with activity concentrated in Extractives &amp; Mining (20), Food &amp; Agriculture (3), Health &amp; Water (3). The near-term strategic storyline is a policy-led reopening dynamic—especially around energy and capital channels—while thematic pressure remains centered on energy and extractives, finance and macro policy, food systems. Commercial upside is present but selective (0 opportunity-flagged items), and execution risk remains material (2 risk-flagged items tied to sanctions, regulatory uncertainty, or operating friction). Cross-source coverage with publication timing from 2026-01-26 to 2026-02-28 indicates rising momentum, but not yet a structurally de-risked environment. For strategy teams, the practical posture is scenario-based planning: prioritize partner diligence, compliance-ready operating models, and trigger-based monitoring before committing irreversible capital.</div>
-<p class="diff-note">Run-to-run diff: <strong>0</strong> new · <strong>0</strong> updated · <strong>0</strong> dropped since prior snapshot.</p></section>
+<section class="vzla-section"><div class="exec-brief">This cycle surfaces 35 ranked Venezuela-linked developments across 6 sectors (Extractives &amp; Mining, Food &amp; Agriculture, Health &amp; Water, Education &amp; Workforce, Finance &amp; Investment, Cross-cutting / Policy / Risk), with activity concentrated in Extractives &amp; Mining (19), Finance &amp; Investment (4), Food &amp; Agriculture (3). The near-term strategic storyline is a policy-led reopening dynamic—especially around energy and capital channels—while thematic pressure remains centered on energy and extractives, finance and macro policy, food systems. Commercial upside is present but selective (0 opportunity-flagged items), and execution risk remains material (2 risk-flagged items tied to sanctions, regulatory uncertainty, or operating friction). Cross-source coverage with publication timing from 2026-01-26 to 2026-02-28 indicates rising momentum, but not yet a structurally de-risked environment. For strategy teams, the practical posture is scenario-based planning: prioritize partner diligence, compliance-ready operating models, and trigger-based monitoring before committing irreversible capital.</div>
+<p class="diff-note">Run-to-run diff: <strong>17</strong> new · <strong>0</strong> updated · <strong>0</strong> dropped since prior snapshot.</p></section>
 
 ## Research Tools
 
@@ -77,13 +77,13 @@
 <ul class="latest-updates-list">
 <li class="latest-updates-item"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNlA1ZzRVNzhyM0FvYkYzcDlldEFYYmREQjU0aU9DMXRNYTh5UVFweTZGVmpSaHExSW1CM3VlVHZtQk10VDR4UFRET1dOMnU2d1JBQ09LQy1pRHc0Z1ZJODU0MmlxSkVmQnZFVzZoRzlzQnJUYlhKZXB1MlBuSlYxNlQtQThoM3FBRHc4Q3gyc0RKQ1dfUEF4dEYwWkFnZ0FCakhfMFFqMEdsa2JTUFhQZzBVRHNSNDdMTE51M0hiU0RBQQ?oc=5&hl=en-US&gl=US&ceid=US:en">U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts Say: 'They Understand Mining Is the Future' - Latin Times</a>
 <div class="latest-updates-meta">news.google.com · 2026-02-28 · Extractives & Mining</div></li>
+<li class="latest-updates-item"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9kcG1URi00Mlc1WUtPN3dtRV8ybGk0OXhyc1hDRVNSVzduYlV2SGFoMGhvd05YM2VsV1M2bmFSeHNWRG9RWlgwM2xFdUFRM3EyME9FbmIxV0ZMZk5XZmdBWmU3Z1FzQU5NbktsMC15Ymw1WUxDVC1XbA?oc=5">Venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes - Discovery Alert</a>
+<div class="latest-updates-meta">news.google.com · 2026-02-27 · Finance & Investment</div></li>
 <li class="latest-updates-item"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ2o0b0V1emRrSHR0Yy1memtndl94UGV0V1dFdVkxVGp2Uk9hWDc1NTgxSzhNSXBOdDdleGdjWDNBaTBxNGhPRUVnelo5VEd4V01CakR3ZkFmUndWdWZ3RW9ic2NxU1ZaY3h3R3FYTnQ4VmlFbDJ2SllsekxNMTNyd0Z2a1lKTnlFTDlWRWdkN2lWemdpWU1oNW5XTGY5aE0yVVNuUw?oc=5&hl=en-US&gl=US&ceid=US:en">Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela - Orinoco Tribune</a>
 <div class="latest-updates-meta">news.google.com · 2026-02-27 · Extractives & Mining</div></li>
 <li class="latest-updates-item"><a href="https://www.paho.org/en/news/27-2-2026-report-latin-america-and-caribbean-advances-eradicating-hunger-fourth-consecutive">UN report: Latin America and the Caribbean advances in eradicating hunger for the fourth consecutive year</a>
 <div class="latest-updates-meta">paho.org · 2026-02-27 · Cross-cutting / Policy / Risk</div></li>
 <li class="latest-updates-item"><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxORkRYaFVkUGZBMUF0LUdkUDFwR1o1WjVPaWlkTm40R0tKdW9qTzg0Q0VqZ1A4SEktT21qZ1BPX01WS3Z3VFlMQUxpcWlOQ2ctTXd5eEx4V1VsYUVyWWZzUjlEUFFuVkJkUHRFdU43RkJTWHlpMUdna0xVZF9aOVFuV01qWU9FVGdNdjlxTW1Vc1A2bUt2YUJzcHp6bnBVOVdmYzlTWUQwNzRhRTAteVJLc3pHbXZaNFBjclFMc3UycHhFTGV0SS1QRW5NQXNJVThtbnN3LUtVTdIB3AFBVV95cUxQTUZUeTJ0UkZmTVg5aUJzSmZGdU1fY2llb1dGVFpUNlo4X1lmbjdKV3BwNEYzWm13eFJWd3VBd1MwVzVnYWtzeGR1azBUSmI5eDNYaDB5LV9XaGo0c0paZHFNNlJKc3ZocnZWRU5OaWlmYjY5VDYxMHRxbU4yUkhfODRuM1hFY1phTTF5SW1Zc05JRzlzOWFXc3lvdFNZOFBvYWZTby12NWpHWVBIRnU2YWxpUzBXaGRCQTRWRjRKMWppYlBQdHV5ZjgtMFVZSEhmRjRSbVBaMHpuaWVW?oc=5&hl=en-US&gl=US&ceid=US:en">Venezuela meets with Shell execs on oil/gas projects - Trinidad Express Newspapers</a>
-<div class="latest-updates-meta">news.google.com · 2026-02-27 · Extractives & Mining</div></li>
-<li class="latest-updates-item"><a href="https://news.google.com/rss/articles/CBMijwRBVV95cUxPTUlUcXo3c01sb3RSRUwxOXVUTHRaekxvd3lyVnJYR2l2UkVDR1hPME5wd0VrQXRnNmVkbDllU1p3UUNJaUk5UElJTHNwNmI0bWViN2N1NWRwMmt2dDFjVnhNa3lHX2VHZmVKcTZTMDBiWUxFNXQ5UFdpMEVJMDBRdDVfMUpSdFpQS0lQZWhlal9obkZ0VTkzMXUtSENaOUdMTHF0UU96RlZMREF4aU9Xa0dvdXRGcHlzNy1MYl9xWVh5ZWhUSzNKU3N2UEM0a0l2X0NRaVhoWi1LOVFXak5qR2xORkI2YlNPLUVvOTZoODV1N3lMeXJQWEhkV2I5Q3BiZ0dnUVNiTnJHNzBTdmRlNTVQRnVyVUQ5VS1EcXJrdF9BTjFSNXQyWkw4alU4VE9iMzZtcnRTSEJDb294enFKSWZLR19zMXZFeXkyczN1ek1felpIZElpV0hPbEU5c3dOTWViVlhxcEJKUm1SVWxKYnRCbHZQSkdRaGdhQWdIUVRyV0Z2SVhBYlVVOHdCMVcxUWh6akxhU3FrdTJYbWkyb0tKd0hfdHBVSU5Pc1NMeC1mZlFLdzBFUXhHUmEyajhQd0xyMFJmaXZRdWFWdHRmdWxfTnRWT2lGOXp2Vl82Wk9IOTJxQjR1VnFQQ2l0cUFpUVphOHVIRGU4TVFkRkFQVWM3VU94Wk14WEMwVno2QQ?oc=5&hl=en-US&gl=US&ceid=US:en">Exclusive-Venezuela's PDVSA selling oil only to individually licensed companies, sources say - AOL.com</a>
 <div class="latest-updates-meta">news.google.com · 2026-02-27 · Extractives & Mining</div></li>
 </ul>
 </section>
@@ -98,7 +98,7 @@
 <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNlA1ZzRVNzhyM0FvYkYzcDlldEFYYmREQjU0aU9DMXRNYTh5UVFweTZGVmpSaHExSW1CM3VlVHZtQk10VDR4UFRET1dOMnU2d1JBQ09LQy1pRHc0Z1ZJODU0MmlxSkVmQnZFVzZoRzlzQnJUYlhKZXB1MlBuSlYxNlQtQThoM3FBRHc4Q3gyc0RKQ1dfUEF4dEYwWkFnZ0FCakhfMFFqMEdsa2JTUFhQZzBVRHNSNDdMTE51M0hiU0RBQQ?oc=5&hl=en-US&gl=US&ceid=US:en">U.S. Can&#x27;t Dislodge Guerrillas From Venezuela&#x27;s Gold and Coltan Flow, Experts Say: &#x27;They Understand Mining Is the Future&#x27; - Latin Times</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-28 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-28 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <p class="story-why">Why this matters: it informs outlooks for production, export channels, and energy-related policy direction.</p>
 <div class="story-actions"><button class="copy-citation" data-citation="U.S. Can&#x27;t Dislodge Guerrillas From Venezuela&#x27;s Gold and Coltan Flow, Experts Say: &#x27;They Understand Mining Is the Future&#x27; - Latin Times — news.google.com (2026-02-28). https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNlA1ZzRVNzhyM0FvYkYzcDlldEFYYmREQjU0aU9DMXRNYTh5UVFweTZGVmpSaHExSW1CM3VlVHZtQk10VDR4UFRET1dOMnU2d1JBQ09LQy1pRHc0Z1ZJODU0MmlxSkVmQnZFVzZoRzlzQnJUYlhKZXB1MlBuSlYxNlQtQThoM3FBRHc4Q3gyc0RKQ1dfUEF4dEYwWkFnZ0FCakhfMFFqMEdsa2JTUFhQZzBVRHNSNDdMTE51M0hiU0RBQQ?oc=5&amp;hl=en-US&amp;gl=US&amp;ceid=US:en">Copy citation</button></div>
 </article>
@@ -107,7 +107,7 @@
 <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ2o0b0V1emRrSHR0Yy1memtndl94UGV0V1dFdVkxVGp2Uk9hWDc1NTgxSzhNSXBOdDdleGdjWDNBaTBxNGhPRUVnelo5VEd4V01CakR3ZkFmUndWdWZ3RW9ic2NxU1ZaY3h3R3FYTnQ4VmlFbDJ2SllsekxNMTNyd0Z2a1lKTnlFTDlWRWdkN2lWemdpWU1oNW5XTGY5aE0yVVNuUw?oc=5&hl=en-US&gl=US&ceid=US:en">Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela - Orinoco Tribune</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-27 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-27 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Sanctions</span>
 </div>
@@ -119,7 +119,7 @@
 <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxORkRYaFVkUGZBMUF0LUdkUDFwR1o1WjVPaWlkTm40R0tKdW9qTzg0Q0VqZ1A4SEktT21qZ1BPX01WS3Z3VFlMQUxpcWlOQ2ctTXd5eEx4V1VsYUVyWWZzUjlEUFFuVkJkUHRFdU43RkJTWHlpMUdna0xVZF9aOVFuV01qWU9FVGdNdjlxTW1Vc1A2bUt2YUJzcHp6bnBVOVdmYzlTWUQwNzRhRTAteVJLc3pHbXZaNFBjclFMc3UycHhFTGV0SS1QRW5NQXNJVThtbnN3LUtVTdIB3AFBVV95cUxQTUZUeTJ0UkZmTVg5aUJzSmZGdU1fY2llb1dGVFpUNlo4X1lmbjdKV3BwNEYzWm13eFJWd3VBd1MwVzVnYWtzeGR1azBUSmI5eDNYaDB5LV9XaGo0c0paZHFNNlJKc3ZocnZWRU5OaWlmYjY5VDYxMHRxbU4yUkhfODRuM1hFY1phTTF5SW1Zc05JRzlzOWFXc3lvdFNZOFBvYWZTby12NWpHWVBIRnU2YWxpUzBXaGRCQTRWRjRKMWppYlBQdHV5ZjgtMFVZSEhmRjRSbVBaMHpuaWVW?oc=5&hl=en-US&gl=US&ceid=US:en">Venezuela meets with Shell execs on oil/gas projects - Trinidad Express Newspapers</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-27 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-27 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Energy</span>
 <span class="story-tag">Debt/FX</span>
@@ -140,7 +140,7 @@
 <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1NUWppeWlnVGRubVZJajB4WlRsNERHVld6c3ZaNXZ0ZVByTXhONGFxXzB3T0VrQ0psanJJR3JhS1dxdHg3bDJCczRCU25xTDVYTXVTUnFJZ2RPV3FzOUMxcDkxMlhqaVgwRmJyNEo4NUJ4cFE4aTdLbENBMEfSAXxBVV95cUxNTVFqaXlpZ1Rkbm1WSWoweFpUbDRER1ZXenN2WjV2dGVQck14TjRhcV8wd09Fa0NKbGpySUdyYUtXcXR4N2wyQnM0QlNucUw1WE11U1JxSWdkT1dxczlDMXA5MTJYamlYMEZicjRKODVCeHBROGk3S2xDQTBH?oc=5&hl=en-US&gl=US&ceid=US:en">Food Security, could Digital Insurance help Venezuela? - Irish Tech News</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-06 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-06 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Debt/FX</span>
 </div>
@@ -152,7 +152,7 @@
 <a href="https://news.google.com/rss/articles/CBMimwJBVV95cUxNMk1mQXdsb3dBbDRQaVZwQ244dU1XUERhaEhBU3B3WVpnQk9BcWRGUWpEXzh0THpSTGNxc2ltM2ZlODJFQTB2dnR0QW1TdVU4ZC1lVHBlMDZrWFNyNXdKdlk0b3hLQlJWMjB3VElKWVFqN1ZOS2hqaExpYVRldldEVGR4dGlwQm1sZXkwTmtaVUFDR3ZtempydHFrV21DRm5xT0ZhSl9EajJkX0pGS1pUX0Q0WEQ0RlZYYVlucnZCY0JLSC11S244cVRqUk1ET1RnS0dMZlNzMmJuQUlxNU5EV2pqMUlmYzJ5SEJXQVlPMjBYMVZKOHJrZ2VzaTVzWkczYnduVUxUbGJaY1B1YUZ2Q2JfQVpBZElWQ1J3?oc=5&hl=en-US&gl=US&ceid=US:en">Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate - Venezuelanalysis</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-01-31 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-01-31 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Sanctions</span>
 </div>
@@ -164,7 +164,7 @@
 <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxPWEFYWS1GOWpNa0ZEUXo0S19fQUFkT0lhbjlNMmJwQzdBNTQ3WXQ4QUw4TUgydDVVZkgyTUR2VmpVdHg4R2ZTT3lWcEhyRkdFN1ZNRDJTbkVONVZZSHFDRUVqWjhxbjdvZ0liWG9OZ2NNSUc2SXBGaVR4Vm5lLVdlWWRweVV4a1BNSEtwUDQtNHhLTDdXSWZSSGFZZWVMdWdXU0F0UHBWZnNEVS1mMnJONlpHWWxBRXRSd0xzag?oc=5&hl=en-US&gl=US&ceid=US:en">The end of Venezuelan oil hits food security in Cuba hard - CiberCuba</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-01-26 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-01-26 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Energy</span>
 </div>
@@ -184,7 +184,7 @@
 <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOMG1ZUnFzblc4cElzdnZMRDdES2huQkNaWDgyTGNsRnpIWEZqLTZJd3pTUS1lNmQwSkZ0MlkxSjk0WWNEZUtjcXFocXJNRGxpSE1SWnZtMzVSQnhDbTVVNlpEVnJnbGdNc0ZGekNxSHp4RW00QXMzdjVOVDRmT2c0Mmo2ajEwc0tQRE5SUUh2SV9ZNHR0bzNZ?oc=5&hl=en-US&gl=US&ceid=US:en">The road to self-sufficiency for Venezuelan communities - nrc.no</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-06 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-06 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <p class="story-why">Why this matters: it can shift humanitarian priorities and infrastructure reliability assumptions.</p>
 <div class="story-actions"><button class="copy-citation" data-citation="The road to self-sufficiency for Venezuelan communities - nrc.no — news.google.com (2026-02-06). https://news.google.com/rss/articles/CBMilwFBVV95cUxOMG1ZUnFzblc4cElzdnZMRDdES2huQkNaWDgyTGNsRnpIWEZqLTZJd3pTUS1lNmQwSkZ0MlkxSjk0WWNEZUtjcXFocXJNRGxpSE1SWnZtMzVSQnhDbTVVNlpEVnJnbGdNc0ZGekNxSHp4RW00QXMzdjVOVDRmT2c0Mmo2ajEwc0tQRE5SUUh2SV9ZNHR0bzNZ?oc=5&amp;hl=en-US&amp;gl=US&amp;ceid=US:en">Copy citation</button></div>
 </article>
@@ -193,7 +193,7 @@
 <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5yOVczRzlUU0ZyMEN0TmtQTDJybThuV1daaGs2ZTNGU1dIWG5qZWQzbEw0aHhVMVYtMTg4bHBUOTF3X0JzVGFuZTdfb3ZkQlJHSExIdU5zSFlCZWpLTlVvdVh4Zw?oc=5&hl=en-US&gl=US&ceid=US:en">Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov)</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-06 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-06 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Health</span>
 </div>
@@ -205,7 +205,7 @@
 <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext">Venezuela&#x27;s health system: when force meets fragility</a>
 </h4>
 <p class="story-summary">The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country&#x27;s President Nicolás Maduro represent a profound shock to a health system already in collapse. With US President Donald ...</p>
-<p class="story-meta">bing.com · 2026-02-04 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">bing.com · 2026-02-04 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Health</span>
 </div>
@@ -225,7 +225,7 @@
 <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOR2hlSUswRWlwT09fbjgzblU0VlVIV3hyQ2k2dnFSWTdEQ0xicXM1X0dkcFg1Z3BhdHhHWng4dS1XWkp6VFNwU3FtN2Z6WklUTEduUHpVUERadk5Ub05WUkVtSFFlOEI5Nl9QOTdiRVRCOGJCbHoyNVhVRTQtS1lDYjdka1JUbGQ5TWJrR0pxUkQtdVV4UnFRRDVMbHQyQ18zSkxwZUNaeFYzUUZsMjZQOE4tbWk?oc=5&hl=en-US&gl=US&ceid=US:en">Venezuelans See Brighter Economic Outlook After US Intervention - Bloomberg.com</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-26 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-26 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <p class="story-why">Why this matters: it indicates labor availability, social stability, and long-term human-capital trends.</p>
 <div class="story-actions"><button class="copy-citation" data-citation="Venezuelans See Brighter Economic Outlook After US Intervention - Bloomberg.com — news.google.com (2026-02-26). https://news.google.com/rss/articles/CBMitAFBVV95cUxOR2hlSUswRWlwT09fbjgzblU0VlVIV3hyQ2k2dnFSWTdEQ0xicXM1X0dkcFg1Z3BhdHhHWng4dS1XWkp6VFNwU3FtN2Z6WklUTEduUHpVUERadk5Ub05WUkVtSFFlOEI5Nl9QOTdiRVRCOGJCbHoyNVhVRTQtS1lDYjdka1JUbGQ5TWJrR0pxUkQtdVV4UnFRRDVMbHQyQ18zSkxwZUNaeFYzUUZsMjZQOE4tbWk?oc=5&amp;hl=en-US&amp;gl=US&amp;ceid=US:en">Copy citation</button></div>
 </article>
@@ -234,7 +234,7 @@
 <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1zTXhvYld2THBDYnNQMlhHNHE1SExfTkNlZWhrV3BydXp1eVhlSzVhRTFtcTgzT0YybGhfUjdMNVVOb1lURGNWVlNWXzhzUm01RmdlLTh2ckh5ZDVoSWJOXzlsQUZfV2F1RHQwQmtTSzhZNUFNVVNN?oc=5&hl=en-US&gl=US&ceid=US:en">The voice of students in Venezuela - universitas.no</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-23 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-23 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <p class="story-why">Why this matters: it indicates labor availability, social stability, and long-term human-capital trends.</p>
 <div class="story-actions"><button class="copy-citation" data-citation="The voice of students in Venezuela - universitas.no — news.google.com (2026-02-23). https://news.google.com/rss/articles/CBMid0FVX3lxTE1zTXhvYld2THBDYnNQMlhHNHE1SExfTkNlZWhrV3BydXp1eVhlSzVhRTFtcTgzT0YybGhfUjdMNVVOb1lURGNWVlNWXzhzUm01RmdlLTh2ckh5ZDVoSWJOXzlsQUZfV2F1RHQwQmtTSzhZNUFNVVNN?oc=5&amp;hl=en-US&amp;gl=US&amp;ceid=US:en">Copy citation</button></div>
 </article>
@@ -243,7 +243,7 @@
 <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOWhFNjVnZUtHU0tKanhSUjBqTUdwZG0wbEpkT3UwYVVZdlpDQVNiUTVrWjF5X3FpTkNET1hJbnltWGJ3bGtqbGZYSnprLUx1VHJPUUNqLXJBa1p5MWEwUmVqdlR3M3AxSlJKTVRpVUJYZlYtRHJtMVVPZWZTOUdjU2NGWDFXd0hza0gyY18yZWluaFlyM2owUjMwbWhhQmVJSnNmVXBOZDlWVWs?oc=5&hl=en-US&gl=US&ceid=US:en">Venezuelans rally more openly as they navigate changing political landscape - NBC News</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-11 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-11 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Debt/FX</span>
 </div>
@@ -258,12 +258,24 @@
 
 <p class="sector-description">Inflation, exchange rates, debt, sanctions, investment flows, and financial policy signals.</p>
 <div class="sector-cards">
-<article class="story-card featured" data-sector="Finance &amp; Investment" data-quality="Other" data-confidence="High (Feed snippet)" data-date="2026-02-26" data-search="bondholders should be less excited about venezuelan debt restructuring - omfif comprehensive up-to-date news coverage, aggregated from sources all over the world by google news. debt/fx">
+<article class="story-card featured" data-sector="Finance &amp; Investment" data-quality="Other" data-confidence="Low (Template fallback)" data-date="2026-02-27" data-search="venezuela reviews oil contracts following 2026 hydrocarbon law changes - discovery alert key update on venezuela reviews oil contracts following 2026 hydrocarbon law changes. energy">
+<h4 class="story-title">
+<a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9kcG1URi00Mlc1WUtPN3dtRV8ybGk0OXhyc1hDRVNSVzduYlV2SGFoMGhvd05YM2VsV1M2bmFSeHNWRG9RWlgwM2xFdUFRM3EyME9FbmIxV0ZMZk5XZmdBWmU3Z1FzQU5NbktsMC15Ymw1WUxDVC1XbA?oc=5">Venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes - Discovery Alert</a>
+</h4>
+<p class="story-summary">Key update on venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes.</p>
+<p class="story-meta">news.google.com · 2026-02-27 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">Low (Template fallback)</span></p>
+<div class="story-tags">
+<span class="story-tag">Energy</span>
+</div>
+<p class="story-why">Why this matters: it influences macro risk, financing conditions, and investor confidence signals.</p>
+<div class="story-actions"><button class="copy-citation" data-citation="Venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes - Discovery Alert — news.google.com (2026-02-27). https://news.google.com/rss/articles/CBMieEFVX3lxTE9kcG1URi00Mlc1WUtPN3dtRV8ybGk0OXhyc1hDRVNSVzduYlV2SGFoMGhvd05YM2VsV1M2bmFSeHNWRG9RWlgwM2xFdUFRM3EyME9FbmIxV0ZMZk5XZmdBWmU3Z1FzQU5NbktsMC15Ymw1WUxDVC1XbA?oc=5">Copy citation</button></div>
+</article>
+<article class="story-card" data-sector="Finance &amp; Investment" data-quality="Other" data-confidence="High (Feed snippet)" data-date="2026-02-26" data-search="bondholders should be less excited about venezuelan debt restructuring - omfif comprehensive up-to-date news coverage, aggregated from sources all over the world by google news. debt/fx">
 <h4 class="story-title">
 <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQNW82VFZqcTR2bUZWeC1fNTNBSlNtUGF5cDE5Nmc4WVBuYTlCa0R1em45VXBYU3VLeFNuejhiT2d3Q1ZrRmtmNVctLWhUVnpfbmh4c05KT0JCc0M5eDNrRi1NV3h4Y1V3UUcwX3h4WVltRGpsVTB1MkJfZllYYTFZR2FBZ2hSWXNNVS1rbl8xQ2R1U0V4X1FwMjZKZ0ZYSDhpSzJZ?oc=5&hl=en-US&gl=US&ceid=US:en">Bondholders should be less excited about Venezuelan debt restructuring - OMFIF</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-26 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-26 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Debt/FX</span>
 </div>
@@ -275,22 +287,9 @@
 <a href="https://www.zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9">Africa, Venezuela Advance Practical Trade and Investment Cooperation</a>
 </h4>
 <p class="story-summary">Leading discussions with Coromoto Godoy Calderón, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...</p>
-<p class="story-meta">bing.com · 2026-02-26 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">bing.com · 2026-02-26 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <p class="story-why">Why this matters: it influences macro risk, financing conditions, and investor confidence signals.</p>
 <div class="story-actions"><button class="copy-citation" data-citation="Africa, Venezuela Advance Practical Trade and Investment Cooperation — bing.com (2026-02-26). https://www.zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9">Copy citation</button></div>
-</article>
-<article class="story-card" data-sector="Finance &amp; Investment" data-quality="Other" data-confidence="High (Feed snippet)" data-date="2026-01-30" data-search="venezuela’s acting president signs oil industry overhaul, easing state control to lure investors - ap news comprehensive up-to-date news coverage, aggregated from sources all over the world by google news. energy,debt/fx">
-<h4 class="story-title">
-<a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPMU1WN1pmTnhhejVQcEkxZlJUUF9ZVVJEZnhYdENDTEIzMUZSNDlUS0htRXZfVlFWLWI3bm8tT2R6MVZyQnRBYnZWZ25ydHdqMUJrZDlHZ0JmZUJZNTI3aFgzZlIyNTZDelA2bUNReHpIS3IwTGZONm1nNTBQbEtrMzFlMkd3aDdyQXVaaXFXazUyQWwtYUdMRFpOYVI?oc=5&hl=en-US&gl=US&ceid=US:en">Venezuela’s acting president signs oil industry overhaul, easing state control to lure investors - AP News</a>
-</h4>
-<p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-01-30 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
-<div class="story-tags">
-<span class="story-tag">Energy</span>
-<span class="story-tag">Debt/FX</span>
-</div>
-<p class="story-why">Why this matters: it influences macro risk, financing conditions, and investor confidence signals.</p>
-<div class="story-actions"><button class="copy-citation" data-citation="Venezuela’s acting president signs oil industry overhaul, easing state control to lure investors - AP News — news.google.com (2026-01-30). https://news.google.com/rss/articles/CBMinAFBVV95cUxPMU1WN1pmTnhhejVQcEkxZlJUUF9ZVVJEZnhYdENDTEIzMUZSNDlUS0htRXZfVlFWLWI3bm8tT2R6MVZyQnRBYnZWZ25ydHdqMUJrZDlHZ0JmZUJZNTI3aFgzZlIyNTZDelA2bUNReHpIS3IwTGZONm1nNTBQbEtrMzFlMkd3aDdyQXVaaXFXazUyQWwtYUdMRFpOYVI?oc=5&amp;hl=en-US&amp;gl=US&amp;ceid=US:en">Copy citation</button></div>
 </article>
 </div>
 </section>
@@ -305,7 +304,7 @@
 <a href="https://www.paho.org/en/news/27-2-2026-report-latin-america-and-caribbean-advances-eradicating-hunger-fourth-consecutive">UN report: Latin America and the Caribbean advances in eradicating hunger for the fourth consecutive year</a>
 </h4>
 <p class="story-summary">According to the publication of FAO, IFAD, PAHO, UNICEF and WFP, undernourishment and food insecurity dropped, though concerns remain around the cost of a healthy diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin America and the Caribbean undernourishment…</p>
-<p class="story-meta">paho.org · 2026-02-27 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">NGO / Multilateral</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">paho.org · 2026-02-27 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">NGO / Multilateral</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Infrastructure</span>
 <span class="story-tag">Policy</span>
@@ -318,7 +317,7 @@
 <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFA0THBHVWs5MElSMEUyQldfY1JsYTE3MEpNdGQxbVVSZkpoeTNUR0J2N3JXWkhqN1pwTklaNlZGZ01MNkhJcllGV0tYaXprQ2szb09SMjlTY1lmN2lnMDBqZnV4aGlUZmVPM1pFZzhDQTI4dkw3N1hzNV9R?oc=5&hl=en-US&gl=US&ceid=US:en">Venezuela’s Long Road to Recovery - Foreign Affairs</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-23 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-23 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Policy</span>
 </div>
@@ -330,7 +329,7 @@
 <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPTXdlZHlRYlVyN2U2OVhjeTU1b0dWM1FuT1hfZk13RWJabERsRERhdmluV2NPanIzRlVYOHRzalVtejJ1d0ZqMHM4VERtSWRFTkhETG1leFZRX1BrX2RyT1hRaldxZG5PS2t6THBMQmhobmdXRVVLNEdjTTNpanN3T2RfVDBxM2g3OVRnS2l4SE1HSHM?oc=5&hl=en-US&gl=US&ceid=US:en">Africa Venezuela Energy Ties: Strategic Partnership Growth - Discovery Alert</a>
 </h4>
 <p class="story-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
-<p class="story-meta">news.google.com · 2026-02-22 · Retrieved 2026-02-28 18:21:33.087626 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
+<p class="story-meta">news.google.com · 2026-02-22 · Retrieved 2026-02-28 18:26:00.993788 UTC <span class="story-badge">Other</span><span class="story-badge">High (Feed snippet)</span></p>
 <div class="story-tags">
 <span class="story-tag">Policy</span>
 </div>
