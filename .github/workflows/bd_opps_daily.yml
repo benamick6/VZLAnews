@@ -19,6 +19,10 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
       - name: Build BD opportunities JSON
         run: |
           python scripts/build_bd_opps.py

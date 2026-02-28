@@ -1,10 +1,14 @@
-import json
-import re
-import os
 import datetime
+import json
+import os
+import re
+from email.utils import parsedate_to_datetime
 from urllib.parse import urlparse
 
+import feedparser
+
 LATEST_JSON = "docs/data/latest.json"
+FEEDS_PATH = "feeds.txt"
 OUT_JSON = "docs/data/bd_opps.json"
 
 OPP_TERMS = [
@@ -16,6 +20,13 @@ OPP_TERMS = [
 ]
 
 EXCLUDE_TERMS = ["opinion", "commentary", "podcast", "video", "newsletter", "profile", "interview"]
+
+VZLA_TERMS = [
+    "venezuela", "venezuelan", "venezolana", "venezolano", "caracas", "pdvsa",
+    "bolivar", "bolívar", "maracaibo", "orinoco", "zulia", "guyana essequibo"
+]
+
+ACRONYM_TERMS = {"rfp", "rfi", "rfq", "itb", "eoi", "tor"}
 
 DEADLINE_PATTERNS = [
     r"(deadline|due by|due|closing date|closes|submission deadline)\s*[:\-]?\s*(\w+\s+\d{1,2},\s+20\d{2})",
@@ -58,7 +69,16 @@ def norm(value: str) -> str:
 
 def contains_any(text: str, terms) -> bool:
     low = text.lower()
-    return any(term in low for term in terms)
+    for term in terms:
+        token = term.lower().strip()
+        if not token:
+            continue
+        if token in ACRONYM_TERMS:
+            if re.search(rf"\b{re.escape(token)}\b", low):
+                return True
+        elif token in low:
+            return True
+    return False
 
 
 def extract_deadline(text: str) -> str:
@@ -127,13 +147,37 @@ def score_opp(text: str) -> int:
         "expression of interest", "eoi", "grant", "call for proposals", "consultancy"
     ]
     for term in strong:
-        if term in low:
+        if term in ACRONYM_TERMS:
+            if re.search(rf"\b{re.escape(term)}\b", low):
+                score += 3
+        elif term in low:
             score += 3
     if extract_deadline(text):
         score += 2
     if extract_amount(text):
         score += 2
     return score
+
+
+def _looks_venezuela_focused(text: str) -> bool:
+    return contains_any(text, VZLA_TERMS)
+
+
+def _entry_date_iso(entry: dict) -> str:
+    value = norm(entry.get("published") or entry.get("updated") or "")
+    if not value:
+        return ""
+    for fmt in ("%Y-%m-%d", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%S", "%a, %d %b %Y %H:%M:%S %z"):
+        try:
+            dt = datetime.datetime.strptime(value, fmt)
+            return dt.date().isoformat()
+        except ValueError:
+            continue
+    try:
+        dt = parsedate_to_datetime(value)
+        return dt.date().isoformat()
+    except Exception:
+        return ""
 
 
 def split_sentences(value: str):
@@ -192,13 +236,94 @@ def _items_from_latest(payload: dict) -> list[dict]:
     return []
 
 
-def main() -> None:
-    with open(LATEST_JSON, "r", encoding="utf-8") as fh:
-        data = json.load(fh)
+def _load_feed_urls(path: str = FEEDS_PATH) -> list[str]:
+    if not os.path.exists(path):
+        return []
+    urls: list[str] = []
+    with open(path, "r", encoding="utf-8") as fh:
+        for raw_line in fh:
+            line = raw_line.strip()
+            if not line or line.startswith("#"):
+                continue
+            if " - http" in line:
+                url = line.split(" - ", 1)[1].strip()
+            else:
+                url = line
+            if url.startswith("http"):
+                urls.append(url)
+    return urls
 
-    items = _items_from_latest(data)
+
+def _extract_feed_items(urls: list[str]) -> list[dict]:
+    items: list[dict] = []
+    for url in urls:
+        try:
+            feed = feedparser.parse(url, request_headers={"User-Agent": "VZLAnews/1.0"})
+        except Exception:
+            continue
+
+        feed_title = norm((feed.get("feed") or {}).get("title", "")) if isinstance(feed, dict) else ""
+        for entry in getattr(feed, "entries", []) or []:
+            title = norm(entry.get("title", ""))
+            link = norm(entry.get("link", ""))
+            if not title or not link:
+                continue
+
+            summary = norm(entry.get("summary", "") or entry.get("description", ""))
+            content_value = ""
+            content = entry.get("content", []) or []
+            if isinstance(content, list) and content:
+                first = content[0] or {}
+                if isinstance(first, dict):
+                    content_value = norm(first.get("value", ""))
+
+            tags = []
+            raw_tags = entry.get("tags", []) or []
+            if isinstance(raw_tags, list):
+                for tag in raw_tags:
+                    if isinstance(tag, dict):
+                        term = norm(tag.get("term", ""))
+                        if term:
+                            tags.append(term)
+
+            source = entry.get("source") or {}
+            publisher = ""
+            if isinstance(source, dict):
+                publisher = norm(source.get("title", ""))
+            if not publisher:
+                publisher = feed_title or norm(urlparse(url).netloc)
+
+            items.append(
+                {
+                    "id": norm(entry.get("id", "") or entry.get("guid", "") or link),
+                    "title": title,
+                    "url": link,
+                    "publisher": publisher,
+                    "publishedAt": _entry_date_iso(entry),
+                    "preview": summary,
+                    "description": summary,
+                    "snippet": content_value,
+                    "tags": tags,
+                    "categories": tags,
+                    "sector": "",
+                }
+            )
+    return items
+
+
+def main() -> None:
+    items: list[dict] = []
+    if os.path.exists(LATEST_JSON):
+        with open(LATEST_JSON, "r", encoding="utf-8") as fh:
+            data = json.load(fh)
+        items.extend(_items_from_latest(data))
+
+    feed_urls = _load_feed_urls(FEEDS_PATH)
+    items.extend(_extract_feed_items(feed_urls))
+
     opportunities = []
     today = datetime.datetime.now(datetime.timezone.utc).date()
+    seen: set[str] = set()
 
     for item in items:
         hay = " ".join([
@@ -214,6 +339,8 @@ def main() -> None:
 
         if not hay or len(hay) < 60:
             continue
+        if not _looks_venezuela_focused(hay):
+            continue
         if not contains_any(hay, OPP_TERMS):
             continue
 
@@ -224,8 +351,15 @@ def main() -> None:
             continue
 
         deadline = extract_deadline(hay)
-        if deadline and is_expired_deadline(deadline, today):
+        if not deadline:
             continue
+        if is_expired_deadline(deadline, today):
+            continue
+
+        dedupe_key = f"{norm(item.get('url', '')).lower()}|{norm(item.get('title', '')).lower()}"
+        if dedupe_key in seen:
+            continue
+        seen.add(dedupe_key)
 
         opportunities.append({
             "id": item.get("id"),
@@ -240,7 +374,15 @@ def main() -> None:
             "summary": make_summary(item, hay),
         })
 
-    opportunities.sort(key=lambda opp: (-int(opp.get("score", 0)), str(opp.get("publishedAt", ""))))
+    opportunities.sort(
+        key=lambda opp: (
+            int(opp.get("score", 0)),
+            0 if norm(opp.get("deadline", "")) else 1,
+            str(opp.get("deadline", "")),
+            str(opp.get("publishedAt", "")),
+        ),
+        reverse=True,
+    )
 
     output = {
         "asOf": datetime.datetime.now(datetime.timezone.utc).isoformat(),
