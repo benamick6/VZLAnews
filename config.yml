@@ -29,7 +29,7 @@ article_extraction:
 
 selection:
   min_per_section: 3
-  max_per_section: 3
+  max_per_section: 5
 
 brief_sections:
   - "Extractives & Mining"

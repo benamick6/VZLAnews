@@ -1167,8 +1167,6 @@ def _detect_content_language(*texts: str) -> str:
     if not combined:
         return "other"
     low = combined.lower()
-    if re.search(r"[áéíóúñ¿¡]", low):
-        return "es"
 
     spanish_markers = {
         " de ", " la ", " el ", " y ", " en ", " para ", " por ", " con ", " una ", " del ",
@@ -1180,6 +1178,12 @@ def _detect_content_language(*texts: str) -> str:
     }
     score_es = sum(1 for marker in spanish_markers if marker in f" {low} ")
     score_en = sum(1 for marker in english_markers if marker in f" {low} ")
+
+    # Accented Spanish characters are a helpful signal, but not definitive on their own
+    # since names and quotes can appear in otherwise English text.
+    accent_hits = len(re.findall(r"[áéíóúñ¿¡]", low))
+    if accent_hits >= 2:
+        score_es += 1
 
     words = re.findall(r"[a-záéíóúñ]+", low)
     if words:

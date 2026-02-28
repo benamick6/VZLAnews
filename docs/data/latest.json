@@ -1,14 +1,14 @@
 {
-  "runAt": "2026-02-28T23:46:40.652193+00:00",
-  "totalItems": 31,
+  "runAt": "2026-02-28T23:51:19.290844+00:00",
+  "totalItems": 30,
   "sectors": [
     {
       "name": "Extractives & Mining",
       "synth": {
         "bullets": [
           "Officials reported An illustration of oil rigs over a background of a Venezuelan flag.",
-          "Field updates show Title: Petr\u00f3leos de Venezuela S.A.",
-          "Separate sources indicate Edit Article Add New Article Close You have permission to edit this article."
+          "Field updates show Edit Article Add New Article Close You have permission to edit this article.",
+          "Separate sources indicate Petrolero Skipper y 2 millones de barriles vinculados a Ir\u00e1n pasan a proceso legal Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n\u2026"
         ],
         "drivers": [
           "Oil production/export",
@@ -180,69 +180,6 @@
           "icons": [
             "ENERGY",
             "TRADE"
-          ]
-        },
-        {
-          "id": "22266cca15b9",
-          "title": "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment ...",
-          "url": "https://www.zawya.com/en/press-release/africa-press-releases/petroleos-de-venezuela-sa-pdvsa-venezuelas-hydrocarbon-ministry-african-energy-chamber-aec-sign-memorandum-of-m3qxof1h",
-          "publisher": "zawya.com",
-          "publishedAt": "2026-02-27",
-          "sourcePublishedAt": "2026-02-27",
-          "sourceTier": "Tier 3",
-          "sector": "Extractives & Mining",
-          "snippet": "Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration ...",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Oil production/export"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 3,
-          "risk_score": 45,
-          "entities": [
-            "PDVSA"
-          ],
-          "tags": [
-            "Energy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Detentions and releases",
-                "value": "59",
-                "context": "Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026",
-                "score": 3
-              },
-              {
-                "label": "Detentions and releases",
-                "value": "18",
-                "context": "Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026",
-                "score": 3
-              }
-            ]
-          },
-          "preview": "Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration ...",
-          "preview_source": "fallback_summary",
-          "language": "es",
-          "insight2": {
-            "s1": "Title: Petr\u00f3leos de Venezuela S.A",
-            "s2": "(PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in extractives & mining, with 59 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026",
-              "Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026"
-            ]
-          },
-          "icons": [
-            "ENERGY"
           ]
         },
         {
@@ -753,7 +690,7 @@
           },
           "preview": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...",
           "preview_source": "fallback_summary",
-          "language": "es",
+          "language": "en",
           "insight2": {
             "s1": "They were placed on your computer when you launched this website",
             "s2": "You can change your cookie settings through your browser",
