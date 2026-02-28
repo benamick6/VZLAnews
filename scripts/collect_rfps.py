@@ -1420,6 +1420,7 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         ".story-title { margin: 0 0 10px; font-size: 18px; line-height: 1.35; font-weight: 700; }",
         ".story-card.featured .story-title { font-size: 20px; }",
         ".story-summary { margin: 0 0 10px; font-size: 16px; line-height: 1.55; color: #111827; }",
+        ".story-one-liner { margin: 0 0 6px; color: #4b5563; font-size: 13px; line-height: 1.45; }",
         ".story-meta { margin: 0; color: #6b7280; font-size: 13px; line-height: 1.4; }",
         ".story-tags { margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }",
         ".story-tag { border: 1px solid #d1d5db; border-radius: 999px; padding: 2px 8px; font-size: 12px; color: #374151; }",
@@ -1427,6 +1428,8 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         ".story-why { margin: 8px 0 0; color: #374151; font-size: 14px; line-height: 1.5; }",
         ".story-actions { margin-top: 10px; }",
         ".story-actions button { font-size: 12px; border: 1px solid #d1d5db; border-radius: 6px; background: #fff; padding: 4px 8px; cursor: pointer; }",
+        ".tone-badges { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }",
+        ".tone-badge { font-size: 11px; border: 1px solid #d1d5db; border-radius: 999px; padding: 2px 7px; color: #374151; }",
         ".method-box { margin-top: 20px; border-top: 1px solid #e5e7eb; padding-top: 12px; }",
         ".method-box details { margin-top: 8px; }",
         ".transparency-note { margin-top: 36px; color: #6b7280; font-size: 14px; line-height: 1.5; border-top: 1px solid #e5e7eb; padding-top: 16px; }",
@@ -1648,6 +1651,12 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
             citation = f'{title} — {source} ({pub}). {link}'.strip()
             tag_text = ",".join(tags + events + entities).lower()
             feature_class = " featured" if idx == 0 else ""
+            item_id = _entry_id(e)
+            item_date_iso = ""
+            if e.get("published") is not None and hasattr(e.get("published"), "strftime"):
+                item_date_iso = e.get("published").strftime("%Y-%m-%d")
+            flag_risk = "1" if "🔴 Risk" in detect_flags(e, cfg) else "0"
+            flag_opp = "1" if "🟢 Opportunity" in detect_flags(e, cfg) else "0"
 
             lines.append(
                 f'<article class="story-card{feature_class}" '
@@ -1659,6 +1668,17 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
                 f'data-risk="{risk_score}" '
                 f'data-entity="{escape((entities[0] if entities else ""))}" '
                 f'data-date="{escape(pub)}" '
+                f'data-item-id="{escape(item_id)}" '
+                f'data-item-url="{escape(link)}" '
+                f'data-item-title="{escape(title)}" '
+                f'data-item-sector="{escape(section)}" '
+                f'data-item-snippet="{escape(summary_sentence)}" '
+                f'data-item-why="{escape(why)}" '
+                f'data-item-dateiso="{escape(item_date_iso)}" '
+                f'data-item-publisher="{escape(source)}" '
+                f'data-item-confidence="{escape(confidence_label)}" '
+                f'data-item-flag-risk="{flag_risk}" '
+                f'data-item-flag-opportunity="{flag_opp}" '
                 f'data-search="{escape((title + " " + summary_sentence + " " + tag_text).lower())}">'
             )
             lines.append('<h4 class="story-title">')
@@ -1667,6 +1687,7 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
             else:
                 lines.append(escape(title))
             lines.append("</h4>")
+            lines.append('<p class="story-one-liner" data-role="one-liner"></p>')
             lines.append(f'<p class="story-summary">{escape(summary_sentence)}</p>')
             lines.append(
                 f'<p class="story-meta">{escape(source)} · {escape(pub)} · Retrieved {escape(run_at or "N/A")} '
@@ -1681,6 +1702,7 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
                     lines.append(f'<span class="story-tag">{escape(event)}</span>')
                 lines.append('</div>')
             lines.append(f'<p class="story-why">{escape(why)}</p>')
+            lines.append('<div class="tone-badges" data-role="tone-badges"></div>')
             lines.append(
                 f'<div class="story-actions"><button class="copy-citation" data-citation="{escape(citation)}">Copy citation</button></div>'
             )
@@ -1698,6 +1720,7 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         '</section>',
         '<footer class="transparency-note">This page aggregates publicly available reporting from Venezuelan and international sources. Summaries are descriptive and non-partisan. Updated regularly.</footer>',
         "</div>",
+        '<script src="{{ \'/docs/assets/nlg.js\' | relative_url }}"></script>',
         "<script>",
         "(function () {",
         "  const cards = Array.from(document.querySelectorAll('.story-card'));",
@@ -1759,6 +1782,7 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         "",
         "  [searchInput, sectorFilter, qualityFilter, confidenceFilter, eventFilter, sentimentFilter, riskFilter, entityFilter, dateFilter].forEach((el) => el && el.addEventListener('input', applyFilters));",
         "  [sectorFilter, qualityFilter, confidenceFilter, eventFilter, sentimentFilter, riskFilter, entityFilter, dateFilter].forEach((el) => el && el.addEventListener('change', applyFilters));",
+        "  if (window.enhanceNlgCards) { window.enhanceNlgCards(); }",
         "  applyFilters();",
         "",
         "  document.querySelectorAll('.copy-citation').forEach((button) => {",
