@@ -201,12 +201,24 @@
     }
 
     function renderMacros(macros) {
+        const indicators = Array.isArray(macros && macros.indicators) ? macros.indicators : [];
+        const hasMeaningfulData = indicators.some((metric) => {
+            const value = String((metric && metric.value) || '').trim().toLowerCase();
+            const trend = String((metric && metric.trend) || '').trim().toLowerCase();
+            if (!value) return false;
+            if (value === 'n/a' || value === 'na' || value === '—' || value === '-') return false;
+            if (trend.includes('pending')) return false;
+            return true;
+        });
+
+        if (!hasMeaningfulData) return '';
+
         return `
             <section class="macro-block">
                 <h3>Macro Indicators</h3>
                 <p class="macro-note">Daily refresh at end-of-report for context and trend checks.</p>
                 <div class="macro-grid">
-                    ${(macros.indicators || []).map((m) => `
+                    ${indicators.map((m) => `
                         <article class="macro-card">
                             <h4>${esc(m.name)}</h4>
                             <p class="macro-value">${esc(m.value)}</p>
