@@ -1,12 +1,12 @@
 {
-  "run_at": "2026-02-28T20:46:12.588041+00:00",
-  "fetched": 1623,
-  "filtered": 95,
-  "deduplicated": 86,
+  "run_at": "2026-02-28T20:50:21.415344+00:00",
+  "fetched": 1599,
+  "filtered": 94,
+  "deduplicated": 85,
   "selected": 35,
-  "diff_new": 15,
+  "diff_new": 16,
   "diff_updated": 3,
-  "diff_dropped": 0,
+  "diff_dropped": 1,
   "trend_summary": {
     "freq_7d": 35.0,
     "intensity_30d": "\u2192 Stable",
@@ -119,16 +119,16 @@
     },
     "Health": {
       "health": 7,
-      "summary": "This week in health, signal flow is concentrated around Humanitarian crisis, Political transition, Security. Risk pressure is mixed with an average score of 28/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in health, signal flow is concentrated around Political transition, Security. Risk pressure is mixed with an average score of 30/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
+        "Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov)",
         "The road to self-sufficiency for Venezuelan communities - nrc.no",
-        "Venezuela - European Civil Protection and Humanitarian Aid Operations",
         "Venezuela's health system: when force meets fragility"
       ],
       "opportunities": [
         "The road to self-sufficiency for Venezuelan communities - nrc.no",
         "Venezuela's health system: when force meets fragility",
-        "Venezuela - European Civil Protection and Humanitarian Aid Operations"
+        "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -181,7 +181,7 @@
       "signals_count": 35,
       "sanctions_count": 3,
       "oil_count": 19,
-      "risk_avg": 32.83
+      "risk_avg": 32.97
     }
   ],
   "output_file": "/workspaces/VZLAnews/docs/index.md",

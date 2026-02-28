@@ -60,6 +60,16 @@ def _looks_like_noise(paragraph: str) -> bool:
         return True
     if "skip to content" in low:
         return True
+    if "wrong site?" in low or "go back hide about us" in low:
+        return True
+    if "main topics" in low or "featured topics" in low:
+        return True
+    if "a lock ( ) or https://" in low:
+        return True
+    if "latest news stories from around the world" in low:
+        return True
+    if "home -" in low and low.count("home") >= 2:
+        return True
     return any(
         marker in low
         for marker in [

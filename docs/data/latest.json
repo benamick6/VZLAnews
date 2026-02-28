@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-02-28T20:46:12.588041+00:00",
+  "runAt": "2026-02-28T20:50:21.415344+00:00",
   "totalItems": 35,
   "sectors": [
     {
@@ -635,11 +635,10 @@
       "synth": {
         "bullets": [
           "Officials reported We have redirected you to a site for your country, if this was not correct, please use the link to go back.",
-          "Field updates show Venezuela - European Civil Protection and Humanitarian Aid Operations is the central development flagged in the publication.",
+          "Field updates show Here's how you know Espa\u00c3\u00b1ol Official websites use .gov A .gov website belongs to an official government organization in the United States.",
           "Separate sources indicate E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required\u2026"
         ],
         "drivers": [
-          "Humanitarian crisis",
           "Political transition",
           "Security"
         ],
@@ -704,44 +703,97 @@
           "icons": []
         },
         {
-          "id": "0c71c866c188",
-          "title": "Venezuela - European Civil Protection and Humanitarian Aid Operations",
-          "url": "https://civil-protection-humanitarian-aid.ec.europa.eu/select-language?destination=/node/1",
-          "publisher": "civil-protection-humanitarian-aid.ec.europa.eu",
+          "id": "691860c09d6b",
+          "title": "Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov)",
+          "url": "https://www.cdc.gov/",
+          "publisher": "cdc.gov",
           "publishedAt": "2026-02-06",
           "sourceTier": "Tier 3",
           "sector": "Health & Water",
-          "snippet": "DG ECHO Whenever there is a disaster or humanitarian emergency, the EU provides assistance for the affected countries and populations.",
+          "snippet": "A lock ( ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Humanitarian crisis"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
+          "event_types": [],
+          "sentiment": "Negative",
+          "materiality": 1,
+          "risk_score": 35,
           "entities": [],
-          "tags": [],
+          "tags": [
+            "Health"
+          ],
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Health signal",
+                "value": "19",
+                "context": "Slide --> Pause carousel Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu H5\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "19",
+                "context": "Topics Outbreaks About CDC Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "24",
+                "context": "leading science-based, data-driven, service organization that protects the public's health. CDC works 24/7 to protect\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "7",
+                "context": "leading science-based, data-driven, service organization that protects the public's health. CDC works 24/7 to protect\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "800",
+                "context": "English Archive CDC Archive Public Health Publications Contact Us Contact Us Call 800-232-4636 Contact CDC About CDC\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "232",
+                "context": "English Archive CDC Archive Public Health Publications Contact Us Contact Us Call 800-232-4636 Contact CDC About CDC\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "1 Million",
+                "context": "Cancer is Now the Largest in the Nation \u00e2\u0080\u008e\u00e2\u0080\u008eJAN \u00e2\u0080\u008e\u00e2\u0080\u008e30 CDC Surpasses 1 Million Voluntary Air Travel Participants in\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "19",
+                "context": "About CDC About CDC Close Search Search Featured Topics How Flu Spreads COVID-19 Treatment Cancer Screening Substance\u2026",
+                "score": 0
+              }
+            ]
           },
           "preview": "",
           "preview_source": "none",
           "insight2": {
-            "s1": "Venezuela - European Civil Protection and Humanitarian Aid Operations is the central development flagged in the publication.",
-            "s2": "The report frames this as an active shift with potential effects on operating conditions and counterpart behavior.",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in health & water.",
+            "s1": "Here's how you know Espa\u00c3\u00b1ol Official websites use .gov A .gov website belongs to an official government organization in the United States",
+            "s2": "Secure .gov websites use HTTPS A lock ( ) or https:// means you've safely connected to the .gov website",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in health & water, with 19 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
-            "evidence": []
+            "evidence": [
+              "Slide --> Pause carousel Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu H5\u2026",
+              "Topics Outbreaks About CDC Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu\u2026"
+            ]
           },
           "icons": [
-            "HUMAN"
+            "HUMAN",
+            "NEW"
           ]
         },
         {
@@ -849,7 +901,7 @@
       "synth": {
         "bullets": [
           "Officials reported Title: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News URL Source: http://www.bloomberg.com/ Markdown Content: Live [Iran Says 201\u2026",
-          "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump tells NBC News \"a large amount of leadership\" in Iran\u2026",
+          "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump tells NBC News 'a large amount of leadership' in Iran\u2026",
           "Separate sources indicate Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser\u2026"
         ],
         "drivers": [
@@ -1008,8 +1060,8 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "5",
-                "context": "Bank Reagerer etter avbrutt tale Notiser D\u00f8de personer lever videre p\u00e5 SoMe 5 timer siden Ada Louise Andreassen Meta\u2026",
+                "value": "6",
+                "context": "Bank Reagerer etter avbrutt tale Notiser D\u00f8de personer lever videre p\u00e5 SoMe 6 timer siden Ada Louise Andreassen Meta\u2026",
                 "score": 0
               },
               {
@@ -1073,20 +1125,20 @@
             "numbers": [
               {
                 "label": "Policy or market figure",
-                "value": "8m",
-                "context": "'A large number' of Iranian leaders were killed in strikes Just now 8m ago In a phone call with NBC News, Trump said \"a\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
                 "value": "15",
                 "context": "SUBSCRIBERS Protests against U.S. and Israeli strikes on Iran form in NYC 01:15 FOR SUBSCRIBERS Senior Iranian figures\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
+                "value": "12m",
+                "context": "'A large number' of Iranian leaders were killed in strikes Just now 12m ago In a phone call with NBC News, Trump said\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
                 "value": "11",
-                "context": "\"a large amount of leadership\" in Iran was killed in strikes IE 11 is not supported. For an optimal experience visit\u2026",
+                "context": "'a large amount of leadership' in Iran was killed in strikes IE 11 is not supported. For an optimal experience visit\u2026",
                 "score": 0
               },
               {
@@ -1109,8 +1161,8 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "10m",
-                "context": "strikes. Trump says military action in Iran was a 'success' Just now 10m ago In an interview with NBC News, the\u2026",
+                "value": "14m",
+                "context": "strikes. Trump says military action in Iran was a 'success' Just now 14m ago In an interview with NBC News, the\u2026",
                 "score": -3
               }
             ]
@@ -1118,13 +1170,13 @@
           "preview": "OpenAI strikes deal with Pentagon, hours after Trump cut off talks with Anthropic CEO Sam Altman announced the agreement, which comes after Pete Hegseth said he would label rival Anthropic a national security risk. In a phone call with NBC News, Trump confirmed that \"a large amount of leadership\" had been killed in Iran in today's strikes. In an interview with NBC News, the president said today's military strikes in Iran are \"already a success.\"",
           "preview_source": "trafilatura",
           "insight2": {
-            "s1": "NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump tells NBC News \"a large amount of leadership\" in Iran was killed in strikes IE 11 is not supported",
+            "s1": "NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump tells NBC News 'a large amount of leadership' in Iran was killed in strikes IE 11 is not supported",
             "s2": "For an optimal experience visit our site on another browser",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in education & workforce, with 8m as a measurable reference point for scenario tracking.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in education & workforce, with 15 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "'A large number' of Iranian leaders were killed in strikes Just now 8m ago In a phone call with NBC News, Trump said \"a\u2026",
-              "SUBSCRIBERS Protests against U.S. and Israeli strikes on Iran form in NYC 01:15 FOR SUBSCRIBERS Senior Iranian figures\u2026"
+              "SUBSCRIBERS Protests against U.S. and Israeli strikes on Iran form in NYC 01:15 FOR SUBSCRIBERS Senior Iranian figures\u2026",
+              "'A large number' of Iranian leaders were killed in strikes Just now 12m ago In a phone call with NBC News, Trump said\u2026"
             ]
           },
           "icons": [

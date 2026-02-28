@@ -795,6 +795,12 @@ def _validate_preview_text(text: str) -> str:
         "reset password",
         "wrong login information",
         "iniciar sesión",
+        "wrong site?",
+        "go back hide about us",
+        "main topics",
+        "featured topics",
+        "a lock ( ) or https://",
+        "latest news stories from around the world",
     ]):
         return ""
     if "](http" in clean.lower() or clean.count("[") >= 3:
