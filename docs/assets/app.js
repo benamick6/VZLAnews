@@ -58,6 +58,7 @@
     function renderLanguageSwitcher(activeLanguage) {
         return `
             <section class="panel language-panel">
+                <p class="language-note">Filter by original source language (not translation). English and Español show different source articles.</p>
                 <div class="language-switch" role="group" aria-label="Language filter">
                     <button class="lang-btn ${activeLanguage === 'en' ? 'active' : ''}" data-lang="en" type="button">English</button>
                     <button class="lang-btn ${activeLanguage === 'es' ? 'active' : ''}" data-lang="es" type="button">Español</button>
@@ -298,8 +299,6 @@
                     if (lang === 'en' || lang === 'es') acc[lang] += 1;
                     return acc;
                 }, { en: 0, es: 0 });
-            if (languageCounts.es > languageCounts.en) activeLanguage = 'es';
-            if (languageCounts.en === 0 && languageCounts.es > 0) activeLanguage = 'es';
 
             const render = () => {
                 const rejectedRuntime = [];

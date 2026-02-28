@@ -71,6 +71,13 @@ textarea {
     padding: 10px 14px;
 }
 
+.language-note {
+    margin: 0 0 8px;
+    color: var(--me-muted);
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
 .language-switch {
     display: flex;
     gap: 10px;
