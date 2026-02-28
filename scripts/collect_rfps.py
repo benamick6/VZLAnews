@@ -16,7 +16,8 @@ import logging
 import os
 import re
 import sys
-from html import unescape
+import csv
+from html import escape, unescape
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from urllib.parse import parse_qs, unquote, urlparse
@@ -892,6 +893,7 @@ def _descriptive_summary_for_story(
 
     feed_snippet = _entry_feed_snippet(entry, max_chars=max_chars)
     if feed_snippet:
+        entry["_summary_source"] = "feed_snippet"
         return feed_snippet
 
     for key in ("meta_description", "first_paragraph"):
@@ -902,6 +904,7 @@ def _descriptive_summary_for_story(
             min_chars=80,
         )
         if cleaned:
+            entry["_summary_source"] = key
             return cleaned
 
     base_text = (entry.get("article_text", "") or "").strip()
@@ -923,8 +926,10 @@ def _descriptive_summary_for_story(
         if _title_similarity(title, sentence) < 0.88 and not _sentence_is_noise(sentence):
             chosen = _clean_snippet(sentence, title, max_chars=max_chars, min_chars=60)
             if chosen:
+                entry["_summary_source"] = "article_text"
                 return chosen
 
+    entry["_summary_source"] = "fallback"
     return _fallback_summary(entry, section_label, story_index, max_chars)
 
 
@@ -1057,9 +1062,110 @@ def _latest_news_synthesis(entries: list[dict], cfg: dict) -> list[str]:
     ]
 
 
+def _summary_confidence_label(entry: dict) -> str:
+    source = (entry.get("_summary_source") or "").strip()
+    mapping = {
+        "feed_snippet": "High (Feed snippet)",
+        "meta_description": "Medium (Meta description)",
+        "first_paragraph": "Medium (Page paragraph)",
+        "article_text": "Low (Page extraction)",
+        "fallback": "Low (Template fallback)",
+    }
+    return mapping.get(source, "Unknown")
+
+
+def _source_quality_tier(domain: str) -> str:
+    host = (domain or "").lower().strip()
+    if not host:
+        return "Unknown"
+
+    wire = ("reuters.com", "apnews.com", "bloomberg.com")
+    ngo_multilateral = ("paho.org", "who.int", "reliefweb.int", "worldbank.org", "nrc.no")
+    major_media = ("bbc.com", "cnn.com", "nytimes.com", "wsj.com", "ft.com", "nbcnews.com")
+    local_regional = ("elpitazo.net", "efectococuyo.com", "el-nacional.com", "talcualdigital.com", "venezuelanalysis.com")
+
+    if any(host == d or host.endswith(f".{d}") for d in wire):
+        return "Wire Service"
+    if any(host == d or host.endswith(f".{d}") for d in ngo_multilateral):
+        return "NGO / Multilateral"
+    if any(host == d or host.endswith(f".{d}") for d in major_media):
+        return "Major Media"
+    if any(host == d or host.endswith(f".{d}") for d in local_regional):
+        return "Local / Regional"
+    return "Other"
+
+
+def _research_tags(entry: dict, section_label: str) -> list[str]:
+    text = _text(entry)
+    tag_terms = {
+        "Sanctions": ["sanction", "embargo", "license"],
+        "Energy": ["oil", "gas", "pdvsa", "refinery"],
+        "Elections": ["election", "vote", "ballot", "campaign"],
+        "Migration": ["migration", "migrant", "displacement", "refugee"],
+        "Health": ["health", "hospital", "outbreak", "dengue", "malaria"],
+        "Debt/FX": ["debt", "bond", "inflation", "exchange", "fx"],
+        "Infrastructure": ["infrastructure", "port", "pipeline", "transport"],
+    }
+    tags = [tag for tag, terms in tag_terms.items() if any(term in text for term in terms)]
+    if section_label == "Cross-cutting / Policy / Risk" and "Policy" not in tags:
+        tags.append("Policy")
+    return tags[:4]
+
+
+def _why_this_matters(entry: dict, cfg: dict, section_label: str) -> str:
+    flags = detect_flags(entry, cfg)
+    if "🔴 Risk" in flags:
+        return "Why this matters: this item may affect risk assumptions, compliance posture, or operational continuity planning."
+    if "🟢 Opportunity" in flags:
+        return "Why this matters: this item may signal near-term openings for partnerships, contracting, or market entry decisions."
+
+    section_map = {
+        "Extractives & Mining": "Why this matters: it informs outlooks for production, export channels, and energy-related policy direction.",
+        "Food & Agriculture": "Why this matters: it helps assess food-system resilience, input constraints, and trade-linked supply risks.",
+        "Health & Water": "Why this matters: it can shift humanitarian priorities and infrastructure reliability assumptions.",
+        "Education & Workforce": "Why this matters: it indicates labor availability, social stability, and long-term human-capital trends.",
+        "Finance & Investment": "Why this matters: it influences macro risk, financing conditions, and investor confidence signals.",
+        "Cross-cutting / Policy / Risk": "Why this matters: it can alter regulatory scenarios, stakeholder positions, and execution risk.",
+    }
+    return section_map.get(
+        section_label,
+        "Why this matters: it provides context for policy, risk, and execution planning.",
+    )
+
+
+def _entry_id(entry: dict) -> str:
+    link = (entry.get("link") or "").strip()
+    if link:
+        return f"url::{link}"
+    title = _title_key(entry.get("title", ""))
+    return f"title::{title}"
+
+
+def _serialize_entry(entry: dict, section_label: str) -> dict:
+    tags = _research_tags(entry, section_label)
+    return {
+        "id": _entry_id(entry),
+        "title": entry.get("title", ""),
+        "url": entry.get("link", ""),
+        "source": _fmt_source(entry),
+        "source_quality": _source_quality_tier(entry.get("source_domain", "")),
+        "published": _fmt_date(entry.get("published")),
+        "retrieved": "",
+        "sector": section_label,
+        "summary": entry.get("_summary_text", ""),
+        "summary_confidence": _summary_confidence_label(entry),
+        "tags": tags,
+    }
+
+
 def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
     country_name = cfg.get("country", {}).get("name", "Venezuela")
     summary_max_chars = min(280, int(cfg.get("summary_max_chars", 280)))
+    run_at = (run_meta.get("run_at", "") or "").replace("T", " ").replace("+00:00", " UTC")
+    diff_new = int(run_meta.get("diff_new", 0) or 0)
+    diff_updated = int(run_meta.get("diff_updated", 0) or 0)
+    diff_dropped = int(run_meta.get("diff_dropped", 0) or 0)
+    executive_brief = _latest_news_synthesis(entries, cfg)[0]
     section_descriptions = {
         "Extractives & Mining": "Oil, gas, mining activity, concessions, production shifts, and energy security developments.",
         "Food & Agriculture": "Food supply, agricultural output, imports, and nutrition-related policy and market developments.",
@@ -1072,9 +1178,19 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
     lines = [
         f"# {country_name} News Intelligence",
         "",
+        f"> Last refreshed: **{run_at or 'N/A'}**",
+        "",
         "<style>",
         ".vzla-page { max-width: 920px; margin: 0 auto; }",
         ".vzla-section { margin-top: 32px; }",
+        ".vzla-controls { display: grid; gap: 10px; margin: 14px 0 6px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }",
+        ".vzla-controls input, .vzla-controls select { width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; }",
+        ".vzla-toolbar { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }",
+        ".vzla-toolbar a { border: 1px solid #d1d5db; border-radius: 6px; padding: 6px 10px; font-size: 13px; text-decoration: none; }",
+        ".jump-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }",
+        ".jump-links a { font-size: 13px; color: #1f2937; text-decoration: none; border: 1px solid #d1d5db; border-radius: 999px; padding: 4px 10px; }",
+        ".exec-brief { border: 1px solid #e5e7eb; background: #f9fafb; border-radius: 8px; padding: 14px; font-size: 15px; line-height: 1.6; }",
+        ".diff-note { margin-top: 10px; color: #374151; font-size: 14px; }",
         ".latest-updates-list { list-style: none; margin: 0; padding: 0; }",
         ".latest-updates-item { padding: 10px 0; border-bottom: 1px solid #e5e7eb; }",
         ".latest-updates-item:last-child { border-bottom: none; }",
@@ -1083,11 +1199,20 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         ".sector-description { margin: 0 0 20px; color: #4b5563; font-size: 16px; line-height: 1.5; }",
         ".sector-cards { display: block; }",
         ".story-card { border: 1px solid #e5e7eb; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08); border-radius: 8px; padding: 18px; margin-bottom: 22px; }",
+        ".story-card.hidden { display: none; }",
         ".story-card:last-child { margin-bottom: 0; }",
         ".story-title { margin: 0 0 10px; font-size: 18px; line-height: 1.35; font-weight: 700; }",
         ".story-card.featured .story-title { font-size: 20px; }",
         ".story-summary { margin: 0 0 10px; font-size: 16px; line-height: 1.55; color: #111827; }",
         ".story-meta { margin: 0; color: #6b7280; font-size: 13px; line-height: 1.4; }",
+        ".story-tags { margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }",
+        ".story-tag { border: 1px solid #d1d5db; border-radius: 999px; padding: 2px 8px; font-size: 12px; color: #374151; }",
+        ".story-badge { font-size: 12px; border-radius: 999px; padding: 2px 8px; border: 1px solid #d1d5db; margin-left: 6px; }",
+        ".story-why { margin: 8px 0 0; color: #374151; font-size: 14px; line-height: 1.5; }",
+        ".story-actions { margin-top: 10px; }",
+        ".story-actions button { font-size: 12px; border: 1px solid #d1d5db; border-radius: 6px; background: #fff; padding: 4px 8px; cursor: pointer; }",
+        ".method-box { margin-top: 20px; border-top: 1px solid #e5e7eb; padding-top: 12px; }",
+        ".method-box details { margin-top: 8px; }",
         ".transparency-note { margin-top: 36px; color: #6b7280; font-size: 14px; line-height: 1.5; border-top: 1px solid #e5e7eb; padding-top: 16px; }",
         "@media (max-width: 720px) {",
         "  .vzla-page { padding: 0 12px; }",
@@ -1100,6 +1225,29 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         "</style>",
         "",
         "<div class=\"vzla-page\">",
+        "",
+        "## Executive Brief",
+        "",
+        f'<section class="vzla-section"><div class="exec-brief">{escape(executive_brief)}</div>',
+        f'<p class="diff-note">Run-to-run diff: <strong>{diff_new}</strong> new · <strong>{diff_updated}</strong> updated · <strong>{diff_dropped}</strong> dropped since prior snapshot.</p></section>',
+        "",
+        "## Research Tools",
+        "",
+        '<section class="vzla-section">',
+        '<div class="vzla-controls">',
+        '<input id="searchInput" placeholder="Search title, snippet, or tags" />',
+        '<select id="sectorFilter"><option value="all">All sectors</option></select>',
+        '<select id="qualityFilter"><option value="all">All source quality tiers</option><option>Wire Service</option><option>Major Media</option><option>NGO / Multilateral</option><option>Local / Regional</option><option>Other</option><option>Unknown</option></select>',
+        '<select id="confidenceFilter"><option value="all">All snippet confidence</option><option>High (Feed snippet)</option><option>Medium (Meta description)</option><option>Medium (Page paragraph)</option><option>Low (Page extraction)</option><option>Low (Template fallback)</option></select>',
+        '<select id="dateFilter"><option value="all">All dates</option><option value="7">Last 7 days</option><option value="30">Last 30 days</option></select>',
+        '</div>',
+        '<div class="vzla-toolbar">',
+        '<a href="{{ \'/data/latest_stories.json\' | relative_url }}" download>Download JSON</a>',
+        '<a href="{{ \'/data/latest_stories.csv\' | relative_url }}" download>Download CSV</a>',
+        '<a href="#methodology">Methodology</a>',
+        '</div>',
+        '<div class="jump-links" id="jumpLinks"></div>',
+        '</section>',
         "",
         "## Latest Updates",
         "",
@@ -1146,7 +1294,8 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
 
     for section in section_order:
         section_entries = grouped.get(section, [])
-        lines.append('<section class="vzla-section">')
+        section_id = re.sub(r"[^a-z0-9]+", "-", section.lower()).strip("-")
+        lines.append(f'<section class="vzla-section" id="{section_id}" data-sector-header="{escape(section)}">')
         lines.append(f"### {section}")
         lines.append("")
         lines.append(
@@ -1174,17 +1323,44 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
                 section_label=section,
                 story_index=idx,
             )
+            e["_summary_text"] = summary_sentence
+            confidence_label = _summary_confidence_label(e)
+            quality_tier = _source_quality_tier(e.get("source_domain", ""))
+            tags = _research_tags(e, section)
+            why = _why_this_matters(e, cfg, section)
+            citation = f'{title} — {source} ({pub}). {link}'.strip()
+            tag_text = ",".join(tags).lower()
             feature_class = " featured" if idx == 0 else ""
 
-            lines.append(f'<article class="story-card{feature_class}">')
+            lines.append(
+                f'<article class="story-card{feature_class}" '
+                f'data-sector="{escape(section)}" '
+                f'data-quality="{escape(quality_tier)}" '
+                f'data-confidence="{escape(confidence_label)}" '
+                f'data-date="{escape(pub)}" '
+                f'data-search="{escape((title + " " + summary_sentence + " " + tag_text).lower())}">'
+            )
             lines.append('<h4 class="story-title">')
             if link:
-                lines.append(f'<a href="{link}">{title}</a>')
+                lines.append(f'<a href="{link}">{escape(title)}</a>')
             else:
-                lines.append(title)
+                lines.append(escape(title))
             lines.append("</h4>")
-            lines.append(f'<p class="story-summary">{summary_sentence}</p>')
-            lines.append(f'<p class="story-meta">{source} · {pub}</p>')
+            lines.append(f'<p class="story-summary">{escape(summary_sentence)}</p>')
+            lines.append(
+                f'<p class="story-meta">{escape(source)} · {escape(pub)} · Retrieved {escape(run_at or "N/A")} '
+                f'<span class="story-badge">{escape(quality_tier)}</span>'
+                f'<span class="story-badge">{escape(confidence_label)}</span></p>'
+            )
+            if tags:
+                lines.append('<div class="story-tags">')
+                for tag in tags:
+                    lines.append(f'<span class="story-tag">{escape(tag)}</span>')
+                lines.append('</div>')
+            lines.append(f'<p class="story-why">{escape(why)}</p>')
+            lines.append(
+                f'<div class="story-actions"><button class="copy-citation" data-citation="{escape(citation)}">Copy citation</button></div>'
+            )
             lines.append("</article>")
 
         lines.append("</div>")
@@ -1192,8 +1368,77 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         lines.append("")
 
     lines += [
+        '<section class="vzla-section method-box" id="methodology">',
+        '<h3>Methodology & Limitations</h3>',
+        '<details><summary>Methodology</summary><p>Ranking combines country/sector relevance, business signals, recency, and source weighting. Snippets prioritize feed-provided text, then page metadata, then first paragraph extraction, then fallback phrasing. Duplicate control uses URL and title similarity checks.</p></details>',
+        '<details><summary>Known limitations</summary><p>Some sources are paywalled, throttled, or inaccessible from automated environments; those items may rely on feed snippets or fallback text. Publication dates can vary by feed timezone formatting. This page is a research triage tool and should be paired with source-level verification.</p></details>',
+        '</section>',
         '<footer class="transparency-note">This page aggregates publicly available reporting from Venezuelan and international sources. Summaries are descriptive and non-partisan. Updated regularly.</footer>',
         "</div>",
+        "<script>",
+        "(function () {",
+        "  const cards = Array.from(document.querySelectorAll('.story-card'));",
+        "  const searchInput = document.getElementById('searchInput');",
+        "  const sectorFilter = document.getElementById('sectorFilter');",
+        "  const qualityFilter = document.getElementById('qualityFilter');",
+        "  const confidenceFilter = document.getElementById('confidenceFilter');",
+        "  const dateFilter = document.getElementById('dateFilter');",
+        "  const jumpLinks = document.getElementById('jumpLinks');",
+        "",
+        "  const sectorNames = [...new Set(cards.map((c) => c.dataset.sector).filter(Boolean))];",
+        "  sectorNames.forEach((name) => {",
+        "    const option = document.createElement('option');",
+        "    option.value = name; option.textContent = name; sectorFilter.appendChild(option);",
+        "",
+        "    const id = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');",
+        "    const link = document.createElement('a');",
+        "    link.href = '#' + id; link.textContent = name; jumpLinks.appendChild(link);",
+        "  });",
+        "",
+        "  function daysSince(dateStr) {",
+        "    if (!dateStr || dateStr === 'N/A') return null;",
+        "    const parsed = new Date(dateStr + 'T00:00:00Z');",
+        "    if (Number.isNaN(parsed.getTime())) return null;",
+        "    return Math.floor((Date.now() - parsed.getTime()) / 86400000);",
+        "  }",
+        "",
+        "  function applyFilters() {",
+        "    const q = (searchInput.value || '').toLowerCase().trim();",
+        "    const sector = sectorFilter.value;",
+        "    const quality = qualityFilter.value;",
+        "    const confidence = confidenceFilter.value;",
+        "    const daysWindow = dateFilter.value === 'all' ? null : Number(dateFilter.value);",
+        "",
+        "    cards.forEach((card) => {",
+        "      const text = card.dataset.search || '';",
+        "      const sectorMatch = sector === 'all' || card.dataset.sector === sector;",
+        "      const qualityMatch = quality === 'all' || card.dataset.quality === quality;",
+        "      const confidenceMatch = confidence === 'all' || card.dataset.confidence === confidence;",
+        "      const days = daysSince(card.dataset.date);",
+        "      const dateMatch = daysWindow === null || (days !== null && days <= daysWindow);",
+        "      const searchMatch = !q || text.includes(q);",
+        "      card.classList.toggle('hidden', !(sectorMatch && qualityMatch && confidenceMatch && dateMatch && searchMatch));",
+        "    });",
+        "  }",
+        "",
+        "  [searchInput, sectorFilter, qualityFilter, confidenceFilter, dateFilter].forEach((el) => el && el.addEventListener('input', applyFilters));",
+        "  [sectorFilter, qualityFilter, confidenceFilter, dateFilter].forEach((el) => el && el.addEventListener('change', applyFilters));",
+        "  applyFilters();",
+        "",
+        "  document.querySelectorAll('.copy-citation').forEach((button) => {",
+        "    button.addEventListener('click', async () => {",
+        "      const text = button.getAttribute('data-citation') || '';",
+        "      try {",
+        "        await navigator.clipboard.writeText(text);",
+        "        const old = button.textContent; button.textContent = 'Copied';",
+        "        setTimeout(() => { button.textContent = old; }, 1200);",
+        "      } catch (_) {",
+        "        button.textContent = 'Copy failed';",
+        "      }",
+        "    });",
+        "  });",
+        "})();",
+        "</script>",
         "",
     ]
 
@@ -1235,20 +1480,58 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     selected_count = len(top)
     logger.info("Selected top %d entries", selected_count)
 
+    os.makedirs(DOCS_DIR, exist_ok=True)
+    os.makedirs(DATA_DIR, exist_ok=True)
+
+    latest_snapshot_path = os.path.join(DATA_DIR, "latest_stories.json")
+    latest_csv_path = os.path.join(DATA_DIR, "latest_stories.csv")
+
+    previous_snapshot: list[dict] = []
+    if os.path.exists(latest_snapshot_path):
+        try:
+            with open(latest_snapshot_path, "r", encoding="utf-8") as fh:
+                loaded = json.load(fh)
+                if isinstance(loaded, list):
+                    previous_snapshot = loaded
+        except (json.JSONDecodeError, OSError):
+            previous_snapshot = []
+
+    previous_map = {
+        str(item.get("id", "")): item
+        for item in previous_snapshot
+        if isinstance(item, dict) and item.get("id")
+    }
+    current_ids = {_entry_id(entry) for entry in top}
+    if not previous_map:
+        diff_new = 0
+        diff_updated = 0
+        diff_dropped = 0
+    else:
+        diff_new = 0
+        diff_updated = 0
+        for entry in top:
+            entry_id = _entry_id(entry)
+            prev = previous_map.get(entry_id)
+            if prev is None:
+                diff_new += 1
+            elif str(prev.get("title", "")) != str(entry.get("title", "")):
+                diff_updated += 1
+        diff_dropped = len([entry_id for entry_id in previous_map if entry_id not in current_ids])
+
     run_meta = {
         "run_at": now.isoformat(),
         "fetched": fetched_count,
         "filtered": filtered_count,
         "deduplicated": deduped_count,
         "selected": selected_count,
+        "diff_new": diff_new,
+        "diff_updated": diff_updated,
+        "diff_dropped": diff_dropped,
         "output_file": OUTPUT_PATH,
         "metadata_file": METADATA_PATH,
     }
 
     markdown = build_markdown(top, cfg, run_meta)
-
-    os.makedirs(DOCS_DIR, exist_ok=True)
-    os.makedirs(DATA_DIR, exist_ok=True)
 
     # Idempotency: only write if content changed
     existing_md = ""
@@ -1266,6 +1549,64 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     with open(METADATA_PATH, "w", encoding="utf-8") as fh:
         json.dump(run_meta, fh, indent=2, default=str)
     logger.info("Wrote %s", METADATA_PATH)
+
+    section_order = cfg.get("brief_sections", [])
+    grouped: dict[str, list[dict]] = {s: [] for s in section_order}
+    grouped["Cross-cutting / Policy / Risk"] = grouped.get("Cross-cutting / Policy / Risk", [])
+    for entry in top:
+        section = detect_sector_label(entry, cfg)
+        grouped.setdefault(section, []).append(entry)
+
+    export_rows: list[dict] = []
+    for section in section_order:
+        top_three = _sort_entries_for_sector(grouped.get(section, []))[:3]
+        for idx, entry in enumerate(top_three):
+            summary_text = _compact_summary(
+                entry,
+                cfg,
+                max_chars=min(280, int(cfg.get("summary_max_chars", 280))),
+                section_label=section,
+                story_index=idx,
+            )
+            entry["_summary_text"] = summary_text
+            row = _serialize_entry(entry, section)
+            row["retrieved"] = now.strftime("%Y-%m-%d %H:%M UTC")
+            export_rows.append(row)
+
+    with open(latest_snapshot_path, "w", encoding="utf-8") as fh:
+        json.dump(export_rows, fh, indent=2)
+    logger.info("Wrote %s", latest_snapshot_path)
+
+    with open(latest_csv_path, "w", encoding="utf-8", newline="") as fh:
+        writer = csv.writer(fh)
+        writer.writerow([
+            "id",
+            "title",
+            "url",
+            "source",
+            "source_quality",
+            "published",
+            "retrieved",
+            "sector",
+            "summary",
+            "summary_confidence",
+            "tags",
+        ])
+        for row in export_rows:
+            writer.writerow([
+                row.get("id", ""),
+                row.get("title", ""),
+                row.get("url", ""),
+                row.get("source", ""),
+                row.get("source_quality", ""),
+                row.get("published", ""),
+                row.get("retrieved", ""),
+                row.get("sector", ""),
+                row.get("summary", ""),
+                row.get("summary_confidence", ""),
+                "; ".join(row.get("tags", [])),
+            ])
+    logger.info("Wrote %s", latest_csv_path)
 
 
 if __name__ == "__main__":

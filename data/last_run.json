@@ -1,9 +1,12 @@
 {
-  "run_at": "2026-02-24T17:18:34.882093+00:00",
-  "fetched": 1652,
-  "filtered": 99,
-  "deduplicated": 97,
+  "run_at": "2026-02-28T18:21:33.087626+00:00",
+  "fetched": 1614,
+  "filtered": 95,
+  "deduplicated": 86,
   "selected": 35,
+  "diff_new": 0,
+  "diff_updated": 0,
+  "diff_dropped": 0,
   "output_file": "/workspaces/VZLAnews/docs/index.md",
   "metadata_file": "/workspaces/VZLAnews/data/last_run.json"
 }
