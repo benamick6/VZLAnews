@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-27 18:54 UTC**
+> Last updated: **2026-02-28 02:26 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,35 +8,35 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Reuters: Washington asume manejo directo de los ingresos petroleros de Venezuela](https://bitlysdowssl-aws.com/2026/02/reuters-washington-asume-manejo-directo-de-los-ingresos-petroleros-de-venezuela/) — Fri, 27 Feb 2026 18:29:02 +0000
-- [Bill Clinton declara ante el Congreso de EE UU que no sabía de los delitos de Epstein](https://bitlysdowssl-aws.com/2026/02/bill-clinton-declara-ante-el-congreso-de-ee-uu-que-no-sabia-de-los-delitos-de-epstein/) — Fri, 27 Feb 2026 18:05:36 +0000
-- [Freddy Superlano recibe oficialmente su libertad](https://bitlysdowssl-aws.com/2026/02/freddy-superlano-recibe-oficialmente-su-libertad/) — Fri, 27 Feb 2026 18:00:58 +0000
-- [OVCS registra más de 20 protestas en Venezuela: liberación de presos políticos y ajuste salarial son las principales exigencias](https://bitlysdowssl-aws.com/2026/02/ovcs-registra-mas-de-20-protestas-en-venezuela-liberacion-de-presos-politicos-y-ajuste-salarial-son-las-principales-exigencias/) — Fri, 27 Feb 2026 17:23:44 +0000
-- [Gobierno dice estar adquiriendo dosis de vacunas para enfrentar brote de fiebre amarilla](https://bitlysdowssl-aws.com/2026/02/gobierno-adquiere-vacunas-para-enfrentar-brote-de-fiebre-amarilla/) — Fri, 27 Feb 2026 17:19:07 +0000
+- [Trump destaca relación energética con Venezuela y plan conjunto para refinar crudo](https://bitlysdowssl-aws.com/2026/02/trump-destaca-relacion-energetica-con-venezuela-y-plan-conjunto-para-refinar-crudo/) — Sat, 28 Feb 2026 01:23:03 +0000
+- [¿Qué se esconde tras reaparición y aumento de la malaria en la Amazonía?](https://bitlysdowssl-aws.com/2026/02/que-se-esconde-tras-reaparicion-y-aumento-de-la-malaria-en-la-amazonia/) — Sat, 28 Feb 2026 00:50:00 +0000
+- [Empire Keeway apuesta por la EK Xpress Lite para marcar la diferencia](https://bitlysdowssl-aws.com/2026/02/empire-keeway-apuesta-por-la-ek-xpress-lite-para-marcar-la-diferencia/) — Sat, 28 Feb 2026 00:46:42 +0000
+- [¿Por qué Trump ordenó a las agencias federales dejar de usar la lA de Anthropic?](https://bitlysdowssl-aws.com/2026/02/por-que-trump-ordeno-a-las-agencias-federales-dejar-de-usar-la-la-de-anthropic/) — Sat, 28 Feb 2026 00:30:00 +0000
+- ["Nos vemos pronto recorriendo Barinas": María Corina Machado celebra la liberación de Freddy Superlano](https://bitlysdowssl-aws.com/2026/02/nos-vemos-pronto-recorriendo-barinas-maria-corina-machado-celebra-la-liberacion-de-freddy-superlano/) — Sat, 28 Feb 2026 00:28:11 +0000
 
 ## Efecto Cocuyo
 
-- [Freddy Superlano recibe libertad plena tras retiro de grillete electrónico](https://efectococuyo.com/la-humanidad/freddy-superlano-recibe-libertad-plena-tras-retiro-de-grillete-electronico/) — Fri, 27 Feb 2026 18:09:19 +0000
-- [Enrique Márquez: «No soy candidato. Tengo dos candidatas: democracia y Constitución»](https://efectococuyo.com/politica/enrique-marquez-no-soy-candidato-tengo-dos-candidatas-democracia-y-constitucion/) — Fri, 27 Feb 2026 17:10:48 +0000
-- [Estados Unidos redirige ingresos por ventas de petróleo venezolano directamente al Tesoro, anuncia secretario de Energía Chris Wright](https://efectococuyo.com/internacionales/estados-unidos-redirige-ingresos-por-ventas-de-petroleo-venezolano-directamente-al-tesoro-anuncia-secretario-de-energia-chris-wright/) — Fri, 27 Feb 2026 16:58:52 +0000
-- [Rubio se consolida como el político más popular en Venezuela, por delante de Machado y Trump, según encuesta AtlasIntel-Bloomberg](https://efectococuyo.com/politica/rubio-se-consolida-como-el-politico-mas-popular-en-venezuela-por-delante-de-machado-y-trump-segun-encuesta-atlasintel-bloomberg/) — Fri, 27 Feb 2026 15:48:39 +0000
-- [La Ley de Amnistía deja heridas abiertas: defensores de DDHH critican exclusiones y ausencia de perdón estatal en #EfectoPaz](https://efectococuyo.com/la-humanidad/la-ley-de-amnistia-deja-heridas-abiertas-defensores-de-ddhh-critican-exclusiones-y-ausencia-de-perdon-estatal-en-efectopaz/) — Fri, 27 Feb 2026 15:27:49 +0000
+- [Comisión de Postulaciones del Poder Ciudadano inicia proceso para escoger nuevos Fiscal General y Defensor del Pueblo](https://efectococuyo.com/politica/comision-de-postulaciones-del-poder-ciudadano-inicia-proceso-para-escoger-nuevos-fiscal-general-y-defensor-del-pueblo/) — Fri, 27 Feb 2026 22:16:19 +0000
+- [El gobierno reconoce un brote de fiebre amarilla en Venezuela y lanza vacunación urgente en cuatro estados](https://efectococuyo.com/salud/el-gobierno-reconoce-un-brote-de-fiebre-amarilla-en-venezuela-y-lanza-vacunacion-urgente-en-cuatro-estados/) — Fri, 27 Feb 2026 22:00:34 +0000
+- [Comisión parlamentaria cifra en 223 las personas que han salido de prisión tras amnistía en Venezuela](https://efectococuyo.com/politica/comision-parlamentaria-cifra-en-223-las-personas-que-han-salido-de-prision-tras-amnistia-en-venezuela/) — Fri, 27 Feb 2026 21:01:17 +0000
+- [Iris Varela exige investigar a nueve venezolanos nombrados en correos desclasificados del caso Epstein](https://efectococuyo.com/politica/iris-varela-exige-investigar-a-nueve-venezolanos-nombrados-en-correos-desclasificados-del-caso-epstein/) — Fri, 27 Feb 2026 19:21:46 +0000
+- [Trump dice que tal vez opte por «una toma de control amistosa de Cuba»](https://efectococuyo.com/internacionales/trump-dice-que-tal-vez-opte-por-una-toma-de-control-amistosa-de-cuba/) — Fri, 27 Feb 2026 18:55:10 +0000
 
 ## El Pitazo
 
-- [Freddy Superlano recibe libertad plena bajo Ley de Amnistía: le quitaron el grillete](https://elpitazo.net/politica/freddy-superlano-recibe-libertad-plena-bajo-ley-de-amnistia-le-quitaron-el-grillete/) — Fri, 27 Feb 2026 18:32:15 +0000
-- [Patria paga bono de 29.000 bolívares: conoce quiénes lo reciben](https://elpitazo.net/economia/patria-paga-bono-de-29-000-bolivares-conoce-quienes-lo-reciben/) — Fri, 27 Feb 2026 18:04:04 +0000
-- [La polarización no está planteada en Venezuela asegura economista José Guerra](https://elpitazo.net/economia/la-polarizacion-no-esta-planteada-en-venezuela-asegura-economista-jose-guerra/) — Fri, 27 Feb 2026 17:34:20 +0000
-- [Bloomberg: Venezuela canceló venta de activos de Halliburton tras solicitud de Estados Unidos](https://elpitazo.net/economia/bloomberg-venezuela-cancelo-venta-de-activos-de-halliburton-tras-solicitud-de-estados-unidos/) — Fri, 27 Feb 2026 17:34:07 +0000
-- [Presencia de Enrique Márquez en EE. UU. impulsa democratización de Venezuela, según expertos](https://elpitazo.net/politica/presencia-de-enrique-marquez-en-ee-uu-impulsa-democratizacion-de-venezuela-segun-expertos/) — Fri, 27 Feb 2026 16:21:51 +0000
+- [Asamblea Nacional recibirá postulaciones para fiscal general y defensor del pueblo del 2 al 9 de marzo](https://elpitazo.net/politica/asamblea-nacional-recibira-postulaciones-para-fiscal-general-y-defensor-del-pueblo-del-2-al-9-de-marzo/) — Fri, 27 Feb 2026 23:27:34 +0000
+- [Abogados denuncian que un juez negó la amnistía a los acusados por el caso Paramacay](https://elpitazo.net/politica/abogados-denuncian-que-un-juez-nego-la-amnistia-a-los-acusados-por-el-caso-paramacay/) — Fri, 27 Feb 2026 23:19:00 +0000
+- [Falla de una aeronave detuvo temporalmente los aterrizajes en el aeropuerto de Maiquetía](https://elpitazo.net/regiones/falla-de-una-aeronave-detuvo-temporalmente-los-aterrizajes-en-el-aeropuerto-de-maiquetia/) — Fri, 27 Feb 2026 23:12:38 +0000
+- [El Caracazo: estallido social que ocurrió hace 37 años en Venezuela](https://elpitazo.net/caracas/el-caracazo-estallido-social-que-ocurrio-hace-37-anos-en-venezuela/) — Fri, 27 Feb 2026 22:17:54 +0000
+- [Ganancias por venta de petróleo se depositan en cuentas administradas por el Tesoro de EE. UU.](https://elpitazo.net/economia/ganancias-por-venta-de-petroleo-se-depositan-en-cuentas-administradas-por-el-tesoro-de-ee-uu-ya-no-pasaran-por-qatar/) — Fri, 27 Feb 2026 21:36:24 +0000
 
 ## Google News – Venezuela
 
 - [Rodríguez pide a Trump cesar "bloqueo" sobre Venezuela - dw.com](https://news.google.com/rss/articles/CBMilAFBVV95cUxNSXNkQXNZTTJCeXM4bl81T2xtOHIyT2NvYlBuRW5WVFpETnFOUXY5N0xNSnZ5NXI0dmRCOEt4OGJuWDhPOWs3dG5BX1dsMkFOdVNpUmlSNTVyMGhNaVZwUHhOZ0Jtbm5WSlQ4Z0gwRFNGTUZLWnFYcGNxXzMzNFJrTVdlVGR6OVZfYkFYSnR0NVgybkpQ0gGUAUFVX3lxTE9lc2FfN3FydHVMc1dPeDF6dHdzaVhkZ25WcGw1RGxIX3Blbnl6M1l5Mmstdm1WQURXdHBuNC1Nbno3elFvaUM1Y2JLWHpKRFQ4LV92RWliU2o4Y2lzTEtxZ2xub3VmSGtEaE95U0laakVSV3lUZG5sTEVGaTlXbXlmMnI5eGY4N1dFT05OakNNbGhmaHc?oc=5) — Fri, 27 Feb 2026 00:55:08 GMT
 - [Delcy Rodríguez llama "socio y amigo" a Trump y le pide cesar el bloqueo contra Venezuela - France 24](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdWtKUnpTWjVBXzZhc1pwekNzWnJXTExyUVdCVDB2ZmdiS0Z3RUl6eUxuLXdoMHVRWGpIWG5UR3VoZGhZWU1XZmtqeEtKYmhkS2ZPbEFvMWNKQTJCcElkcHIwXzVFZkdrR19zcHRTMVFIaVozV2VzTTNaaThmWER1MHlPUFAxNGhFRmtIbm9EZzZlMFdnVmVwdDVUbWg5LU9RNXNRSmloV3hEMXBMRFR3UmZfQUhHVnZFY3ctYmxma2FlLU9qa3hFNEFUcGN2dnlnaG1rYzVqM25wUVRucXBNSUMtSQ?oc=5) — Fri, 27 Feb 2026 00:32:22 GMT
-- [Delcy Rodríguez pidió a Trump que ponga fin al bloqueo contra Venezuela - ultimasnoticias.com.ve](https://news.google.com/rss/articles/CBMisgFBVV95cUxOMWRXOFQ3M2dEY3B4RmMzeWpBckhYeHQzcmVrNnZVd3BZYzZEdVpnaTVoSEp1UnB6R1haU1JlQmR5RFBROEdyanFTdElwQmdIanB5RVo2ZEhhQllqRTZYXzBBTG5DQ1R2Z1JoaE5JSU1uV2tZV285blYzakxkcWVocEZGZXhHRUZRR3ZjNmpsWXh4bXlJN0pKSWtWb3JCNnhSc1V0bHBzYnBuMUxQOGdYSUF3?oc=5) — Thu, 26 Feb 2026 23:28:08 GMT
-- [El abogado de Maduro denuncia que Estados Unidos impide que Venezuela pague por su defensa - EL PAÍS](https://news.google.com/rss/articles/CBMizgFBVV95cUxPYVlGOTd0NVpORWZ0VkVkMFBaa1JoUDhxNUpCXzJHS01ZLUdlaVZZS0JqYnJwRzZpSUxUd1IzdUlaNERsT3lueU13bW1ONUhrQjNDR3VhSXlucWV5Yk1SZXdyZGVGSHllc05GMXA2Z0dOc1NLaVlzYnUyWkhTOHQ4WHg2QnFKSGRFMXdzdVhxazNIUEhhdzFoaUJHUVdVV3p6OWNkOVZDNkV0cmlhRldKd0ZyYnU1ZExwRFRHODJYb2lmQnlxeFlhUHB1UnQtd9IB4gFBVV95cUxPbFpqLXhTblAtUXhTdkdxd1UzYVdaQ1ZjME5lRmV3bFdURXdmNXFkVWVScG9oNHpzcGpwTFFrYlRvelN0cUJISEhjODJpOTlVMmE5UmVKU3Z4QXV2XzJyUnVpbjQyVTlvNkpXV2hYYU5PNWJISENKVl9wbzJvVHRXdE1reTZsaFhwQzcxMVpzWVlZNFhLOERRVDVud05GbmtxYWFqSV8xVHFsT0ltUWhTZ0ZXWHBUYkNEZHh2T05fQ0lmSkZGclE5ekhiYnZSNW1hWXdibl8zb3hvLTM4bkhmZTJn?oc=5) — Thu, 26 Feb 2026 04:30:00 GMT
-- [EE. UU. impide que Venezuela pague la defensa de Maduro, según su abogado - The New York Times](https://news.google.com/rss/articles/CBMilAFBVV95cUxPUzY3VFYycHJ1TURfdTNLeVZ2OENxbWd1bC02YVM0UE83LWhfRkU1ZWFRMElPZGZPQWNtYy1YWjZWOFdkeEpJZDlVbHB0RGtBRmFRd0NfRC1HWnZILWZKNUU5OXpSUktkSGQxWGJzM0h0QnhVUkhrcVNNN0o0dXhrQjdKVS1VeE0zcDBlcF9FN18xNXZx?oc=5) — Thu, 26 Feb 2026 14:40:51 GMT
+- [Revelan lo que pensaba Nicolás Maduro de Delcy Rodríguez días antes de ser capturado por EE UU - El Nacional](https://news.google.com/rss/articles/CBMiygFBVV95cUxQd0MxeURxMnVVX25lTmE2YjRZZ1Y4NTMtZ21NRDdFQjNBMFMycGJNOVo4LW54U3ZuTFR5ZnItdWVZeS11OWdsQkdnSWVhQjYzUnRRZmpabmRiUFFtUHFEd0ZlekM5YV90VVNab1N6SHYwNkVNbVRLbzZjQUlEd3pyczFFVWNmLWg2WnF0SjFjdUFWYmViRkpDTzlxbkM5OS1KUzc1bDNlc3VyUlVUSEVsNmJmR1VFeUlyOE5QdzR3RXQ1d1FtTlF4b2h3?oc=5) — Fri, 27 Feb 2026 22:54:26 GMT
+- [Reuters: Washington asume manejo directo de los ingresos petroleros de Venezuela - El Nacional](https://news.google.com/rss/articles/CBMitgFBVV95cUxPMHE2dmtMQnZWNVhxcUdIWjVWbWZRU1VNUDUyTk93dW9pSTY1YlcyYVJYQVdVN1ZobnpENk1EbnYwLW5Wak83MXgtQXhOZ25SY09PYkVGdnIwT3dpTlBZX1hSTFdpWFhudURSLXoxUjBocm9YWnI0SlFTQTFoSFhuVXFxaWpQNjFobVNJeWRPQWJFWFV1OXVtejVDampTaUpaa0NVeWtsb1pucGNPS0FWZ2I4UjZHZw?oc=5) — Fri, 27 Feb 2026 18:29:18 GMT
+- [Qué se sabe sobre cómo EE.UU. vende el petróleo de Venezuela y le envía el dinero al gobierno de Delcy Rodríguez - BBC](https://news.google.com/rss/articles/CBMiW0FVX3lxTE16Mk94emxyd3ZFUDNGcGF0dUE1RnNad3hyaFFzVDdyNTM5S2hTanp2ODhpWVhybGc3TEpXNFE3Mko1eVkzWXdJM2NGeDJGSzJCMWZEQ3JtcTJ6ekHSAWBBVV95cUxQNVJFN29PQjNxMXZYMVl2M3BWbGlRQlNBZXJsc2FudkJXSlZvcXJrOVVHM0V4d2lDTHJNVXNHSHBhdERXVElkOXVsMmVYUndLcGpYMWZwSno1WlNBcVdvc0Y?oc=5) — Fri, 13 Feb 2026 08:00:00 GMT
 
 ---
 
