@@ -25,7 +25,7 @@
             if (two.length > 360) return '';
             return two;
         }
-        if (clean.length >= 90 && clean.length <= 360) {
+        if (clean.length >= 70 && clean.length <= 380) {
             return clean;
         }
         return '';
@@ -142,7 +142,7 @@
 
     function renderItem(item) {
         const preview = normalizePreview(item.preview || '');
-        if (preview.length < 80) return '';
+        if (preview.length < 60) return '';
         const sourceDate = (item.sourcePublishedAt || '').trim();
         const isVerified = sourceDate.length > 0;
 

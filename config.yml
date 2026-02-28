@@ -10,7 +10,7 @@ country:
   currency_code: "VES"   # Venezuelan bolívar soberano
 
 # --- Scheduling / Recency ---
-max_age_days: 14
+max_age_days: 20
 prefer_published_date: true
 
 # --- Output Control ---

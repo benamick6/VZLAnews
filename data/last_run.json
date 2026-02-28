@@ -1,7 +1,7 @@
 {
-  "run_at": "2026-02-28T23:40:10.199354+00:00",
-  "fetched": 2070,
-  "filtered": 97,
+  "run_at": "2026-02-28T23:46:40.652193+00:00",
+  "fetched": 2042,
+  "filtered": 125,
   "deduplicated": 34,
   "selected": 34,
   "diff_new": 20,
@@ -71,7 +71,7 @@
       "opportunities": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
         "US says it will allow resale of Venezuelan oil to Cuba",
-        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber ("
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
