@@ -71,7 +71,6 @@
         const evidenceHtml = evidence.length
             ? `<div class="item-evidence">${evidence.map((line) => `<p>${esc(line)}</p>`).join('')}</div>`
             : '';
-        const confidence = item.insight2 && item.insight2.confidence ? item.insight2.confidence : '';
         const s1 = item.insight2 && item.insight2.s1 ? item.insight2.s1 : '';
         const s2 = item.insight2 && item.insight2.s2 ? item.insight2.s2 : '';
         const s3 = item.insight2 && item.insight2.s3 ? item.insight2.s3 : '';
@@ -88,7 +87,6 @@
                 <p class="item-meta">${esc(item.publisher)} · ${esc(item.publishedAt)} · ${esc(item.sourceTier)}</p>
                 <p class="item-insight">${insightText}</p>
                 ${evidenceHtml}
-                ${confidence ? `<p class="item-confidence">Confidence: ${esc(confidence)}</p>` : ''}
             </article>
         `;
     }

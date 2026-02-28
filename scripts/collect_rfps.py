@@ -1554,7 +1554,6 @@ def _icons_for_item(item: dict) -> list[str]:
 
 def _generate_insight2(item: dict, source_text: str = "") -> dict:
     seed = item["id"]
-    snippet = _normalize_text_block(item.get("snippet", ""))
     source_text = _normalize_text_block(source_text)
     facts = item.get("metrics", {}).get("numbers", [])
     first_fact = facts[0]["value"] if facts else ""
@@ -1569,54 +1568,67 @@ def _generate_insight2(item: dict, source_text: str = "") -> dict:
         if idx + 1 < len(raw_parts) and re.search(r"\b(?:U\.S|U\.K|Mr|Mrs|Ms|Dr|St)\.$", current):
             current = f"{current} {raw_parts[idx + 1]}".strip()
             idx += 1
-        if len(current) >= 35 and not _sentence_is_noise(current):
+        if len(current) >= 30 and not _sentence_is_noise(current):
             sentence_parts.append(current)
         idx += 1
 
     title_norm = _normalize_text_block(item.get("title", ""))
-    filtered = [
-        s for s in sentence_parts
-        if _title_similarity(title_norm, s) < 0.90
-        and not re.search(r"\b(this article discusses|the report highlights|according to reports)\b", s, flags=re.IGNORECASE)
-    ]
+    filtered: list[str] = []
+    for sentence in sentence_parts:
+        cleaned = _sentence_case_start(_strip_summary_leadin(sentence)).strip()
+        if not cleaned:
+            continue
+        if _title_similarity(title_norm, cleaned) >= 0.84:
+            continue
+        if re.search(r"\b(read more|click here|subscribe|newsletter|advertisement)\b", cleaned, flags=re.IGNORECASE):
+            continue
+        if re.search(r"\b(this article discusses|the report highlights|according to reports)\b", cleaned, flags=re.IGNORECASE):
+            continue
+        if _is_low_quality_phrase(cleaned):
+            continue
+        filtered.append(cleaned)
 
     if filtered:
-        s1 = clamp_text_py(filtered[0], 210)
-        if len(s1.split()) < 8 and len(filtered) > 1:
-            s1 = clamp_text_py(filtered[1], 210)
+        s1 = clamp_text_py(filtered[0], 240)
+        s2 = clamp_text_py(filtered[1], 240) if len(filtered) > 1 else ""
     else:
-        event_hint = _deterministic_pick(seed + "-evt", item.get("event_types", []) or [sector])
         title_topic = _title_topic({"title": item.get("title", "")})
-        s1 = f"The source describes a concrete development around {title_topic} in Venezuela"
-        if first_fact:
-            s1 += f", with figures such as {first_fact} reported"
-        s1 += "."
+        s1 = f"{title_topic} is the central development flagged in the publication."
+        s2 = "The report frames this as an active shift with potential effects on operating conditions and counterpart behavior."
 
-    if len(filtered) > 1:
-        s2 = clamp_text_py(filtered[1], 210)
-    else:
-        mechanism = "implementation constraints and counterpart response"
-        if item.get("flags", {}).get("risk"):
-            mechanism = "compliance requirements, delivery timelines, and execution risk"
-        elif item.get("flags", {}).get("opportunity"):
-            mechanism = "implementation windows, counterpart sequencing, and timing"
-        s2 = f"Follow-on details indicate shifts in {mechanism} for {sector.lower()} operations."
+    if not s2:
+        s2 = "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response."
 
-    why_openers = [
-        "Why this matters:",
-        "Operational implication:",
-        "Decision relevance:",
-        "Practical takeaway:",
+    event_hint = _deterministic_pick(seed + "-evt-imp", item.get("event_types", []) or [sector])
+    implication_options = [
+        f"the political economy signal now points to tighter bargaining space around {sector.lower()} decisions",
+        f"institutions should re-base short-cycle scenarios because counterpart incentives are shifting around {event_hint.lower()}",
+        f"execution risk should be re-priced as administrative and political constraints converge in {sector.lower()}",
+        f"stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in {sector.lower()}",
+        f"near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone",
     ]
-    why_prefix = _deterministic_pick(seed + "-why", why_openers)
-    why_clause = "this changes near-term execution assumptions for institutions monitoring this sector"
+    implication_clause = _deterministic_pick(seed + "-imp", implication_options)
     if item.get("flags", {}).get("risk"):
-        why_clause = "this raises downside exposure and tightens execution requirements for near-term planning"
+        implication_clause = _deterministic_pick(
+            seed + "-imp-risk",
+            [
+                f"downside exposure is rising as policy uncertainty and compliance friction compound in {sector.lower()}",
+                f"risk management assumptions should tighten because implementation conditions are deteriorating around {event_hint.lower()}",
+                f"the balance of risk is shifting negative, with higher probability of delays, reversals, or enforcement shocks",
+            ],
+        )
     elif item.get("flags", {}).get("opportunity"):
-        why_clause = "this creates a narrower but actionable window for structured engagement"
+        implication_clause = _deterministic_pick(
+            seed + "-imp-opp",
+            [
+                f"a narrow engagement window is opening if actors can align quickly on sequencing and compliance",
+                f"upside exists, but only for operators that can move within tighter political and administrative constraints",
+                f"counterpart alignment is improving, creating a conditional opportunity for structured progress in {sector.lower()}",
+            ],
+        )
     if first_fact:
-        why_clause += f", with {first_fact} serving as a measurable reference point"
-    s3 = f"{why_prefix} {why_clause}."
+        implication_clause += f", with {first_fact} as a measurable reference point for scenario tracking"
+    s3 = f"Implication: {implication_clause}."
 
     for banned in (
         "this article discusses",
@@ -1625,6 +1637,7 @@ def _generate_insight2(item: dict, source_text: str = "") -> dict:
         "this cycle brought a concrete update on",
         "this cycle brought a concrete update",
         "sources indicate implementation movement tied to",
+        "why this matters:",
     ):
         s1 = re.sub(re.escape(banned), "", s1, flags=re.IGNORECASE).strip()
         s2 = re.sub(re.escape(banned), "", s2, flags=re.IGNORECASE).strip()
@@ -1636,19 +1649,19 @@ def _generate_insight2(item: dict, source_text: str = "") -> dict:
         s1 = f"The source outlines a concrete development tied to {title_topic} in Venezuela."
     if s1 and s1[0].islower():
         s1 = s1[0].upper() + s1[1:]
+    if s2 and s2[0].islower():
+        s2 = s2[0].upper() + s2[1:]
 
     headline_norm = title_norm.lower()
     if headline_norm and _title_similarity(headline_norm, s1.lower()) > 0.88:
         event_hint = _deterministic_pick(seed + "-evt2", item.get("event_types", []) or [sector])
-        s1 = f"Reporting describes an actionable development in {event_hint.lower()} with concrete implications in Venezuela."
+        s1 = f"The publication reports movement in {event_hint.lower()} with concrete operational relevance in Venezuela."
 
     confidence = "HIGH" if item.get("summary_confidence", "").startswith("High") else "MED"
     if item.get("summary_confidence", "").startswith("Low"):
         confidence = "LOW"
 
     evidence = []
-    if snippet:
-        evidence.append(clamp_text_py(snippet, 120))
     for fact in facts[:2]:
         context = fact.get("context", "")
         if context:

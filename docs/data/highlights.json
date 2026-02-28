@@ -1,26 +1,18 @@
 {
   "executiveBriefBullets": [
-    "Government and institutional moves show Venezuelanalysis and bing.com converging on February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process\u2026 with figures\u2026",
-    "Operational evidence across sources indicates bing.com and CiberCuba converging on The source describes a concrete development around US says it will allow resale of Venezuelan oil to Cuba in Venezuela.",
-    "Multiple reports converge on CiberCuba and bing.com converging on CiberCuba: News from Cuba, the digital voice of Cubans Homepage Latest News Cuba News Miami News Entertainment Informal\u2026 with figures including 11.",
-    "The current cycle confirms bing.com and Reuters converging on (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive\u2026 with figures including 59.",
-    "Cross-sector tracking now shows Reuters and Reuters converging on Reporting describes an actionable development in oil production/export with concrete implications in Venezuela."
+    "Government and institutional moves show Venezuelanalysis and CiberCuba converging on February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process\u2026 with figures\u2026",
+    "Operational evidence across sources indicates CiberCuba and bing.com converging on CiberCuba: News from Cuba, the digital voice of Cubans Homepage Latest News Cuba News Miami News Entertainment Informal\u2026 with figures\u2026",
+    "Multiple reports converge on bing.com and Reuters converging on Title: Petr\u00f3leos de Venezuela S.A with figures including 59.",
+    "The current cycle confirms Reuters and Reuters converging on US to allow resale of Venezuelan oil to Cuba's private sector, Treasury says is the central development flagged in the\u2026.",
+    "Cross-sector tracking now shows Reuters and Reuters converging on Exclusive: Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say is the central\u2026 with figures including 19."
   ],
   "keyDevelopments": [
     {
       "text": "February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026\u2026",
       "itemIds": [
         "ad8359b9d80a",
-        "53843da51f92",
-        "da671b4f3852"
-      ]
-    },
-    {
-      "text": "The source describes a concrete development around US says it will allow resale of Venezuelan oil to Cuba in Venezuela.",
-      "itemIds": [
-        "53843da51f92",
-        "ad8359b9d80a",
-        "da671b4f3852"
+        "da671b4f3852",
+        "b28de1e086d4"
       ]
     },
     {
@@ -28,23 +20,31 @@
       "itemIds": [
         "da671b4f3852",
         "ad8359b9d80a",
-        "53843da51f92"
+        "22266cca15b9"
       ]
     },
     {
-      "text": "(PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026",
+      "text": "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment became a\u2026",
       "itemIds": [
         "22266cca15b9",
-        "53843da51f92",
-        "da671b4f3852"
+        "da671b4f3852",
+        "a982a976d7bc"
       ]
     },
     {
-      "text": "Reporting describes an actionable development in oil production/export with concrete implications in Venezuela.",
+      "text": "US to allow resale of Venezuelan oil to Cuba's private sector, Treasury says is the central development flagged in the publication.",
       "itemIds": [
         "a982a976d7bc",
-        "53843da51f92",
-        "da671b4f3852"
+        "da671b4f3852",
+        "22266cca15b9"
+      ]
+    },
+    {
+      "text": "Exclusive: Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say is the central development flagged in the publication.",
+      "itemIds": [
+        "cf00b18c1d58",
+        "da671b4f3852",
+        "22266cca15b9"
       ]
     }
   ],
@@ -62,10 +62,10 @@
       "itemId": "ad8359b9d80a"
     },
     {
-      "label": "Sanctions and state revenue",
-      "value": "28",
-      "context": "Rodr\u00edguez Requests That Trump End Sanctions and Blockade Against Venezuela orinocotribune\u2026",
-      "itemId": "b28de1e086d4"
+      "label": "Oil and production",
+      "value": "$1.5",
+      "context": "$100-million onshore oil search February 10, 2026 News Haynesville Shale JERA closes\u2026",
+      "itemId": "163e0d51e24d"
     },
     {
       "label": "Detentions and releases",
@@ -83,7 +83,7 @@
   "sectorSynth": {
     "Extractives & Mining": {
       "bullets": [
-        "Officials reported February 27, 2026 Central America and the Caribbean (+Mexico) Latin America and ALBA-TCP \u2018Worthy Children of Heroes and Martyrs\u2019: How Nicaragua Cultivates Peace\u2026",
+        "Officials reported Check your inbox or spam folder to confirm your subscription.",
         "Field updates show Business Deputy CEO at Angostura sent on leave pending Investigation Just over ten months after his appointment as deputy chief executive officer of Angostura\u2026",
         "Separate sources indicate News, Immigration, Soccer, Telenovelas And Culture for Latinos in the U.S. \u2013 Latin Times Saturday, February 28, 2026 English Search form Search Politics\u2026"
       ],
@@ -135,8 +135,8 @@
     },
     "Education & Workforce": {
       "bullets": [
-        "Officials reported Reporting describes an actionable development in education & workforce with concrete implications in Venezuela.",
-        "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News IE 11 is not supported.",
+        "Officials reported Title: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News URL Source: http://www.bloomberg.com/ Markdown Content: Live [Iran Says 201\u2026",
+        "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump to NBC News on reports of Ayatollah's death: \"We feel\u2026",
         "Separate sources indicate Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser\u2026"
       ],
       "drivers": [
