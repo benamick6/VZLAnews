@@ -27,15 +27,15 @@ jobs:
       - name: Run collection script
         run: python scripts/collect_rfps.py
 
-      - name: Verify docs/index.md contains required sections
+      - name: Verify docs/index.md contains app shell markers
         run: |
-          for section in "Latest Updates" "Cross-cutting / Policy / Risk"; do
-            if ! grep -q "$section" docs/index.md; then
-              echo "ERROR: docs/index.md is missing section: $section"
+          for marker in "VZLAnews Intelligence Platform" "id=\"app-root\"" "assets/app.js"; do
+            if ! grep -q "$marker" docs/index.md; then
+              echo "ERROR: docs/index.md is missing app shell marker: $marker"
               exit 1
             fi
           done
-          echo "All required sections present in docs/index.md"
+          echo "All app shell markers present in docs/index.md"
 
       - name: Commit changes (if any)
         run: |
