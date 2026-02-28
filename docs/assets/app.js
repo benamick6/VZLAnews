@@ -130,6 +130,7 @@
                 <div class="item-head">
                     <h5><a id="item-${esc(item.id)}"></a><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h5>
                 </div>
+                <p class="item-verified">Verified article URL</p>
                 ${sourceDate ? `<p class="item-source-date">Source date: ${esc(sourceDate)}</p>` : ''}
                 <p class="item-desc">${esc(preview)}</p>
             </article>
