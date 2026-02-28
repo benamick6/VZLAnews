@@ -30,10 +30,10 @@ textarea {
 }
 
 .vzla-app {
-    max-width: 1080px;
+    max-width: 1120px;
     margin: 0 auto;
     display: grid;
-    gap: 18px;
+    gap: 22px;
 }
 
 .panel,
@@ -41,9 +41,20 @@ textarea {
 .macro-block {
     border: 1px solid var(--me-border);
     border-radius: var(--me-radius);
-    padding: 16px;
+    padding: 18px;
     background: linear-gradient(180deg, var(--me-surface-top) 0%, var(--me-surface-bottom) 100%);
     box-shadow: var(--me-shadow);
+}
+
+.panel h3,
+.sector-block h3,
+.macro-block h3,
+.imf-card h3 {
+    margin: 0 0 10px;
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--me-text);
 }
 
 .exec-brief p,
@@ -100,7 +111,7 @@ textarea {
 .items-grid,
 .macro-grid {
     display: grid;
-    gap: 12px;
+    gap: 14px;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
@@ -108,9 +119,18 @@ textarea {
 .macro-card {
     border: 1px solid var(--me-border);
     border-radius: 12px;
-    padding: 12px;
+    padding: 14px;
     background: linear-gradient(180deg, rgba(23, 53, 77, 0.96) 0%, rgba(18, 47, 69, 0.96) 100%);
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.item-card:hover,
+.macro-card:hover,
+.metric-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.38);
+    border-color: rgba(124, 200, 220, 0.38);
 }
 
 .item-head {
@@ -120,7 +140,9 @@ textarea {
 
 .item-head h5 {
     margin: 0;
-    font-size: 15px;
+    font-size: 1.02rem;
+    line-height: 1.35;
+    font-weight: 650;
 }
 
 .item-meta,
@@ -137,9 +159,9 @@ textarea {
 }
 
 .item-desc {
-    margin-top: 8px;
+    margin-top: 10px;
     color: var(--me-text);
-    font-size: 15px;
+    font-size: 0.98rem;
 }
 
 .item-source-date {
@@ -163,8 +185,8 @@ textarea {
 }
 
 .macro-value {
-    font-size: 18px;
-    margin: 2px 0;
+    font-size: 1.2rem;
+    margin: 4px 0;
     font-weight: 700;
 }
 
@@ -183,7 +205,7 @@ a:hover {
 .metric-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
+    gap: 14px;
 }
 
 @media (max-width: 980px) {
@@ -203,7 +225,7 @@ a:hover {
     justify-content: space-between;
     align-items: flex-start;
     gap: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .imf-card .meta,
@@ -224,7 +246,7 @@ a:hover {
     background: linear-gradient(180deg, rgba(25, 57, 83, 0.95) 0%, rgba(17, 43, 64, 0.95) 100%);
     border: 1px solid var(--me-border, #e5e7eb);
     border-radius: var(--me-radius, 10px);
-    padding: 12px;
+    padding: 14px;
 }
 
 .metric-top {
@@ -274,11 +296,32 @@ a:hover {
 }
 
 #app-root {
-    padding: 10px 0 22px;
+    padding: 14px 0 28px;
 }
 
 #app-root ul { margin-top: 0.25rem; margin-bottom: 0.75rem; }
 #app-root li { margin: 0.25rem 0; }
-#app-root h3 { margin-top: 1.25rem; }
-#app-root h5 { margin-top: 0.9rem; margin-bottom: 0.25rem; }
-#app-root p { margin: 0.4rem 0; line-height: 1.55; }
+#app-root h3 { margin-top: 1.4rem; }
+#app-root h5 { margin-top: 1rem; margin-bottom: 0.35rem; }
+#app-root p { margin: 0.5rem 0; line-height: 1.6; }
+
+@media (max-width: 760px) {
+    .panel,
+    .sector-block,
+    .macro-block,
+    .item-card,
+    .macro-card,
+    .metric-tile {
+        padding: 12px;
+    }
+
+    .vzla-app {
+        gap: 16px;
+    }
+
+    .items-grid,
+    .macro-grid,
+    .metric-grid {
+        gap: 10px;
+    }
+}

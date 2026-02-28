@@ -1,17 +1,13 @@
 {
-  "runAt": "2026-02-28T22:59:46.925037+00:00",
+  "runAt": "2026-02-28T23:02:42.405231+00:00",
   "counts": {
-    "new": 23,
+    "new": 19,
     "updated": 0,
     "dropped": 0
   },
   "new": [
-    "url::https://www.jpost.com/international/article-888190",
     "url::https://indianexpress.com/article/world/us-news/venezuela-suspends-19-oil-gas-production-sharing-contracts-signed-under-maduro-government-10554560/",
-    "url::https://elpitazo.net/alianzas/leandro-palmar-y-belises-cubillan-la-libertad-no-es-solo-un-concepto/",
-    "url::https://elpitazo.net/sucesos/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/",
     "url::https://elpitazo.net/politica/foro-penal-excarcelados-al-menos-ocho-presos-politicos-militares-en-venezuela/",
-    "url::https://trinidadexpress.com/newsextra/venezuela-meets-with-shell-execs-on-oil-gas-projects/article_ce815659-a7f3-4544-9e9c-7085ef8a191b.html",
     "url::https://www.elnacional.com/2026/02/fiscalia-de-ecuador-allana-la-sede-del-correismo/",
     "url::https://www.elnacional.com/2026/02/el-dinero-para-el-magnicidio-de-miguel-uribe-provino-de-venezuela/",
     "url::https://www.elnacional.com/2026/02/foro-penal-contabiliza-al-menos-ocho-presos-politicos-militares-excarcelados/",
