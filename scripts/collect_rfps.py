@@ -1112,6 +1112,12 @@ def _validate_preview_text(text: str) -> str:
         "title:",
         "url source:",
         "markdown content:",
+        "request blocked",
+        "we can't connect to the server",
+        "we cant connect to the server",
+        "can't connect to the server for this app or website",
+        "cannot connect to the server for this app or website",
+        "this app or website at this time",
         "just a moment",
         "performing security verification",
         "skip to content",
@@ -1388,6 +1394,12 @@ def _normalize_text_block(text: str) -> str:
 def _sentence_is_noise(sentence: str) -> bool:
     lower = sentence.lower()
     noisy_markers = [
+        "request blocked",
+        "we can't connect to the server",
+        "we cant connect to the server",
+        "can't connect to the server for this app or website",
+        "cannot connect to the server for this app or website",
+        "this app or website at this time",
         "subscribe to read",
         "skip to",
         "sign in",

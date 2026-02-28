@@ -50,6 +50,16 @@ def _is_byline(paragraph: str) -> bool:
 
 def _looks_like_noise(paragraph: str) -> bool:
     low = paragraph.lower()
+    if "request blocked" in low:
+        return True
+    if "we can't connect to the server" in low or "we cant connect to the server" in low:
+        return True
+    if "can't connect to the server for this app or website" in low:
+        return True
+    if "cannot connect to the server for this app or website" in low:
+        return True
+    if "this app or website at this time" in low:
+        return True
     if low.count("http") >= 2:
         return True
     if low.count(" |") >= 3 or low.count(" - ") >= 6:
