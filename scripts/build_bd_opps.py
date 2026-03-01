@@ -173,8 +173,11 @@ def score_opp(text: str) -> int:
     low = text.lower()
     score = 0
     strong = [
+        "request for proposal", "request for proposals",
+        "request for information", "request for quotation",
         "rfp", "rfi", "rfq", "tender", "procurement", "itb", "tor",
-        "expression of interest", "eoi", "grant", "call for proposals", "consultancy"
+        "expression of interest", "eoi", "grant", "funding opportunity",
+        "call for proposals", "open call", "services required", "consultancy", "consultant",
     ]
     for term in strong:
         if term in ACRONYM_TERMS:
