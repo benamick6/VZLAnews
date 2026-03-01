@@ -28,6 +28,22 @@ VZLA_TERMS = [
 
 ACRONYM_TERMS = {"rfp", "rfi", "rfq", "itb", "eoi", "tor"}
 
+TITLE_URL_OPP_TERMS = [
+    "request for proposal", "rfp", "request for information", "rfi",
+    "request for quotation", "rfq", "invitation to bid", "itb",
+    "expression of interest", "eoi", "terms of reference", "tor",
+    "tender", "procurement", "call for proposals", "call for applications",
+    "open call", "funding opportunity", "consultancy", "consultant",
+    "services required", "bid notice", "tender notice",
+]
+
+ACTION_TERMS = [
+    "apply", "application", "submit", "submission", "eligibility", "bid documents",
+    "evaluation criteria", "procurement notice", "tender notice", "deadline", "closing date",
+    "request for proposal", "request for information", "request for quotation",
+    "expression of interest", "terms of reference", "call for proposals", "call for applications",
+]
+
 DEADLINE_PATTERNS = [
     r"(deadline|due by|due|closing date|closes|submission deadline)\s*[:\-]?\s*(\w+\s+\d{1,2},\s+20\d{2})",
     r"(deadline|due by|due|closing date|closes|submission deadline)\s*[:\-]?\s*(20\d{2}-\d{2}-\d{2})",
@@ -341,8 +357,10 @@ def main() -> None:
     seen: set[str] = set()
 
     for item in items:
+        title = norm(item.get("title"))
+        url = norm(item.get("url"))
         hay = " ".join([
-            norm(item.get("title")),
+            title,
             norm(item.get("preview")),
             norm(item.get("insight2", {}).get("s1") if isinstance(item.get("insight2"), dict) else ""),
             norm(item.get("insight2", {}).get("s2") if isinstance(item.get("insight2"), dict) else ""),
@@ -356,16 +374,23 @@ def main() -> None:
             continue
         if not _looks_venezuela_focused(hay):
             continue
+
+        title_url_text = f"{title} {url}"
+        if not contains_any(title_url_text, TITLE_URL_OPP_TERMS):
+            continue
+
         if not contains_any(hay, OPP_TERMS):
+            continue
+
+        deadline = extract_deadline(hay)
+        amount = extract_amount(hay)
+        if not (deadline or amount or contains_any(hay, ACTION_TERMS)):
             continue
 
         score = score_opp(hay)
         if contains_any(hay, EXCLUDE_TERMS) and score < 5:
             continue
-
-        deadline = extract_deadline(hay)
-        min_score = 5 if deadline else 3
-        if score < min_score:
+        if score < 5:
             continue
         if is_expired_deadline(deadline, today):
             continue
@@ -383,7 +408,7 @@ def main() -> None:
             "publisher": item.get("publisher") or "",
             "publishedAt": item.get("publishedAt") or item.get("dateISO") or "",
             "deadline": deadline,
-            "amount": extract_amount(hay),
+            "amount": amount,
             "score": score,
             "summary": make_summary(item, hay),
         })

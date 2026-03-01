@@ -1,87 +1,66 @@
 {
-  "asOf": "2026-03-01T20:18:55.158643Z",
+  "asOf": "2026-03-01T20:25:56.923025Z",
   "title": "Executive Rapid Brief",
   "rows": [
     {
-      "theme": "sanctions",
-      "subheading": "Compliance risk moves",
-      "sentence": "Recent reporting across 3 items in Food & Agriculture, Cross-cutting / Policy / Risk points to shifts in sanctions and humanitarian crisis through 2026-02-20; this changes counterparty risk and deal feasibility for corporates and donors.",
+      "subheading": "Macro conditions move",
+      "sentence": "Policy: Contra Irán URL Source: http://elpitazo.net/politica/canciller-de-venezuela-elimina-comunicado-en-el-que-condenaba-ataque-de-ee-uu-contra-iran/ Published Time: 2026-03-01T17:59:57+00:00 Markdown Content: Canciller de… Contra Irán - El Pitazo =============== * [Inicio](https://elpitazo.net/) * [Regiones](https.",
+      "sources": [
+        {
+          "title": "Canciller de Venezuela elimina comunicado en el que condenaba ataque de EE. UU. contra Irán",
+          "url": "https://elpitazo.net/politica/canciller-de-venezuela-elimina-comunicado-en-el-que-condenaba-ataque-de-ee-uu-contra-iran/"
+        }
+      ],
+      "theme": "macro",
+      "publishedAt": "2026-03-01"
+    },
+    {
+      "subheading": "Compliance risk re-prices",
+      "sentence": "Sanctions: Natalia Burdynska Schuurman January 31, 2026 February 26, 2026 Venezuelan popular power organizations have developed creative solutions to advance food sovereignty while under the US blockade (FAO) Natalia Burdynska Schuurman defended her MsC thesis at the University of Edinburgh on Venezuela’s struggle fo.",
       "sources": [
         {
           "title": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate",
           "url": "https://venezuelanalysis.com/opinion/unilateral-sanctions-food-insecurity-and-food-sovereignty-construction-in-venezuela-challenges-and-prospects-for-zero-hunger-in-a-transforming-petrostate/"
-        },
-        {
-          "title": "Spain urges EU to lift sanctions on Venezuela's interim president after amnesty bill",
-          "url": "https://www.reuters.com/world/americas/spain-urges-eu-lift-sanctions-venezuelas-interim-president-after-amnesty-bill-2026-02-20/"
         }
-      ]
+      ],
+      "theme": "sanctions",
+      "publishedAt": "2026-02-18"
     },
     {
-      "theme": "politics",
-      "subheading": "Governance signal spikes",
-      "sentence": "Recent reporting across 6 items in Cross-cutting / Policy / Risk, Extractives & Mining points to shifts in policy and regulatory reform through 2026-02-27; this affects policy continuity, stakeholder alignment, and implementation risk.",
+      "subheading": "New bid pipeline emerges",
+      "sentence": "En su reciente discurso sobre el Estado de la Unión, el presidente Donald Trump dijo que Estados Unidos había recibido más de 80 millones de barriles de petróleo de Venezuela, y describió a la nación como \"nuestro nuevo… The publication adds implementation detail that clarifies pace, constraints, and expected counter.",
       "sources": [
         {
-          "title": "Venezuela attorney general resigns, then lands acting ombudsman role in surprise move",
-          "url": "https://apnews.com/article/venezuela-attorney-general-resignation-repression-human-rights-44ccb6341428278b13697d6d5949578d"
-        },
-        {
-          "title": "Venezuela says more than 3,200 people have been fully released since amnesty law took effect",
-          "url": "https://apnews.com/article/venezuela-political-prisoners-detained-amnesty-delcy-38494341c7f1fc5c6b3f2936a7830fb8"
+          "title": "Envíos desde Houston marcan nueva fase en la reactivación petrolera venezolana",
+          "url": "https://www.elnacional.com/2026/03/envios-desde-houston-marcan-fase-en-la-reactivacion-petrolera/"
         }
-      ]
+      ],
+      "theme": "opportunity",
+      "publishedAt": "2026-03-01"
     },
     {
-      "theme": "macro",
-      "subheading": "Fiscal reality shows through",
-      "sentence": "Recent reporting across 5 items in Cross-cutting / Policy / Risk, Finance & Investment points to shifts in policy and humanitarian crisis through 2026-03-01; this shifts assumptions on stability, pricing, and operating conditions.",
+      "subheading": "PDVSA signal shifts",
+      "sentence": "Infrastructure: Durante la cuarta edición de Perspectivas Agropecuarias Tendencias Venezuela, realizada en Valencia, representantes del sector para analizar tendencias de consumo, mercados internacionales, tecnologías emergentes,… The publication adds implementation detail that clarifies pace, constraints, and expect.",
       "sources": [
-        {
-          "title": "María Corina Machado anuncia su regreso a Venezuela para preparar una “nueva victoria electoral”",
-          "url": "https://elpitazo.net/politica/maria-corina-machado-anuncia-su-regreso-a-venezuela-para-preparar-una-nueva-victoria-electoral/"
-        },
-        {
-          "title": "IMF says Venezuela's economic, humanitarian situation is 'quite fragile'",
-          "url": "https://www.reuters.com/world/americas/imf-says-venezuelas-economic-humanitarian-situation-is-quite-fragile-2026-02-19/"
-        }
-      ]
-    },
-    {
-      "theme": "investment",
-      "subheading": "Procurement and funding pipeline",
-      "sentence": "Recent reporting across 2 items in Cross-cutting / Policy / Risk, Finance & Investment points to shifts in policy and fx / inflation through 2026-03-01; this creates near-term entry points for advisory, partnerships, and bids.",
-      "sources": [
-        {
-          "title": "Venezuela en transición geopolítica",
-          "url": "https://www.elnacional.com/2026/03/venezuela-en-transicion-geopolitica/"
-        },
-        {
-          "title": "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
-          "url": "https://www.zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9"
-        }
-      ]
-    },
-    {
-      "theme": "energy",
-      "subheading": "Oil flows matter again",
-      "sentence": "Recent reporting across 4 items in Extractives & Mining points to shifts in oil production/export and energy through 2026-03-01; this influences export revenue, contract risk, and near-term cash dynamics.",
-      "sources": [
-        {
-          "title": "Exclusive: US refiners Phillips 66, Citgo seek to buy crude directly from Venezuela, sources say",
-          "url": "https://www.reuters.com/business/energy/us-refiners-phillips-66-citgo-seek-buy-crude-directly-venezuela-sources-say-2026-02-18/"
-        },
         {
           "title": "Agroindustria venezolana podría incrementar su oferta exportable entre 25% y 40% impulsada por una nueva bonanza petrolera",
           "url": "https://www.elnacional.com/2026/03/agroindustria-podria-incrementar-su-oferta-exportable-entre-25-y-40/"
         }
-      ]
+      ],
+      "theme": "energy",
+      "publishedAt": "2026-03-01"
     },
     {
-      "theme": "macro",
       "subheading": "Deep-dive evidence update",
-      "sentence": "No new open-access Venezuela publication was confirmed in this cycle; this keeps uncertainty higher for medium-term planning than when fresh deep-dive evidence is available.",
-      "sources": []
+      "sentence": "Deep-dive evidence: The Mission’s findings reveal a coordinated effort to target perceived political opponents; it strengthens decision quality beyond daily headlines.",
+      "sources": [
+        {
+          "title": "Human rights violations escalate in Venezuela following disputed presidential election",
+          "url": "https://news.un.org/en/story/2024/10/1155736"
+        }
+      ],
+      "theme": "research",
+      "publishedAt": "2024-10-14"
     }
   ]
 }
