@@ -114,11 +114,81 @@ Google News – ReliefWeb Venezuela PDF (2025) - https://news.google.com/rss/sea
 # SPANISH-LANGUAGE SOURCES
 # ============================
 
+# ============================
+# VENEZUELA – MACRO & POLICY (SPANISH)
+# ============================
+
 Google News – Venezuela economía política (es) - https://news.google.com/rss/search?q=Venezuela+econom%C3%ADa+pol%C3%ADtica&hl=es-419&gl=VE&ceid=VE:es-419
-Google News – Venezuela petróleo PDVSA (es) - https://news.google.com/rss/search?q=Venezuela+petr%C3%B3leo+PDVSA&hl=es-419&gl=VE&ceid=VE:es-419
-Google News – Venezuela inflación tipo de cambio (es) - https://news.google.com/rss/search?q=Venezuela+inflaci%C3%B3n+tipo+de+cambio&hl=es-419&gl=VE&ceid=VE:es-419
-Google News – Venezuela salud agua saneamiento (es) - https://news.google.com/rss/search?q=Venezuela+salud+agua+saneamiento&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela gobierno regulación (es) - https://news.google.com/rss/search?q=Venezuela+gobierno+regulaci%C3%B3n&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela infraestructura (es) - https://news.google.com/rss/search?q=Venezuela+infraestructura+proyecto&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela comercio sanciones (es) - https://news.google.com/rss/search?q=Venezuela+comercio+sanciones&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela clima inversión (es) - https://news.google.com/rss/search?q=Venezuela+clima+inversi%C3%B3n&hl=es-419&gl=VE&ceid=VE:es-419
+
+# ============================
+# EXTRACTIVES & MINING (SPANISH)
+# ============================
+
+Google News – Venezuela petróleo gas PDVSA (es) - https://news.google.com/rss/search?q=Venezuela+petr%C3%B3leo+gas+PDVSA&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela minería oro (es) - https://news.google.com/rss/search?q=Venezuela+miner%C3%ADa+oro+colt%C3%A1n&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela proyectos energía (es) - https://news.google.com/rss/search?q=Venezuela+proyectos+energ%C3%ADa+contrato&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela Faja Petrolífera (es) - https://news.google.com/rss/search?q=Venezuela+Faja+Petroli%C3%ADfera+producci%C3%B3n&hl=es-419&gl=VE&ceid=VE:es-419
+
+# ============================
+# FOOD & AGRICULTURE (SPANISH)
+# ============================
+
+Google News – Venezuela agricultura seguridad alimentaria (es) - https://news.google.com/rss/search?q=Venezuela+agricultura+seguridad+alimentaria&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela fertilizante semillas (es) - https://news.google.com/rss/search?q=Venezuela+fertilizante+semillas+riego&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela importaciones alimentos (es) - https://news.google.com/rss/search?q=Venezuela+importaciones+alimentos+distribuci%C3%B3n&hl=es-419&gl=VE&ceid=VE:es-419
+
+# ============================
+# HEALTH & WATER (SPANISH)
+# ============================
+
+Google News – Venezuela salud sistema (es) - https://news.google.com/rss/search?q=Venezuela+salud+sistema+hospital+medicina&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela brotes dengue malaria (es) - https://news.google.com/rss/search?q=Venezuela+brotes+dengue+malaria&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela agua saneamiento (es) - https://news.google.com/rss/search?q=Venezuela+agua+saneamiento+infraestructura&hl=es-419&gl=VE&ceid=VE:es-419
+
+# ============================
+# EDUCATION & WORKFORCE (SPANISH)
+# ============================
+
+Google News – Venezuela educación escuelas (es) - https://news.google.com/rss/search?q=Venezuela+educaci%C3%B3n+escuelas+docentes&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela universidad estudiantes (es) - https://news.google.com/rss/search?q=Venezuela+universidad+estudiantes&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela empleo mercado laboral (es) - https://news.google.com/rss/search?q=Venezuela+empleo+mercado+laboral&hl=es-419&gl=VE&ceid=VE:es-419
+
+# ============================
+# FINANCE & INVESTMENT (SPANISH)
+# ============================
+
+Google News – Venezuela banca inflación tipo cambio (es) - https://news.google.com/rss/search?q=Venezuela+banca+inflaci%C3%B3n+tipo+cambio&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela inversión extranjera privatización (es) - https://news.google.com/rss/search?q=Venezuela+inversi%C3%B3n+extranjera+privatizaci%C3%B3n&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela deuda bonos reestructuración (es) - https://news.google.com/rss/search?q=Venezuela+deuda+bonos+reestructuraci%C3%B3n&hl=es-419&gl=VE&ceid=VE:es-419
+
+# ============================
+# SPANISH-LANGUAGE OUTLETS
+# ============================
+
 El Nacional - https://www.elnacional.com/feed/
 Efecto Cocuyo - https://efectococuyo.com/feed/
 El Pitazo - https://elpitazo.net/feed/
 TalCual - https://talcualdigital.com/feed/
+Runrunes - https://www.runrunes.es/feed/
+2001 Online - https://www.2001online.com/feed/
+Últimas Noticias - https://www.ultimasnoticias.com.ve/feed/
+Panorama - https://www.panorama.com.ve/feed/
+La Voz - https://www.lavoz.com.ve/feed/
+
+# ============================
+# SPANISH BOOSTER QUERIES
+# ============================
+
+Google News – Venezuela economía sanciones (es) - https://news.google.com/rss/search?q=Venezuela+econom%C3%ADa+sanciones+OFAC&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela licencias petróleo Chevron (es) - https://news.google.com/rss/search?q=Venezuela+licencias+petr%C3%B3leo+Chevron+OFAC&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela gas proyectos GNL (es) - https://news.google.com/rss/search?q=Venezuela+gas+proyectos+GNL&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela minería inversión oro (es) - https://news.google.com/rss/search?q=Venezuela+miner%C3%ADa+inversi%C3%B3n+oro&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela reestructuración deuda bonos (es) - https://news.google.com/rss/search?q=Venezuela+reestructuraci%C3%B3n+deuda+bonos&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela financiamiento BM FMI (es) - https://news.google.com/rss/search?q=Venezuela+financiamiento+Banco+Mundial+FMI&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela asociación público privada (es) - https://news.google.com/rss/search?q=Venezuela+asociaci%C3%B3n+p%C3%BAblico+privada+infraestructura&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela ayuda humanitaria logística (es) - https://news.google.com/rss/search?q=Venezuela+ayuda+humanitaria+log%C3%ADstica&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela elecciones gobernanza riesgo (es) - https://news.google.com/rss/search?q=Venezuela+elecciones+gobernanza+riesgo&hl=es-419&gl=VE&ceid=VE:es-419
