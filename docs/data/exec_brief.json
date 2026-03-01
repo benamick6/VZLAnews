@@ -1,76 +1,40 @@
 {
-  "asOf": "2026-03-01T20:26:59.951495Z",
+  "asOf": "2026-03-01T20:40:47.739080Z",
   "title": "Executive Rapid Brief",
   "rows": [
     {
-      "subheading": "Compliance risk re-prices",
-      "sentence": "Sanctions: Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate; This changes counterparty risk and deal feasibility.",
-      "sources": [
-        {
-          "title": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate",
-          "url": "https://venezuelanalysis.com/opinion/unilateral-sanctions-food-insecurity-and-food-sovereignty-construction-in-venezuela-challenges-and-prospects-for-zero-hunger-in-a-transforming-petrostate/"
-        }
-      ],
+      "subheading": "Sanctions posture shifted",
+      "sentence": "Humanitarian crisis, FX / Inflation: Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate. This continues to shape counterparty risk and deal feasibility, especially for state-linked exposure and import channels.",
       "theme": "sanctions",
-      "publishedAt": "2026-02-18"
+      "publishedAt": "2026-02-01"
     },
     {
-      "subheading": "Regulatory signal spikes",
-      "sentence": "Policy: Tarek William Saab, a close ally of former President Nicolás Maduro, submitted his resignation to the ruling party-controlled National Assembly without offering a reason for his decision; This affects policy continuity and implementation risk.",
-      "sources": [
-        {
-          "title": "Venezuela attorney general resigns, then lands acting ombudsman role in surprise move",
-          "url": "https://apnews.com/article/venezuela-attorney-general-resignation-repression-human-rights-44ccb6341428278b13697d6d5949578d"
-        }
-      ],
+      "subheading": "Policy continuity risk rose",
+      "sentence": "Policy: Tarek William Saab, a close ally of former President Nicolás Maduro, submitted his resignation to the ruling party-controlled National Assembly without offering a reason for his decision. This raises policy discontinuity risk and weakens enforcement predictability for operators and partners.",
       "theme": "governance",
-      "publishedAt": "2026-02-25"
+      "publishedAt": "2026-02-26"
     },
     {
-      "subheading": "FX and inflation pressures change",
-      "sentence": "Policy: María Corina Machado anuncia su regreso a Venezuela para preparar una “nueva victoria electoral”; This shifts operating assumptions for pricing and stability.",
-      "sources": [
-        {
-          "title": "María Corina Machado anuncia su regreso a Venezuela para preparar una “nueva victoria electoral”",
-          "url": "https://elpitazo.net/politica/maria-corina-machado-anuncia-su-regreso-a-venezuela-para-preparar-una-nueva-victoria-electoral/"
-        }
-      ],
+      "subheading": "FX and inflation risk reset",
+      "sentence": "Policy: María Corina Machado anuncia su regreso a Venezuela para preparar una “nueva victoria electoral”. This can flow through to FX, inflation expectations, and near-term operating stability assumptions.",
       "theme": "macro",
       "publishedAt": "2026-03-01"
     },
     {
-      "subheading": "New bid pipeline emerges",
-      "sentence": "Policy: La transición geopolítica en Venezuela no puede entenderse únicamente como un proceso interno de reorganización política o económica Más bien, forma parte de un reordenamiento estratégico; This creates near-term BD entry points if requirements match.",
-      "sources": [
-        {
-          "title": "Venezuela en transición geopolítica",
-          "url": "https://www.elnacional.com/2026/03/venezuela-en-transicion-geopolitica/"
-        }
-      ],
+      "subheading": "Oil contracting and licensing environment shifted",
+      "sentence": "PDVSA: Exclusive: US refiners Phillips 66, Citgo seek to buy crude directly from Venezuela, sources say. Net effect is that licensing pathways and compliance screens now determine who can transact, at what margins, and with what execution risk.",
+      "theme": "energy",
+      "publishedAt": "2026-02-18"
+    },
+    {
+      "subheading": "Bid pipeline emerged",
+      "sentence": "Policy: La transición geopolítica en Venezuela no puede entenderse únicamente como un proceso interno de reorganización política o económica Más bien, forma parte de un reordenamiento estratégico más amplio en el. This creates near-term entry points where requirements align, but qualification and partner diligence remain critical.",
       "theme": "opportunity",
       "publishedAt": "2026-03-01"
     },
     {
-      "subheading": "PDVSA signal shifts",
-      "sentence": "Infrastructure: Durante la cuarta edición de Perspectivas Agropecuarias Tendencias Venezuela, realizada en Valencia, representantes del sector para analizar tendencias de consumo, mercados; This influences export revenue and contract risk.",
-      "sources": [
-        {
-          "title": "Agroindustria venezolana podría incrementar su oferta exportable entre 25% y 40% impulsada por una nueva bonanza petrolera",
-          "url": "https://www.elnacional.com/2026/03/agroindustria-podria-incrementar-su-oferta-exportable-entre-25-y-40/"
-        }
-      ],
-      "theme": "energy",
-      "publishedAt": "2026-03-01"
-    },
-    {
       "subheading": "Deep-dive evidence update",
-      "sentence": "Deep-dive evidence: The Mission’s findings reveal a coordinated effort to target perceived political opponents; it strengthens decision quality beyond daily headlines.",
-      "sources": [
-        {
-          "title": "Human rights violations escalate in Venezuela following disputed presidential election",
-          "url": "https://news.un.org/en/story/2024/10/1155736"
-        }
-      ],
+      "sentence": "New deep-dive research adds evidence beyond daily reporting. It strengthens decision quality beyond headline-driven signals.",
       "theme": "research",
       "publishedAt": "2024-10-14"
     }

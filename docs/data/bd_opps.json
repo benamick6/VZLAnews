@@ -1,5 +1,7 @@
 {
-  "asOf": "2026-03-01T20:38:37.691527+00:00",
+  "asOf": "2026-03-01T20:41:06.737946+00:00",
+  "windowDays": 90,
+  "fallbackUsed": true,
   "count": 0,
   "opportunities": []
 }

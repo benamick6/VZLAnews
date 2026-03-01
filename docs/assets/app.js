@@ -11,15 +11,6 @@
         ));
     }
 
-    function host(rawUrl) {
-        if (!rawUrl) return '';
-        try {
-            return new URL(rawUrl).host.toLowerCase();
-        } catch {
-            return '';
-        }
-    }
-
     function detectLanguage(item) {
         const declared = (item && item.language ? String(item.language) : '').toLowerCase();
         return (declared === 'es' || declared === 'en') ? declared : 'other';
@@ -286,13 +277,6 @@
                     <div class="exec-row">
                         <div class="exec-subheading">${esc(row.subheading || '')}</div>
                         <div class="exec-sentence">${esc(row.sentence || '')}</div>
-                        <div class="exec-links">
-                            ${((row.sources || []).slice(0, 2).map((source) => {
-                                const url = source && source.url ? String(source.url) : '';
-                                if (!url) return '';
-                                return `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(host(url) || 'source')}</a>`;
-                            }).filter(Boolean).join(' · '))}
-                        </div>
                     </div>
                 `).join('')}
               </div>`

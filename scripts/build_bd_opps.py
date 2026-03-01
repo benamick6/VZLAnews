@@ -443,6 +443,7 @@ def main() -> None:
     opportunities = []
     today = datetime.datetime.now(datetime.timezone.utc).date()
     recent_cutoff = today - datetime.timedelta(days=60)
+    fallback_cutoff = today - datetime.timedelta(days=90)
     seen: set[str] = set()
 
     for item in items:
@@ -488,7 +489,7 @@ def main() -> None:
         published_date = _parse_iso_date(published_raw)
         if published_date == datetime.date.min:
             continue
-        if published_date < recent_cutoff:
+        if published_date < fallback_cutoff:
             continue
 
         dedupe_key = f"{norm(item.get('url', '')).lower()}|{norm(item.get('title', '')).lower()}"
@@ -519,10 +520,23 @@ def main() -> None:
         reverse=True,
     )
 
-    top_opportunities = opportunities[:5]
+    recent_opportunities = [
+        opp for opp in opportunities
+        if _parse_iso_date(str(opp.get("publishedAt", "") or "")) >= recent_cutoff
+    ]
+    if recent_opportunities:
+        top_opportunities = recent_opportunities[:5]
+        window_days = 60
+        fallback_used = False
+    else:
+        top_opportunities = opportunities[:5]
+        window_days = 90
+        fallback_used = True
 
     output = {
         "asOf": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "windowDays": window_days,
+        "fallbackUsed": fallback_used,
         "count": len(top_opportunities),
         "opportunities": top_opportunities,
     }

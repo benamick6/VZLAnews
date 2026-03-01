@@ -1,275 +1,327 @@
-import json, os, re, datetime
-from urllib.parse import urlparse
+import datetime
+import json
+import os
+import re
 
 LATEST_JSON = "docs/data/latest.json"
-PDF_JSON    = "docs/data/pdf_publications_2026.json"
-OUT_JSON    = "docs/data/exec_brief.json"
+PDF_JSON = "docs/data/pdf_publications_2026.json"
 PDF_FALLBACKS = [
-  "docs/data/pdf_publications_recent.json",
-  "docs/data/pdf_publications_2025_2026.json",
+    "docs/data/pdf_publications_recent.json",
+    "docs/data/pdf_publications_2025_2026.json",
 ]
+OUT_JSON = "docs/data/exec_brief.json"
 
-def norm(s):
-  return re.sub(r"\s+", " ", (s or "")).strip()
-
-def host(url):
-  try: return urlparse(url).netloc.lower()
-  except: return ""
-
-def split_sentences(s):
-  parts = re.split(r"(?<=[\.\!\?])\s+(?=[A-ZÁÉÍÓÚÑ0-9])", (s or "").strip())
-  return [p.strip() for p in parts if p.strip()]
-
-def clean_text_block(text):
-  t = norm(text)
-  t = re.sub(r"https?://\S+", "", t)
-  t = re.sub(r"\b(URL Source|Published Time|Markdown Content)\b:?", "", t, flags=re.I)
-  t = re.sub(r"The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response\.?", "", t, flags=re.I)
-  t = re.sub(r"The Afternoon Wire.*$", "", t, flags=re.I)
-  t = re.sub(r"See All Newsletters.*$", "", t, flags=re.I)
-  t = re.sub(r"AP QUIZZES.*$", "", t, flags=re.I)
-  t = re.sub(r"Test Your News I\.Q.*$", "", t, flags=re.I)
-  t = re.sub(r"\*\s*\[[^\]]+\]\([^\)]+\)", "", t)
-  t = re.sub(r"=+", " ", t)
-  t = re.sub(r"\s+", " ", t).strip(" .;:-")
-  return t
-
-def substance(item):
-  i2 = item.get("insight2")
-  if isinstance(i2, dict):
-    cand = clean_text_block((i2.get("s1","") + " " + i2.get("s2","")).strip())
-    if cand: return cand
-  return clean_text_block(item.get("preview") or item.get("description") or item.get("snippet") or "")
-
-def get_list(item, key):
-  v = item.get(key)
-  if isinstance(v, list): return [norm(x) for x in v if norm(x)]
-  return []
-
-def pick_entities(item):
-  # Prefer explicit entities list; fallback to tags/categories
-  ents = get_list(item, "entities")
-  if ents: return ents[:3]
-  tags = get_list(item, "eventTypes") + get_list(item, "tags") + get_list(item, "categories")
-  # Clean noisy tags
-  bad = {"sanctions","energy","security","positive","neutral","negative"}
-  tags = [t for t in tags if t.lower() not in bad]
-  return tags[:3]
-
-def pick_event_tags(item):
-  ev = get_list(item, "eventTypes")
-  if ev: return ev[:2]
-  # Heuristic fallback: use a few tags
-  return get_list(item, "tags")[:2]
-
-def choose_best_sentence(text):
-  # Choose the first sentence that looks like "something happened"
-  # Reject meta phrases and boilerplate
-  rejects = [
-    "recent reporting", "this cycle", "comprehensive up-to-date news coverage",
-    "why this matters", "retrieved", "tier", "copy citation"
-  ]
-  for s in split_sentences(norm(text)):
-    low = s.lower()
-    if any(r in low for r in rejects):
-      continue
-    # Prefer sentences with action verbs / change signals
-    if re.search(r"\b(approved|announced|signed|suspended|launched|met|agreed|allowed|imposed|lifted|expanded|cut|raised|reform|review|invest|sanction|license|export|production|inflation|debt|election)\b", low):
-      return s
-  # Fallback: first non-trivial sentence
-  for s in split_sentences(norm(text)):
-    if len(s) >= 55:
-      return s
-  return clean_text_block(text)[:220]
-
-def is_noisy_sentence(s):
-  low = (s or "").lower()
-  bad = [
-    "january", "february", "march", "url source", "published time", "markdown content",
-    "the publication reports movement", "(...)", "afternoon wire", "newsletter", "ap quizzes"
-  ]
-  if any(x in low for x in bad):
-    return True
-  if len(s or "") < 45:
-    return True
-  return False
-
-def infer_theme(item, text):
-  t = (text or "").lower()
-  # Use event tags if present
-  ev = " ".join([e.lower() for e in pick_event_tags(item)])
-  t = t + " " + ev
-
-  if any(k in t for k in ["sanction","ofac","license","compliance","designation"]): return "sanctions"
-  if any(k in t for k in ["election","opposition","government","assembly","cne","decree","law","regulation"]): return "governance"
-  if any(k in t for k in ["inflation","fx","exchange","debt","bond","reserve","gdp","budget"]): return "macro"
-  if any(k in t for k in ["oil","pdvsa","export","refinery","crude","opec","gas","hydrocarbon"]): return "energy"
-  if any(k in t for k in ["food","health","water","dengue","migration","school","poverty","humanitarian"]): return "social"
-  if any(k in t for k in ["tender","procurement","rfp","rfi","rfq","grant","eoi","bid"]): return "opportunity"
-  return "macro"
+THEME_ORDER = ["sanctions", "governance", "macro", "energy", "social", "opportunity"]
 
 SNAPPY = {
-  "sanctions":   ["Sanctions posture shifts", "Compliance risk re-prices", "Licensing signals move"],
-  "governance":  ["Policy direction changes", "Regulatory signal spikes", "Governance calculus shifts"],
-  "macro":       ["Macro conditions move", "Fiscal reality shows", "FX and inflation pressures change"],
-  "energy":      ["Oil flows change", "PDVSA signal shifts", "Energy policy resets"],
-  "social":      ["Social pressure points", "Humanitarian needs intensify", "Services and livelihoods shift"],
-  "opportunity": ["Live funding or tender", "Procurement window opens", "New bid pipeline emerges"]
+    "sanctions": [
+        "Compliance risk just re-priced",
+        "Sanctions posture shifted",
+        "Licensing risk moved",
+    ],
+    "governance": [
+        "Regulatory signal spiked",
+        "Policy continuity risk rose",
+        "Governance calculus shifted",
+    ],
+    "macro": [
+        "Political volatility affects pricing assumptions",
+        "Macro assumptions moved",
+        "FX and inflation risk reset",
+    ],
+    "energy": [
+        "Oil contracting and licensing environment shifted",
+        "PDVSA contracting signal changed",
+        "Energy execution risk moved",
+    ],
+    "social": [
+        "Human rights and social exposure remains elevated",
+        "Humanitarian pressure persists",
+        "Delivery constraints increased",
+    ],
+    "opportunity": [
+        "Live funding and tender signals moved",
+        "Procurement window shifted",
+        "Bid pipeline emerged",
+    ],
 }
 
 SO_WHAT = {
-  "sanctions":   "This changes counterparty risk and deal feasibility.",
-  "governance":  "This affects policy continuity and implementation risk.",
-  "macro":       "This shifts operating assumptions for pricing and stability.",
-  "energy":      "This influences export revenue and contract risk.",
-  "social":      "This shapes humanitarian priorities and delivery constraints.",
-  "opportunity": "This creates near-term BD entry points if requirements match."
+    "sanctions": "This continues to shape counterparty risk and deal feasibility, especially for state-linked exposure and import channels.",
+    "governance": "This raises policy discontinuity risk and weakens enforcement predictability for operators and partners.",
+    "macro": "This can flow through to FX, inflation expectations, and near-term operating stability assumptions.",
+    "energy": "Net effect is that licensing pathways and compliance screens now determine who can transact, at what margins, and with what execution risk.",
+    "social": "This raises reputational, duty-of-care, and third-party screening requirements for any field footprint.",
+    "opportunity": "This creates near-term entry points where requirements align, but qualification and partner diligence remain critical.",
 }
 
+NOISE_PATTERNS = [
+    r"https?://\S+",
+    r"\b(URL Source|Published Time|Markdown Content)\b:?",
+    r"The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response\.?",
+    r"The Afternoon Wire.*$",
+    r"See All Newsletters.*$",
+    r"AP QUIZZES.*$",
+    r"Test Your News I\.Q.*$",
+    r"\*\s*\[[^\]]+\]\([^\)]+\)",
+    r"=+",
+]
+
+
+def norm(text):
+    return re.sub(r"\s+", " ", str(text or "")).strip()
+
+
+def clean_text(text):
+    out = norm(text).replace("—", "-")
+    for pattern in NOISE_PATTERNS:
+        out = re.sub(pattern, "", out, flags=re.IGNORECASE)
+    out = re.sub(r"\s+", " ", out).strip(" .;:-")
+    return out
+
+
+def is_noisy_text(text):
+    low = (text or "").lower()
+    noisy_tokens = [
+        "january", "february", "march", "april", "published time", "markdown content",
+        "the publication reports movement", "(...)", "afternoon wire", "newsletter",
+        "findings are drawn from open-access material", "url source",
+    ]
+    if any(token in low for token in noisy_tokens):
+        return True
+    if len(text or "") < 45:
+        return True
+    return False
+
+
+def split_sentences(text):
+    parts = re.split(r"(?<=[\.\!\?])\s+(?=[A-ZÁÉÍÓÚÑ0-9])", clean_text(text))
+    return [part.strip() for part in parts if part.strip()]
+
+
+def get_list(item, key):
+    value = item.get(key)
+    if isinstance(value, list):
+        return [clean_text(v) for v in value if clean_text(v)]
+    return []
+
+
+def substance(item):
+    insight = item.get("insight2")
+    if isinstance(insight, dict):
+        candidate = clean_text(f"{insight.get('s1', '')} {insight.get('s2', '')}")
+        if len(candidate) >= 80:
+            return candidate
+    return clean_text(item.get("preview") or item.get("description") or item.get("snippet") or "")
+
+
+def choose_best_sentence(text):
+    rejects = [
+        "recent reporting",
+        "this cycle",
+        "why this matters",
+        "copy citation",
+        "newsletter",
+        "retrieved",
+    ]
+    action_regex = r"\b(approved|announced|signed|suspended|launched|met|agreed|allowed|imposed|lifted|expanded|cut|raised|reviewed|reformed|invested|sanctioned|licensed|exported|inflation|debt|election|resigned|released|resale|contract)\b"
+
+    for sentence in split_sentences(text):
+        low = sentence.lower()
+        if any(term in low for term in rejects):
+            continue
+        if re.search(action_regex, low):
+            return sentence
+
+    for sentence in split_sentences(text):
+        if len(sentence) >= 65:
+            return sentence
+
+    fallback = clean_text(text)
+    return fallback[:210].rstrip(".,;: ")
+
+
+def clean_title(title):
+    t = clean_text(title)
+    t = re.sub(r"\s*\|\s*.*$", "", t)
+    t = re.sub(r"\s*-\s*Reuters\s*$", "", t, flags=re.I)
+    t = re.sub(r"\s*\(.*?\)\s*$", "", t)
+    return clean_text(t)
+
+
+def flatten_items(latest):
+    direct = latest.get("items") or latest.get("allItems") or []
+    if direct:
+        return direct
+
+    rows = []
+    for sector in latest.get("sectors") or []:
+        sector_name = sector.get("name") or ""
+        for item in sector.get("items") or []:
+            if sector_name and not item.get("sector"):
+                item = dict(item)
+                item["sector"] = sector_name
+            rows.append(item)
+    return rows
+
+
+def pick_entities(item):
+    entities = get_list(item, "entities")
+    if entities:
+        return entities[:2]
+
+    merged_tags = get_list(item, "eventTypes") + get_list(item, "event_types") + get_list(item, "tags") + get_list(item, "categories")
+    blocked = {"sanctions", "energy", "security", "positive", "neutral", "negative"}
+    cleaned = [tag for tag in merged_tags if tag.lower() not in blocked]
+    return cleaned[:2]
+
+
+def infer_theme(item, text):
+    corpus = f"{clean_text(item.get('title') or '')} {clean_text(text)}"
+    corpus += " " + " ".join([v.lower() for v in (get_list(item, "eventTypes") + get_list(item, "event_types") + get_list(item, "tags"))])
+    low = corpus.lower()
+
+    if any(key in low for key in ["sanction", "ofac", "license", "compliance", "designation", "amnesty bill"]):
+        return "sanctions"
+    if any(key in low for key in ["election", "opposition", "government", "assembly", "cne", "decree", "law", "regulation", "resigned", "ombudsman"]):
+        return "governance"
+    if any(key in low for key in ["inflation", "fx", "exchange", "debt", "bond", "reserve", "gdp", "budget", "fragile economy"]):
+        return "macro"
+    if any(key in low for key in ["oil", "pdvsa", "export", "refinery", "crude", "opec", "gas", "hydrocarbon", "resale"]):
+        return "energy"
+    if any(key in low for key in ["food", "health", "water", "dengue", "migration", "school", "poverty", "humanitarian", "human rights"]):
+        return "social"
+    if any(key in low for key in ["tender", "procurement", "rfp", "rfi", "rfq", "grant", "eoi", "bid"]):
+        return "opportunity"
+    return "macro"
+
+
+def choose_items(items, limit=80):
+    scored = []
+    for item in items:
+        title = clean_text(item.get("title") or "")
+        text = substance(item)
+        if len(title) < 20 and len(text) < 90:
+            continue
+        date_str = item.get("sourcePublishedAt") or item.get("publishedAt") or item.get("dateISO") or ""
+        recency = 2 if isinstance(date_str, str) and date_str.startswith("2026-") else 0
+        tier = str(item.get("sourceTier") or item.get("tier") or "").lower()
+        tier_boost = 60 if "1" in tier else (30 if "2" in tier else 0)
+        quality = len(text) + len(title) + (200 * recency) + tier_boost
+        scored.append((quality, item))
+    scored.sort(key=lambda row: row[0], reverse=True)
+    return [item for _, item in scored[:limit]]
+
+
+def build_sentence(item, theme):
+    title = clean_title(item.get("title") or "")
+    core_text = choose_best_sentence(substance(item) or title)
+    if (is_noisy_text(core_text) or len(core_text) < 60) and len(title) >= 30:
+        core_text = title
+    if is_noisy_text(core_text):
+        core_text = "A material development was reported with direct implications for near-term operating conditions"
+
+    entities = pick_entities(item)
+    actor_prefix = f"{', '.join(entities)}: " if entities else ""
+
+    happened = core_text.rstrip(". ")
+    if len(happened) > 210:
+        happened = happened[:208].rsplit(" ", 1)[0].rstrip(".,;: ")
+
+    so_what = SO_WHAT.get(theme, "This matters for risk and opportunity in Venezuela.")
+    sentence = f"{actor_prefix}{happened}. {so_what}"
+    sentence = clean_text(sentence)
+    if not sentence.endswith("."):
+        sentence += "."
+    return sentence
+
+
 def pick_snappy(theme, seed):
-  opts = SNAPPY.get(theme, ["Key development"])
-  idx = sum(ord(c) for c in (seed or "")) % len(opts)
-  return opts[idx]
+    options = SNAPPY.get(theme, ["Key development"])
+    index = sum(ord(char) for char in str(seed or "")) % len(options)
+    return options[index]
 
-def build_one_sentence(item):
-  text = substance(item)
-  best = clean_text_block(choose_best_sentence(text))
-  title_fallback = clean_text_block(item.get("title") or "")
-  if is_noisy_sentence(best) and len(title_fallback) >= 25:
-    best = title_fallback
-  if is_noisy_sentence(best):
-    best = "A material development was reported with immediate policy and market implications"
-
-  theme = infer_theme(item, f"{title_fallback} {best}")
-  ents = pick_entities(item)
-  evs = pick_event_tags(item)
-
-  # Build a one-sentence brief:
-  # Actor/context (entities) + what happened (best sentence) + so-what.
-  ctx = ""
-  if ents:
-    ctx = f"{', '.join(ents[:2])}: "
-  elif evs:
-    ctx = f"{', '.join(evs[:2])}: "
-
-  core = best.rstrip(".")
-  if len(core) > 190:
-    core = core[:188].rsplit(" ", 1)[0].rstrip(".,;: ")
-  so  = SO_WHAT.get(theme, "This matters for risk and opportunity in Venezuela.")
-
-  # Keep it ONE sentence using a semicolon
-  out = f"{ctx}{core}; {so}"
-  out = norm(out)
-
-  # Cap length for executive scanning
-  if len(out) > 320:
-    out = out[:318].rstrip("; ").rstrip(".") + "."
-  else:
-    if not out.endswith("."): out += "."
-  return theme, out
-
-def choose_items(items, limit=60):
-  # Prefer items with substance and recency; avoid thin items
-  scored = []
-  for it in items:
-    sub = substance(it)
-    if len(sub) < 80:
-      continue
-    dt = it.get("publishedAt") or it.get("dateISO") or ""
-    rec = 2 if isinstance(dt, str) and dt.startswith("2026-") else 0
-    score = len(sub) + (200 * rec)
-    scored.append((score, it))
-  scored.sort(key=lambda x: x[0], reverse=True)
-  return [it for _, it in scored[:limit]]
-
-def extract_items(latest):
-  direct = latest.get("items") or latest.get("allItems") or []
-  if direct:
-    return direct
-  out = []
-  for sec in latest.get("sectors") or []:
-    sec_name = sec.get("name") or ""
-    for it in sec.get("items") or []:
-      if sec_name and not it.get("sector"):
-        it = dict(it)
-        it["sector"] = sec_name
-      out.append(it)
-  return out
 
 def load_pdfs():
-  candidates = [PDF_JSON] + PDF_FALLBACKS
-  for path in candidates:
-    if not os.path.exists(path):
-      continue
-    try:
-      with open(path, "r", encoding="utf-8") as f:
-        payload = json.load(f)
-      pubs = payload.get("publications") or []
-      if pubs:
-        return pubs
-    except:
-      continue
-  return []
+    for path in [PDF_JSON] + PDF_FALLBACKS:
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path, "r", encoding="utf-8") as handle:
+                payload = json.load(handle)
+            publications = payload.get("publications") or []
+            if publications:
+                return publications
+        except Exception:
+            continue
+    return []
+
 
 def build_rows(items, pdfs, max_rows=6):
-  rows = []
-  used_themes = set()
+    selected = choose_items(items, limit=80)
+    grouped = {theme: [] for theme in THEME_ORDER}
 
-  for it in choose_items(items, limit=60):
-    theme, sentence = build_one_sentence(it)
-    # Force variety
-    if theme in used_themes and len(used_themes) < 5:
-      continue
+    for item in selected:
+        probe_text = f"{item.get('title', '')} {substance(item)}"
+        theme = infer_theme(item, probe_text)
+        grouped.setdefault(theme, []).append(item)
 
-    subheading = pick_snappy(theme, it.get("title") or sentence[:80])
-    rows.append({
-      "subheading": subheading,
-      "sentence": sentence,
-      "sources": [
-        {"title": it.get("title",""), "url": it.get("url","")}
-      ],
-      "theme": theme,
-      "publishedAt": it.get("publishedAt") or it.get("dateISO") or ""
-    })
-    used_themes.add(theme)
-    if len(rows) >= max_rows - 1:
-      break
+    rows = []
+    for theme in THEME_ORDER:
+        cluster = grouped.get(theme) or []
+        if not cluster:
+            continue
+        top = cluster[0]
+        sentence = build_sentence(top, theme)
+        subheading = pick_snappy(theme, top.get("title") or sentence[:80])
+        rows.append(
+            {
+                "subheading": subheading,
+                "sentence": sentence,
+                "theme": theme,
+                "publishedAt": top.get("sourcePublishedAt") or top.get("publishedAt") or top.get("dateISO") or "",
+            }
+        )
+        if len(rows) >= max_rows - 1:
+            break
 
-  # Add one deep-dive anchor row if present
-  if pdfs:
-    p = pdfs[0]
-    abs_txt = norm(p.get("abstract") or "")
-    core = choose_best_sentence(abs_txt) if abs_txt else "A new open-access Venezuela publication adds detailed evidence beyond daily reporting"
-    sentence = f"Deep-dive evidence: {core.rstrip('.')}; it strengthens decision quality beyond daily headlines."
-    rows.append({
-      "subheading": "Deep-dive evidence update",
-      "sentence": norm(sentence if sentence.endswith(".") else sentence + "."),
-      "sources": [{"title": p.get("title","PDF publication"), "url": p.get("url","")}],
-      "theme": "research",
-      "publishedAt": p.get("publishedAt") or "2026"
-    })
+    if pdfs and len(rows) < max_rows:
+        publication = pdfs[0]
+        abstract = clean_text(publication.get("abstract") or "")
+        core = choose_best_sentence(abstract) if abstract else "A new open-access Venezuela publication adds detailed evidence beyond daily reporting"
+        if is_noisy_text(core):
+            core = "New deep-dive research adds evidence beyond daily reporting"
+        sentence = f"{core.rstrip('. ')}. It strengthens decision quality beyond headline-driven signals."
+        rows.append(
+            {
+                "subheading": "Deep-dive evidence update",
+                "sentence": clean_text(sentence) + ("" if clean_text(sentence).endswith(".") else "."),
+                "theme": "research",
+                "publishedAt": publication.get("publishedAt") or "",
+            }
+        )
 
-  # Add a second source link when you have it: pick a second item in same theme
-  # Optional: enrich later; keep simple now.
-  return rows[:max_rows]
+    return rows[:max_rows]
+
 
 def main():
-  with open(LATEST_JSON, "r", encoding="utf-8") as f:
-    latest = json.load(f)
-  items = extract_items(latest)
-  pdfs = load_pdfs()
+    with open(LATEST_JSON, "r", encoding="utf-8") as handle:
+        latest = json.load(handle)
 
-  rows = build_rows(items, pdfs, max_rows=6)
+    items = flatten_items(latest)
+    pdfs = load_pdfs()
+    rows = build_rows(items, pdfs, max_rows=6)
 
-  out = {
-    "asOf": datetime.datetime.utcnow().isoformat() + "Z",
-    "title": "Executive Rapid Brief",
-    "rows": rows
-  }
+    output = {
+        "asOf": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
+        "title": "Executive Rapid Brief",
+        "rows": rows,
+    }
 
-  os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
-  with open(OUT_JSON, "w", encoding="utf-8") as f:
-    json.dump(out, f, ensure_ascii=False, indent=2)
+    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
+    with open(OUT_JSON, "w", encoding="utf-8") as handle:
+        json.dump(output, handle, ensure_ascii=False, indent=2)
+
 
 if __name__ == "__main__":
-  main()
+    main()
