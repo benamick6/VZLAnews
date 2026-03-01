@@ -301,7 +301,7 @@
         const list = (pubs && Array.isArray(pubs.publications)) ? pubs.publications : [];
         const periodLabel = (pubs && pubs.yearLabel) ? pubs.yearLabel : 'Last 3 Years';
         const body = list.length
-            ? list.slice(0, 8).map((publication) => {
+            ? list.slice(0, 7).map((publication) => {
                 const pageUrl = publication.pageUrl || publication.url || '';
                 return `
                 <div class="pub-row">

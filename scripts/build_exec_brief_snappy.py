@@ -67,6 +67,29 @@ NOISE_PATTERNS = [
     r"=+",
 ]
 
+SPANISH_MARKERS = [
+    " de ", " la ", " el ", " en ", " para ", " con ", " una ", " un ", " y ",
+    " transicion ", " venezuela ", " gobierno ", " politica ", " economica ",
+]
+
+ENGLISH_EVENT = {
+    "sanctions": "Authorities and counterparties signaled a meaningful shift in sanctions-related operating conditions",
+    "governance": "Political actors triggered an institutional change with direct policy execution implications",
+    "macro": "Market and political signals shifted near-term assumptions for inflation, FX, and operating stability",
+    "energy": "Energy-side actors signaled a contracting and licensing shift in oil market access",
+    "social": "Humanitarian and rights-related signals point to sustained pressure on delivery conditions",
+    "opportunity": "Commercial and funding signals point to near-term openings with higher qualification scrutiny",
+}
+
+SECTOR_REPHRASE = {
+    "cross-cutting / policy / risk": "policy and institutional channels",
+    "extractives & mining": "energy and extractives channels",
+    "finance & investment": "capital and market channels",
+    "food & agriculture": "food system channels",
+    "health & water": "public service channels",
+    "education & workforce": "labor and human capital channels",
+}
+
 
 def norm(text):
     return re.sub(r"\s+", " ", str(text or "")).strip()
@@ -92,6 +115,14 @@ def is_noisy_text(text):
     if len(text or "") < 45:
         return True
     return False
+
+
+def is_likely_non_english(text):
+    value = f" {clean_text(text).lower()} "
+    if re.search(r"[áéíóúñ]", value):
+        return True
+    marker_hits = sum(1 for marker in SPANISH_MARKERS if marker in value)
+    return marker_hits >= 3
 
 
 def split_sentences(text):
@@ -141,12 +172,38 @@ def choose_best_sentence(text):
     return fallback[:210].rstrip(".,;: ")
 
 
+def has_action_signal(text):
+    return bool(re.search(r"\b(approved|announced|signed|suspended|launched|met|agreed|allowed|imposed|lifted|expanded|cut|raised|reviewed|reformed|invested|sanctioned|licensed|exported|inflation|debt|election|resigned|released|resale|contract|seeking|sold|rejected)\b", (text or "").lower()))
+
+
+def looks_like_title_fragment(text):
+    value = clean_text(text)
+    if len(value) < 60:
+        return False
+    if has_action_signal(value):
+        return False
+    words = value.split()
+    title_like = sum(1 for word in words if word[:1].isupper())
+    if title_like >= max(6, len(words) // 2):
+        return True
+    if ":" in value and len(words) >= 10:
+        return True
+    return False
+
+
 def clean_title(title):
     t = clean_text(title)
     t = re.sub(r"\s*\|\s*.*$", "", t)
     t = re.sub(r"\s*-\s*Reuters\s*$", "", t, flags=re.I)
     t = re.sub(r"\s*\(.*?\)\s*$", "", t)
     return clean_text(t)
+
+
+def smooth_sector_phrase(sector):
+    normalized = clean_text(sector).lower()
+    if not normalized:
+        return "priority operating channels"
+    return SECTOR_REPHRASE.get(normalized, normalized)
 
 
 def flatten_items(latest):
@@ -169,11 +226,7 @@ def pick_entities(item):
     entities = get_list(item, "entities")
     if entities:
         return entities[:2]
-
-    merged_tags = get_list(item, "eventTypes") + get_list(item, "event_types") + get_list(item, "tags") + get_list(item, "categories")
-    blocked = {"sanctions", "energy", "security", "positive", "neutral", "negative"}
-    cleaned = [tag for tag in merged_tags if tag.lower() not in blocked]
-    return cleaned[:2]
+    return []
 
 
 def infer_theme(item, text):
@@ -218,8 +271,18 @@ def build_sentence(item, theme):
     core_text = choose_best_sentence(substance(item) or title)
     if (is_noisy_text(core_text) or len(core_text) < 60) and len(title) >= 30:
         core_text = title
-    if is_noisy_text(core_text):
-        core_text = "A material development was reported with direct implications for near-term operating conditions"
+    if is_noisy_text(core_text) or is_likely_non_english(core_text) or looks_like_title_fragment(core_text):
+        sector = smooth_sector_phrase(item.get("sector") or "")
+        date_str = clean_text(item.get("sourcePublishedAt") or item.get("publishedAt") or item.get("dateISO") or "")
+        base = ENGLISH_EVENT.get(theme, "A material development was reported with direct implications for near-term operating conditions")
+        if sector and date_str:
+            core_text = f"{base} in {sector} through {date_str}"
+        elif sector:
+            core_text = f"{base} in {sector}"
+        elif date_str:
+            core_text = f"{base} in reporting through {date_str}"
+        else:
+            core_text = base
 
     entities = pick_entities(item)
     actor_prefix = f"{', '.join(entities)}: " if entities else ""

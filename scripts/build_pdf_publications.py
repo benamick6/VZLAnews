@@ -222,6 +222,51 @@ def infer_year(item: dict) -> int | None:
     return None
 
 
+def _is_trusted_institutional_source(publisher: str, domain: str) -> bool:
+    """Check if source is from a trusted institution that we should be lenient with."""
+    trusted_keywords = [
+        "worldbank",
+        "imf",
+        "undp",
+        "unicef",
+        "cepal",
+        "eclac",
+        "paho",
+        "iadb",
+        "caf",
+        "un.org",
+        "fao",
+        "ifpri",
+        "reliefweb",
+        "brookings",
+        "csis",
+        "wilsoncenter",
+        "chathamhouse",
+        "carnegie",
+        "ilo",
+        "unctad",
+        "unesco",
+    ]
+    combined = f"{publisher} {domain}".lower()
+    return any(keyword in combined for keyword in trusted_keywords)
+
+
+def _content_mentions_venezuela(item: dict) -> bool:
+    """Check if Venezuela is mentioned anywhere in the item's content."""
+    haystack = " ".join([
+        norm(item.get("title") or ""),
+        norm(item.get("preview") or ""),
+        norm(item.get("description") or ""),
+    ]).lower()
+    return bool(
+        re.search(
+            r"\b(?:venezuela|venezuelan|venezolano(?:s)?|venezolana(?:s)?)\b",
+            haystack,
+            flags=re.IGNORECASE,
+        )
+    )
+
+
 def mentions_target_years(item: dict, years: set[int]) -> bool:
     haystack = " ".join(
         [
@@ -677,8 +722,18 @@ def main() -> None:
             continue
         seen.add(dedupe_key)
 
-        if not _title_mentions_venezuela(title):
-            continue
+        # For trusted institutional sources, check Venezuela anywhere in content
+        # For others, require Venezuela in title
+        temp_publisher = norm(item.get("publisher") or domain_of(landing_page_url))
+        temp_domain = domain_of(landing_page_url)
+        if _is_trusted_institutional_source(temp_publisher, temp_domain):
+            # Lenient: just check Venezuela is mentioned somewhere
+            if not _content_mentions_venezuela(item):
+                continue
+        else:
+            # Strict: require Venezuela in title
+            if not _title_mentions_venezuela(title):
+                continue
 
         publisher = norm(item.get("publisher") or domain_of(landing_page_url))
         published_at = item.get("publishedAt") or item.get("dateISO") or ""
@@ -705,7 +760,7 @@ def main() -> None:
     publications.sort(key=lambda publication: str(publication.get("publishedAt") or ""), reverse=True)
 
     year_range_sorted = sorted(TARGET_YEARS)
-    publications_recent = publications[:25]
+    publications_recent = publications[:7]
     publications_2025 = [p for p in publications_recent if int(p.get("year") or 0) == 2025]
     publications_2025_2026 = [
         p for p in publications_recent if int(p.get("year") or 0) in {2025, 2026}
