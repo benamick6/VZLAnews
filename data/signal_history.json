@@ -5,5 +5,12 @@
     "sanctions_count": 3,
     "oil_count": 8,
     "risk_avg": 24.56
+  },
+  {
+    "date": "2026-03-01",
+    "signals_count": 33,
+    "sanctions_count": 3,
+    "oil_count": 8,
+    "risk_avg": 23.79
   }
 ]

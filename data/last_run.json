@@ -1,14 +1,14 @@
 {
-  "run_at": "2026-02-28T23:51:19.290844+00:00",
-  "fetched": 2064,
-  "filtered": 133,
-  "deduplicated": 34,
-  "selected": 34,
+  "run_at": "2026-03-01T04:30:04.868111+00:00",
+  "fetched": 2789,
+  "filtered": 156,
+  "deduplicated": 33,
+  "selected": 33,
   "diff_new": 20,
   "diff_updated": 0,
-  "diff_dropped": 0,
+  "diff_dropped": 1,
   "trend_summary": {
-    "freq_7d": 34.0,
+    "freq_7d": 33.5,
     "intensity_30d": "\u2192 Stable",
     "direction_90d": "\u2192 Stable"
   },
@@ -65,13 +65,13 @@
       "summary": "This week in extractives, signal flow is concentrated around Oil production/export, Political transition, Sanctions. Risk pressure is mixed with an average score of 36/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
-        "US says it will allow resale of Venezuelan oil to Cuba",
+        "Exclusive-Venezuela's PDVSA Selling Oil Only to Individually Licensed Companies, Sources Say",
         "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber ("
       ],
       "opportunities": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
-        "US says it will allow resale of Venezuelan oil to Cuba",
-        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep"
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
+        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber ("
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -80,10 +80,9 @@
       ]
     },
     "Finance": {
-      "health": 5,
-      "summary": "This week in finance, signal flow is concentrated around FX / Inflation, Humanitarian crisis. Risk pressure is mixed with an average score of 48/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "health": 7,
+      "summary": "This week in finance, signal flow is concentrated around FX / Inflation. Risk pressure is mixed with an average score of 30/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "THE ECONOMIST: Venezuela",
         "Africa, Venezuela Advance Practical Trade and Investment Cooperation"
       ],
       "opportunities": [
@@ -152,16 +151,16 @@
     },
     "Infrastructure": {
       "health": 8,
-      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export, Political transition. Risk pressure is mixed with an average score of 21/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export, Political transition. Risk pressure is mixed with an average score of 22/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
-        "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo",
-        "Una visi\u00f3n de futuro que convoque a todos los venezolanos"
+        "Texas port humming as Trump ramps up Venezuela oil",
+        "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo"
       ],
       "opportunities": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
-        "Una visi\u00f3n de futuro que convoque a todos los venezolanos",
-        "Las adversidades de un preso pol\u00edtico"
+        "Texas port humming as Trump ramps up Venezuela oil",
+        "Una visi\u00f3n de futuro que convoque a todos los venezolanos"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -171,6 +170,13 @@
     }
   },
   "timeline_rows": [
+    {
+      "date": "2026-03-01",
+      "signals_count": 33,
+      "sanctions_count": 3,
+      "oil_count": 8,
+      "risk_avg": 23.79
+    },
     {
       "date": "2026-02-28",
       "signals_count": 34,
