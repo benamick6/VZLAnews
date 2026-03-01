@@ -2,6 +2,7 @@ import datetime
 import json
 import os
 import re
+from collections import Counter
 
 LATEST_JSON = "docs/data/latest.json"
 PUBS_JSON = "docs/data/pdf_publications_recent.json"
@@ -118,72 +119,58 @@ def quality_sentence(text):
     return sentence
 
 
-def build_news_bullets(latest, news_items):
-    starters = [
-        "Political and regulatory signals:",
-        "Economic and market movement:",
-        "Humanitarian and social conditions:",
-        "Energy and extractives developments:",
-    ]
+def build_news_bullets(_latest, news_items):
+    grouped = {}
+    for item in news_items:
+        sector = norm(item.get("sector") or "General")
+        grouped.setdefault(sector, []).append(item)
 
-    sectors = latest.get("sectors") or []
-    sector_bullets = []
-    for sector in sectors:
-        sector_name = norm(sector.get("name") or "")
-        if not sector_name:
-            continue
-
-        synth = sector.get("synth") or {}
-        synth_bullets = [quality_sentence(value) for value in (synth.get("bullets") or [])]
-        synth_bullets = [value for value in synth_bullets if value]
-
-        item_summaries = []
-        for item in (sector.get("items") or [])[:6]:
-            candidate = quality_sentence(substance(item))
-            if candidate:
-                item_summaries.append(candidate)
-
-        merged = []
-        for candidate in synth_bullets + item_summaries:
-            if candidate and candidate not in merged:
-                merged.append(candidate)
-            if len(merged) >= 2:
-                break
-
-        drivers = [norm(value).lower() for value in (synth.get("drivers") or []) if norm(value)]
-        if drivers:
-            lead = f"{sector_name} reporting keeps {', '.join(drivers[:2])} in focus for near-term decisions."
-        else:
-            lead = f"{sector_name} reporting points to meaningful shifts that require close monitoring in the coming days."
-
-        if merged:
-            if len(merged) > 1:
-                body = f"{merged[0]} {merged[1]}"
-            else:
-                body = merged[0]
-            sector_bullets.append(norm(f"{lead} {body}"))
-
-        if len(sector_bullets) >= 4:
-            break
-
-    if not sector_bullets:
-        pool = [quality_sentence(substance(item)) for item in news_items]
-        pool = [entry for entry in pool if entry]
-    else:
-        pool = []
-
-    if not sector_bullets and not pool:
+    if not grouped:
         return [
-            "Political and regulatory signals: Coverage remains thin in the current cycle, so directional interpretation should stay conservative until fresh source reporting arrives."
+            "Political and regulatory signals: Coverage remains thin in the current cycle, so interpretation should stay conservative until fresh reporting arrives."
         ]
 
-    if sector_bullets:
-        return sector_bullets[:4]
+    ranked_sectors = sorted(grouped.items(), key=lambda entry: len(entry[1]), reverse=True)
+    bullets = []
 
-    fallback = []
-    for idx, candidate in enumerate(pool[:4]):
-        fallback.append(norm(f"{starters[idx % len(starters)]} {candidate}"))
-    return fallback[:4]
+    for sector_name, sector_items in ranked_sectors[:4]:
+        theme_counts = Counter()
+        latest_date = ""
+
+        for item in sector_items:
+            for theme in item.get("event_types") or []:
+                normalized = norm(theme)
+                if normalized:
+                    theme_counts[normalized] += 2
+            for tag in item.get("tags") or []:
+                normalized = norm(tag)
+                if normalized:
+                    theme_counts[normalized] += 1
+
+            date_str = str(item.get("sourcePublishedAt") or item.get("publishedAt") or item.get("dateISO") or "")
+            if date_str and date_str > latest_date:
+                latest_date = date_str
+
+        top_themes = [theme.lower() for theme, _count in theme_counts.most_common(2)]
+        if len(top_themes) == 0:
+            top_themes = ["policy direction", "market conditions"]
+        elif len(top_themes) == 1:
+            top_themes.append("implementation timing")
+
+        count = len(sector_items)
+        sentence1 = (
+            f"{sector_name} coverage across {count} items points to combined pressure around {top_themes[0]} and {top_themes[1]}, "
+            "with counterpart decisions likely to hinge on near-term policy execution."
+        )
+        if latest_date:
+            sentence2 = (
+                f"Signals remain active in reporting through {latest_date}, indicating the trend set is still developing rather than resolved."
+            )
+            bullets.append(norm(f"{sentence1} {sentence2}"))
+        else:
+            bullets.append(norm(sentence1))
+
+    return bullets[:4]
 
 
 def build_publication_bullet(publications):
