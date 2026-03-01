@@ -11,10 +11,12 @@ from dateutil import parser as dateutil_parser
 
 LATEST_JSON = "docs/data/latest.json"
 FEEDS_TXT = "feeds.txt"
-TARGET_YEAR = 2025
-OUT_JSON = "docs/data/pdf_publications_2025.json"
-
 TODAY = datetime.date.today()
+YEAR_MAX = TODAY.year
+YEAR_MIN = TODAY.year - 1
+TARGET_YEARS = {YEAR_MIN, YEAR_MAX}
+OUT_JSON = "docs/data/pdf_publications_2025_2026.json"
+
 UA = "Mozilla/5.0 (compatible; MarketEdgeVZLAnews/1.0; +https://marketedgeglobal.github.io/VZLAnews/)"
 
 ALLOWED_DOMAINS = [
@@ -138,8 +140,7 @@ def infer_year(item: dict) -> int | None:
     return None
 
 
-def mentions_target_year(item: dict, year: int) -> bool:
-    target = str(year)
+def mentions_target_years(item: dict, years: set[int]) -> bool:
     haystack = " ".join(
         [
             str(item.get("title") or ""),
@@ -149,7 +150,11 @@ def mentions_target_year(item: dict, year: int) -> bool:
             str(item.get("source_url") or ""),
         ]
     )
-    return re.search(rf"\b{re.escape(target)}\b", haystack) is not None
+    for year in years:
+        target = str(year)
+        if re.search(rf"\b{re.escape(target)}\b", haystack):
+            return True
+    return False
 
 
 def is_pdf_url(url: str) -> bool:
@@ -392,7 +397,7 @@ def main() -> None:
             continue
 
         year = infer_year(item)
-        if year != TARGET_YEAR and not mentions_target_year(item, TARGET_YEAR):
+        if year not in TARGET_YEARS and not mentions_target_years(item, TARGET_YEARS):
             continue
 
         if not looks_like_research(haystack):
@@ -423,7 +428,10 @@ def main() -> None:
         seen.add(dedupe_key)
 
         publisher = norm(item.get("publisher") or domain_of(final_url))
-        published_at = item.get("publishedAt") or item.get("dateISO") or str(TARGET_YEAR)
+        published_at = item.get("publishedAt") or item.get("dateISO") or ""
+        publication_year = year if year in TARGET_YEARS else YEAR_MAX
+        if not published_at:
+            published_at = str(publication_year)
 
         publications.append(
             {
@@ -432,7 +440,7 @@ def main() -> None:
                 "url": final_url,
                 "publisher": publisher,
                 "publishedAt": published_at,
-                "year": TARGET_YEAR,
+                "year": publication_year,
                 "sector": item.get("sector") or "",
                 "abstract": make_abstract(item),
             }
@@ -442,7 +450,8 @@ def main() -> None:
 
     output = {
         "asOf": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "year": TARGET_YEAR,
+        "yearRange": [YEAR_MIN, YEAR_MAX],
+        "yearLabel": f"{YEAR_MIN}-{YEAR_MAX}",
         "count": len(publications),
         "publications": publications[:25],
     }

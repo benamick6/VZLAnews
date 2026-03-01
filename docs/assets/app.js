@@ -253,9 +253,9 @@
         }
     }
 
-    async function loadPdfPubs2025() {
+    async function loadPdfPubs2Y() {
         try {
-            return await loadJson('data/pdf_publications_2025.json');
+            return await loadJson('data/pdf_publications_2025_2026.json');
         } catch {
             return null;
         }
@@ -277,14 +277,14 @@
                     <div class="pub-abstract">${esc(publication.abstract || '')}</div>
                 </div>
             `).join('')
-            : '<div class="pub-empty">No open-access Venezuela-focused PDFs detected for 2025 from your current feed set.</div>';
+            : '<div class="pub-empty">No open-access Venezuela-focused PDFs detected for 2025–2026 from your current feed set.</div>';
 
         return `
             <section class="panel pub-card" id="deep-dive-pubs">
                 <div class="pub-head">
                     <div>
-                        <h3>Deep-Dive Publications (PDF) – Venezuela (2025)</h3>
-                        <div class="pub-sub">In-depth secondary research: reports, working papers, and studies. Open access only.</div>
+                        <h3>Deep-Dive Publications (PDF) – Venezuela (2025–2026)</h3>
+                        <div class="pub-sub">In-depth secondary research from the past two years: reports, publications, working papers, and studies. Open access only.</div>
                     </div>
                     <div class="pub-count">${esc(String((pubs && pubs.count) ?? list.length))} found</div>
                 </div>
@@ -334,7 +334,7 @@
                 loadJson('data/latest.json'),
                 loadJson('data/macros.json'),
                 loadIMF(),
-                loadPdfPubs2025(),
+                loadPdfPubs2Y(),
                 loadBdOpps()
             ]);
             const debugMode = new URLSearchParams(window.location.search).get('debug') === '1';
