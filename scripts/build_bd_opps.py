@@ -439,7 +439,7 @@ def main() -> None:
         score = score_opp(hay)
         if contains_any(hay, EXCLUDE_TERMS) and score < 5:
             continue
-        if score < 5:
+        if score < 3:
             continue
         if is_expired_deadline(deadline, today):
             continue
