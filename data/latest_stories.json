@@ -1,37 +1,12 @@
 [
   {
-    "id": "url::https://elpitazo.net/politica/dgcim-detiene-al-ex-viceministro-de-deporte-alexander-mimou-vargas",
-    "title": "Dgcim detiene al ex viceministro de Deporte Alexander \u00abMimou\u00bb Vargas",
-    "url": "https://elpitazo.net/politica/dgcim-detiene-al-ex-viceministro-de-deporte-alexander-mimou-vargas/",
-    "source": "elpitazo.net",
-    "source_quality": "Tier 2",
-    "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
-    "sector": "Extractives & Mining",
-    "summary": "Caracas.- Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex viceministro del Deporte, Alexander \u00abMimou\u00bb Vargas, quien fue un cercano colaborador de Nicol\u00e1s Maduro. Fuentes de El Pitazo confirmaron la detenci\u00f3n\u2026",
-    "summary_confidence": "High (Feed snippet)",
-    "event_types": [
-      "Political transition"
-    ],
-    "sentiment": "Neutral",
-    "materiality": 1,
-    "risk_score": 15,
-    "entities": [
-      "Maduro"
-    ],
-    "tags": [
-      "Energy",
-      "Infrastructure"
-    ]
-  },
-  {
     "id": "url::https://elnacional.com/2026/03/envios-desde-houston-marcan-fase-en-la-reactivacion-petrolera",
     "title": "Env\u00edos desde Houston marcan nueva fase en la reactivaci\u00f3n petrolera venezolana",
     "url": "https://www.elnacional.com/2026/03/envios-desde-houston-marcan-fase-en-la-reactivacion-petrolera/",
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Extractives & Mining",
     "summary": "En su reciente discurso sobre el Estado de la Uni\u00f3n, el presidente Donald Trump dijo que Estados Unidos hab\u00eda recibido m\u00e1s de 80 millones de barriles de petr\u00f3leo de Venezuela, y describi\u00f3 a la naci\u00f3n como \"nuestro nuevo amigo y socio\" The post Env\u00edos desde Houston marcan nueva\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -49,7 +24,7 @@
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Extractives & Mining",
     "summary": "Durante la cuarta edici\u00f3n de Perspectivas Agropecuarias Tendencias Venezuela, realizada en Valencia, representantes del sector para analizar tendencias de consumo, mercados internacionales, tecnolog\u00edas emergentes, inteligencia artificial, finanzas y los escenarios claves para\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -71,7 +46,7 @@
     "source": "zawya.com",
     "source_quality": "Tier 3",
     "published": "2026-02-27",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Extractives & Mining",
     "summary": "Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration ...",
     "summary_confidence": "High (Feed snippet)",
@@ -95,7 +70,7 @@
     "source": "trinidadexpress.com",
     "source_quality": "Tier 3",
     "published": "2026-02-27",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Extractives & Mining",
     "summary": "Days after US Secretary of State Marco Rubio met with Prime minister Kamla Persad-Bissessar at Caricom\u2019s 50th Regular Meeting of the Conference of Heads of Government, representatives of energy giant,.",
     "summary_confidence": "High (Feed snippet)",
@@ -117,7 +92,7 @@
     "source": "jpost.com",
     "source_quality": "Tier 3",
     "published": "2026-02-26",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Extractives & Mining",
     "summary": "Venezuela's oil ministry suspends 19 production-sharing contracts, including projects in Lake Maracaibo and the Orinoco Belt, as part of a broader review of deals linked to US sanctions.",
     "summary_confidence": "High (Feed snippet)",
@@ -144,7 +119,7 @@
     "source": "yahoo.com",
     "source_quality": "Tier 3",
     "published": "2026-02-25",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Extractives & Mining",
     "summary": "WASHINGTON, Feb 25 (Reuters) - The U.S. Treasury Department said on Wednesday it would authorize companies seeking licenses to resell Venezuelan oil to Cuba, according \u200cto guidance posted on the ...",
     "summary_confidence": "High (Feed snippet)",
@@ -170,7 +145,7 @@
     "source": "reuters.com",
     "source_quality": "Tier 1",
     "published": "2026-02-23",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Extractives & Mining",
     "summary": "Trump officials have been pressing an interim administration in Caracas to allow U.S. firms access to oil and to instigate reforms since the U.S.",
     "summary_confidence": "High (Feed snippet)",
@@ -194,7 +169,7 @@
     "source": "reuters.com",
     "source_quality": "Tier 1",
     "published": "2026-02-18",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Extractives & Mining",
     "summary": "U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan state oil company PDVSA starting in April to maximize profits, rather than purchasing through ...",
     "summary_confidence": "High (Feed snippet)",
@@ -218,7 +193,7 @@
     "source": "reuters.com",
     "source_quality": "Tier 1",
     "published": "2026-02-17",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Extractives & Mining",
     "summary": "The tiny oil-producing nation of Guyana, already one of the world's fastest-growing economies, has a window of opportunity for more expansion amid ongoing U.S. activity in neighboring Venezuela, ...",
     "summary_confidence": "High (Feed snippet)",
@@ -235,13 +210,40 @@
     ]
   },
   {
+    "id": "url::https://money.usnews.com/investing/news/articles/2026-02-13/exclusive-venezuelas-pdvsa-selling-oil-only-to-individually-licensed-companies-sources-say",
+    "title": "Exclusive-Venezuela's PDVSA Selling Oil Only to Individually Licensed Companies, Sources Say",
+    "url": "https://money.usnews.com/investing/news/articles/2026-02-13/exclusive-venezuelas-pdvsa-selling-oil-only-to-individually-licensed-companies-sources-say",
+    "source": "money.usnews.com",
+    "source_quality": "Tier 3",
+    "published": "2026-02-13",
+    "retrieved": "2026-03-01 19:48 UTC",
+    "sector": "Extractives & Mining",
+    "summary": "HOUSTON, Feb 13 (Reuters) - Venezuela's state-run oil company PDVSA has refused to \u2060sell oil \u2060to companies without individual U.S. licenses in the past \u2060two weeks, four sources from companies seeking ...",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [
+      "Sanctions",
+      "Oil production/export"
+    ],
+    "sentiment": "Neutral",
+    "materiality": 3,
+    "risk_score": 60,
+    "entities": [
+      "PDVSA",
+      "OFAC"
+    ],
+    "tags": [
+      "Sanctions",
+      "Energy"
+    ]
+  },
+  {
     "id": "url::https://venezuelanalysis.com/opinion/unilateral-sanctions-food-insecurity-and-food-sovereignty-construction-in-venezuela-challenges-and-prospects-for-zero-hunger-in-a-transforming-petrostate",
     "title": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate",
     "url": "https://venezuelanalysis.com/opinion/unilateral-sanctions-food-insecurity-and-food-sovereignty-construction-in-venezuela-challenges-and-prospects-for-zero-hunger-in-a-transforming-petrostate/",
     "source": "venezuelanalysis.com",
     "source_quality": "Tier 2",
     "published": "2026-02-18",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Food & Agriculture",
     "summary": "Natalia Burdynska Schuurman researched Venezuela's construction of food sovereignty under the Bolivarian Revolution and amid US sanctions.",
     "summary_confidence": "High (Feed snippet)",
@@ -259,55 +261,13 @@
     ]
   },
   {
-    "id": "url::https://reuters.com/world/us/just-one-four-americans-support-us-strikes-iran-reutersipsos-poll-finds-2026-03-01",
-    "title": "Just one in four Americans supports US strikes on Iran, Reuters/Ipsos poll finds",
-    "url": "https://www.reuters.com/world/us/just-one-four-americans-support-us-strikes-iran-reutersipsos-poll-finds-2026-03-01/",
-    "source": "reuters.com",
-    "source_quality": "Tier 1",
-    "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
-    "sector": "Health & Water",
-    "summary": "WASHINGTON, March 1 (Reuters) - Only one in four Americans approves of the U.S. strikes that killed Iran\u2019s leader, while about half \u2014 including one in four Republicans \u2014 believe President Donald Trump ...",
-    "summary_confidence": "High (Feed snippet)",
-    "event_types": [],
-    "sentiment": "Neutral",
-    "materiality": 2,
-    "risk_score": 30,
-    "entities": [],
-    "tags": [
-      "Infrastructure"
-    ]
-  },
-  {
-    "id": "url::https://apnews.com/article/trump-iran-strike-conflict-us-war-opposition-8fa7a441a4a696a8562de583395ab0bf",
-    "title": "Trump\u2019s \u2018America First\u2019 campaign battle cry gives way to military strikes abroad",
-    "url": "https://apnews.com/article/trump-iran-strike-conflict-us-war-opposition-8fa7a441a4a696a8562de583395ab0bf",
-    "source": "apnews.com",
-    "source_quality": "Tier 1",
-    "published": "2026-02-28",
-    "retrieved": "2026-03-01 19:21 UTC",
-    "sector": "Health & Water",
-    "summary": "President Trump\u2019s decision to strike Iran pulls him toward the kind of overseas conflict he once attacked.",
-    "summary_confidence": "High (Feed snippet)",
-    "event_types": [
-      "Security"
-    ],
-    "sentiment": "Negative",
-    "materiality": 2,
-    "risk_score": 60,
-    "entities": [],
-    "tags": [
-      "Elections"
-    ]
-  },
-  {
     "id": "url::https://zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9",
     "title": "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
     "url": "https://www.zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9",
     "source": "zawya.com",
     "source_quality": "Tier 3",
     "published": "2026-02-26",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Finance & Investment",
     "summary": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...",
     "summary_confidence": "High (Feed snippet)",
@@ -321,13 +281,38 @@
     "tags": []
   },
   {
+    "id": "url::https://reuters.com/world/americas/imf-says-venezuelas-economic-humanitarian-situation-is-quite-fragile-2026-02-19",
+    "title": "IMF says Venezuela's economic, humanitarian situation is 'quite fragile'",
+    "url": "https://www.reuters.com/world/americas/imf-says-venezuelas-economic-humanitarian-situation-is-quite-fragile-2026-02-19/",
+    "source": "reuters.com",
+    "source_quality": "Tier 1",
+    "published": "2026-02-19",
+    "retrieved": "2026-03-01 19:48 UTC",
+    "sector": "Finance & Investment",
+    "summary": "Venezuela's economic and humanitarian situation is \"quite fragile,\" the International Monetary Fund said on Thursday, adding that it was seeing inflation estimated to be in the triple digits and a ...",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [
+      "Humanitarian crisis",
+      "FX / Inflation"
+    ],
+    "sentiment": "Neutral",
+    "materiality": 4,
+    "risk_score": 60,
+    "entities": [
+      "IMF"
+    ],
+    "tags": [
+      "Debt/FX"
+    ]
+  },
+  {
     "id": "url::https://elnacional.com/2026/03/llegaremos-para-garantizar-una-transicion-a-la-democracia-maria-corina-machado-anuncia-que-regresara-pronto-a-venezuela",
     "title": "\"Llegaremos para garantizar una transici\u00f3n a la democracia\": Mar\u00eda Corina Machado anuncia que regresar\u00e1 pronto a Venezuela",
     "url": "https://www.elnacional.com/2026/03/llegaremos-para-garantizar-una-transicion-a-la-democracia-maria-corina-machado-anuncia-que-regresara-pronto-a-venezuela/",
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "The post \"Llegaremos para garantizar una transici\u00f3n a la democracia\": Mar\u00eda Corina Machado anuncia que regresar\u00e1 pronto a Venezuela appeared first on EL NACIONAL .",
     "summary_confidence": "High (Feed snippet)",
@@ -347,7 +332,7 @@
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "Los movimientos tuvieron lugar una semana despu\u00e9s de la entrada en vigor de la amnist\u00eda The post \u00bfQu\u00e9 significan los cambios en el Ministerio P\u00fablico y Defensor\u00eda del Pueblo en Venezuela? appeared first on EL NACIONAL .",
     "summary_confidence": "High (Feed snippet)",
@@ -367,7 +352,7 @@
     "source": "elpitazo.net",
     "source_quality": "Tier 2",
     "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "Caracas.- El canciller venezolano, Yv\u00e1n Gil, borr\u00f3 de sus redes sociales y de la de la Canciller\u00eda de Venezuela el comunicado en el que condenaba el ataque de Estados Unidos e Israel contra Ir\u00e1n, cuando apenas se confirm\u00f3 la muerte del l\u00edder supremo iran\u00ed, Al\u00ed Jamene\u00ed. En el\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -381,59 +366,15 @@
     ]
   },
   {
-    "id": "url::https://elnacional.com/2026/03/quien-es-eric-slover-el-piloto-unicornio-condecorado-por-la-captura-de-maduro",
-    "title": "\u00bfQui\u00e9n es Eric Slover, el piloto \"unicornio\" al que premi\u00f3 Trump por la captura de Maduro?",
-    "url": "https://www.elnacional.com/2026/03/quien-es-eric-slover-el-piloto-unicornio-condecorado-por-la-captura-de-maduro/",
-    "source": "elnacional.com",
-    "source_quality": "Tier 3",
-    "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
-    "sector": "Cross-cutting / Policy / Risk",
-    "summary": "El piloto de 45 a\u00f1os, herido de gravedad en la pierna durante el operativo que desembarc\u00f3 en Caracas, lider\u00f3 la infiltraci\u00f3n a\u00e9rea sorteando un valle monta\u00f1oso y amenazas tierra-aire y logr\u00f3 mantener el control para que sus artilleros neutralizaran el fuego enemigo The post\u2026",
-    "summary_confidence": "High (Feed snippet)",
-    "event_types": [
-      "Political transition"
-    ],
-    "sentiment": "Neutral",
-    "materiality": 1,
-    "risk_score": 15,
-    "entities": [
-      "Maduro"
-    ],
-    "tags": [
-      "Policy"
-    ]
-  },
-  {
     "id": "url::https://elpitazo.net/politica/maria-corina-machado-anuncia-su-regreso-a-venezuela-para-preparar-una-nueva-victoria-electoral",
     "title": "Mar\u00eda Corina Machado anuncia su regreso a Venezuela para preparar una \u201cnueva victoria electoral\u201d",
     "url": "https://elpitazo.net/politica/maria-corina-machado-anuncia-su-regreso-a-venezuela-para-preparar-una-nueva-victoria-electoral/",
     "source": "elpitazo.net",
     "source_quality": "Tier 2",
     "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "Caracas.- La l\u00edder opositora venezolana, Mar\u00eda Corina Machado, anunci\u00f3 este domingo 1 de marzo su regreso a Venezuela en las pr\u00f3ximas semanas para preparar una \u201cnueva victoria electoral\u201d. \u201cVoy a regresar en pocas semanas a Venezuela.",
-    "summary_confidence": "High (Feed snippet)",
-    "event_types": [],
-    "sentiment": "Neutral",
-    "materiality": 1,
-    "risk_score": 15,
-    "entities": [],
-    "tags": [
-      "Policy"
-    ]
-  },
-  {
-    "id": "url::https://elpitazo.net/politica/mapas-de-poder-las-conexiones-oscuras-de-zapatero",
-    "title": "Mapas de Poder: Las conexiones oscuras de Zapatero",
-    "url": "https://elpitazo.net/politica/mapas-de-poder-las-conexiones-oscuras-de-zapatero/",
-    "source": "elpitazo.net",
-    "source_quality": "Tier 2",
-    "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
-    "sector": "Cross-cutting / Policy / Risk",
-    "summary": "Este domingo a las 7:00 pm, el canal de YouTube de El Pitazo estrena un nuevo cap\u00edtulo de Mapas de Poder, dedicado a un personaje que ha marcado la relaci\u00f3n entre Espa\u00f1a y Venezuela en los \u00faltimos a\u00f1os: el expresidente del Gobierno espa\u00f1ol, Jos\u00e9 Luis Rodr\u00edguez Zapatero. Durante\u2026",
     "summary_confidence": "High (Feed snippet)",
     "event_types": [],
     "sentiment": "Neutral",
@@ -451,7 +392,7 @@
     "source": "elpitazo.net",
     "source_quality": "Tier 2",
     "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "Madrid.- Plus Ultra L\u00edneas A\u00e9reas reanudar\u00e1 este martes 3 de marzo sus vuelos con Caracas, suspendidos desde el 23 de noviembre de 2025. Esta es la segunda aerol\u00ednea espa\u00f1ola en volver al pa\u00eds despu\u00e9s de Air Europa, que lo hizo el pasado 17 de febrero, y a la espera de que\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -465,40 +406,15 @@
     ]
   },
   {
-    "id": "url::https://elnacional.com/2026/03/jaime-bayly-zapatero-ha-lavado-la-imagen-manchada-de-maduro-que-ha-matado-y-torturado-a-mucha-gente",
-    "title": "Jaime Bayly: \"Zapatero ha lavado la imagen manchada de Maduro, que ha matado y torturado a mucha gente\"",
-    "url": "https://www.elnacional.com/2026/03/jaime-bayly-zapatero-ha-lavado-la-imagen-manchada-de-maduro-que-ha-matado-y-torturado-a-mucha-gente/",
+    "id": "url::https://elnacional.com/2026/03/venezuela-el-miedo-retrocede-el-poder-calcula-el-mundo-condiciona",
+    "title": "Venezuela: el miedo retrocede, el poder calcula, el mundo condiciona",
+    "url": "https://www.elnacional.com/2026/03/venezuela-el-miedo-retrocede-el-poder-calcula-el-mundo-condiciona/",
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Cross-cutting / Policy / Risk",
-    "summary": "El escritor peruano vuelve a Madrid, su ciudad so\u00f1ada, \u00abdonde comenz\u00f3 todo lo bueno\u00bb, y denuncia en esta entrevista para El Debate el pasado golpista de Venezuela para entender la actual dictadura bolivariana The post Jaime Bayly: \"Zapatero ha lavado la imagen manchada de\u2026",
-    "summary_confidence": "High (Feed snippet)",
-    "event_types": [
-      "Political transition",
-      "FX / Inflation"
-    ],
-    "sentiment": "Neutral",
-    "materiality": 1,
-    "risk_score": 15,
-    "entities": [
-      "Maduro"
-    ],
-    "tags": [
-      "Policy"
-    ]
-  },
-  {
-    "id": "url::https://elnacional.com/2026/03/fernando-batista-dirigira-a-la-seleccion-de-costa-rica",
-    "title": "Fernando Batista dirigir\u00e1 a la selecci\u00f3n de Costa Rica",
-    "url": "https://www.elnacional.com/2026/03/fernando-batista-dirigira-a-la-seleccion-de-costa-rica/",
-    "source": "elnacional.com",
-    "source_quality": "Tier 3",
-    "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
-    "sector": "Cross-cutting / Policy / Risk",
-    "summary": "La FCRF destac\u00f3 que Batista fue t\u00e9cnico de las selecciones sub-20 y sub-23 de Argentina, logrando la clasificaci\u00f3n del equipo a los Juegos Ol\u00edmpicos de Tokio 2020, y que viene de dirigir a la selecci\u00f3n absoluta de Venezuela entre 2023 y 2025 The post Fernando Batista dirigir\u00e1 a\u2026",
+    "summary": "En Venezuela no estamos viviendo una \u201cnormalizaci\u00f3n\u201d. Estamos entrando en una fase m\u00e1s rara y m\u00e1s riesgosa: el r\u00e9gimen intenta aflojar lo suficiente para ganar ox\u00edgeno, la sociedad empieza a perder el miedo por goteo, y el entorno internacional \u2014por primera vez en mucho tiempo\u2014\u2026",
     "summary_confidence": "High (Feed snippet)",
     "event_types": [],
     "sentiment": "Neutral",
@@ -510,15 +426,75 @@
     ]
   },
   {
-    "id": "url::https://elnacional.com/2026/03/plus-ultra-reanudara-desde-el-3-de-marzo-sus-vuelos-madrid-caracas",
-    "title": "Plus Ultra reanudar\u00e1 desde el 3 de marzo sus vuelos Madrid-Caracas",
-    "url": "https://www.elnacional.com/2026/03/plus-ultra-reanudara-desde-el-3-de-marzo-sus-vuelos-madrid-caracas/",
+    "id": "url::https://elnacional.com/2026/03/venezuela-en-transicion-geopolitica",
+    "title": "Venezuela en transici\u00f3n geopol\u00edtica",
+    "url": "https://www.elnacional.com/2026/03/venezuela-en-transicion-geopolitica/",
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-03-01",
-    "retrieved": "2026-03-01 19:21 UTC",
+    "retrieved": "2026-03-01 19:48 UTC",
     "sector": "Cross-cutting / Policy / Risk",
-    "summary": "La aerol\u00ednea dej\u00f3 de volar a Venezuela el 23 de noviembre de 2025, siguiendo las recomendaciones de la Agencia Estatal de Seguridad A\u00e9rea (AESA) y de su hom\u00f3loga europea EASA The post Plus Ultra reanudar\u00e1 desde el 3 de marzo sus vuelos Madrid-Caracas appeared first on EL\u2026",
+    "summary": "La transici\u00f3n geopol\u00edtica en Venezuela no puede entenderse \u00fanicamente como un proceso interno de reorganizaci\u00f3n pol\u00edtica o econ\u00f3mica. M\u00e1s bien, forma parte de un reordenamiento estrat\u00e9gico m\u00e1s amplio en el que Estados Unidos ejerce su influencia, guiado por sus intereses en el\u2026",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [],
+    "sentiment": "Neutral",
+    "materiality": 1,
+    "risk_score": 15,
+    "entities": [],
+    "tags": [
+      "Policy"
+    ]
+  },
+  {
+    "id": "url::https://elpitazo.net/politica/parlamento-venezolano-anuncia-la-excarcelacion-de-31-militares-en-el-marco-de-la-ley-de-amnistia",
+    "title": "Parlamento venezolano anuncia la excarcelaci\u00f3n de 31 militares en el marco de la Ley de Amnist\u00eda",
+    "url": "https://elpitazo.net/politica/parlamento-venezolano-anuncia-la-excarcelacion-de-31-militares-en-el-marco-de-la-ley-de-amnistia/",
+    "source": "elpitazo.net",
+    "source_quality": "Tier 2",
+    "published": "2026-02-28",
+    "retrieved": "2026-03-01 19:48 UTC",
+    "sector": "Cross-cutting / Policy / Risk",
+    "summary": "El presidente de la comisi\u00f3n parlamentaria para la aplicaci\u00f3n de la Ley de Amnist\u00eda para la Convivencia Democr\u00e1tica en Venezuela, el diputado Jorge Arreaza, inform\u00f3 este s\u00e1bado que 31 militares fueron excarcelados con \u00abmedidas alternativas\u00bb con el objetivo de contribuir a la paz\u2026",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [],
+    "sentiment": "Neutral",
+    "materiality": 1,
+    "risk_score": 15,
+    "entities": [],
+    "tags": [
+      "Policy"
+    ]
+  },
+  {
+    "id": "url::https://elpitazo.net/politica/miguel-rodriguez-torres-regreso-a-venezuela-esto-es-lo-que-se-sabe",
+    "title": "\u00bfMiguel Rodr\u00edguez Torres regres\u00f3 a Venezuela? Esto es lo que se sabe",
+    "url": "https://elpitazo.net/politica/miguel-rodriguez-torres-regreso-a-venezuela-esto-es-lo-que-se-sabe/",
+    "source": "elpitazo.net",
+    "source_quality": "Tier 2",
+    "published": "2026-02-28",
+    "retrieved": "2026-03-01 19:48 UTC",
+    "sector": "Cross-cutting / Policy / Risk",
+    "summary": "El viernes 27 de febrero circul\u00f3 la versi\u00f3n de que el mayor general Miguel Rodr\u00edguez Torres, exministro del Interior y Justicia, aterrizar\u00eda a las 9:00 de la noche en el aeropuerto internacional de Maiquet\u00eda, procedente desde Madrid, Espa\u00f1a. Este posible regreso se enmarca en un\u2026",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [],
+    "sentiment": "Neutral",
+    "materiality": 1,
+    "risk_score": 15,
+    "entities": [],
+    "tags": [
+      "Policy"
+    ]
+  },
+  {
+    "id": "url::https://elnacional.com/2026/02/fiscalia-de-ecuador-allana-la-sede-del-correismo",
+    "title": "Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo por supuesta financiaci\u00f3n de Venezuela",
+    "url": "https://www.elnacional.com/2026/02/fiscalia-de-ecuador-allana-la-sede-del-correismo/",
+    "source": "elnacional.com",
+    "source_quality": "Tier 3",
+    "published": "2026-02-28",
+    "retrieved": "2026-03-01 19:48 UTC",
+    "sector": "Cross-cutting / Policy / Risk",
+    "summary": "La Fiscal\u00eda General del Estado y la Polic\u00eda Nacional de Ecuador allanaron este s\u00e1bado la sede del movimiento Revoluci\u00f3n Ciudadana.",
     "summary_confidence": "High (Feed snippet)",
     "event_types": [],
     "sentiment": "Neutral",

@@ -1,14 +1,14 @@
 {
-  "run_at": "2026-03-01T19:21:24.209786+00:00",
-  "fetched": 3967,
-  "filtered": 432,
-  "deduplicated": 51,
-  "selected": 51,
-  "diff_new": 50,
+  "run_at": "2026-03-01T19:48:56.872121+00:00",
+  "fetched": 4082,
+  "filtered": 229,
+  "deduplicated": 31,
+  "selected": 31,
+  "diff_new": 15,
   "diff_updated": 0,
-  "diff_dropped": 25,
+  "diff_dropped": 8,
   "trend_summary": {
-    "freq_7d": 42.5,
+    "freq_7d": 32.5,
     "intensity_30d": "\u2192 Stable",
     "direction_90d": "\u2192 Stable"
   },
@@ -62,7 +62,7 @@
   "sector_briefs": {
     "Extractives": {
       "health": 6,
-      "summary": "This week in extractives, signal flow is concentrated around Oil production/export, Political transition, Regulatory reform. Risk pressure is mixed with an average score of 42/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in extractives, signal flow is concentrated around Oil production/export, Political transition, Regulatory reform. Risk pressure is mixed with an average score of 44/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
         "Exclusive: US refiners Phillips 66, Citgo seek to buy crude directly from Venezuela, sources sa",
@@ -80,14 +80,15 @@
       ]
     },
     "Finance": {
-      "health": 7,
-      "summary": "This week in finance, signal flow is concentrated around FX / Inflation. Risk pressure is mixed with an average score of 30/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "health": 6,
+      "summary": "This week in finance, signal flow is concentrated around FX / Inflation, Humanitarian crisis. Risk pressure is mixed with an average score of 45/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
+        "IMF says Venezuela's economic, humanitarian situation is 'quite fragile'",
         "Africa, Venezuela Advance Practical Trade and Investment Cooperation"
       ],
       "opportunities": [
         "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
-        "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
+        "IMF says Venezuela's economic, humanitarian situation is 'quite fragile'",
         "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
       ],
       "watch": [
@@ -114,35 +115,36 @@
       ]
     },
     "Health": {
-      "health": 6,
-      "summary": "This week in health, signal flow is concentrated around Security. Risk pressure is mixed with an average score of 45/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "health": 5,
+      "summary": "Coverage is limited this cycle; monitor for confirmation in the next run.",
       "risks": [
-        "Trump\u2019s \u2018America First\u2019 campaign battle cry gives way to military strikes abroad",
-        "Just one in four Americans supports US strikes on Iran, Reuters/Ipsos poll finds"
+        "Signal density is low",
+        "Data confidence is constrained",
+        "Cross-check with primary sources"
       ],
       "opportunities": [
-        "Just one in four Americans supports US strikes on Iran, Reuters/Ipsos poll finds",
-        "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
-        "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
+        "Watch for early policy movement",
+        "Track counterpart statements",
+        "Review exposure scenarios"
       ],
       "watch": [
-        "Executive decrees and regulatory circulars",
-        "Sanctions/license language shifts",
-        "Operational updates from Tier 1 and Tier 2 sources"
+        "Next weekly cycle",
+        "Regulatory updates",
+        "Source confirmation"
       ]
     },
     "Governance": {
       "health": 8,
-      "summary": "This week in governance, signal flow is concentrated around FX / Inflation, Political transition, Regulatory reform. Risk pressure is mixed with an average score of 24/100. Positive momentum appears in 0 items, while 2 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in governance, signal flow is concentrated around Political transition, Regulatory reform, Sanctions. Risk pressure is mixed with an average score of 24/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Spain urges EU to lift sanctions on Venezuela's interim president after amnesty bill",
-        "Trump's Iran strike tests MAGA unity ahead of midterms",
-        "Maduro\u2019s lawyer says US is blocking Venezuela government from paying deposed leader\u2019s drug defe"
+        "Maduro\u2019s lawyer says US is blocking Venezuela government from paying deposed leader\u2019s drug defe",
+        "Venezuelan nonprofit says 16 verified prisoners released under Venezuela\u2019s amnesty"
       ],
       "opportunities": [
-        "Jaime Bayly: \"Zapatero ha lavado la imagen manchada de Maduro, que ha matado y torturado a much",
         "Venezuela en transici\u00f3n geopol\u00edtica",
-        "Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto"
+        "Canciller de Venezuela elimina comunicado en el que condenaba ataque de EE. UU. contra Ir\u00e1n",
+        "Mar\u00eda Corina Machado anuncia su regreso a Venezuela para preparar una \u201cnueva victoria electoral"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -151,17 +153,16 @@
       ]
     },
     "Infrastructure": {
-      "health": 8,
-      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export, Political transition. Risk pressure is mixed with an average score of 23/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "health": 7,
+      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export. Risk pressure is mixed with an average score of 28/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "Just one in four Americans supports US strikes on Iran, Reuters/Ipsos poll finds",
         "Agroindustria venezolana podr\u00eda incrementar su oferta exportable entre 25% y 40% impulsada por ",
         "Guyana's oil growth potential rises as Venezuela tensions set to ease"
       ],
       "opportunities": [
-        "Just one in four Americans supports US strikes on Iran, Reuters/Ipsos poll finds",
-        "Dgcim detiene al ex viceministro de Deporte Alexander \u00abMimou\u00bb Vargas",
-        "Agroindustria venezolana podr\u00eda incrementar su oferta exportable entre 25% y 40% impulsada por "
+        "Agroindustria venezolana podr\u00eda incrementar su oferta exportable entre 25% y 40% impulsada por ",
+        "Guyana's oil growth potential rises as Venezuela tensions set to ease",
+        "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -173,10 +174,10 @@
   "timeline_rows": [
     {
       "date": "2026-03-01",
-      "signals_count": 51,
+      "signals_count": 31,
       "sanctions_count": 5,
       "oil_count": 9,
-      "risk_avg": 29.55
+      "risk_avg": 33.45
     },
     {
       "date": "2026-02-28",

@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-03-01T19:21:24.209786+00:00",
-  "totalItems": 49,
+  "runAt": "2026-03-01T19:48:56.872121+00:00",
+  "totalItems": 30,
   "sectors": [
     {
       "name": "Extractives & Mining",
@@ -50,7 +50,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -83,8 +83,7 @@
             ]
           },
           "icons": [
-            "ENERGY",
-            "NEW"
+            "ENERGY"
           ]
         },
         {
@@ -117,7 +116,7 @@
           "flags": {
             "risk": true,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -188,8 +187,7 @@
           "icons": [
             "RISK",
             "POLICY",
-            "ENERGY",
-            "NEW"
+            "ENERGY"
           ]
         },
         {
@@ -221,7 +219,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -240,8 +238,7 @@
           "icons": [
             "RISK",
             "POLICY",
-            "ENERGY",
-            "NEW"
+            "ENERGY"
           ]
         },
         {
@@ -324,7 +321,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -341,8 +338,7 @@
             "evidence": []
           },
           "icons": [
-            "ENERGY",
-            "NEW"
+            "ENERGY"
           ]
         },
         {
@@ -371,7 +367,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -389,8 +385,7 @@
           },
           "icons": [
             "ENERGY",
-            "TRADE",
-            "NEW"
+            "TRADE"
           ]
         },
         {
@@ -418,7 +413,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -452,8 +447,7 @@
           },
           "icons": [
             "ENERGY",
-            "TRADE",
-            "NEW"
+            "TRADE"
           ]
         },
         {
@@ -536,65 +530,6 @@
           ]
         },
         {
-          "id": "326881234757",
-          "title": "Dgcim detiene al ex viceministro de Deporte Alexander \u00abMimou\u00bb Vargas",
-          "url": "https://elpitazo.net/politica/dgcim-detiene-al-ex-viceministro-de-deporte-alexander-mimou-vargas/",
-          "publisher": "elpitazo.net",
-          "publishedAt": "2026-03-01",
-          "sourcePublishedAt": "2026-03-01",
-          "sourceTier": "Tier 2",
-          "sector": "Extractives & Mining",
-          "snippet": "Caracas.- Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex viceministro del Deporte, Alexander \u00abMimou\u00bb Vargas, quien fue un cercano colaborador de Nicol\u00e1s Maduro. Fuentes de El Pitazo confirmaron la detenci\u00f3n\u2026",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Political transition"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [
-            "Maduro"
-          ],
-          "tags": [
-            "Energy",
-            "Infrastructure"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "Caracas.- Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex viceministro del Deporte, Alexander \u00abMimou\u00bb Vargas, quien fue un cercano colaborador de Nicol\u00e1s Maduro. Fuentes de El Pitazo confirmaron la detenci\u00f3n\u2026",
-          "preview_source": "fallback_summary",
-          "language": "es",
-          "insight2": {
-            "s1": "Caracas.- Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex viceministro del Deporte, Alexander \u00abMimou\u00bb Vargas, quien fue un cercano colaborador de\u2026",
-            "s2": "Fuentes de El Pitazo confirmaron la detenci\u00f3n\u2026",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around political transition, with 28 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex\u2026"
-            ]
-          },
-          "icons": [
-            "ENERGY",
-            "TRADE",
-            "NEW"
-          ]
-        },
-        {
           "id": "c3c0d88356d6",
           "title": "Env\u00edos desde Houston marcan nueva fase en la reactivaci\u00f3n petrolera venezolana",
           "url": "https://www.elnacional.com/2026/03/envios-desde-houston-marcan-fase-en-la-reactivacion-petrolera/",
@@ -615,7 +550,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -641,8 +576,7 @@
             ]
           },
           "icons": [
-            "ENERGY",
-            "NEW"
+            "ENERGY"
           ]
         }
       ]
@@ -694,7 +628,7 @@
           "flags": {
             "risk": true,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -742,8 +676,7 @@
             "RISK",
             "POLICY",
             "FX",
-            "HUMAN",
-            "NEW"
+            "HUMAN"
           ]
         }
       ]
@@ -752,162 +685,18 @@
       "name": "Health & Water",
       "synth": {
         "bullets": [
-          "Officials reported The Afternoon Wire Get caught up on what you may have missed throughout the day.",
-          "Field updates show WASHINGTON, March 1 (Reuters) - Only one in four Americans approves of the U.S. strikes that killed Iran\u2019s leader, while about half \u2014 including one in four\u2026",
-          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
+          "Coverage was limited in this sector during the current cycle.",
+          "No concrete multi-source development met the threshold for a stronger synthesis bullet.",
+          "Watch the next run for confirmed operational or policy updates tied to this sector."
         ],
-        "drivers": [
-          "Security"
-        ],
+        "drivers": [],
         "watch": [
-          "Regulatory deadlines",
-          "Executive decrees",
-          "Sanctions and licensing language"
+          "Regulatory updates",
+          "Partner statements",
+          "Execution constraints"
         ]
       },
-      "items": [
-        {
-          "id": "befbf9709a92",
-          "title": "Trump\u2019s \u2018America First\u2019 campaign battle cry gives way to military strikes abroad",
-          "url": "https://apnews.com/article/trump-iran-strike-conflict-us-war-opposition-8fa7a441a4a696a8562de583395ab0bf",
-          "publisher": "apnews.com",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 1",
-          "sector": "Health & Water",
-          "snippet": "President Trump\u2019s decision to strike Iran pulls him toward the kind of overseas conflict he once attacked.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Security"
-          ],
-          "sentiment": "Negative",
-          "materiality": 2,
-          "risk_score": 60,
-          "entities": [],
-          "tags": [
-            "Elections"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Detentions and releases",
-                "value": "25",
-                "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
-                "score": 3
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "25",
-                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "86",
-                "context": "Ali Khamenei, who led the Islamic Republic since 1989, is dead at 86 How succession works in Iran and who could be the\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "24",
-                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "7",
-                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "14",
-                "context": "life in Texas detention center Texas bar shooting leaves 3 dead and 14 wounded as FBI investigates possible terrorism\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "25",
-                "context": "Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto Racing MLB NFL TOP STORIES\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "25",
-                "context": "in Spire gear as a lawsuit court deadline looms Newsletters AP Top 25 Poll Alerts Get email alerts for every college\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "Trump justified the action as necessary to prevent Iran from obtaining nuclear weapons or developing missiles capable of reaching the US, less than a year after he said airstrikes \u201cobliterated\u201d their capability. US intelligence has also said Iran\u2019s weapons capability was substantially degraded.",
-          "preview_source": "trafilatura",
-          "language": "en",
-          "insight2": {
-            "s1": "The Afternoon Wire Get caught up on what you may have missed throughout the day",
-            "s2": "See All Newsletters AP QUIZZES Test Your News I.Q",
-            "s3": "Implication: the political economy signal now points to tighter bargaining space around health & water decisions, with 25 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
-              "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026"
-            ]
-          },
-          "icons": [
-            "NEW"
-          ]
-        },
-        {
-          "id": "200b4785b03b",
-          "title": "Just one in four Americans supports US strikes on Iran, Reuters/Ipsos poll finds",
-          "url": "https://www.reuters.com/world/us/just-one-four-americans-support-us-strikes-iran-reutersipsos-poll-finds-2026-03-01/",
-          "publisher": "reuters.com",
-          "publishedAt": "2026-03-01",
-          "sourcePublishedAt": "2026-03-01",
-          "sourceTier": "Tier 1",
-          "sector": "Health & Water",
-          "snippet": "WASHINGTON, March 1 (Reuters) - Only one in four Americans approves of the U.S. strikes that killed Iran\u2019s leader, while about half \u2014 including one in four Republicans \u2014 believe President Donald Trump ...",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [],
-          "tags": [
-            "Infrastructure"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": []
-          },
-          "preview": "WASHINGTON, March 1 (Reuters) - Only one in four Americans approves of the U.S. strikes that killed Iran\u2019s leader, while about half \u2014 including one in four Republicans \u2014 believe President Donald Trump ...",
-          "preview_source": "fallback_summary",
-          "language": "en",
-          "insight2": {
-            "s1": "WASHINGTON, March 1 (Reuters) - Only one in four Americans approves of the U.S. strikes that killed Iran\u2019s leader, while about half \u2014 including one in four Republicans \u2014 believe President Donald Trump",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in health & water.",
-            "confidence": "HIGH",
-            "evidence": []
-          },
-          "icons": [
-            "TRADE",
-            "NEW"
-          ]
-        }
-      ]
+      "items": []
     },
     {
       "name": "Education & Workforce",
@@ -930,12 +719,13 @@
       "name": "Finance & Investment",
       "synth": {
         "bullets": [
-          "Officials reported Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to\u2026",
-          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
+          "Officials reported Venezuela's economic and humanitarian situation is \"quite fragile,\" the International Monetary Fund said on Thursday, adding that it was seeing inflation\u2026",
+          "Field updates show They were placed on your computer when you launched this website.",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
         "drivers": [
-          "FX / Inflation"
+          "FX / Inflation",
+          "Humanitarian crisis"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -944,6 +734,56 @@
         ]
       },
       "items": [
+        {
+          "id": "71f36b5b93ab",
+          "title": "IMF says Venezuela's economic, humanitarian situation is 'quite fragile'",
+          "url": "https://www.reuters.com/world/americas/imf-says-venezuelas-economic-humanitarian-situation-is-quite-fragile-2026-02-19/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-02-19",
+          "sourcePublishedAt": "2026-02-19",
+          "sourceTier": "Tier 1",
+          "sector": "Finance & Investment",
+          "snippet": "Venezuela's economic and humanitarian situation is \"quite fragile,\" the International Monetary Fund said on Thursday, adding that it was seeing inflation estimated to be in the triple digits and a ...",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Humanitarian crisis",
+            "FX / Inflation"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 4,
+          "risk_score": 60,
+          "entities": [
+            "IMF"
+          ],
+          "tags": [
+            "Debt/FX"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "Venezuela's economic and humanitarian situation is \"quite fragile,\" the International Monetary Fund said on Thursday, adding that it was seeing inflation estimated to be in the triple digits and a ...",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "Venezuela's economic and humanitarian situation is \"quite fragile,\" the International Monetary Fund said on Thursday, adding that it was seeing inflation estimated to be in the triple digits and a",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around humanitarian crisis.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "FX",
+            "HUMAN",
+            "NEW"
+          ]
+        },
         {
           "id": "0845d51e0693",
           "title": "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
@@ -967,25 +807,70 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "05",
+                "context": "Venezuela Advance Practical Trade and Investment Cooperation URL Source:\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "84",
+                "context": "* [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA - ENGLISH](http://www.zawya.com/en/saudi-arabia) * [\u0627\u0644\u0634\u0631\u0652\u0642\u064f\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "85",
+                "context": "* [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA - ENGLISH](http://www.zawya.com/en/saudi-arabia) * [\u0627\u0644\u0634\u0631\u0652\u0642\u064f\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "84",
+                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "92",
+                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "82",
+                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "88",
+                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
+                "score": 0
+              }
+            ]
           },
           "preview": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...",
           "preview_source": "fallback_summary",
           "language": "en",
           "insight2": {
-            "s1": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in finance & investment.",
+            "s1": "They were placed on your computer when you launched this website",
+            "s2": "You can change your cookie settings through your browser",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in finance & investment, with 05 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
-            "evidence": []
+            "evidence": [
+              "Venezuela Advance Practical Trade and Investment Cooperation URL Source:\u2026",
+              "* [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA - ENGLISH](http://www.zawya.com/en/saudi-arabia) * [\u0627\u0644\u0634\u0631\u0652\u0642\u064f\u2026"
+            ]
           },
           "icons": [
-            "FX",
-            "NEW"
+            "FX"
           ]
         }
       ]
@@ -995,8 +880,8 @@
       "synth": {
         "bullets": [
           "Officials reported Spain's foreign minister urged the European Union on Friday to lift its sanctions on Venezuela's interim president, Delcy Rodriguez, after lawmakers in the\u2026",
-          "Field updates show Conservative critics pointed to potential risks for Republicans after the president campaigned in 2024 on a promise to focus on the economy and not start wars.",
-          "Separate sources indicate Russian President Putin on Sunday condemned the killing of Iranian Supreme Leader Ayatollah Ali Khamenei as a \"cynical\" murder but he offered little in\u2026"
+          "Field updates show The Afternoon Wire Get caught up on what you may have missed throughout the day.",
+          "Separate sources indicate The Afternoon Wire Get caught up on what you may have missed throughout the day."
         ],
         "drivers": [
           "Political transition",
@@ -1056,136 +941,6 @@
           "icons": [
             "RISK",
             "POLICY",
-            "NEW"
-          ]
-        },
-        {
-          "id": "9dc273902671",
-          "title": "Trump's Iran strike tests MAGA unity ahead of midterms",
-          "url": "https://www.reuters.com/world/us/trumps-iran-strike-tests-maga-unity-ahead-midterms-2026-02-28/",
-          "publisher": "reuters.com",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 1",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Conservative critics pointed to potential risks for Republicans after the president campaigned in 2024 on a promise to focus on the economy and not start wars.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Negative",
-          "materiality": 2,
-          "risk_score": 50,
-          "entities": [],
-          "tags": [
-            "Elections",
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": []
-          },
-          "preview": "WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning it could hurt Republicans in November's ...",
-          "preview_source": "fallback_summary",
-          "language": "en",
-          "insight2": {
-            "s1": "Conservative critics pointed to potential risks for Republicans after the president campaigned in 2024 on a promise to focus on the economy and not start wars",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: the political economy signal now points to tighter bargaining space around cross-cutting / policy / risk decisions.",
-            "confidence": "HIGH",
-            "evidence": []
-          },
-          "icons": [
-            "NEW"
-          ]
-        },
-        {
-          "id": "8dedf04fe5ad",
-          "title": "Putin slams killing of Iran's Khamenei but offers little beyond condolences so far",
-          "url": "https://www.reuters.com/world/middle-east/putin-says-killing-khamenei-is-cynical-murder-2026-03-01/",
-          "publisher": "reuters.com",
-          "publishedAt": "2026-03-01",
-          "sourcePublishedAt": "2026-03-01",
-          "sourceTier": "Tier 1",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Russian President Putin on Sunday condemned the killing of Iranian Supreme Leader Ayatollah Ali Khamenei as a \"cynical\" murder but he offered little in public to Moscow's ally beyond condolences.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [],
-          "tags": [
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": []
-          },
-          "preview": "Russian President Putin on Sunday condemned the killing of Iranian Supreme Leader Ayatollah Ali Khamenei as a \"cynical\" murder but he offered little in public to Moscow's ally beyond condolences.",
-          "preview_source": "fallback_summary",
-          "language": "en",
-          "insight2": {
-            "s1": "Russian President Putin on Sunday condemned the killing of Iranian Supreme Leader Ayatollah Ali Khamenei as a \"cynical\" murder but he offered little in public to Moscow's ally beyond condolences",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk.",
-            "confidence": "HIGH",
-            "evidence": []
-          },
-          "icons": [
-            "NEW"
-          ]
-        },
-        {
-          "id": "a01ce16af823",
-          "title": "Trump touts economy, energy in Texas, mum on his favorite in Republican Senate race",
-          "url": "https://www.reuters.com/world/us/trump-tout-economy-energy-texas-ahead-republican-primaries-2026-02-27/",
-          "publisher": "reuters.com",
-          "publishedAt": "2026-02-27",
-          "sourcePublishedAt": "2026-02-27",
-          "sourceTier": "Tier 1",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "U.S. President Donald Trump touted his economic and fossil fuel agenda in southern Texas on Friday but was coy about which of three Republican candidates he would back in the state's looming U.S.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [],
-          "tags": [
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": []
-          },
-          "preview": "U.S. President Donald Trump touted his economic and fossil fuel agenda in southern Texas on Friday but was coy about which of three Republican candidates he would back in the state's looming U.S.",
-          "preview_source": "fallback_summary",
-          "language": "en",
-          "insight2": {
-            "s1": "U.S. President Donald Trump touted his economic and fossil fuel agenda in southern Texas on Friday but was coy about which of three Republican candidates he would back in the state's looming U.S",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in cross-cutting / policy / risk.",
-            "confidence": "HIGH",
-            "evidence": []
-          },
-          "icons": [
             "NEW"
           ]
         },
@@ -1385,50 +1140,6 @@
           ]
         },
         {
-          "id": "4a7caae78192",
-          "title": "Insight: Spain's looming migrant amnesty strains services, sends applicants scrambling",
-          "url": "https://www.reuters.com/world/europe/spains-looming-migrant-amnesty-strains-services-sends-applicants-scrambling-2026-02-26/",
-          "publisher": "reuters.com",
-          "publishedAt": "2026-02-25",
-          "sourcePublishedAt": "2026-02-25",
-          "sourceTier": "Tier 1",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Spain's newest drive to fast-track legal status for at least half a million undocumented migrants has already burdened immigration offices and sparked anxiety among prospective applicants weeks before ...",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [],
-          "tags": [
-            "Migration",
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": []
-          },
-          "preview": "Spain's newest drive to fast-track legal status for at least half a million undocumented migrants has already burdened immigration offices and sparked anxiety among prospective applicants weeks before ...",
-          "preview_source": "fallback_summary",
-          "language": "en",
-          "insight2": {
-            "s1": "Spain's newest drive to fast-track legal status for at least half a million undocumented migrants has already burdened immigration offices and sparked anxiety among prospective applicants weeks before",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk.",
-            "confidence": "HIGH",
-            "evidence": []
-          },
-          "icons": [
-            "NEW"
-          ]
-        },
-        {
           "id": "779913837acc",
           "title": "Venezuela says more than 3,200 people have been fully released since amnesty law took effect",
           "url": "https://apnews.com/article/venezuela-political-prisoners-detained-amnesty-delcy-38494341c7f1fc5c6b3f2936a7830fb8",
@@ -1526,24 +1237,25 @@
           ]
         },
         {
-          "id": "35f30b1b5b45",
-          "title": "Takeaways from Trump's State of the Union address to Congress",
-          "url": "https://www.reuters.com/legal/government/takeaways-trumps-state-union-address-congress-2026-02-25/",
-          "publisher": "reuters.com",
-          "publishedAt": "2026-02-24",
-          "sourcePublishedAt": "2026-02-24",
+          "id": "70e2a7f4480e",
+          "title": "Venezuelan nonprofit says 16 verified prisoners released under Venezuela\u2019s amnesty",
+          "url": "https://apnews.com/article/venezuela-political-prisoners-release-amnesty-918eda09c041c74ef863a44b83eeab09",
+          "publisher": "apnews.com",
+          "publishedAt": "2026-02-22",
+          "sourcePublishedAt": "2026-02-22",
           "sourceTier": "Tier 1",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "President Donald Trump addressed Congress against a backdrop of rising tensions with Iran and voter frustration with the high cost of living.",
+          "snippet": "Venezuela\u2019s new amnesty law has started freeing some political detainees, but rights groups say the numbers stay far below government claims.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
+          "event_types": [
+            "Regulatory reform"
+          ],
           "sentiment": "Neutral",
           "materiality": 2,
           "risk_score": 30,
           "entities": [],
           "tags": [
-            "Elections",
             "Policy"
           ],
           "flags": {
@@ -1553,43 +1265,95 @@
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "25",
+                "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+                "score": 3
+              },
+              {
+                "label": "Detentions and releases",
+                "value": "16",
+                "context": "groups say the numbers stay far below government claims. Venezuelan nonprofit says 16 verified prisoners released under\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "86",
+                "context": "Ali Khamenei, who led the Islamic Republic since 1989, is dead at 86 How succession works in Iran and who could be the\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "7",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto Racing MLB NFL TOP STORIES\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "in Spire gear as a lawsuit court deadline looms Newsletters AP Top 25 Poll Alerts Get email alerts for every college\u2026",
+                "score": 0
+              }
+            ]
           },
-          "preview": "President Donald Trump addressed Congress against a backdrop of rising tensions with Iran and voter frustration with the high cost of living.",
+          "preview": "Venezuela\u2019s new amnesty law has started freeing some political detainees, but rights groups say the numbers stay far below government claims.",
           "preview_source": "fallback_summary",
           "language": "en",
           "insight2": {
-            "s1": "President Donald Trump addressed Congress against a backdrop of rising tensions with Iran and voter frustration with the high cost of living",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around cross-cutting / policy / risk.",
+            "s1": "The Afternoon Wire Get caught up on what you may have missed throughout the day",
+            "s2": "See All Newsletters AP QUIZZES Test Your News I.Q",
+            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 25 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
-            "evidence": []
+            "evidence": [
+              "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+              "groups say the numbers stay far below government claims. Venezuelan nonprofit says 16 verified prisoners released under\u2026"
+            ]
           },
           "icons": [
             "NEW"
           ]
         },
         {
-          "id": "35c7f8557804",
-          "title": "Colombia\u2019s ELN rebels declare a unilateral ceasefire ahead of key congressional elections",
-          "url": "https://apnews.com/article/colombia-eln-ceasefire-gustavo-petro-congressional-elections-c4925ab5f825ce7fdb48550a8a2715ce",
+          "id": "895e7ef827be",
+          "title": "Venezuela\u2019s new amnesty law gets a chilly response from the opposition and detainees\u2019 families",
+          "url": "https://apnews.com/article/venezuela-amnesty-prisoners-delcy-rodriguez-5f34e5dd597f9ac9e307d4eba76d31e5",
           "publisher": "apnews.com",
-          "publishedAt": "2026-02-23",
-          "sourcePublishedAt": "2026-02-23",
+          "publishedAt": "2026-02-20",
+          "sourcePublishedAt": "2026-02-20",
           "sourceTier": "Tier 1",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Colombia\u2019s largest remaining rebel group has declared a unilateral ceasefire ahead of next month's congressional elections.",
+          "snippet": "Venezuela has passed a new amnesty law, but some families of political detainees and prisoners' rights groups are reacting with mixed feelings.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [
-            "Political transition"
+            "Political transition",
+            "Regulatory reform"
           ],
           "sentiment": "Neutral",
           "materiality": 2,
           "risk_score": 30,
           "entities": [],
           "tags": [
-            "Elections",
             "Policy"
           ],
           "flags": {
@@ -1599,21 +1363,376 @@
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "25",
+                "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "86",
+                "context": "Ali Khamenei, who led the Islamic Republic since 1989, is dead at 86 How succession works in Iran and who could be the\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "7",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "14",
+                "context": "life in Texas detention center Texas bar shooting leaves 3 dead and 14 wounded as FBI investigates possible terrorism\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto Racing MLB NFL TOP STORIES\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "in Spire gear as a lawsuit court deadline looms Newsletters AP Top 25 Poll Alerts Get email alerts for every college\u2026",
+                "score": 0
+              }
+            ]
           },
-          "preview": "Earlier this month, Indigenous Sen. Aida Quilcue was kidnapped while she traveled between two towns in the southwest Cauca region, but was released unharmed a few hours later, as the military deployed troops to rescue her.",
-          "preview_source": "trafilatura",
+          "preview": "Venezuela has passed a new amnesty law, but some families of political detainees and prisoners' rights groups are reacting with mixed feelings.",
+          "preview_source": "fallback_summary",
           "language": "en",
           "insight2": {
-            "s1": "Colombia\u2019s largest remaining rebel group has declared a unilateral ceasefire ahead of next month's congressional elections",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk.",
+            "s1": "The Afternoon Wire Get caught up on what you may have missed throughout the day",
+            "s2": "See All Newsletters AP QUIZZES Test Your News I.Q",
+            "s3": "Implication: the political economy signal now points to tighter bargaining space around cross-cutting / policy / risk decisions, with 25 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
-            "evidence": []
+            "evidence": [
+              "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+              "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026"
+            ]
           },
           "icons": [
             "NEW"
           ]
+        },
+        {
+          "id": "beeacb03cb10",
+          "title": "Venezuela approves amnesty that could release hundreds detained for political reasons",
+          "url": "https://apnews.com/article/venezuela-amnesty-prisoners-delcy-rodriguez-855e4fa19251f29e7abd42f18e167365",
+          "publisher": "apnews.com",
+          "publishedAt": "2026-02-19",
+          "sourcePublishedAt": "2026-02-19",
+          "sourceTier": "Tier 1",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Venezuela\u2019s acting president Delcy Rodr\u00edguez has signed into law an amnesty bill that could lead to the release of politicians, activists, lawyers and many others.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Regulatory reform"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "25",
+                "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "86",
+                "context": "Ali Khamenei, who led the Islamic Republic since 1989, is dead at 86 How succession works in Iran and who could be the\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "7",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto Racing MLB NFL TOP STORIES\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "in Spire gear as a lawsuit court deadline looms Newsletters AP Top 25 Poll Alerts Get email alerts for every college\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "Venezuela\u2019s acting president Delcy Rodr\u00edguez has signed into law an amnesty bill that could lead to the release of politicians, activists, lawyers and many others.",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "The Afternoon Wire Get caught up on what you may have missed throughout the day",
+            "s2": "See All Newsletters AP QUIZZES Test Your News I.Q",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around regulatory reform, with 25 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+              "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026"
+            ]
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
+        {
+          "id": "7e3684a33254",
+          "title": "Venezuela en transici\u00f3n geopol\u00edtica",
+          "url": "https://www.elnacional.com/2026/03/venezuela-en-transicion-geopolitica/",
+          "publisher": "elnacional.com",
+          "publishedAt": "2026-03-01",
+          "sourcePublishedAt": "2026-03-01",
+          "sourceTier": "Tier 3",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "La transici\u00f3n geopol\u00edtica en Venezuela no puede entenderse \u00fanicamente como un proceso interno de reorganizaci\u00f3n pol\u00edtica o econ\u00f3mica. M\u00e1s bien, forma parte de un reordenamiento estrat\u00e9gico m\u00e1s amplio en el que Estados Unidos ejerce su influencia, guiado por sus intereses en el\u2026",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": true,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "La transici\u00f3n geopol\u00edtica en Venezuela no puede entenderse \u00fanicamente como un proceso interno de reorganizaci\u00f3n pol\u00edtica o econ\u00f3mica. M\u00e1s bien, forma parte de un reordenamiento estrat\u00e9gico m\u00e1s amplio en el que Estados Unidos ejerce su influencia, guiado por sus intereses en el\u2026",
+          "preview_source": "fallback_summary",
+          "language": "es",
+          "insight2": {
+            "s1": "La transici\u00f3n geopol\u00edtica en Venezuela no puede entenderse \u00fanicamente como un proceso interno de reorganizaci\u00f3n pol\u00edtica o econ\u00f3mica",
+            "s2": "M\u00e1s bien, forma parte de un reordenamiento estrat\u00e9gico m\u00e1s amplio en el que Estados Unidos ejerce su influencia, guiado por sus intereses en el\u2026",
+            "s3": "Implication: a narrow engagement window is opening if actors can align quickly on sequencing and compliance.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "OPPORTUNITY",
+            "NEW"
+          ]
+        },
+        {
+          "id": "590a46515a94",
+          "title": "Canciller de Venezuela elimina comunicado en el que condenaba ataque de EE. UU. contra Ir\u00e1n",
+          "url": "https://elpitazo.net/politica/canciller-de-venezuela-elimina-comunicado-en-el-que-condenaba-ataque-de-ee-uu-contra-iran/",
+          "publisher": "elpitazo.net",
+          "publishedAt": "2026-03-01",
+          "sourcePublishedAt": "2026-03-01",
+          "sourceTier": "Tier 2",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Caracas.- El canciller venezolano, Yv\u00e1n Gil, borr\u00f3 de sus redes sociales y de la de la Canciller\u00eda de Venezuela el comunicado en el que condenaba el ataque de Estados Unidos e Israel contra Ir\u00e1n, cuando apenas se confirm\u00f3 la muerte del l\u00edder supremo iran\u00ed, Al\u00ed Jamene\u00ed. En el\u2026",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "[Facebook](https://www.facebook.com/elpitazotv \"Facebook\") Publicidad y Ventas [Suscr\u00edbete a nuestros\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "5",
+                "context": "en curso Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 1 de marzo de 2026 ![Image\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 3: El\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "59",
+                "context": "condenaba ataque de EE. UU. contra Ir\u00e1n URL Source:\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "57",
+                "context": "condenaba ataque de EE. UU. contra Ir\u00e1n URL Source:\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "Ilustrado](https://crisionario.com/) *\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28.7",
+                "context": "*\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "Caracas.- El canciller venezolano, Yv\u00e1n Gil, borr\u00f3 de sus redes sociales y de la de la Canciller\u00eda de Venezuela el comunicado en el que condenaba el ataque de Estados Unidos e Israel contra Ir\u00e1n, cuando apenas se confirm\u00f3 la muerte del l\u00edder supremo iran\u00ed, Al\u00ed Jamene\u00ed. En el\u2026",
+          "preview_source": "fallback_summary",
+          "language": "es",
+          "insight2": {
+            "s1": "Contra Ir\u00e1n URL Source: http://elpitazo.net/politica/canciller-de-venezuela-elimina-comunicado-en-el-que-condenaba-ataque-de-ee-uu-contra-iran/ Published Time: 2026-03-01T17:59:57+00:00 Markdown Content: Canciller de\u2026",
+            "s2": "Contra Ir\u00e1n - El Pitazo =============== * [Inicio](https://elpitazo.net/) * [Regiones](https://elpitazo.net/category/regiones/) * [Gran Caracas](https://elpitazo.net/category/regiones/gran-caracas/) *\u2026",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 12 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "[Facebook](https://www.facebook.com/elpitazotv \"Facebook\") Publicidad y Ventas [Suscr\u00edbete a nuestros\u2026",
+              "en curso Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 1 de marzo de 2026 ![Image\u2026"
+            ]
+          },
+          "icons": []
+        },
+        {
+          "id": "bfa8e8ba163b",
+          "title": "Mar\u00eda Corina Machado anuncia su regreso a Venezuela para preparar una \u201cnueva victoria electoral\u201d",
+          "url": "https://elpitazo.net/politica/maria-corina-machado-anuncia-su-regreso-a-venezuela-para-preparar-una-nueva-victoria-electoral/",
+          "publisher": "elpitazo.net",
+          "publishedAt": "2026-03-01",
+          "sourcePublishedAt": "2026-03-01",
+          "sourceTier": "Tier 2",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Caracas.- La l\u00edder opositora venezolana, Mar\u00eda Corina Machado, anunci\u00f3 este domingo 1 de marzo su regreso a Venezuela en las pr\u00f3ximas semanas para preparar una \u201cnueva victoria electoral\u201d. \u201cVoy a regresar en pocas semanas a Venezuela.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "[Facebook](https://www.facebook.com/elpitazotv \"Facebook\") Publicidad y Ventas [Suscr\u00edbete a nuestros\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 2: El\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "Venezuela para preparar una \u201cnueva victoria electoral\u201d URL Source:\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "14",
+                "context": "Venezuela para preparar una \u201cnueva victoria electoral\u201d URL Source:\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "Ilustrado](https://crisionario.com/) *\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28.7",
+                "context": "*\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "Caracas.- La l\u00edder opositora venezolana, Mar\u00eda Corina Machado, anunci\u00f3 este domingo 1 de marzo su regreso a Venezuela en las pr\u00f3ximas semanas para preparar una \u201cnueva victoria electoral\u201d. \u201cVoy a regresar en pocas semanas a Venezuela. (\u2026) Llegaremos para abrazarnos, para trabajar\u2026",
+          "preview_source": "fallback_summary",
+          "language": "es",
+          "insight2": {
+            "s1": "The publication reports movement in cross-cutting / policy / risk with concrete operational relevance in Venezuela.",
+            "s2": "(...) Llegaremos para garantizar una transici\u00f3n a la democracia ordenada y sostenible e indetenible\u201d, dijo Machado Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 1 de marzo de 2026 ![Image\u2026",
+            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 12 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "[Facebook](https://www.facebook.com/elpitazotv \"Facebook\") Publicidad y Ventas [Suscr\u00edbete a nuestros\u2026",
+              "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 2: El\u2026"
+            ]
+          },
+          "icons": []
         }
       ]
     }
