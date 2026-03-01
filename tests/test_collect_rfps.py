@@ -300,6 +300,30 @@ class TestDeduplicate:
         result = cr.deduplicate([e1, e2], threshold=0.95)
         assert len(result) == 1
 
+    def test_removes_same_story_with_wire_suffix_variants(self):
+        e1 = make_entry(
+            title="Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, reports",
+            link="https://indianexpress.com/article/world/us-news/venezuela-suspends-19-oil-gas-production-sharing-contracts-signed-under-maduro-government-10554560/",
+        )
+        e2 = make_entry(
+            title="Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
+            link="https://www.jpost.com/international/article-888190",
+        )
+        result = cr.deduplicate([e1, e2], threshold=0.90)
+        assert len(result) == 1
+
+    def test_removes_same_url_with_tracking_params(self):
+        e1 = make_entry(
+            title="Venezuela refinery policy update",
+            link="https://example.com/news/venezuela-update?utm_source=rss&oc=5",
+        )
+        e2 = make_entry(
+            title="Venezuela refinery policy update",
+            link="https://example.com/news/venezuela-update?utm_medium=feed&gclid=test123",
+        )
+        result = cr.deduplicate([e1, e2], threshold=0.95)
+        assert len(result) == 1
+
 
 # ---------------------------------------------------------------------------
 # score_entry

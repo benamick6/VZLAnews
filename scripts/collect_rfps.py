@@ -20,7 +20,7 @@ import csv
 from html import escape, unescape
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
-from urllib.parse import parse_qs, unquote, urlparse
+from urllib.parse import parse_qs, parse_qsl, unquote, urlencode, urlparse, urlunparse
 
 import time as _time
 
@@ -800,22 +800,92 @@ def _title_key(title: str) -> str:
     return re.sub(r"\W+", " ", title.lower()).strip()
 
 
+def _canonical_url_for_dedupe(url: str) -> str:
+    if not url:
+        return ""
+    raw = str(url).strip()
+    if not raw:
+        return ""
+
+    try:
+        parsed = urlparse(raw)
+    except Exception:  # noqa: BLE001
+        return raw
+
+    host = (parsed.netloc or "").lower().strip()
+    if host.startswith("www."):
+        host = host[4:]
+
+    path = (parsed.path or "").strip() or "/"
+    if path != "/":
+        path = path.rstrip("/")
+
+    query_pairs = parse_qsl(parsed.query, keep_blank_values=False)
+    drop_keys = {
+        "fbclid",
+        "gclid",
+        "mc_cid",
+        "mc_eid",
+        "oc",
+        "ocid",
+        "ref",
+        "ref_src",
+        "source",
+    }
+    filtered_pairs = [
+        (k, v)
+        for k, v in query_pairs
+        if not k.lower().startswith("utm_") and k.lower() not in drop_keys
+    ]
+    filtered_query = urlencode(filtered_pairs, doseq=True)
+
+    scheme = (parsed.scheme or "https").lower()
+    if not host:
+        return raw
+
+    return urlunparse((scheme, host, path, "", filtered_query, ""))
+
+
+def _title_topic_key(title: str) -> str:
+    topic = _title_topic({"title": title})
+    if not topic:
+        return ""
+    topic = topic.strip().rstrip(". ")
+    topic = re.sub(
+        r"(?:,?\s*(?:reports?|report|sources?\s+say|officials?\s+say|says|say))$",
+        "",
+        topic,
+        flags=re.IGNORECASE,
+    ).strip().rstrip(". ")
+    return _title_key(topic)
+
+
 def deduplicate(entries: list[dict], threshold: float = 0.90, cfg: dict | None = None) -> list[dict]:
     """Remove duplicate entries using URL + title-similarity checks."""
     seen_urls: set[str] = set()
     seen_titles: list[str] = []
+    seen_topics: list[str] = []
     unique: list[dict] = []
+    dedup_cfg = (cfg or {}).get("deduplication", {}) if isinstance(cfg, dict) else {}
+    topic_threshold = float(dedup_cfg.get("topic_similarity_threshold", max(0.84, threshold - 0.05)))
 
     for e in entries:
-        url = e.get("link", "")
+        url = _canonical_url_for_dedupe(e.get("link", ""))
         if url and url in seen_urls:
             continue
 
         title = _title_key(e.get("title", ""))
+        topic = _title_topic_key(e.get("title", ""))
         duplicate = False
         for idx, seen in enumerate(seen_titles):
             ratio = SequenceMatcher(None, title, seen).ratio()
-            if ratio >= threshold:
+            topic_ratio = (
+                SequenceMatcher(None, topic, seen_topics[idx]).ratio()
+                if topic and seen_topics[idx]
+                else 0.0
+            )
+            same_topic = bool(topic and seen_topics[idx] and (topic == seen_topics[idx] or topic_ratio >= topic_threshold))
+            if ratio >= threshold or same_topic:
                 if cfg is not None:
                     existing = unique[idx]
                     new_label = detect_sector_label(e, cfg)
@@ -830,6 +900,7 @@ def deduplicate(entries: list[dict], threshold: float = 0.90, cfg: dict | None =
         if url:
             seen_urls.add(url)
         seen_titles.append(title)
+        seen_topics.append(topic)
         unique.append(e)
 
     return unique
@@ -936,8 +1007,8 @@ def select_diverse_top_entries(entries: list[dict], cfg: dict, max_results: int)
     section_counts: dict[str, int] = {section: 0 for section in grouped}
 
     def _entry_key(item: dict) -> str:
-        link = item.get("link", "")
-        title = _title_key(item.get("title", ""))
+        link = _canonical_url_for_dedupe(item.get("link", ""))
+        title = _title_topic_key(item.get("title", "")) or _title_key(item.get("title", ""))
         return f"{link}::{title}"
 
     def _try_add(item: dict, section: str, enforce_cap: bool = True) -> bool:
@@ -2062,7 +2133,7 @@ def _why_this_matters(entry: dict, cfg: dict, section_label: str) -> str:
 
 
 def _entry_id(entry: dict) -> str:
-    link = (entry.get("link") or "").strip()
+    link = _canonical_url_for_dedupe((entry.get("link") or "").strip())
     if link:
         return f"url::{link}"
     title = _title_key(entry.get("title", ""))
