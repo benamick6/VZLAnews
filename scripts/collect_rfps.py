@@ -974,6 +974,51 @@ def select_diverse_top_entries(entries: list[dict], cfg: dict, max_results: int)
             if len(selected) >= max_results:
                 break
 
+    # Pass 4: language balancing backfill (without lowering quality thresholds).
+    language_targets = selection_cfg.get("min_per_language", {}) or {}
+    if isinstance(language_targets, dict) and len(selected) < max_results:
+        for language, target in language_targets.items():
+            lang = str(language or "").strip().lower()
+            if lang not in {"en", "es"}:
+                continue
+            try:
+                needed = int(target)
+            except (TypeError, ValueError):
+                continue
+            if needed <= 0:
+                continue
+
+            current = sum(
+                1
+                for item in selected
+                if _detect_content_language(
+                    str(item.get("title", "") or ""),
+                    str(item.get("summary", "") or ""),
+                    str(item.get("snippet", "") or ""),
+                )
+                == lang
+            )
+            if current >= needed:
+                continue
+
+            for item in entries:
+                if len(selected) >= max_results or current >= needed:
+                    break
+                section = detect_sector_label(item, cfg)
+                key = _entry_key(item)
+                if key in selected_keys:
+                    continue
+                item_lang = _detect_content_language(
+                    str(item.get("title", "") or ""),
+                    str(item.get("summary", "") or ""),
+                    str(item.get("snippet", "") or ""),
+                )
+                if item_lang != lang:
+                    continue
+                if not _try_add(item, section):
+                    continue
+                current += 1
+
     return selected
 
 
@@ -3262,6 +3307,15 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
                     if validated:
                         fallback_preview = validated
                         break
+                    cleaned = _clean_snippet(
+                        candidate,
+                        str(entry.get("title", "") or ""),
+                        max_chars=280,
+                        min_chars=60,
+                    )
+                    if cleaned and not _sentence_is_noise(cleaned):
+                        fallback_preview = cleaned
+                        break
                 if fallback_preview:
                     preview_payload = {
                         "preview": fallback_preview,
@@ -3442,25 +3496,27 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
             row["retrieved"] = now.strftime("%Y-%m-%d %H:%M UTC")
             export_rows.append(row)
 
-    normalized_by_id = {str(item.get("id", "")): item for item in normalized_items}
+    normalized_by_section: dict[str, list[dict]] = {section: [] for section in section_order}
+    for item in normalized_items:
+        section_name = str(item.get("sector", "") or "")
+        if section_name:
+            normalized_by_section.setdefault(section_name, []).append(item)
+
+    def _normalized_item_sort_key(item: dict) -> tuple[int, int, str]:
+        return (
+            int(item.get("materiality", 1) or 1),
+            int(item.get("risk_score", 0) or 0),
+            str(item.get("publishedAt", "") or ""),
+        )
+
     sector_synth: dict[str, dict] = {}
     sectors_payload: list[dict] = []
     for section in section_order:
-        top_items = _sort_entries_for_sector(grouped.get(section, []))[:section_item_limit]
-        items_for_section = []
-        for entry in top_items:
-            published_at = ""
-            if entry.get("published") is not None and hasattr(entry.get("published"), "strftime"):
-                published_at = entry["published"].strftime("%Y-%m-%d")
-            item = normalized_by_id.get(
-                _stable_item_id(
-                    str(entry.get("link", "")),
-                    str(entry.get("title", "")),
-                    published_at,
-                )
-            )
-            if item:
-                items_for_section.append(item)
+        items_for_section = sorted(
+            normalized_by_section.get(section, []),
+            key=_normalized_item_sort_key,
+            reverse=True,
+        )[:section_item_limit]
         synth = _build_sector_synth(section, items_for_section)
         sector_synth[section] = synth
         sectors_payload.append({"name": section, "synth": synth, "items": items_for_section})
