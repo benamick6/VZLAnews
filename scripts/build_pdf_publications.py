@@ -240,7 +240,10 @@ def mentions_target_years(item: dict, years: set[int]) -> bool:
 def is_pdf_url(url: str) -> bool:
     if not url:
         return False
-    return url.lower().split("?")[0].endswith(".pdf")
+    low = url.lower()
+    if low.split("?")[0].endswith(".pdf"):
+        return True
+    return ".pdf" in low
 
 
 def unwrap_search_redirect(url: str) -> str:
@@ -290,7 +293,9 @@ def head_is_pdf(url: str) -> tuple[bool, str]:
     try:
         response = requests.head(url, allow_redirects=True, timeout=15, headers={"User-Agent": UA})
         content_type = (response.headers.get("content-type") or "").lower()
-        return ("application/pdf" in content_type, response.url or url)
+        content_disp = (response.headers.get("content-disposition") or "").lower()
+        is_pdf = ("application/pdf" in content_type) or (".pdf" in content_disp)
+        return (is_pdf, response.url or url)
     except requests.RequestException:
         return False, url
 
