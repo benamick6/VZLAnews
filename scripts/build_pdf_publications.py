@@ -483,13 +483,17 @@ def make_abstract(item: dict) -> str:
     return " ".join(sentences[:4])
 
 
-def _ensure_venezuela_in_title(title: str) -> str:
-    clean_title = norm(title)
+def _title_mentions_venezuela(title: str) -> bool:
+    clean_title = norm(title).lower()
     if not clean_title:
-        return "Venezuela publication"
-    if "venezuela" in clean_title.lower() or "venezuelan" in clean_title.lower():
-        return clean_title
-    return f"Venezuela: {clean_title}"
+        return False
+    return bool(
+        re.search(
+            r"\b(?:venezuela|venezuelan|venezolano(?:s)?|venezolana(?:s)?)\b",
+            clean_title,
+            flags=re.IGNORECASE,
+        )
+    )
 
 
 def _build_four_sentence_overview(item: dict, publication_title: str) -> str:
@@ -676,18 +680,20 @@ def main() -> None:
             continue
         seen.add(dedupe_key)
 
-        title_with_country = _ensure_venezuela_in_title(title)
+        if not _title_mentions_venezuela(title):
+            continue
+
         publisher = norm(item.get("publisher") or domain_of(landing_page_url))
         published_at = item.get("publishedAt") or item.get("dateISO") or ""
         publication_year = year if year in TARGET_YEARS else YEAR_MAX
         if not published_at:
             published_at = str(publication_year)
-        overview = _build_four_sentence_overview(item, title_with_country)
+        overview = _build_four_sentence_overview(item, title)
 
         publications.append(
             {
                 "id": item.get("id") or "",
-                "title": title_with_country,
+                "title": title,
                 "url": landing_page_url,
                 "pageUrl": landing_page_url,
                 "pdfUrl": chosen_pdf_url,

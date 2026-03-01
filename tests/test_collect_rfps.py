@@ -194,6 +194,17 @@ class TestFilterEntries:
         result = cr.filter_entries([geo], cfg, NOW)
         assert len(result) == 1
 
+    def test_requires_venezuela_in_title_for_news_cards(self):
+        cfg = minimal_cfg()
+        entry = make_entry(
+            title="Regional trade summit advances",
+            summary="Discussion includes Venezuela market access.",
+            source_url="https://example.com/rss",
+            published=NOW - timedelta(days=1),
+        )
+        result = cr.filter_entries([entry], cfg, NOW)
+        assert result == []
+
     def test_global_feed_requires_venezuela_relevance(self):
         cfg = minimal_cfg()
         global_irrelevant = make_entry(

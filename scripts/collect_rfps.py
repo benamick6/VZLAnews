@@ -687,6 +687,19 @@ def passes_country_filter(entry: dict, country_terms: list[str], geo_terms: list
     return "venezuela" in source or "venezuelan" in source
 
 
+def _title_mentions_venezuela(title: str) -> bool:
+    value = _normalize_text_block(title).lower()
+    if not value:
+        return False
+    return bool(
+        re.search(
+            r"\b(?:venezuela|venezuelan|venezolano(?:s)?|venezolana(?:s)?)\b",
+            value,
+            flags=re.IGNORECASE,
+        )
+    )
+
+
 def passes_exclude_filter(entry: dict, exclude_terms: list[str]) -> bool:
     text = _text(entry)
     return not any(t.lower() in text for t in exclude_terms)
@@ -707,10 +720,22 @@ def filter_entries(
     filtered = []
     for e in entries:
         source_url = str(e.get("source_url", "") or "")
+        title_text = str(e.get("title", "") or "")
+
+        if not _title_mentions_venezuela(title_text):
+            _log_rejection(
+                source_url,
+                title_text,
+                "title_country_criterion_fail",
+                candidate_url=str(e.get("link", "") or ""),
+                published_at=_fmt_date(e.get("published")),
+            )
+            continue
+
         if _is_global_feed_source(source_url) and not _is_venezuela_relevant_entry(e):
             _log_rejection(
                 source_url,
-                str(e.get("title", "") or ""),
+                title_text,
                 "not_venezuela_relevant",
                 candidate_url=str(e.get("link", "") or ""),
                 published_at=_fmt_date(e.get("published")),
@@ -728,7 +753,7 @@ def filter_entries(
         if not passes_age_filter(e, entry_max_age, now):
             _log_rejection(
                 source_url,
-                str(e.get("title", "") or ""),
+                title_text,
                 "too_old",
                 candidate_url=str(e.get("link", "") or ""),
                 published_at=_fmt_date(e.get("published")),
@@ -737,7 +762,7 @@ def filter_entries(
         if not passes_exclude_filter(e, exclude_terms):
             _log_rejection(
                 source_url,
-                str(e.get("title", "") or ""),
+                title_text,
                 "excluded_term",
                 candidate_url=str(e.get("link", "") or ""),
                 published_at=_fmt_date(e.get("published")),
@@ -746,7 +771,7 @@ def filter_entries(
         if require_country and not passes_country_filter(e, country_terms, geo_terms):
             _log_rejection(
                 source_url,
-                str(e.get("title", "") or ""),
+                title_text,
                 "country_filter_fail",
                 candidate_url=str(e.get("link", "") or ""),
                 published_at=_fmt_date(e.get("published")),
