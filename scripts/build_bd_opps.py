@@ -11,6 +11,20 @@ LATEST_JSON = "docs/data/latest.json"
 FEEDS_PATH = "feeds.txt"
 OUT_JSON = "docs/data/bd_opps.json"
 
+BD_FEED_URLS = [
+    "https://news.google.com/rss/search?q=Venezuela+rfp+OR+request+for+proposal+OR+tender+OR+procurement",
+    "https://news.google.com/rss/search?q=Venezuela+expression+of+interest+OR+EOI+OR+terms+of+reference+OR+ToR",
+    "https://news.google.com/rss/search?q=Venezuela+grant+funding+opportunity+call+for+proposals",
+    "https://news.google.com/rss/search?q=site:devbusiness.un.org+Venezuela+tender+OR+procurement",
+    "https://news.google.com/rss/search?q=site:ungm.org+Venezuela+tender+OR+procurement",
+    "https://news.google.com/rss/search?q=site:reliefweb.int+Venezuela+" +
+    "\"call for proposals\"+OR+\"expression of interest\"+OR+tender",
+    "https://www.bing.com/news/search?q=venezuela+rfp+request+for+proposal+tender+procurement&format=rss",
+    "https://www.bing.com/news/search?q=site:devbusiness.un.org+venezuela+tender+procurement&format=rss",
+    "https://www.bing.com/news/search?q=site:ungm.org+venezuela+tender+procurement&format=rss",
+    "https://www.bing.com/news/search?q=venezuela+grant+funding+opportunity+call+for+proposals&format=rss",
+]
+
 OPP_TERMS = [
     "request for proposal", "rfp", "request for information", "rfi",
     "request for quotation", "rfq", "tender", "procurement", "invitation to bid", "itb",
@@ -285,6 +299,41 @@ def _load_feed_urls(path: str = FEEDS_PATH) -> list[str]:
     return urls
 
 
+def _bd_feed_urls(path: str = FEEDS_PATH) -> list[str]:
+    urls: list[str] = []
+
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as fh:
+            for raw_line in fh:
+                line = raw_line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                low = line.lower()
+                if not any(token in low for token in [
+                    "rfp", "request for proposal", "tender", "procurement", "eoi",
+                    "expression of interest", "grant", "funding", "call for proposals", "tor",
+                ]):
+                    continue
+                if " - http" in line:
+                    url = line.split(" - ", 1)[1].strip()
+                else:
+                    url = line
+                if url.startswith("http"):
+                    urls.append(url)
+
+    urls.extend(BD_FEED_URLS)
+
+    seen: set[str] = set()
+    deduped: list[str] = []
+    for url in urls:
+        key = norm(url)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(key)
+    return deduped
+
+
 def _extract_feed_items(urls: list[str]) -> list[dict]:
     items: list[dict] = []
     for url in urls:
@@ -349,7 +398,7 @@ def main() -> None:
             data = json.load(fh)
         items.extend(_items_from_latest(data))
 
-    feed_urls = _load_feed_urls(FEEDS_PATH)
+    feed_urls = _bd_feed_urls(FEEDS_PATH)
     items.extend(_extract_feed_items(feed_urls))
 
     opportunities = []
