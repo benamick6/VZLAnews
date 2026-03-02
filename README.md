@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-03-01 19:01 UTC**
+> Last updated: **2026-03-02 05:08 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,35 +8,35 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Nuevo incidente racista provoca interrupción del Elche-Espanyol de LaLiga](https://bitlysdowssl-aws.com/2026/03/nuevo-incidente-racista-provoca-interrupcion-del-elche-espanyol-de-laliga/) — Sun, 01 Mar 2026 18:18:29 +0000
-- [¿Qué significan los cambios en el Ministerio Público y Defensoría del Pueblo en Venezuela?](https://bitlysdowssl-aws.com/2026/03/que-significan-los-cambios-en-el-ministerio-publico-y-defensoria-del-pueblo-en-venezuela/) — Sun, 01 Mar 2026 18:09:01 +0000
-- [Desde el Senado italiano, opositores venezolanos exigen elecciones libres y garantías para exiliados y presos políticos](https://bitlysdowssl-aws.com/2026/03/desde-el-senado-italiano-opositores-venezolanos-exigen-elecciones-libres-y-garantias-para-exiliados-y-presos-politicos/) — Sun, 01 Mar 2026 18:02:00 +0000
-- [¿Quién es Eric Slover, el piloto "unicornio" al que premió Trump por la captura de Maduro?](https://bitlysdowssl-aws.com/2026/03/quien-es-eric-slover-el-piloto-unicornio-condecorado-por-la-captura-de-maduro/) — Sun, 01 Mar 2026 17:54:15 +0000
-- [Quién tiene el poder en Irán tras la muerte del ayatolá Alí Jamenei y cómo se elegirá a su sucesor](https://bitlysdowssl-aws.com/2026/03/quien-tiene-el-poder-en-iran-tras-la-muerte-del-ayatola-ali-jamenei/) — Sun, 01 Mar 2026 17:44:31 +0000
+- [Irán ofrece negociar mientras Trump prevé un mes más de ofensiva militar](https://bitlysdowssl-aws.com/2026/03/iran-ofrece-negociar-mientras-trump-preve-un-mes-mas-de-ofensiva-militar/) — Mon, 02 Mar 2026 00:55:44 +0000
+- [Investigan asesinato de dos policías en El Junquito: eran hermanos](https://bitlysdowssl-aws.com/2026/03/investigan-asesinato-de-dos-policias-en-el-junquito-eran-hermanos/) — Mon, 02 Mar 2026 00:39:00 +0000
+- [Video: turistas en Dubái duermen en colchones en el sótano de un hotel de lujo tras explosiones por ataques de Irán](https://bitlysdowssl-aws.com/2026/03/video-turistas-en-dubai-duermen-en-colchones-en-el-sotano-de-un-hotel-de-lujo-tras-explosiones-por-ataques-de-iran/) — Mon, 02 Mar 2026 00:27:09 +0000
+- [Cuba anuncia que irá al Clásico de Béisbol pese a que EE UU no dio visas a 8 delegados](https://bitlysdowssl-aws.com/2026/03/cuba-anuncia-que-ira-al-clasico-de-beisbol-pese-a-que-ee-uu-no-dio-visas-a-8-delegados/) — Mon, 02 Mar 2026 00:19:12 +0000
+- [Comunidades rurales de San Juan Bautista del Pao denuncian campamentos irregulares y piden acción de las autoridades](https://bitlysdowssl-aws.com/2026/03/comunidades-rurales-de-san-juan-bautista-del-pao-denuncian-campamentos-irregulares-ypiden-accion-de-las-autoridades/) — Sun, 01 Mar 2026 23:59:55 +0000
 
 ## Efecto Cocuyo
 
-- [Desviación del MP a aparato represor: cronología de Tarek William Saab](https://efectococuyo.com/la-humanidad/desviacion-del-mp-a-aparato-represor-cronologia-de-tarek-william-saab/) — Sun, 01 Mar 2026 14:45:00 +0000
-- [Trump amenaza a Irán con una «fuerza nunca vista» si cumple su promesa de ofensiva](https://efectococuyo.com/internacionales/trump-amenaza-iran-fuerza-nunca-vista-si-cumple-promesa-de-ofensiva/) — Sun, 01 Mar 2026 12:57:07 +0000
-- [Papa León XIV urge detener espiral de violencia](https://efectococuyo.com/internacionales/papa-leon-xiv-urge-detener-espiral-de-violencia/) — Sun, 01 Mar 2026 12:41:55 +0000
-- [Cómo se elige al líder supremo de Irán y quiénes son los favoritos](https://efectococuyo.com/internacionales/como-se-elige-al-lider-supremo-de-iran-quienes-son-los-favoritos/) — Sun, 01 Mar 2026 12:32:30 +0000
-- [Trump anuncia muerte del ayatolá Ali Jameneí](https://efectococuyo.com/internacionales/trump-confirma-muerte-del-ayatola-ali-jamenei/) — Sat, 28 Feb 2026 22:37:09 +0000
+- [Argentina agradece apoyos de Italia, EEUU y Foro Penal en liberación de Nahuel Gallo](https://efectococuyo.com/internacionales/argentina-agradece-apoyos-italia-estados-unidos-foro-penal-liberacion-nahuel-gallo/) — Mon, 02 Mar 2026 02:05:32 +0000
+- [Liberaron al gendarme argentino Nahuel Gallo y lo enviaron a su país](https://efectococuyo.com/politica/liberaron-gendarme-argentino-nahuel-gallo-y-lo-enviaron-a-su-pais/) — Sun, 01 Mar 2026 23:11:16 +0000
+- [Que la libertad no es solo un concepto](https://efectococuyo.com/la-humanidad/que-la-libertad-no-es-solo-un-concepto/) — Sun, 01 Mar 2026 19:41:31 +0000
+- [María Corina Machado dice que regresará en pocas semanas y llama a prepararse para «la gran tarea» que viene](https://efectococuyo.com/politica/maria-corina-machado-dice-regresara-pocas-semanas-llama-a-prepararse-para-gran-tarea/) — Sun, 01 Mar 2026 19:23:02 +0000
+- [Organizaciones impulsan derogatoria de leyes que criminalizan la disidencia](https://efectococuyo.com/politica/organizaciones-impulsan-derogatoria-de-leyes-que-criminalizan-la-disidencia/) — Sun, 01 Mar 2026 19:03:00 +0000
 
 ## El Pitazo
 
+- [Gendarme argentino Nahuel Gallo es liberado en Venezuela: las asociaciones de fútbol intervinieron](https://elpitazo.net/politica/el-gendarme-argentino-nahuel-gallo-es-liberado-en-venezuela-las-asociaciones-de-futbol-intervinieron/) — Sun, 01 Mar 2026 23:07:19 +0000
+- [Cicpc investiga el asesinato de 2 policías en El Junquito: las víctimas eran hermanos](https://elpitazo.net/sucesos/cicpc-investiga-el-asesinato-de-2-policias-en-el-junquito-las-victimas-eran-hermanos/) — Sun, 01 Mar 2026 20:56:36 +0000
 - [Dgcim detiene al ex viceministro de Deporte Alexander «Mimou» Vargas](https://elpitazo.net/politica/dgcim-detiene-al-ex-viceministro-de-deporte-alexander-mimou-vargas/) — Sun, 01 Mar 2026 18:22:11 +0000
 - [Canciller de Venezuela elimina comunicado en el que condenaba ataque de EE. UU. contra Irán](https://elpitazo.net/politica/canciller-de-venezuela-elimina-comunicado-en-el-que-condenaba-ataque-de-ee-uu-contra-iran/) — Sun, 01 Mar 2026 17:59:57 +0000
 - [María Corina Machado anuncia su regreso a Venezuela para preparar una “nueva victoria electoral”](https://elpitazo.net/politica/maria-corina-machado-anuncia-su-regreso-a-venezuela-para-preparar-una-nueva-victoria-electoral/) — Sun, 01 Mar 2026 17:28:14 +0000
-- [Irán multiplica ataques en el Golfo tras jurar venganza por muerte de Jamenei](https://elpitazo.net/internacional/iran-multiplica-ataques-en-el-golfo-tras-jurar-venganza-por-muerte-de-jamenei/) — Sun, 01 Mar 2026 16:50:52 +0000
-- [Mapas de Poder: Las conexiones oscuras de Zapatero](https://elpitazo.net/politica/mapas-de-poder-las-conexiones-oscuras-de-zapatero/) — Sun, 01 Mar 2026 15:44:24 +0000
 
 ## Google News – Venezuela
 
-- [Enrique Márquez dice que Venezuela “es otro país” tras la captura de Maduro: “Estamos listos para seguir los cambios” - CNN en Español](https://news.google.com/rss/articles/CBMilwFBVV95cUxQTnJCcWQ3YzR4V3RqRjlobE0taVowYzZUWF9GZlJuRDdNYm1ROTM1amptdjduOHpwTnA3b3RKZElZZEFyLTZqRVpTeVJiVl9Ua3BaSGdRdWRUSThZQkJwWlFsM1RwSHRvaU5RZTgyV0FmTE40NzFna1JqMVFKYUZSVjl2V2pDa2ZITk0xMlhsZjkxS1ZlVW5n?oc=5) — Sat, 28 Feb 2026 03:45:00 GMT
-- [Juan Pablo Guanipa: “No tengo dudas: Venezuela va hacia unas elecciones” - EL PAÍS](https://news.google.com/rss/articles/CBMisAFBVV95cUxPN3lpeDFsM2lhQkhSYXA1S3NpMmlEWFBhalFlUWhGUmJPMmZGTHkwc3N6RTQzR2dJOFFfV3ZjdzB4WW52Zl9PRktsLWdUZ1c5VEFSQWltVVpEdWEyQ1Z6NTNWeVQ5X3BJb2hFd054UnB3a0dEMS0wMGtlRi14N3p0RW1fNGJaSzRVRnNGT0hWR1k5YWU4UmFwM2tGZjR3X2VRcVpBNjR0Smt0dmR1aHZFb9IBxAFBVV95cUxNT2QzT1lIblJRSHoxMXp0S0NHNWhfenVyejdQOF92bmkzaFAzUXdXRElfLWFJR3kwRFJQUkxMaVRUcFJ5MW8xTUtGWFZDQ1BNOGN5VUNfa2ZVeXIwdGRQNnBqZVd2elRvMVI2MzZpNmJja3JWZTVKQTdZa1hVVGV6N04wbk9rMUxwbkVHZUI5dF9LT0dfa2pNUkEwVmhfNjRKbDl4LXRvOWk3T0pWUi1GaDQ3T1pWbnNTbkNrVF9FWVRndHBh?oc=5) — Fri, 27 Feb 2026 04:30:00 GMT
+- [María Corina Machado anuncia que regresa a Venezuela en “pocas semanas” para una “transición indetenible” - EL PAÍS](https://news.google.com/rss/articles/CBMi3AFBVV95cUxNa3B0Nnk0dmhZd1FCaW9CZnFPRWw3Y05HS2JCLXpRX1VHaXdoU3VZdGxMZzg2bnE2eWp1XzI2YjRTV2VCYmZ0SmhvYlNRUXRNd3Q4WUx1Y19FYjVkSGl4UlFrOGJBa2R3WFZfZUR4cm9wQkg3bG1PaE1fNEhENFJOSHpZWWFnaXNxaXpxZGg2T1FoZllWVXpuVXU0TExHajNkMEp4ZGtKY3NUYkd1d181THhTallCTDhUcXF3T3RDaTFjTXFKWGRjeVJ5am1ZbHV5b2sxTXNXa3FSbm9K0gHwAUFVX3lxTE43OC1DZW85V2MwTktTRnFGOW94bzYwWk53S09SdmxBd05nMXFpZ2JkNmZXT2RhOGVHZFBwYU9qaTV5Q01XSTJjNGJKMk1HRjVZZFV1RFhsZlRtMlNnUDE1V203UDVsVW9SbFJEU2hHYzVqeUdqWVlRVUktYWdEcGhYWV9jR2J2bzhraVFWdmJwU3B1eDVRY1hPTzY2MnVmbGpOMmVheVZ3NXp3VTZLbzQzWWNMd0pOcW1wQkhSb0RLQWJXYjFNZjN5UHNESWtadmdJUmJnUVdIXzg3YXFUMGxvZFJCbTctRndFWXJQaEU4Xw?oc=5) — Sun, 01 Mar 2026 18:17:56 GMT
 - [María Corina Machado anuncia su regreso a Venezuela en "pocas semanas" - Euronews.com](https://news.google.com/rss/articles/CBMipgFBVV95cUxPa1JfOTNRN2FPdzNxRTVoMWd3Ukx2Nk9OZXNpRFE1VTJuOHZidnVjMGlZUk5COW1KcFpuNDQ0cUpNZ3dKNTRWenM5Z3hMRjRJeU9KOW9YVHhQWm1CN2lzeHhyT1ZXVGVQRVg5bF9RVXJyX1I3MlFQLWZvWXc5a0RiTXIwaHo2R2E5NGw1am9OWGxncV85Z3RFblJob0JQNi0yajY2UWh3?oc=5) — Sun, 01 Mar 2026 17:31:45 GMT
-- [El puerto de Houston se activa con envíos de insumos petroleros a Venezuela - France 24](https://news.google.com/rss/articles/CBMizgFBVV95cUxNOGZXclpPX2V6ODVaOWdJVEVkclBWTUFROWtzbXZDekxOMnNzRGljRWhLdDd4Nm9UZ2FSYmpBX21sTEd3TnBFQWd5T2tCcm5EaEhPSGplblNmakVKZXl4bE9UclloNFlQbmhQZzNnb3BvVEJqLUVmTkJvejdBSmk2NndGb0Vadm1IempfakdLc0l1XzhLS0tKcWJJZ0ZmR2VfWGNjbWVDUkgxZW1PWHF0bDFNLU10djNrUWpzb3F6SUtLdXJWdjZFNGhHbkprdw?oc=5) — Sun, 01 Mar 2026 16:53:33 GMT
-- [María Corina Machado anunció que volverá a Venezuela "en las próximas semanas" - CNN en Español](https://news.google.com/rss/articles/CBMikwFBVV95cUxNYk14aS1TX1NEeXZTZ3pUWXBvcmQwdmlJazlZcElEeUpBSXZNeTAxU2FXeXJISjFPYlBieE9hWEx5aGtubGhpcHcyNXlaWjFVQUhWRlRNYkJ0bER0VW9PNFlheHdWWlpMSldjZS1pZXlpMXJiLXM0aWJNNENsZVdadXRqbGNFWVhBaG81bmFReVpXTGs?oc=5) — Sun, 01 Mar 2026 17:12:00 GMT
+- [Machado dice que regresará a Venezuela "en pocas semanas" - DW.com](https://news.google.com/rss/articles/CBMisAFBVV95cUxPNzV1WGFRWGtzZ1JDUDU4a2RFWG5fY0ZNaUxEYzQ5OThvZGtBdDNwdi1qYldTYU1zZHNJRGNLT2hFX1hOanlKUHJXQ0ZxaGlIRjhuME5Wc2w0cHRVc3FtbXQtN2hPSkdlVmhmcUg3N193cmVSLWc3WjZsX2E3ZHJyeF9DVmtQVVVIcmlPalVPTlR5azFKdWhpQXlOUk82RWRRMTNpYU85T3NvcGlxTnlUTdIBsAFBVV95cUxObkVvNjF5b2M3MVFON19qd1p0MmZaMEp6NktnaU4yUGV1S0F1VV9hYkJ1Ni1FektoWG55VGEzbXF2MXBIa0RtUzhRYlRxQ05nTXczaEd1c0dLWXRXeFdjTVpGZE1MSkxfZlBJZFhabkNhNXYwa0dNTmF1TVozRlNxaXByOVc0R0lpTmJ0N2l1Qk9XTnlfMlNZYjB3eE9XX1lhZEQxS25zb1VSVDllYlpOOA?oc=5) — Sun, 01 Mar 2026 19:32:16 GMT
+- [Venezuela otorga libertad condicional a 31 militares - DW.com](https://news.google.com/rss/articles/CBMijgFBVV95cUxQRVJCMWttY2xWbkdDZndKbVFYdDRGd2ItYUd2cFpHdl9tRnBvLWQ2NDRURUw5anZybmtVc29WUDNibGI3VjY1bEUwbXpaTGpKS19Ga0NaVExiY1RZVzM5R1NnWlNGd1huNHNMdFNrblk5VVNjVjZZYXZDOVlKckMtMnpRbkpDZzV4Nk14SjVB0gGOAUFVX3lxTFAzZGxGeGgxclZReXRXcE5MVXdfRDluOVBxdFhtOUEzZVBQdDZsZENrQm82Z1BGQ3gzaGM2eW9SeDAtd3JzMUhPcHRZTmJuWGFXcHR2UGtIUHpNT2hRMXBLbjM2Z2pQeDBySUplYV9weURTQ1hJeWRvUlg5bEg3eW84VTR2eW45ODZRZ24xNEE?oc=5) — Sat, 28 Feb 2026 23:54:07 GMT
+- [Luzardo listo para ayudar a Venezuela en el Clásico Mundial: ‘Si me necesitan ahí estaré’ - MLB.com](https://news.google.com/rss/articles/CBMimAFBVV95cUxPOHdwRFVsTm1oZTFKLW1uQnp2WVRZQjF5OUFuUjVvaGUxeDd4azhjeXBaeXFibUdPbE1RM3RKd1BQMU5WZzBPNHF2TkFDT1hTWTNwUUtqUjVrbWlrcWVmdWI5Tmg5aU9ac1dYOFR1WmgzSU11WHFNSXM0VHBkcE1QdGFyMGxNSnoyTi13M3ZBLTd1S0VPSTZuWtIBpAFBVV95cUxQVUhWSFloXzVQbEdnd01ZdHVxUHJQWWZFOGo0MC1JOWVHSXE2SmI0eWUwbXdmUXdaZE1wT243aGpCTHhwOU94UEFYYlJMVnZieEgyZGNJOTFmUFRnLUF4ZXl4SkE1Rk50UzhfWG1VNUc1TFBQdlZOT2FQT09LcHRaLWVaNFp0ckVQXzU3ZGQ2dTNCZmhWakxWN3F3REJtQjRVa0hNRg?oc=5) — Sun, 01 Mar 2026 19:09:37 GMT
 
 ---
 
