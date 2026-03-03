@@ -2,8 +2,10 @@ name: Update Venezuela News
 
 on:
   schedule:
-    # Run every 6 hours
-    - cron: "0 */6 * * *"
+    # Trigger at both 10:00 and 11:00 UTC, then run only when local ET hour is 06.
+    # This handles DST automatically (EDT=UTC-4, EST=UTC-5).
+    - cron: "0 10 * * *"
+    - cron: "0 11 * * *"
   workflow_dispatch:
 
 jobs:
@@ -13,21 +15,39 @@ jobs:
       contents: write
 
     steps:
+      - name: Check 6 AM ET window
+        id: et_window
+        shell: bash
+        run: |
+          ET_HOUR="$(TZ=America/New_York date +%H)"
+          if [ "$ET_HOUR" = "06" ]; then
+            echo "run_update=true" >> "$GITHUB_OUTPUT"
+            echo "Within 6 AM ET window."
+          else
+            echo "run_update=false" >> "$GITHUB_OUTPUT"
+            echo "Not 6 AM ET (current ET hour: $ET_HOUR). Skipping update."
+          fi
+
       - name: Checkout repository
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         uses: actions/checkout@v4
 
       - name: Set up Python
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install dependencies
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         run: pip install -r requirements.txt
 
       - name: Fetch latest news and update README
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         run: python fetch_news.py
 
       - name: Commit and push changes
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
