@@ -188,6 +188,11 @@
                     }
                     return true;
                 })
+                .sort((a, b) => {
+                    const dateA = String(a.sourcePublishedAt || a.publishedAt || '');
+                    const dateB = String(b.sourcePublishedAt || b.publishedAt || '');
+                    return dateB.localeCompare(dateA);
+                })
                 .map(renderItem)
                 .filter(Boolean)
                 .join('');
