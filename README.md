@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-03-03 05:06 UTC**
+> Last updated: **2026-03-03 07:01 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,11 +8,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Congreso de EE UU publica videos completos de la declaración de los Clinton sobre Epstein](https://bitlysdowssl-aws.com/2026/03/congreso-de-ee-uu-publica-videos-completos-de-la-declaracion-de-los-clinton-sobre-epstein/) — Tue, 03 Mar 2026 01:10:54 +0000
-- [Gobierno mexicano pide esclarecer fallecimiento de migrante detenido por ICE](https://bitlysdowssl-aws.com/2026/03/gobierno-mexicano-pide-esclarecer-fallecimiento-de-migrante-detenido-por-ice/) — Tue, 03 Mar 2026 00:54:51 +0000
-- [Intersectorial de Trabajadores de Guayana: “Delcy Rodríguez es copartícipe de toda la destrucción del país”](https://bitlysdowssl-aws.com/2026/03/intersectorial-de-trabajadores-de-guayana-delcy-rodriguez-es-coparticipe-de-toda-la-destruccion-del-pais/) — Tue, 03 Mar 2026 00:50:00 +0000
-- [Irán cierra el estrecho de Ormuz: cuál es su importancia estratégica y qué consecuencias tiene ya su clausura](https://bitlysdowssl-aws.com/2026/03/iran-cierra-el-estrecho-de-ormuz-cual-es-su-importancia-estrategica-y-que-consecuencias-tiene-ya-su-clausura/) — Tue, 03 Mar 2026 00:30:05 +0000
-- [Melania Trump presidió sesión del Consejo de Seguridad de la ONU: así fue](https://bitlysdowssl-aws.com/2026/03/melania-trump-presidio-sesion-del-consejo-de-seguridad-de-la-onu-asi-fue/) — Tue, 03 Mar 2026 00:30:00 +0000
+- [La reforma judicial como condición republicana](https://bitlysdowssl-aws.com/2026/03/la-reforma-judicial-como-condicion-republicana/) — Tue, 03 Mar 2026 05:25:00 +0000
+- [Recuperar la narrativa](https://bitlysdowssl-aws.com/2026/03/recuperar-la-narrativa/) — Tue, 03 Mar 2026 05:24:00 +0000
+- [Incertidumbre y manipulación social](https://bitlysdowssl-aws.com/2026/03/incertidumbre-y-manipulacion-social/) — Tue, 03 Mar 2026 05:22:00 +0000
+- [La controversia con Guyana, un proceso en curso y Venezuela ausente](https://bitlysdowssl-aws.com/2026/03/la-controversia-con-guyana-un-proceso-en-curso-y-venezuela-ausente/) — Tue, 03 Mar 2026 05:21:00 +0000
+- [Tierra de Gracia: Desclasificar a Delcy](https://bitlysdowssl-aws.com/2026/03/tierra-de-gracia-desclasificar-a-delcy/) — Tue, 03 Mar 2026 05:21:00 +0000
 
 ## Efecto Cocuyo
 
@@ -34,9 +34,9 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 - [María Corina Machado anuncia que regresa a Venezuela en “pocas semanas” para una “transición indetenible” - EL PAÍS](https://news.google.com/rss/articles/CBMi3AFBVV95cUxNa3B0Nnk0dmhZd1FCaW9CZnFPRWw3Y05HS2JCLXpRX1VHaXdoU3VZdGxMZzg2bnE2eWp1XzI2YjRTV2VCYmZ0SmhvYlNRUXRNd3Q4WUx1Y19FYjVkSGl4UlFrOGJBa2R3WFZfZUR4cm9wQkg3bG1PaE1fNEhENFJOSHpZWWFnaXNxaXpxZGg2T1FoZllWVXpuVXU0TExHajNkMEp4ZGtKY3NUYkd1d181THhTallCTDhUcXF3T3RDaTFjTXFKWGRjeVJ5am1ZbHV5b2sxTXNXa3FSbm9K0gHwAUFVX3lxTE43OC1DZW85V2MwTktTRnFGOW94bzYwWk53S09SdmxBd05nMXFpZ2JkNmZXT2RhOGVHZFBwYU9qaTV5Q01XSTJjNGJKMk1HRjVZZFV1RFhsZlRtMlNnUDE1V203UDVsVW9SbFJEU2hHYzVqeUdqWVlRVUktYWdEcGhYWV9jR2J2bzhraVFWdmJwU3B1eDVRY1hPTzY2MnVmbGpOMmVheVZ3NXp3VTZLbzQzWWNMd0pOcW1wQkhSb0RLQWJXYjFNZjN5UHNESWtadmdJUmJnUVdIXzg3YXFUMGxvZFJCbTctRndFWXJQaEU4Xw?oc=5) — Sun, 01 Mar 2026 18:17:56 GMT
 - [María Corina Machado anunció que volverá a Venezuela "en las próximas semanas" - CNN en Español](https://news.google.com/rss/articles/CBMikwFBVV95cUxNYk14aS1TX1NEeXZTZ3pUWXBvcmQwdmlJazlZcElEeUpBSXZNeTAxU2FXeXJISjFPYlBieE9hWEx5aGtubGhpcHcyNXlaWjFVQUhWRlRNYkJ0bER0VW9PNFlheHdWWlpMSldjZS1pZXlpMXJiLXM0aWJNNENsZVdadXRqbGNFWVhBaG81bmFReVpXTGs?oc=5) — Sun, 01 Mar 2026 17:12:00 GMT
-- ["Quita a Delcy su jugada más cómoda": Antonio De La Cruz habla de regreso de María Corina Machado a Venezuela y de Irán - NTN24](https://news.google.com/rss/articles/CBMi-AFBVV95cUxQWTZRQ0p1QnRnMEZTTU01aGdaZGYyTDRSc2lEckNyRWZ5dlpaWlhtTlN2LUdIT2JLU1VtMFhkQlBrZ0pkNjJPbGVXLTljQUlGc2tuQkFScmJ5cTRLWVltNmRnZEo2MHJ1RFhLWEhLSzIwa2l4TUhsSlE1dGtKdFZuMUZOQjM5UTNVR0VZS2FiRUdHemdGNzJqWkIzeGgzcWZvdGZWSXBLd0NlcTNwbVloQW8xVzRjbUdyV0x0TThxNFphN0VTVk5kUS1OWHQxQmZaRTZqbVo5ZkVGRFBsUmJIMndPTTRTWFBmZ294TUVSTklSbnlSOU5TUtIB-AFBVV95cUxNS1lLRXBfOXBjZEZTXzhac1lTUk02ZkJZdUt2RzVTWFNSR2hkMFVnMUpqaVhRZzNBX2hvTFctbnhmb3VkLW5IVnMzZ0o4c2FfRDRCVHBqbWw5eGVrOXdtQWkwNXA3VU1nRF9mTzB0RHJLZTNoak1NUFFVWlZIT19JdDF0MkJyb1lXY2pOTUtFYnpMNHg4dlYtMGJIUWhqdUdoNk8tX0pZNWVvRmZGcHpkYUlITHpXMU5BTVdPdE1VVUF3LVprd29SeHpQZGg3Y3R0S2ZQVXdPWW11WXZoQ1BaSnlPRkp2cDM2Y3loTHBIOXJVZy13b0NGWQ?oc=5) — Tue, 03 Mar 2026 00:24:25 GMT
+- [Machado dice que regresará a Venezuela "en pocas semanas" - DW.com](https://news.google.com/rss/articles/CBMisAFBVV95cUxPNzV1WGFRWGtzZ1JDUDU4a2RFWG5fY0ZNaUxEYzQ5OThvZGtBdDNwdi1qYldTYU1zZHNJRGNLT2hFX1hOanlKUHJXQ0ZxaGlIRjhuME5Wc2w0cHRVc3FtbXQtN2hPSkdlVmhmcUg3N193cmVSLWc3WjZsX2E3ZHJyeF9DVmtQVVVIcmlPalVPTlR5azFKdWhpQXlOUk82RWRRMTNpYU85T3NvcGlxTnlUTdIBsAFBVV95cUxObkVvNjF5b2M3MVFON19qd1p0MmZaMEp6NktnaU4yUGV1S0F1VV9hYkJ1Ni1FektoWG55VGEzbXF2MXBIa0RtUzhRYlRxQ05nTXczaEd1c0dLWXRXeFdjTVpGZE1MSkxfZlBJZFhabkNhNXYwa0dNTmF1TVozRlNxaXByOVc0R0lpTmJ0N2l1Qk9XTnlfMlNZYjB3eE9XX1lhZEQxS25zb1VSVDllYlpOOA?oc=5) — Sun, 01 Mar 2026 23:32:16 GMT
 - [El régimen de Venezuela pone bajo arresto a uno de sus colaboradores, el exbasquetbolista Alexander 'Mimou' Vargas - NTN24](https://news.google.com/rss/articles/CBMi8gFBVV95cUxQeWtpcXRyczBQNE1DYjEzUXZ0TTI4bTJBTVlTcHlBaTlucU1yb1Y2ZG9uT2dlQlFNbmNtdmt0Y0VNMnVQcUoycnE0ZUJxMzB1NHc5dEx3MWJTS3FUNzRoa1B5NkhPVzBwSDBxUVJzWE90cTU5NWVXYWJrT05LWXhBZk1RU1JOazBkYzg3dHBMU0xaS25aVlo4cVN3M1lnbWFwUjZaUFNGcHVWbEgyVWFZbXR1S2lyaWpuR1VqaHlVdkUzM3dZa1BtQTBWRG5NekpoMEptZmVSdEh0ajBaQkVXcDB6c293X0IwR01nZG8yVE1SZ9IB8gFBVV95cUxOeVk4ekZhTkJqZndBUGcwSk5VeE9oRzVvc3lwNUhYZkVPZ2dqdU9SQXg5TERoMldXQS1LcGlFZXFyRWowd01RUGNhakxvRjNPSFJBM2RvUkRXN1VGSTFkQU1aT1ZWM0FyN3Q2STZuNk5XYnY0aFhwcWF6aVRGak44M0pROEdmUk1pM3BoMHNhd0ZhaDROOVNBY0Yza19HSHlPOXVrU3hJWDcyM3BYemR6N3lzTkUzU2pKRXluWUdwZTVnVWpFMjBvaV9UTHVRRlZLYTFlSnJsVTlxZjMwMS1mbHZ3eGxncGxTbXJIMmpmbERTQQ?oc=5) — Mon, 02 Mar 2026 18:02:23 GMT
-- [ONG confirma más liberaciones en Venezuela - DW.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxOSHpoSjZyRWo4Nm03ejgtLWlCbnRFWWdfaGJsXzc2WlZWQ3JPcjk0V2V5RUZXQ2JUa1gxOFlWNXFhT2ZaTGx3ZjZCancweV9OUUlhd1hSOU9WeldYZXFGT09kNzN5SXVIMTQwc2NxZDdCbHppNExneXBNcnNCU0ZVdUlHblZWbnPSAYcBQVVfeXFMTnlJTzAtNGJiTmNGMkZXMGFhQmI0ZGNqX0VRbGNNU2ZhOUM3eFhmYkgzVGtlZUVsdFdaZFVEbDQ3VzhReURrMU45WjhWazgxM1Ftd2daMkQ2ZFlBQXBYX2c1YVZhMTBIbzc5dktBOWx0ZS1nRlk5ZUh2MmtuODYtV1pEMncxUzVF?oc=5) — Tue, 03 Mar 2026 04:29:34 GMT
+- ["Va a ser increíble". Contentos los Contreras al jugar juntos con Venezuela - MLB.com](https://news.google.com/rss/articles/CBMipAFBVV95cUxQNlVUbWxDY2lya2RIZ1B1b3NQcmFaTUltekJyWUtJcENMbERhb2V1RktnNVp4eGtoTnVONXQtZjN5TVMwUk9NMi15RWxReEJNOGZqY1MwWHl6X2VCcUZocFBReXlzREtIY1BnQ3BRSHhKLTVLMld6T2dVTmVKdGg3cXdkUFBhZlp6RlAxblY0aXotXzFfWGx1UlNyMW5uU3ByQWxsNNIBsAFBVV95cUxNbDUtQ2hNZXdqeWtrVmt4RTZ6a3lHQ3cwOFV6ODdobEV4b25NSW4xd1kzUDJlOEhnVEpFOU9xZG9EYUZNNDJpNXlka3lhRmlUekRiQ0lIRHAxTVEwODVSSkEtRjd1SmR2T1Z1eHY2R1FOSEJ4Zkc3WjAzOHFIZXcwMHltekdQMnF3MDhlVlVGZG8yTmFVanBobUNVZktnS095ZE9vQTZOeXBPNmxyTC1TNA?oc=5) — Mon, 02 Mar 2026 17:45:00 GMT
 
 ---
 
