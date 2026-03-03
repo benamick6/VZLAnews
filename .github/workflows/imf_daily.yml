@@ -2,7 +2,8 @@ name: Update IMF Venezuela Indicators
 
 on:
   schedule:
-    - cron: "20 10 * * *"
+    - cron: "0 10 * * *"
+    - cron: "0 11 * * *"
   workflow_dispatch:
 
 permissions:
@@ -12,12 +13,30 @@ jobs:
   update-imf:
     runs-on: ubuntu-latest
     steps:
+      - name: Check 6 AM ET window
+        id: et_window
+        shell: bash
+        run: |
+          ET_HOUR="$(TZ=America/New_York date +%H)"
+          if [ "$ET_HOUR" = "06" ]; then
+            echo "run_update=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run_update=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping run outside 6 AM ET window (current ET hour: $ET_HOUR)."
+          fi
+
       - uses: actions/checkout@v4
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
       - uses: actions/setup-node@v4
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         with:
           node-version: 20
-      - run: node scripts/fetch_imf_ven.js
-      - run: |
+      - name: Fetch IMF indicators
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
+        run: node scripts/fetch_imf_ven.js
+      - name: Commit updates
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
+        run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add docs/data/imf_ven.json
