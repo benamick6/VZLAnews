@@ -50,8 +50,10 @@ MARINE_TOPICS = {
     ],
 }
 
-COUNTRY_KEYWORDS = list(COUNTRIES.values()) + [
-    "southeast asia", "mekong", "south china sea", "andaman", "gulf of thailand"
+COUNTRY_KEYWORDS = [
+    info["name"].lower() for info in COUNTRIES.values()
+] + [
+    "southeast asia", "asean", "mekong", "south china sea", "andaman", "gulf of thailand"
 ]
 
 MAX_ITEMS_PER_FEED = 8
@@ -74,25 +76,35 @@ def generate_id(title: str, url: str) -> str:
     return hashlib.md5(combined.encode()).hexdigest()[:12]
 
 
-def is_relevant(title: str, summary: str = "") -> tuple[bool, list[str]]:
+def is_relevant(
+    title: str,
+    summary: str = "",
+    feed_country: Optional[str] = None,
+) -> tuple[bool, list[str]]:
     """
     Check if article is relevant to coastal/marine topics.
     Returns (is_relevant, topics_found)
     """
     text = f"{title} {summary}".lower()
     
-    # Check for geographic relevance
-    geo_match = any(kw.lower() in text for kw in COUNTRY_KEYWORDS)
-    if not geo_match:
-        return False, []
-    
     # Check for topic relevance
     topics_found = []
     for topic, keywords in MARINE_TOPICS.items():
         if any(kw.lower() in text for kw in keywords):
             topics_found.append(topic)
-    
-    return len(topics_found) > 0, topics_found
+
+    if not topics_found:
+        return False, []
+
+    # Check for geographic relevance
+    # Country-specific feeds are treated as geographically relevant.
+    geo_match = bool(feed_country) or any(kw in text for kw in COUNTRY_KEYWORDS)
+
+    # If no explicit geography appears, allow strongly topical items.
+    if not geo_match and len(topics_found) < 2:
+        return False, []
+
+    return True, topics_found
 
 
 def extract_country_codes(title: str, feed_country: Optional[str] = None) -> list[str]:
@@ -126,7 +138,11 @@ def fetch_feed(feed_url: str, feed_name: str, country_code: Optional[str] = None
                 continue
             
             # Check relevance
-            is_relevant_article, topics = is_relevant(title, summary)
+            is_relevant_article, topics = is_relevant(
+                title,
+                summary,
+                feed_country=country_code,
+            )
             if not is_relevant_article:
                 continue
             
@@ -336,49 +352,64 @@ def main():
     # Load feeds from config
     feeds = [
         {
-            "name": "BenarNews",
-            "url": "https://www.rfa.org/english/news/rss.xml",
-            "country": None,
-        },
-        {
-            "name": "The Straits Times",
-            "url": "https://www.straitstimes.com/asia/?rsspage=popular",
-            "country": "SG",
-        },
-        {
-            "name": "SEAFDEC",
-            "url": "https://www.seafdec.org/feed/",
-            "country": None,
-        },
-        {
-            "name": "FAO Asia",
-            "url": "http://www.fao.org/asiapacific/en/rss/",
-            "country": None,
-        },
-        {
-            "name": "VnExpress",
-            "url": "https://vnexpress.net/?category=home&format=rss",
+            "name": "Google News - Vietnam Coastal",
+            "url": "https://news.google.com/rss/search?q=Vietnam+(fisheries+OR+coastal+OR+marine+pollution+OR+sea+level+rise)&hl=en-US&gl=US&ceid=US:en",
             "country": "VN",
         },
         {
-            "name": "Bangkok Post",
-            "url": "https://www.bangkokpost.com/breaking-news/rss",
+            "name": "Google News - Thailand Coastal",
+            "url": "https://news.google.com/rss/search?q=Thailand+(fisheries+OR+coastal+OR+marine+security+OR+coastal+erosion)&hl=en-US&gl=US&ceid=US:en",
             "country": "TH",
         },
         {
-            "name": "Manila Bulletin",
-            "url": "https://www.mb.com.ph/rss-feeds",
+            "name": "Google News - Philippines Coastal",
+            "url": "https://news.google.com/rss/search?q=Philippines+(fisheries+OR+maritime+OR+typhoon+OR+coastal+communities)&hl=en-US&gl=US&ceid=US:en",
             "country": "PH",
         },
         {
-            "name": "Jakarta Post",
-            "url": "https://www.thejakartapost.com/feed",
+            "name": "Google News - Indonesia Coastal",
+            "url": "https://news.google.com/rss/search?q=Indonesia+(fisheries+OR+marine+pollution+OR+coastal+erosion+OR+blue+economy)&hl=en-US&gl=US&ceid=US:en",
             "country": "ID",
         },
         {
-            "name": "New Straits Times",
-            "url": "https://www.nst.com.my/rss",
+            "name": "Google News - Malaysia Coastal",
+            "url": "https://news.google.com/rss/search?q=Malaysia+(fisheries+OR+marine+security+OR+coastal+pollution)&hl=en-US&gl=US&ceid=US:en",
             "country": "MY",
+        },
+        {
+            "name": "Google News - Myanmar Coastal",
+            "url": "https://news.google.com/rss/search?q=Myanmar+(fisheries+OR+coastal+OR+cyclone+OR+marine)&hl=en-US&gl=US&ceid=US:en",
+            "country": "MM",
+        },
+        {
+            "name": "Google News - Cambodia Coastal",
+            "url": "https://news.google.com/rss/search?q=Cambodia+(fisheries+OR+coastal+OR+mangrove+OR+marine+pollution)&hl=en-US&gl=US&ceid=US:en",
+            "country": "KH",
+        },
+        {
+            "name": "Google News - Singapore Maritime",
+            "url": "https://news.google.com/rss/search?q=Singapore+(maritime+trade+OR+shipping+OR+marine+security)&hl=en-US&gl=US&ceid=US:en",
+            "country": "SG",
+        },
+        {
+            "name": "Google News - Brunei Coastal",
+            "url": "https://news.google.com/rss/search?q=Brunei+(fisheries+OR+coastal+OR+marine+pollution)&hl=en-US&gl=US&ceid=US:en",
+            "country": "BN",
+        },
+        {
+            "name": "Google News - Southeast Asia Marine",
+            "url": "https://news.google.com/rss/search?q=%22Southeast+Asia%22+(marine+security+OR+fisheries+OR+sea+level+rise+OR+ocean+pollution)&hl=en-US&gl=US&ceid=US:en",
+            "country": None,
+        },
+        {
+            "name": "VnExpress Latest",
+            "url": "https://vnexpress.net/rss/tin-moi-nhat.rss",
+            "country": "VN",
+        },
+        {
+            "name": "Bangkok Post Top Stories",
+            "url": "https://www.bangkokpost.com/rss/data/topstories.xml",
+            "country": "TH",
         },
     ]
     

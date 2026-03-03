@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-03-03T21:31:28.081Z",
+  "total_articles": 37,
+  "regional_brief": "15 relevant items were identified for grassroot community leaders. Coverage centers on sustainable_fisheries, blue_economy, climate_coastal, marine_security, marine_pollution. Geographic focus includes VN, MY, KH, TH, PH. Primary sources include Google News - Vietnam Coastal, Google News - Malaysia Coastal, Google News - Cambodia Coastal, Google News - Thailand Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+  "country_briefs": {
+    "VN": {
+      "country": "VN",
+      "article_count": 6,
+      "topics": [
+        "sustainable_fisheries",
+        "blue_economy",
+        "climate_coastal"
+      ],
+      "brief": "6 relevant items were identified for grassroot community leaders. Coverage centers on sustainable_fisheries, blue_economy, climate_coastal. Geographic focus includes VN. Primary sources include Google News - Vietnam Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:14.059Z"
+    },
+    "MY": {
+      "country": "MY",
+      "article_count": 5,
+      "topics": [
+        "marine_security",
+        "marine_pollution",
+        "climate_coastal",
+        "blue_economy",
+        "sustainable_fisheries"
+      ],
+      "brief": "5 relevant items were identified for grassroot community leaders. Coverage centers on marine_security, marine_pollution, climate_coastal, blue_economy, sustainable_fisheries. Geographic focus includes MY. Primary sources include Google News - Malaysia Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:15.061Z"
+    },
+    "KH": {
+      "country": "KH",
+      "article_count": 3,
+      "topics": [
+        "sustainable_fisheries",
+        "blue_economy",
+        "climate_coastal"
+      ],
+      "brief": "3 relevant items were identified for grassroot community leaders. Coverage centers on sustainable_fisheries, blue_economy, climate_coastal. Geographic focus includes KH. Primary sources include Google News - Cambodia Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:16.062Z"
+    },
+    "TH": {
+      "country": "TH",
+      "article_count": 3,
+      "topics": [
+        "blue_economy",
+        "climate_coastal"
+      ],
+      "brief": "3 relevant items were identified for grassroot community leaders. Coverage centers on blue_economy, climate_coastal. Geographic focus includes TH. Primary sources include Google News - Thailand Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:17.063Z"
+    },
+    "PH": {
+      "country": "PH",
+      "article_count": 6,
+      "topics": [
+        "climate_coastal",
+        "blue_economy"
+      ],
+      "brief": "6 relevant items were identified for grassroot community leaders. Coverage centers on climate_coastal, blue_economy. Geographic focus includes PH. Primary sources include Google News - Philippines Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:18.065Z"
+    },
+    "ID": {
+      "country": "ID",
+      "article_count": 7,
+      "topics": [
+        "blue_economy",
+        "climate_coastal"
+      ],
+      "brief": "7 relevant items were identified for grassroot community leaders. Coverage centers on blue_economy, climate_coastal. Geographic focus includes ID. Primary sources include Google News - Indonesia Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:19.066Z"
+    },
+    "MM": {
+      "country": "MM",
+      "article_count": 3,
+      "topics": [
+        "marine_security",
+        "climate_coastal",
+        "blue_economy"
+      ],
+      "brief": "3 relevant items were identified for grassroot community leaders. Coverage centers on marine_security, climate_coastal, blue_economy. Geographic focus includes MM. Primary sources include Google News - Myanmar Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:20.067Z"
+    },
+    "SG": {
+      "country": "SG",
+      "article_count": 3,
+      "topics": [
+        "blue_economy",
+        "marine_security"
+      ],
+      "brief": "3 relevant items were identified for grassroot community leaders. Coverage centers on blue_economy, marine_security. Geographic focus includes SG. Primary sources include Google News - Singapore Maritime. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:21.069Z"
+    },
+    "BN": {
+      "country": "BN",
+      "article_count": 1,
+      "topics": [
+        "marine_security"
+      ],
+      "brief": "1 relevant items were identified for grassroot community leaders. Coverage centers on marine_security. Geographic focus includes BN. Primary sources include Google News - Brunei Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:22.070Z"
+    }
+  },
+  "topic_briefs": {
+    "sustainable_fisheries": {
+      "topic": "sustainable_fisheries",
+      "description": "Sustainable fishing practices, stock management, aquaculture",
+      "article_count": 5,
+      "countries": [
+        "VN",
+        "KH",
+        "MY"
+      ],
+      "brief": "5 relevant items were identified for researchers & ngo leaders. Coverage centers on sustainable_fisheries, blue_economy. Geographic focus includes VN, KH, MY. Primary sources include Google News - Vietnam Coastal, Google News - Cambodia Coastal, Google News - Malaysia Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:23.072Z"
+    },
+    "blue_economy": {
+      "topic": "blue_economy",
+      "description": "Maritime trade, shipping, livelihood opportunities, supply chains",
+      "article_count": 16,
+      "countries": [
+        "VN",
+        "MY",
+        "KH",
+        "TH",
+        "PH",
+        "ID",
+        "MM",
+        "SG"
+      ],
+      "brief": "10 relevant items were identified for researchers & ngo leaders. Coverage centers on sustainable_fisheries, blue_economy, climate_coastal. Geographic focus includes VN, MY, KH, TH, PH, ID. Primary sources include Google News - Vietnam Coastal, Google News - Malaysia Coastal, Google News - Cambodia Coastal, Google News - Thailand Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:24.074Z"
+    },
+    "climate_coastal": {
+      "topic": "climate_coastal",
+      "description": "Sea level rise, coastal adaptation, extreme weather impacts",
+      "article_count": 15,
+      "countries": [
+        "VN",
+        "MY",
+        "TH",
+        "PH",
+        "ID",
+        "MM",
+        "KH"
+      ],
+      "brief": "10 relevant items were identified for researchers & ngo leaders. Coverage centers on climate_coastal, blue_economy. Geographic focus includes VN, MY, TH, PH. Primary sources include Google News - Vietnam Coastal, Google News - Malaysia Coastal, Google News - Thailand Coastal, Google News - Philippines Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:25.076Z"
+    },
+    "marine_security": {
+      "topic": "marine_security",
+      "description": "Maritime sovereignty, territorial disputes, marine enforcement",
+      "article_count": 5,
+      "countries": [
+        "MY",
+        "MM",
+        "SG",
+        "BN"
+      ],
+      "brief": "5 relevant items were identified for researchers & ngo leaders. Coverage centers on marine_security, marine_pollution. Geographic focus includes MY, MM, SG, BN. Primary sources include Google News - Malaysia Coastal, Google News - Myanmar Coastal, Google News - Singapore Maritime, Google News - Brunei Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:26.077Z"
+    },
+    "marine_pollution": {
+      "topic": "marine_pollution",
+      "description": "Ocean plastic, chemical/oil spills, ecosystem contamination",
+      "article_count": 1,
+      "countries": [
+        "MY"
+      ],
+      "brief": "1 relevant items were identified for researchers & ngo leaders. Coverage centers on marine_security, marine_pollution. Geographic focus includes MY. Primary sources include Google News - Malaysia Coastal. Specific operational details remain limited in several articles; details pending where source text is thin.",
+      "generated_at": "2026-03-03T21:31:27.080Z"
+    }
+  }
+}

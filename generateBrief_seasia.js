@@ -8,9 +8,25 @@
 
 import fs from "fs";
 import path from "path";
-import OpenAI from "openai";
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const hasOpenAIKey = Boolean(process.env.OPENAI_API_KEY);
+let openai = null;
+
+async function ensureOpenAIClient() {
+  if (!hasOpenAIKey) return null;
+  if (openai) return openai;
+
+  try {
+    const { default: OpenAI } = await import("openai");
+    openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+    return openai;
+  } catch (error) {
+    console.warn(
+      "⚠️  OpenAI package not installed; using deterministic local summaries."
+    );
+    return null;
+  }
+}
 
 const ARTICLES_PATH = "./data/seasia_coastal/articles_raw";
 const BRIEF_OUTPUT = "./data/seasia_coastal/BRIEF.json";
@@ -104,6 +120,37 @@ function compact(s, maxLen) {
   return cleaned.length > maxLen ? cleaned.slice(0, maxLen) + "…" : cleaned;
 }
 
+function buildFallbackBrief(articles, audienceInfo) {
+  if (!articles || articles.length === 0) {
+    return "No relevant coastal updates were available in this run.";
+  }
+
+  const uniqueTopics = [
+    ...new Set(articles.flatMap((a) => a.topics || [])),
+  ];
+  const uniqueCountries = [
+    ...new Set(articles.flatMap((a) => a.countries || [])),
+  ];
+  const uniqueSources = [
+    ...new Set(articles.map((a) => a.source || "Unknown source")),
+  ];
+
+  const topicText = uniqueTopics.length
+    ? uniqueTopics.join(", ")
+    : "coastal community developments";
+  const countryText = uniqueCountries.length
+    ? uniqueCountries.join(", ")
+    : "multiple Southeast Asian locations";
+
+  return [
+    `${articles.length} relevant items were identified for ${audienceInfo.name.toLowerCase()}.`,
+    `Coverage centers on ${topicText}.`,
+    `Geographic focus includes ${countryText}.`,
+    `Primary sources include ${uniqueSources.slice(0, 4).join(", ")}.`,
+    "Specific operational details remain limited in several articles; details pending where source text is thin.",
+  ].join(" ");
+}
+
 async function generateBriefForArticles(articles, audience = "grassroot_leader") {
   /**
    * Generate brief summary for a collection of articles
@@ -119,8 +166,8 @@ async function generateBriefForArticles(articles, audience = "grassroot_leader")
   // Prepare article summaries
   const articleSummaries = articles
     .map((a, idx) => {
-      const topicList = a.topics.join(", ");
-      const countryList = a.countries.join(", ");
+      const topicList = (a.topics || []).join(", ") || "unspecified";
+      const countryList = (a.countries || []).join(", ") || "regional";
       const header = `ARTICLE ${idx + 1}: "${a.title}"`;
       const meta = `Topic: ${topicList} | Countries: ${countryList} | Source: ${a.source}`;
       const url = `URL: ${a.url}`;
@@ -152,7 +199,12 @@ Provide ONLY the brief text. No labels, no commentary. Pure synthesis.
 Now write the brief:`;
 
   try {
-    const response = await openai.chat.completions.create({
+    const openaiClient = await ensureOpenAIClient();
+    if (!openaiClient) {
+      return buildFallbackBrief(articles, audience_info);
+    }
+
+    const response = await openaiClient.chat.completions.create({
       model: "gpt-4-turbo",
       messages: [
         {
@@ -164,11 +216,10 @@ Now write the brief:`;
       max_tokens: 800,
     });
 
-    return response.choices[0].message.content;
+    return (response.choices?.[0]?.message?.content || "").trim();
   } catch (e) {
     console.error(`❌ OpenAI error: ${e.message}`);
-    // Fallback: simple synthesis
-    return `${articles.length} articles covering ${[...new Set(articles.flatMap((a) => a.topics))].join(", ")} across ${[...new Set(articles.flatMap((a) => a.countries))].join(", ")}. Key sources: ${[...new Set(articles.map((a) => a.source))].slice(0, 3).join(", ")}.`;
+    return buildFallbackBrief(articles, audience_info);
   }
 }
 
@@ -240,7 +291,10 @@ async function generateTopicBriefs(articles) {
       `  → Generating brief for ${topic} (${topicArticles.length} articles)…`
     );
 
-    const topicInfo = TOPIC_CONTEXT[topic];
+    const topicInfo = TOPIC_CONTEXT[topic] || {
+      summary: "Emerging coastal issue",
+      prompts: "Assess implications and local impacts.",
+    };
     const brief = await generateBriefForArticles(
       topicArticles.slice(0, 10),
       "researcher_ngo"
@@ -299,7 +353,7 @@ async function main() {
     console.warn(
       "⚠️  OPENAI_API_KEY not set. Skipping OpenAI-based briefs."
     );
-    console.warn("   Set OPENAI_API_KEY environment variable to enable.");
+    console.warn("   Using deterministic local fallback summaries.");
   }
 
   // Load articles
