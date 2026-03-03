@@ -1,11 +1,9 @@
 name: Update Executive Brief
 
 on:
-  push:
-    paths:
-      - "data/articles.json"
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 10 * * *"
+    - cron: "0 11 * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,23 +14,40 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check 6 AM ET window
+        id: et_window
+        shell: bash
+        run: |
+          ET_HOUR="$(TZ=America/New_York date +%H)"
+          if [ "$ET_HOUR" = "06" ]; then
+            echo "run_update=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run_update=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping run outside 6 AM ET window (current ET hour: $ET_HOUR)."
+          fi
+
       - name: Checkout repository
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         uses: actions/checkout@v4
 
       - name: Set up Node.js 18
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
       - name: Install dependencies
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         run: npm install openai
 
       - name: Generate executive brief
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         run: node generateBrief.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Commit updated brief
+        if: github.event_name == 'workflow_dispatch' || steps.et_window.outputs.run_update == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
