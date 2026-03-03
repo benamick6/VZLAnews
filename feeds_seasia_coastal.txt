@@ -1,0 +1,167 @@
+# ============================
+# SOUTHEAST ASIA COASTAL NEWS FEEDS
+# ============================
+# RSS feeds for grassroot leaders focused on coastal communities in SE Asia
+# Topics: Sustainable Fisheries, Climate Change, Marine Security, Marine Pollution
+# Updated: 2026-03
+
+# ============================
+# REGIONAL NEWS AGGREGATORS
+# ============================
+
+# Broad Regional Coverage
+BenarNews (RFA) – Southeast Asia - https://www.rfa.org/english/news/rss.xml
+The Straits Times – Asia - https://www.straitstimes.com/asia/?rsspage=popular
+Bangkok Post – Southeast Asia - https://www.bangkokpost.com/breaking%20news/rss
+ASEAN Secretariat - https://www.asean.org/news-rss/
+East Asia Forum – Regional Analysis - https://www.eastasiaforum.org/feed/
+Analysis Asia - https://www.analysisasia.com/feed/
+
+# ============================
+# MARINE & FISHERIES GENERAL
+# ============================
+
+FAO Fisheries News - http://www.fao.org/news/rss-feed/en
+FAO Asia Regional Office - http://www.fao.org/asiapacific/en/rss/
+SEAFDEC (Southeast Asian Fisheries Development Center) - https://www.seafdec.org/feed/
+World Bank Fisheries - https://www.worldbank.org/en/topic/fisheries/all
+IUCN News – Fisheries & Marine - https://www.iucn.org/news/news?type=news
+Oceana – Southeast Asia Conservation - https://oceana.org/news/rss-feed/
+
+# ============================
+# CLIMATE CHANGE & COASTAL RESILIENCE
+# ============================
+
+Carbon Brief – Asia Coverage - https://www.carbonbrief.org/feed/
+Mongabay – Southeast Asia - https://feeds.mongabay.com/
+Down To Earth – Asia Environmental - https://www.downtoearth.org.in/rss
+UN Environment Programme (UNEP) - https://www.unep.org/news-and-stories/rss-feed
+Munich Re – Climate & Disasters - https://www.munichre.com/global/en/company/news/latest-news/rss-feed.xml
+Intergovernmental Oceanographic Commission (IOC) - https://en.unesco.org/news
+
+# ============================
+# MARITIME SECURITY & GOVERNANCE
+# ============================
+
+Japan Times – Regional Security - https://www.japantimes.co.jp/news/asia-pacific/feed/
+Nikkei Asia – Maritime & Trade - https://asia.nikkei.com/rss/nikkei-top-stories/
+Maritime Executive – Asia-Pacific - https://www.maritime-executive.com/atom/rss/asia-pacific
+ISM (International Shipping & Maritime News) - https://www.information-systems.co.uk/content/feeds/
+Geopolitical Monitor – Asia-Pacific - https://www.geopoliticalmonitor.com/feed/
+
+# ============================
+# SOUTH CHINA SEA COVERAGE
+# ============================
+
+Google News – South China Sea - https://news.google.com/rss/search?q=South+China+Sea&hl=en&gl=SG&ceid=SG:en
+Google News – Maritime Disputes - https://news.google.com/rss/search?q=maritime+disputes+Southeast+Asia&hl=en&gl=SG&ceid=SG:en
+Council on Foreign Relations - https://www.cfr.org/rss/
+RAND Corporation Policy - https://www.rand.org/news.html?rss
+
+# ============================
+# COUNTRY SPECIFIC FEEDS
+# ============================
+
+# --- VIETNAM ---
+Vietnam News Agency (VNA) - https://www.vietnamplus.vn/rss
+VnExpress International - https://vnexpress.net/?category=home&format=rss
+Tuoi Tre Online - https://tuoitre.vn/rss/index.rss
+Google News – Vietnam English - https://news.google.com/rss/search?q=Vietnam&hl=en&gl=VN&ceid=VN:en
+Google News – Vietnam Fisheries - https://news.google.com/rss/search?q=Vietnam+fisheries+fishing&hl=en&gl=VN&ceid=VN:en
+
+# --- THAILAND ---
+Bangkok Post - https://www.bangkokpost.com/breaking-news/rss
+The Nation Thailand - https://www.nationthailand.com/rss
+Khaosod English - https://english.khaosod.co.th/rss
+Thai News Agency - https://www.thaipbsworld.com/rss.xml
+Google News – Thailand Climate - https://news.google.com/rss/search?q=Thailand+climate+coastal&hl=en&gl=TH&ceid=TH:en
+
+# --- PHILIPPINES ---
+Philippine News Agency (PNA) - https://pna.gov.ph/feed
+Manila Bulletin - https://www.mb.com.ph/rss-feeds
+Rappler – Philippines - https://rappler.com/newsbreak/rss
+PhilStar Global - https://www.philstar.com/feed
+Google News – Philippines Fisheries - https://news.google.com/rss/search?q=Philippines+fisheries+fishing&hl=en&gl=PH&ceid=PH:en
+
+# --- INDONESIA ---
+Jakarta Post - https://www.thejakartapost.com/feed
+Tempo.co - https://www.tempo.co/rss
+Antaranews - https://www.antaranews.com/feed
+Detik.com - https://www.detik.com/rss/
+Google News – Indonesia Marine - https://news.google.com/rss/search?q=Indonesia+marine+fisheries&hl=en&gl=ID&ceid=ID:en
+
+# --- MALAYSIA ---
+New Straits Times - https://www.nst.com.my/rss
+Malay Mail Online - https://www.malaymail.com/rss
+The Star Online - https://www.thestar.com.my/news/rss/
+Google News – Malaysia Coastal - https://news.google.com/rss/search?q=Malaysia+coastal+marine&hl=en&gl=MY&ceid=MY:en
+
+# --- MYANMAR ---
+Myanmar Times - https://www.mmtimes.com/rss-feeds/news
+Irrawaddy Magazine - https://www.irrawaddy.com/feed
+Google News – Myanmar Marine - https://news.google.com/rss/search?q=Myanmar+fisheries+coast&hl=en&gl=MM&ceid=MM:en
+
+# --- CAMBODIA ---
+Khmer Times - https://www.khmertimes.com/feed
+Cambodia News - https://www.cambojanews.com/feed
+Google News – Cambodia Mekong - https://news.google.com/rss/search?q=Cambodia+Mekong+fisheries&hl=en&gl=KH&ceid=KH:en
+
+# --- SINGAPORE ---
+Straits Times Singapore - https://www.straitstimes.com/singapore/?page=1&format=rss
+Channel NewsAsia - https://www.channelnewsasia.com/rss/
+Today Online - https://www.todayonline.com/feeds/rss
+Google News – Singapore Maritime - https://news.google.com/rss/search?q=Singapore+maritime+port&hl=en&gl=SG&ceid=SG:en
+
+# --- BRUNEI ---
+Borneo Bulletin - https://borneobulletin.com.bn/feed/
+Google News – Brunei - https://news.google.com/rss/search?q=Brunei&hl=en&gl=BN&ceid=BN:en
+
+# ============================
+# SPECIALIZED MARINE RESEARCH & MONITORING
+# ============================
+
+Mekong River Commission (MRC) - https://www.mrcmekong.org/news-and-events/
+UN ESCAP – Asia Pacific Regional - https://www.unescap.org/news
+Asian Development Bank (ADB) - https://www.adb.org/news/feed/
+World Wildlife Fund (WWF) – Asia-Pacific - https://feeds.wwf.org/
+The Nature Conservancy – Asia - https://www.tnc.org/news/press/rss
+
+# ============================
+# SUPRANATIONAL GOVERNANCE & POLICY
+# ============================
+
+UN News – Asia Pacific - https://news.un.org/feed/subscribe/region/asia-pacific/rss.xml
+ASEAN Human Rights Commission - https://www.ahrcommission.org/en/news/feed/
+International Labour Organization (ILO) - https://www.ilo.org/news/WCMS_ENG
+Coastal Zone Management Resources - https://coastaleconomy.noaa.gov/rss
+
+# ============================
+# SPECIALIZED TOPIC FEEDS
+# ============================
+
+# Climate and Disaster Management
+RELIEFWEB – Southeast Asia Regional - https://reliefweb.int/country/vnm/rss.xml
+Global Disaster Alert and Coordination System - https://www.gdacs.org/rss.xml
+
+# Pollution & Environmental Health
+Chemical Safety - https://oasys2.iaea.org/crp/pages/feeds/RSS.html
+Environmental Justice - https://ejatlas.org/feed
+
+# Shipping and Maritime Trade
+Lloyd's List Intelligence - https://www.lloydslist.com/rss
+Seatrade Intelligence - https://www.seatradeintelligence.com/news/rss
+
+# ============================
+# BACKUP OR SUPPLEMENTARY SOURCES
+# ============================
+
+# General Asia News (for context)
+Bing News – Asia - https://www.bing.com/news/search?q=Asia&format=rss
+DW News – Asia - https://www.dw.com/en/asia/s-7425
+BBC News – Asia - https://feeds.bbc.co.uk/news/world/asia/rss.xml
+Reuters – Asia - https://www.reuters.com/world/asia/
+
+# Specialized Research Streams
+ResearchGate – Fisheries - https://www.researchgate.net/directory/publications?topic=Fisheries&subdomain=marine-biology
+Google Scholar Alerts – (Custom per research area)
+

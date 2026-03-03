@@ -1,0 +1,260 @@
+# Southeast Asia Coastal Communities News System - Configuration
+# Purpose: Generate daily news briefs on sustainable fisheries, climate change, 
+# marine security, marine pollution for grassroot leaders in SE Asia
+
+# --- Geographic Targeting ---
+countries:
+  - name: "Vietnam"
+    iso2: "VN"
+    iso3: "VNM"
+    languages: ["en", "vi"]
+    focus_provinces: ["Mekong Delta", "Red River Delta", "Central Coast"]
+    
+  - name: "Thailand"
+    iso2: "TH"
+    iso3: "THA"
+    languages: ["en", "th"]
+    focus_provinces: ["Eastern Seaboard", "Andaman Coast", "Gulf of Thailand"]
+    
+  - name: "Philippines"
+    iso2: "PH"
+    iso3: "PHL"
+    languages: ["en", "tl"]
+    focus_provinces: ["Luzon Coast", "Visayas", "Mindanao Coastal"]
+    
+  - name: "Indonesia"
+    iso2: "ID"
+    iso3: "IDN"
+    languages: ["en", "id"]
+    focus_provinces: ["Java Coast", "Sumatra Straits", "Eastern Archipelago"]
+    
+  - name: "Malaysia"
+    iso2: "MY"
+    iso3: "MYS"
+    languages: ["en", "ms"]
+    focus_provinces: ["Peninsular Malaysia Coast", "Sabah", "Sarawak"]
+    
+  - name: "Myanmar"
+    iso2: "MM"
+    iso3: "MMR"
+    languages: ["en", "my"]
+    focus_provinces: ["Irrawaddy Delta", "Rakhine Coast"]
+    
+  - name: "Cambodia"
+    iso2: "KH"
+    iso3: "KHM"
+    languages: ["en", "km"]
+    focus_provinces: ["Tonlé Sap", "Mekong", "South Coast"]
+    
+  - name: "Singapore"
+    iso2: "SG"
+    iso3: "SGP"
+    languages: ["en"]
+    focus_provinces: ["Singapore Strait", "Territorial Waters"]
+    
+  - name: "Brunei"
+    iso2: "BN"
+    iso3: "BRN"
+    languages: ["en", "ms"]
+    focus_provinces: ["Northern Borneo Coast"]
+
+# --- Geographic Scope ---
+regional_focus: "Southeast Asia - Particularly South China Sea, Mekong Region, Andaman Sea"
+eez_monitoring: true
+transboundary_tracking: true
+
+# --- Scheduling / Recency ---
+max_age_days: 14
+prefer_published_date: true
+update_frequency_hours: 12
+
+# --- Output Control ---
+max_results: 80
+summary_max_chars: 520
+section_item_limit: 12
+
+article_extraction:
+  enabled: true
+  max_items: 25
+  timeout_seconds: 8
+  min_chars: 240
+  max_chars: 6000
+  blocked_domains:
+    - tripadvisor.com
+    - booking.com
+    - socialnetwork.dev
+
+selection:
+  min_per_section: 4
+  max_per_section: 10
+  min_per_country: 2
+  min_per_language:
+    en: 15
+    vi: 5
+    th: 5
+    id: 5
+
+# --- Brief Output Sections ---
+brief_sections:
+  - "Marine Security & Governance"
+  - "Sustainable Fisheries & Aquaculture"
+  - "Coastal Environmental Health"
+  - "Blue Economy & Livelihoods"
+  - "Maritime Climate Change"
+  - "Transboundary & Regional Issues"
+
+# --- Topic-Based Organization ---
+topics:
+  sustainable_fisheries:
+    keywords:
+      - "sustainable fishing"
+      - "fisheries management"
+      - "aquaculture"
+      - "fish stocks"
+      - "overfishing"
+      - "IUU fishing"
+      - "illegal unreported unregulated"
+    audience: ["fishing_communities", "ngos", "policymakers"]
+    
+  marine_security:
+    keywords:
+      - "maritime security"
+      - "marine sovereignty"
+      - "EEZ"
+      - "exclusive economic zone"
+      - "territorial waters"
+      - "maritime dispute"
+      - "South China Sea"
+      - "piracy"
+      - "maritime patrol"
+    audience: ["policymakers", "defense", "security_officials"]
+    
+  climate_change_coastal:
+    keywords:
+      - "sea level rise"
+      - "coastal erosion"
+      - "climate adaptation"
+      - "typhoon"
+      - "extreme weather"
+      - "mangrove restoration"
+      - "coral restoration"
+      - "ocean acidification"
+    audience: ["all"]
+    
+  marine_pollution:
+    keywords:
+      - "marine pollution"
+      - "ocean plastic"
+      - "chemical spill"
+      - "oil spill"
+      - "fishing pollution"
+      - "mercury contamination"
+      - "microplastics"
+      - "waste management"
+    audience: ["health_organizations", "environmental_ngos", "communities"]
+    
+  blue_economy:
+    keywords:
+      - "blue economy"
+      - "maritime trade"
+      - "shipping"
+      - "port development"
+      - "marine tourism"
+      - "livelihood"
+      - "seafood export"
+      - "supply chain"
+    audience: ["businesses", "traders", "development_ngos"]
+
+# --- Content Filtering ---
+require_geographic_match: true
+
+country_terms:
+  - vietnam
+  - thailand
+  - philippines
+  - indonesia
+  - malaysia
+  - myanmar
+  - cambodia
+  - singapore
+  - brunei
+  - southeast asia
+  - mekong
+  - "south china sea"
+  - andaman
+  - "gulf of thailand"
+  - borneo
+  - sumatra
+
+marine_coastal_terms:
+  - fisheries
+  - maritime
+  - marine
+  - coastal
+  - ocean
+  - sea
+  - beach
+  - port
+  - aquaculture
+  - fishing
+  - mangrove
+  - coral
+  - seagrass
+  - estuary
+  - lagoon
+  - archipelago
+
+language_preferences:
+  priority_local: true
+  english_fallback: true
+  translation_available: true
+
+# --- Archive & History ---
+archive_enabled: true
+archive_by:
+  - country
+  - topic
+  - month
+
+# --- Output Modes ---
+output_formats:
+  - markdown_readme
+  - json_archive
+  - country_summaries
+  - topic_summaries
+  - regional_digest
+
+# --- Grassroot Leader Customization ---
+grassroot_leader_mode:
+  enabled: true
+  simplify_language: true
+  include_action_items: true
+  highlight_livelihood_impacts: true
+  provide_local_contacts: true
+  local_resources_links: true
+
+# --- Data Quality ---
+deduplication_enabled: true
+duplicate_detection_method: "headline_similarity_threshold"
+similarity_threshold: 0.85
+
+source_credibility_scoring: true
+credible_sources:
+  - benarNews
+  - SEAFDEC
+  - FAO
+  - Reuters
+  - AFP
+  - AP News
+
+# --- Notification Triggers ---
+alerts_enabled: true
+alert_keywords:
+  - "marine disaster"
+  - "environmental emergency"
+  - "fishing ban"
+  - "maritime conflict"
+  - "oil spill"
+  - "cyclone"
+  - "extreme weather warning"
+

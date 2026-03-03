@@ -1,0 +1,220 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Southeast Asia Coastal News Article Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (MD5 hash of title + URL)",
+      "pattern": "^[a-f0-9]{12}$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Article headline"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link to full article"
+    },
+    "published": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Publication date/time"
+    },
+    "source": {
+      "type": "string",
+      "description": "News outlet/feed name",
+      "examples": ["BenarNews", "Bangkok Post", "SEAFDEC"]
+    },
+    "feed_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Source RSS feed URL"
+    },
+    "countries": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["VN", "TH", "PH", "ID", "MY", "MM", "KH", "SG", "BN", "ZZ"]
+      },
+      "description": "ISO-2 country codes mentioned"
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "sustainable_fisheries",
+          "marine_security",
+          "climate_coastal",
+          "marine_pollution",
+          "blue_economy"
+        ]
+      },
+      "description": "Relevant topic categories"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Article summary (first 300 chars)",
+      "maxLength": 300
+    },
+    "relevance_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Relevance score based on topic matches"
+    },
+    "extracted_text": {
+      "type": "string",
+      "description": "Full article text extracted from URL",
+      "maxLength": 6000
+    },
+    "extracted_text_status": {
+      "type": "string",
+      "enum": ["ok", "partial", "fallback_headline_only", "failed"],
+      "description": "Status of text extraction"
+    },
+    "local_language": {
+      "type": "string",
+      "description": "Original language of article",
+      "examples": ["en", "vi", "th", "id"]
+    },
+    "local_text": {
+      "type": "string",
+      "description": "Original language text (if available)",
+      "maxLength": 6000
+    },
+    "translation": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Translated title (if translated)"
+        },
+        "language": {
+          "type": "string",
+          "description": "Language translated to"
+        },
+        "provider": {
+          "type": "string",
+          "description": "Translation service used"
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Manual or automated tags",
+      "examples": ["urgent", "livelihood_threat", "policy_opportunity"]
+    },
+    "geographic_entities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Named geographic locations mentioned",
+      "examples": ["Mekong Delta", "South China Sea"]
+    },
+    "action_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "Recommended action for grassroot leaders"
+          },
+          "audience": {
+            "type": "string",
+            "description": "Target audience for this action"
+          },
+          "priority": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          }
+        }
+      },
+      "description": "Actions grassroot leaders should consider"
+    },
+    "local_contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "description": "Government/NGO role"
+          },
+          "country": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["government", "ngo", "research", "community"]
+          }
+        }
+      },
+      "description": "Relevant local government or NGO contacts"
+    },
+    "livelihood_impact": {
+      "type": "string",
+      "enum": ["high_threat", "medium_threat", "low_threat", "opportunity", "neutral"],
+      "description": "Estimated impact on fishing livelihoods"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "archived", "flagged", "duplicate"],
+      "description": "Processing status"
+    },
+    "archived_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When article was archived"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last modification timestamp"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "credibility_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "read_time_minutes": {
+          "type": "integer"
+        },
+        "word_count": {
+          "type": "integer"
+        },
+        "has_images": {
+          "type": "boolean"
+        },
+        "has_multimedia": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "url",
+    "source",
+    "published",
+    "countries",
+    "topics",
+    "relevance_score",
+    "status"
+  ],
+  "additionalProperties": false
+}
