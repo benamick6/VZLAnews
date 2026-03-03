@@ -2,6 +2,9 @@
 # VENEZUELA – MACRO & POLICY
 # ============================
 
+# HIGH-PRIORITY WIRE SERVICES (Direct feeds)
+AP News – Venezuela Hub - https://rsshub.app/apnews/topics/apf-venezuela
+
 ReliefWeb – Venezuela Updates - https://reliefweb.int/country/ven/rss.xml
 Google News – Venezuela economy policy - https://news.google.com/rss/search?q=Venezuela+economy+policy
 Google News – Venezuela government regulation - https://news.google.com/rss/search?q=Venezuela+government+regulation

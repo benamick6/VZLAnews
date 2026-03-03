@@ -336,6 +336,8 @@ def build_rows(items, pdfs, max_rows=6):
         cluster = grouped.get(theme) or []
         if not cluster:
             continue
+        # Sort by publishedAt descending (newest first) within each theme
+        cluster.sort(key=lambda x: str(x.get('sourcePublishedAt') or x.get('publishedAt') or x.get('dateISO') or ''), reverse=True)
         top = cluster[0]
         sentence = build_sentence(top, theme)
         subheading = pick_snappy(theme, top.get("title") or sentence[:80])

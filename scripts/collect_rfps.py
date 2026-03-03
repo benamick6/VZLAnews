@@ -3598,11 +3598,11 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
         if section_name:
             normalized_by_section.setdefault(section_name, []).append(item)
 
-    def _normalized_item_sort_key(item: dict) -> tuple[int, int, str]:
+    def _normalized_item_sort_key(item: dict) -> tuple[str, int, int]:
         return (
+            str(item.get("publishedAt", "") or ""),
             int(item.get("materiality", 1) or 1),
             int(item.get("risk_score", 0) or 0),
-            str(item.get("publishedAt", "") or ""),
         )
 
     sector_synth: dict[str, dict] = {}
