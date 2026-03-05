@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-03-04 11:26 UTC**
+> Last updated: **2026-03-05 11:30 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,35 +8,35 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Pedro Sánchez responde a Donald Trump: "No a la guerra"](https://bitlysdowssl-aws.com/2026/03/pedro-sanchez-la-posicion-del-gobierno-espanol-se-resume-en-no-a-la-guerra/) — Wed, 04 Mar 2026 10:42:00 +0000
-- [Estados Unidos bloquea el uso de dinero estatal venezolano para pagar abogados de Cilia Flores](https://bitlysdowssl-aws.com/2026/03/estados-unidos-impide-que-venezuela-financie-la-defensa-de-cilia-flores/) — Wed, 04 Mar 2026 10:27:00 +0000
-- [Trump: EE UU escoltará petroleros en el estrecho de Ormuz si es necesario](https://bitlysdowssl-aws.com/2026/03/trump-ee-uu-escoltara-petroleros-en-el-estrecho-de-ormuz-si-es-necesario/) — Wed, 04 Mar 2026 09:57:00 +0000
-- [La subida del petróleo estremece las bolsas asiáticas: las europeas se recuperan](https://bitlysdowssl-aws.com/2026/03/la-subida-del-petroleo-estremece-las-bolsas-asiaticas-las-europeas-se-recuperan/) — Wed, 04 Mar 2026 09:45:00 +0000
-- [Alejo Vidal-Quadras: El mundo será mejor con un Irán laico y democrático](https://bitlysdowssl-aws.com/2026/03/alejo-vidal-quadras-iran-venezuela-transicion-democratica/) — Wed, 04 Mar 2026 08:00:00 +0000
+- [Google bajo escrutinio por noviazgo de usuario con Gemini que terminó en suicidio](https://bitlysdowssl-aws.com/2026/03/google-bajo-escrutinio-por-noviazgo-de-un-usuario-con-gemini/) — Thu, 05 Mar 2026 11:15:52 +0000
+- [Cuál es la importancia estratégica de las bases militares que EE.UU. tiene en España y que el gobierno de Sánchez no permite usar para la guerra en Irán](https://bitlysdowssl-aws.com/2026/03/cual-es-la-importancia-estrategica-de-las-bases-militares-que-ee-uu-tiene-en-espana-y-que-el-gobierno-de-sanchez-no-permite-usar-para-la-guerra-en-iran/) — Thu, 05 Mar 2026 10:56:00 +0000
+- [Detenidos en Centroamérica 60 sospechosos de pederastia](https://bitlysdowssl-aws.com/2026/03/detenidos-en-america-central-60-sospechosos-de-pederastia/) — Thu, 05 Mar 2026 10:45:52 +0000
+- [Venezuela y EE UU exploran alianzas en el sector minero mientras el gobierno alista una reforma legal para atraer inversiones](https://bitlysdowssl-aws.com/2026/03/venezuela-y-ee-uu-exploran-alianzas-en-el-sector-minero-mientras-el-gobierno-alista-una-reforma-legal-para-atraer-inversiones/) — Thu, 05 Mar 2026 10:22:00 +0000
+- [Acnur cifra en más de 275.000 los desplazados en Irán, Afganistán, Pakistán y Líbano](https://bitlysdowssl-aws.com/2026/03/acnur-cifra-en-mas-de-275-000-los-desplazados-en-iran-afganistan-pakistan-y-libano/) — Thu, 05 Mar 2026 10:03:00 +0000
 
 ## Efecto Cocuyo
 
-- [Maduro dos meses fuera de Venezuela, una figura que se desvanece](https://efectococuyo.com/politica/maduro-dos-meses-fuera-de-venezuela-una-figura-que-se-desvanece/) — Wed, 04 Mar 2026 02:11:01 +0000
-- [Vente Venezuela dice que María Corina Machado recorrerá el país](https://efectococuyo.com/politica/vente-venezuela-dice-que-maria-corina-machado-recorrera-el-pais/) — Wed, 04 Mar 2026 01:56:09 +0000
-- [¿Quiénes eran los 47?](https://efectococuyo.com/la-humanidad/quienes-eran-los-47/) — Tue, 03 Mar 2026 21:56:39 +0000
-- [Pdvsa anuncia nuevos contratos de venta de petróleo para el mercado de Estados Unidos](https://efectococuyo.com/economia/pdvsa-anuncia-nuevos-contratos-de-venta-de-petroleo-para-el-mercado-de-estados-unidos/) — Tue, 03 Mar 2026 21:49:49 +0000
-- [Autoridades hallan sin vida al periodista Walter Alexander Jaimes en Mérida tras días desaparecido](https://efectococuyo.com/sucesos/autoridades-hallan-sin-vida-al-periodista-walter-alexander-jaimes-en-merida-tras-dias-desaparecido/) — Tue, 03 Mar 2026 21:39:49 +0000
+- [Las 100 protagonistas, El humor nuestro de cada día y más teatro este fin de semana](https://efectococuyo.com/solaz/las-100-protagonistas-el-humor-nuestro-de-cada-dia-y-mas-teatro/) — Thu, 05 Mar 2026 10:45:00 +0000
+- [Cuarta temporada de Bridgerton y la polaca Jerarquía, lo más visto en Netflix Venezuela](https://efectococuyo.com/solaz/cuarta-temporada-de-bridgerton-y-la-polaca-jerarquia-lo-mas-visto-en-netflix-venezuela/) — Thu, 05 Mar 2026 10:30:00 +0000
+- [El día que la prensa independiente volvió a poner un pie en Miraflores](https://efectococuyo.com/politica/dia-prensa-independiente-vuelve-miraflores/) — Thu, 05 Mar 2026 01:33:16 +0000
+- [La promesa incumplida en Zona 7: «Ese mismo día salen todos»](https://efectococuyo.com/la-humanidad/la-promesa-incumplida-en-zona-7-ese-mismo-dia-salen-todos/) — Wed, 04 Mar 2026 23:28:25 +0000
+- [Trump elogia a Delcy Rodríguez por avances en la cooperación petrolera y ella agradece](https://efectococuyo.com/internacionales/trump-elogia-a-delcy-rodriguez-por-avances-en-la-cooperacion-petrolera-y-ella-agradece/) — Wed, 04 Mar 2026 22:26:18 +0000
 
 ## El Pitazo
 
-- [Pescadores encuentran cadáver del comisario Leobaldo Figuera, jefe de la PNB en Monagas](https://elpitazo.net/sucesos/pescadores-encuentran-cadaver-del-comisario-leobaldo-figuera-jefe-de-la-pnb-en-monagas/) — Tue, 03 Mar 2026 23:54:03 +0000
-- [Salario mínimo en 200 dólares: la propuesta de aumento de la Federación de Empleados Públicos](https://elpitazo.net/economia/salario-minimo-en-200-dolares-la-propuesta-de-aumento-de-la-federacion-de-empleados-publicos/) — Tue, 03 Mar 2026 23:30:08 +0000
-- [Acuchillado y desangrado: funcionarios encuentran cadáver de sexagenario dentro de un pozo en Bolívar](https://elpitazo.net/sucesos/acuchillado-y-desangrado-funcionarios-encuentran-cadaver-de-sexagenario-dentro-de-un-pozo-en-bolivar/) — Tue, 03 Mar 2026 23:24:45 +0000
-- [¿Quiénes eran los 47?](https://elpitazo.net/alianzas/quienes-eran-los-47/) — Tue, 03 Mar 2026 23:20:39 +0000
-- [Fiscal adjunto de EE. UU. niega que se preparen acusaciones contra Delcy Rodríguez: «Es completamente falso»](https://elpitazo.net/politica/fiscal-adjunto-de-ee-uu-niega-que-se-preparen-acusaciones-contra-delcy-rodriguez-es-completamente-falso/) — Tue, 03 Mar 2026 22:33:59 +0000
+- [Noticias desde los cuarteles: movimientos que podrían sacudir el mando militar en Venezuela](https://elpitazo.net/politica/noticias-desde-los-cuarteles-movimientos-que-podrian-sacudir-el-mando-militar-en-venezuela/) — Thu, 05 Mar 2026 01:31:20 +0000
+- [Guárico | Asesinan a venezolano que tenía solo cuatro días de haber sido deportado desde EE. UU.](https://elpitazo.net/sucesos/guarico-asesinan-a-venezolano-que-tenia-solo-cuatro-dias-de-haber-sido-deportado-desde-ee-uu/) — Thu, 05 Mar 2026 00:33:09 +0000
+- [Fiebre amarilla en Venezuela: ¿qué se sabe y cuáles son las recomendaciones?](https://elpitazo.net/salud/fiebre-amarilla-en-venezuela-que-se-sabe-y-cuales-son-las-recomendaciones/) — Thu, 05 Mar 2026 00:31:19 +0000
+- [Donald Trump sobre acuerdos económicos con Delcy Rodríguez: «El petróleo está empezando a fluir»](https://elpitazo.net/economia/donald-trump-sobre-acuerdos-economicos-con-delcy-rodriguez-el-petroleo-esta-empezando-a-fluir/) — Thu, 05 Mar 2026 00:03:30 +0000
+- [La promesa incumplida en Zona 7: «Ese mismo día salen todos»](https://elpitazo.net/alianzas/la-promesa-incumplida-en-zona-7-ese-mismo-dia-salen-todos/) — Wed, 04 Mar 2026 23:21:06 +0000
 
 ## Google News – Venezuela
 
-- [Venezuela firmó nuevos contratos para exportar petróleo y derivados a Estados Unidos - Infobae](https://news.google.com/rss/articles/CBMiygFBVV95cUxQWEZFUEQ1c0ZxNkVFaGlSX2g3UHprN1RNSHBJUU5LTm9sUnA5d0duRHFhbGZia1JfR2d6WVNKRUdkYVRWdTFtNmFQU2ZndU5oOUZqbjRBUVFZbl9vN09iY0ZwMG80R01yOFp1bGhGcGxkbldBb01mUDVGTldNdXY0OHVVOXJzTjZiWFJVMDNINk1fT05XX1l5Rk5pNmMtM3N0dkpCMzd1VlphWHBjdUVtLVpBeGxNWG1JNU5rS0pTV0xCdE55dFN5YV9R0gHkAUFVX3lxTE5lRUlxaTVJSEdsVXZlcllrQzdyQkpNbUgxemlPRVU2VGVQVFNySG1XTmpiSi1vOTlRX0FteHE1S2YtZnladm0tclI2RWsxMndEMUc2TUM1ZjQ4d0ZkQ3lRdmpQWWZvaEZwME9SS3o5T05GUnpiMmhpR0RIUlVxdFE1ZVN1TnIwYjRibUJDSlp6X184Q0pZMXNxUXRIZnBvaktUa25jRWQ2d0NuUlVwRmM3S09qOTdjZWo3czBnQ01GM2VuUzJfZk1ieHZGU3RCUTV2OE81enBQTGlQUThIOW81Z0ZVVg?oc=5) — Tue, 03 Mar 2026 22:20:00 GMT
-- [Venezuela anuncia nuevos contratos de PDVSA para proveer petróleo a Estados Unidos - CNN en Español](https://news.google.com/rss/articles/CBMilwFBVV95cUxONkVRZHZDWUpRNXdPbFBxZ1ByNmRzUXVfdVRuYkxORHhBQlljME9laWdlQmN0MUVoYk5ZSmZKV1Rpa0ZWczV3cDZLMEJHRTU3eTVuNHJSb1AtYklXUUVrLUZ2eUdocnZmRU9kVGpEYnFGcEtRUTBseFhNSlQweUZDVEx6ZGh4QXZYT2UyLUdjMXJXQ1F0N25z?oc=5) — Tue, 03 Mar 2026 22:30:00 GMT
-- [LO ÚLTIMO | Venezuela refuerza su presencia energética con nuevos contratos de suministro al mercado de EEUU (+Comunicado) - La iguana TV](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPOGFUOUljZVBFZXprR1lBc05ES3hBRnY0REJ0M3kyMFFEUWw3em1pYVZtWWpYUW1OZGlBMnlhcWZwOVMzV1d5Q0c2RDhxUzNfZENnamx3c2hTOUk1d3N3cDRNUUxrTzM4VHFTNnMzcDQ3S0tuYzB1empaUUhFMVpsemVOdXVJZ3BVTzRjTllvVC1fbTM4UUI1WHFDZWhnaTNhZmhuTkRqeGo5Vk9xTGRFNU5wRS0ySi1vVnktLTVKVjVfbE1BR29jYTR2VnoxLXhMVTEtbnV0YXEzaEVRbEVj?oc=5) — Tue, 03 Mar 2026 21:10:31 GMT
-- [Jorge Rodríguez admite errores con presos políticos en Venezuela - El Nacional](https://news.google.com/rss/articles/CBMiogFBVV95cUxNbE1wZkFPV0lWdnNWS0o1c0E3ZFExLVJCSlQyMnBGcTdhRUltVU1ua3RBcTlfLUJXVDVQWXpKUVMxM2trOHh5bGFWNUlDYWNyVW1acVhtckxWekJlcGgwSFBRUGFzQW5wWERtVHg1RXNjR0FQLTlDaHN6dFVlQkJqbXdzcFl2MVNMam5qdGRjZTlZNU0yTVdmNmdUMDZ5MW1ZYkE?oc=5) — Tue, 03 Mar 2026 11:40:46 GMT
-- [El conflicto en Irán y la apertura de Venezuela disparan la fortuna de varios millonarios petroleros - Yahoo](https://news.google.com/rss/articles/CBMimwFBVV95cUxOQmJ1N3JRWWF3UzF3SUJ3TS05OWxZVE5FT1pmWklSdWhmWDBWU2ltdHBKRTBfZ2FpV3hpcWY3RXVlc3lueTFwZTQya2w4MDVBNU43bmJ3d2RIMjV6Y1RQTjFqQ3RIRURtRnVmUTdBOGFYeVBvd19MWEpwS0laYXFFbG1PbFB4bkVDZXcxRGdqUUtJbDVVakhLSmE4SQ?oc=5) — Wed, 04 Mar 2026 10:36:00 GMT
+- [Doug Burgum destaca inversiones y reducción de burocracia en Venezuela tras reunión en Miraflores - Efecto Cocuyo](https://news.google.com/rss/articles/CBMipgFBVV95cUxNakhvU0tTblFpX3FNSG9odGhrQ3dpNDhUOEZINU1uTU10YXJpaEFzZmVaeGkyVG1UODJNcnNQV3lJYzl0bUU1OFdsSVlrZVdMWF91Z0djZEV2ZGVORUJZR1Vha3FZSGZaUUpYbFhOUkd4ajgtbzFQU0xiaGoyU3dfX3ZwOVhhZlQxUzAwLTd2aE5nZjA5Nm1nbW9NZ29lTG02a0V3UUhB?oc=5) — Wed, 04 Mar 2026 22:12:32 GMT
+- [De visita en Venezuela el secretario de Interior de EEUU Doug Burgum - ultimasnoticias.com.ve](https://news.google.com/rss/articles/CBMirgFBVV95cUxQbE5ielhMQmZYbTF6UzBDR1FXT2M0a3pueEhxUlBnMUdVR1h5ODQ3Nks1Y1ZnNl9mNzRCTk5uZnVDdDlLeHBUR1p3cF9ySE1HYWx5U0tBWXpQWmJYckZmaWcyZFZ3b2hObDcwTUF2cHRLbzZTNU1VR0syT0VsYkY0MEpQTlBMSG1mMnExY2FISzdYWnVSVlBHVUtILVp4MnVXVUZ6YXlva3VtMElsaWc?oc=5) — Wed, 04 Mar 2026 16:21:39 GMT
+- [Delcy Rodríguez recibe al secretario del Interior de EE.UU. y reitera que Venezuela “está a disposición” para cooperar - CNN en Español](https://news.google.com/rss/articles/CBMinwFBVV95cUxNcm5taDVPeG5KQXJ6bXBfc29JUzE1cS1YSVdKeTlSNHU2cFhqXy03dnpGeWpxdVFPTXVPOXpZYjB0RTY1Z0FuYzhKN3NZVWhoT1VzNjBmc0w5RlpjaGNzeXZoY054cUo5ei12aUJCaGpQbDk1QjlTaVJrUHhjdHNyS0poQWFrdkVSYXdLR01GRnFRUXZLZEFnZGFCck95bGc?oc=5) — Wed, 04 Mar 2026 23:05:00 GMT
+- [Trump ve paralelismos entre Irán y Venezuela. Pero no hay una Delcy Rodríguez en Teherán - CNN en Español](https://news.google.com/rss/articles/CBMilAFBVV95cUxOaDNTeFcxLUNwaS02d1NWc21BeE04V25yTlJNS1hoVjVMSTZ4OEZ1cFZrMFIyQnUxbnR3cVdqUDVsQ2I2SF96dTZlUUk1SFBldU4wYWd6c08zSlJwZ28zdGdKN3Q1ZU0zUklMUWN3MlJEYXEyeXZ3WU83Vk9mWThtaVlLdEQzdVlpWGZKanU5by1rWVdZ?oc=5) — Wed, 04 Mar 2026 02:04:00 GMT
+- [El argentino Nahuel Gallo, tras ser liberado en Venezuela: “No estoy preparado para contar las atrocidades que me hicieron” - EL PAÍS](https://news.google.com/rss/articles/CBMi9wFBVV95cUxPdVp1ay1uSW1md1hEcExuNVNDdjkwbm5zd2JVd19udFZsWlFhODFkQXdnek5hYUlFbVV0MnBQSFpqb0hpblF2TEZ1YjZ0ckRZcjVCZDVBeHphS2M0TUdJMlRTQVZkS29ERUVzdzVuX0pmUDk2Mk5jM1V0d2RaWV9wUUZUZjRlU0Z0NVBUdEdrbmR0YzZXZTdJOWIyRkRMTlJ0N1RkZnFEZGZob3BaY1ROZUNuOEdKWV9pTUhMRHBTVXVkRGVzSUpCdUpSOVdRalNETmg0ekVVbEdEY2tNYzZhNG12T1p4clNIbUhvNy1ndkg1VU1QdnNV0gGLAkFVX3lxTFBCRy1zbklCdGIyQ2VfaVpjcm1FWkl0bzl6LXVoNG9rcTR2ZS1WNVhHaFpNWXpNN2VrQVI1OHhhcnMyQXp3cjhKb1J4TzZNVVBTUlNPRkdFTE85Tkc0bWJSbjRaMHhDVHo3a1B6LWJKeXM3VVlqeHM4eUdTN3QwQzR3elZmek16eFVOaDR2OEZnYzZkaWlPUTVEei0zS1FoVnR3TFFYUWNMdVBzY1RUTElqZC1ueTJyRHNZbGhaM0VrOXhKSVdINHdzalJZei15aU0tMW9UOGpVdGdUcFFveDB2NHZ5NS1mVVpST3M3anNjVUFQM1RTalAxNnVxbUVzaDE1U3F6WXhxV0dsZw?oc=5) — Wed, 04 Mar 2026 20:21:30 GMT
 
 ---
 
